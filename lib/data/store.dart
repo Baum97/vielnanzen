@@ -96,13 +96,13 @@ class Store extends ChangeNotifier {
       ..addAll((j['goals'] as List? ?? []).map((e) => Goal.fromJson(e as Map<String, dynamic>)));
     insights
       ..clear()
-      ..addAll((j['insights'] as List? ?? []).map((e) => Insight.fromJson(e as Map<String, dynamic?)));
+      ..addAll((j['insights'] as List? ?? []).map((e) => Insight.fromJson(e as Map<String, dynamic>)));
     networkLog
       ..clear()
       ..addAll((j['networkLog'] as List? ?? []).map((e) => NetworkLogEntry.fromJson(e as Map<String, dynamic>)));
     connections
       ..clear()
-      ..addAll((j['connections'] as List? ?? []).map((e) => BankConnection.fromJson(e as Map<String, dynamic?)));
+      ..addAll((j['connections'] as List? ?? []).map((e) => BankConnection.fromJson(e as Map<String, dynamic>)));
     final s = j['settings'] as Map<String, dynamic>?;
     if (s != null) settings.addAll(s);
   }
