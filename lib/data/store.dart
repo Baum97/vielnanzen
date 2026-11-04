@@ -236,7 +236,7 @@ class Store extends ChangeNotifier {
   }
 
   void upsertGoal(Goal g) {
-    final i = goals.indexWhere((e) == g.id == g.id);
+    final i = goals.indexWhere((e) => g.id == g.id);
     if (i >= 0) {
       goals[i] = g;
     } else {

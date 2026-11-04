@@ -21,7 +21,7 @@ class AmountText extends StatelessWidget {
       text,
       style: (style ?? DefaultTextStyle.of(context).style).copyWith(
             fontFeatures: const [FontFeature.tabularFigures()],
-            color: color ?? (style?.color),
+            color: color ?? style?.color,
           ),
     );
   }
@@ -46,6 +46,7 @@ class TransactionRow extends StatelessWidget {
     final initials = monogram.isEmpty
         ? '?'
         : monogram.split(RegExp(r'\s+')).where((p) => p.isNotEmpty).map((p) => p[0]).take(2).join().toUpperCase();
+    final subtitle = "${category?.name ?? 'Unkategoriesiert'} · $accountName${t.pending ? ' · vorgemerkt' : ''}";
     return InkWell(
       onTap: onTap,
       child: SizedBox(
@@ -61,26 +62,26 @@ class TransactionRow extends StatelessWidget {
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-               crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 Text(merchantName, style: theme.textTheme.headlineMedium, maxLines: 1, overflow: TextOverflow.ellipsis),
-                 Text(
-                  "${category?.name ?? 'Unkategoriesiert'} · $accountName${t.pending ? ' · vorgemerkt' : ''}",
+                Text(
+                  subtitle,
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
                   maxLines: 1,
-                 overflow: TextOverflow.ellipsis,
+                  overflow: TextOverflow.ellipsis,
                 ),
-             ],
+              ],
             ),
-            AmountText(t.amountCents, signed: true, discreet: discreet, style: theme.textTheme.headlineMedium),
-             ],
-            ],
+          ),
+          AmountText(t.amountCents, signed: true, discreet: discreet, style: theme.textTheme.headlineMedium),
+        ]),
       ),
     );
   }
 }
 
-/// Card-Komponente: Surface, Radius 20, Padding 16, optionaler Titel mit „Alle“.
+/// Card-Komponente: Surface, Radius 20, Padding 16, optionaler Titel mit „Alle".
 class AppCard extends StatelessWidget {
   final String? title;
   final VoidCallback? onSeeAll;
@@ -97,14 +98,12 @@ class AppCard extends StatelessWidget {
         padding: padding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-             children: [
+          children: [
             if (title != null)
               Row(children: [
                 Text(title!, style: theme.textTheme.headlineMedium),
                 const Spacer(),
-                if (onSeeAll != null)
-                  TextButton(onPressed: onSeeAll, child: const Text('Alle')),
-               ],
+                if (onSeeAll != null) TextButton(onPressed: onSeeAll, child: const Text('Alle')),
               ]),
             if (title != null) const SizedBox(height: 8),
             child,
@@ -152,8 +151,7 @@ class Banner extends StatelessWidget {
         Icon(Icons.info_outline, color: color, size: 20),
         const SizedBox(width: 10),
         Expanded(child: Text(text, style: theme.textTheme.bodyMedium)),
-        if (actionLabel != null)
-          TextButton(onPressed: onAction, child: Text(actionLabel!, style: TextStyle(color: color))),
+        if (actionLabel != null) TextButton(onPressed: onAction, child: Text(actionLabel!, style: TextStyle(color: color))),
       ]),
     );
   }

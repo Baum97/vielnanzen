@@ -78,7 +78,7 @@ class _LineChartState extends State<LineChart> {
                     border: Border.all(color: theme.colorScheme.outline),
                   ),
                   child: Text(
-                    '${AmountFormat.dateShort.format(all[hoverIndex!].\$1)} ${AmountFormat.format(all[hoverIndex!].$2)}',
+                    '${AmountFormat.dateShort.format(all[hoverIndex!].$1)} ${AmountFormat.format(all[hoverIndex!].$2)}',
                     style: theme.textTheme.labelSmall,
                   ),
                 ),

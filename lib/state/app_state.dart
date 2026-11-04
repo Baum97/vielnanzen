@@ -44,7 +44,7 @@ class AppStateNotifier extends StateNotifier<AppState> {
       if (existing.isEmpty) state.store.upsertContract(c);
     }
     for (final i in result.insights) {
-      final dup = state.store.insights.any((e) == !e.dismissed && e.title == i.title);
+      final dup = state.store.insights.any((e) => !e.dismissed && e.title == i.title);
       if (!dup) state.store.upsertInsight(i);
     }
     state = state.copyWith(result: result, analyzing: false);
