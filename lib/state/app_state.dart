@@ -40,7 +40,7 @@ class AppStateNotifier extends StateNotifier<AppState> {
     final result = await engine.run();
     state.store.upsertTransactions(result.transactions);
     for (final c in result.contracts) {
-      final existing = state.store.contracts.where((e) == e.name == c.name && e.status != ContractStatus.ignoriert).toList();
+      final existing = state.store.contracts.where((e) => e.name == c.name && e.status != ContractStatus.ignoriert).toList();
       if (existing.isEmpty) state.store.upsertContract(c);
     }
     for (final i in result.insights) {

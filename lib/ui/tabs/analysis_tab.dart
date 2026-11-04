@@ -70,7 +70,7 @@ class _AnalysisTabState extends ConsumerState<AnalysisTab> {
                         for (final e in rows)
                           Builder(builder: (context) {
                             final cat = engine.categoryById(e.key);
-                            final share = total > 0 ? e.value / total : 0;
+                            final double share = total > 0 ? e.value / total : 0.0;
                             return Padding(
                               padding: const EdgeInsets.symmetric(vertical: 6),
                               child: Row(children: [

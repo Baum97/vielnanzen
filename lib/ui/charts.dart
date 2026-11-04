@@ -78,7 +78,7 @@ class _LineChartState extends State<LineChart> {
                     border: Border.all(color: theme.colorScheme.outline),
                   ),
                   child: Text(
-                    '${AmountFormat.dateShort.format(allhoverIndex!].$1)} ${AmountFormat.format(all[hoverIndex!].$2)}',
+                    '${AmountFormat.dateShort.format(all[hoverIndex!].\$1)} ${AmountFormat.format(all[hoverIndex!].$2)}',
                     style: theme.textTheme.labelSmall,
                   ),
                 ),
@@ -272,11 +272,11 @@ class BarChart extends StatelessWidget {
     return SizedBox(
       height: 120,
       child: Row(
-        crossAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           for (var i = 0; i < bars.length; i++)
             Expanded(
-               child: Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Flexible(
@@ -287,14 +287,15 @@ class BarChart extends StatelessWidget {
                           color: i == bars.length - 1 ? theme.colorScheme.primary : theme.colorScheme.secondary.withValues(alpha: 0.4),
                           borderRadius: const BorderRadius.vertical(top: Radius.circular(6)),
                         ),
-                     ),
-                    const SizedBox(height: 4),
-                   Text(bars[i].$1, style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(bars[i].$1, style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
                 ],
               ),
-              ),
-             ),
-           ],
+            ),
+        ],
       ),
     );
   }

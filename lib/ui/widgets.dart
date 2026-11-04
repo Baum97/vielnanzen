@@ -65,7 +65,7 @@ class TransactionRow extends StatelessWidget {
                 children: [
                 Text(merchantName, style: theme.textTheme.headlineMedium, maxLines: 1, overflow: TextOverflow.ellipsis),
                  Text(
-                  '${category?.name ?? 'Unkategoriesiert'} · ${accountName${t.pending ? ' · vorgemerkt' : ''}',
+                  "${category?.name ?? 'Unkategoriesiert'} · $accountName${t.pending ? ' · vorgemerkt' : ''}",
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
                   maxLines: 1,
                  overflow: TextOverflow.ellipsis,

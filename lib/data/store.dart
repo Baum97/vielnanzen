@@ -208,7 +208,7 @@ class Store extends ChangeNotifier {
   }
 
   void upsertRule(Rule r) {
-    final i = rules.indexWhere((e) == e.id == r.id);
+    final i = rules.indexWhere((e) => e.id == r.id);
     if (i >= 0) {
       rules[i] = r;
     } else {
@@ -219,7 +219,7 @@ class Store extends ChangeNotifier {
   }
 
   void removeRule(String id) {
-    rules.removeWhere((e) == e.id == id);
+    rules.removeWhere((e) => e.id == id);
     notifyListeners();
     save();
   }
@@ -276,7 +276,7 @@ class Store extends ChangeNotifier {
   }
 
   void upsertMerchant(Merchant m) {
-    final i = merchants.indexWhere((e) == e.normalizedName == m.normalizedName);
+    final i = merchants.indexWhere((e) => e.normalizedName == m.normalizedName);
     if (i >= 0) {
       merchants[i] = m;
     } else {
@@ -287,7 +287,7 @@ class Store extends ChangeNotifier {
   }
 
   void upsertConnection(BankConnection c) {
-    final i = connections.indexWhere((e) == e.id == c.id);
+    final i = connections.indexWhere((e) => e.id == c.id);
     if (i >= 0) {
       connections[i] = c;
     } else {

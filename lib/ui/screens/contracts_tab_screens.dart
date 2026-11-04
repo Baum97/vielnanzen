@@ -151,7 +151,8 @@ class _ContractsTabScreenState extends ConsumerState<ContractsTabScreen> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, i) {
-                final c = active.toList()..sort((a, b) => b.monthlyCents.compareTo(a.monthlyCents))[i];
+                final sorted = active.toList()..sort((a, b) => b.monthlyCents.compareTo(a.monthlyCents));
+                final c = sorted[i];
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   child: ListTile(

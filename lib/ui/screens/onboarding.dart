@@ -71,7 +71,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
         PrimaryButton(label: "Los geht's", onPressed: () => setState(() => _step = 1)),
       ]);
 
-  Widget _point(IconData icon, String text) => Padding(
+  Widget _point(IconData icon, String text) {
+    final theme = Theme.of(context);
+    return Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
         child: Row(children: [
           Icon(icon, color: theme.colorScheme.primary),
@@ -79,6 +81,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           Expanded(child: Text(text, style: theme.textTheme.bodyLarge)),
         ]),
       );
+  }
 
   Widget _protect(ThemeData theme) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text('App schützen', style: theme.textTheme.headlineMedium),
