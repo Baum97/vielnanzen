@@ -1,1 +1,73 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX2xvY2FsaXphdGlvbnMvZmx1dHRlcl9sb2NhbGl6YXRpb25zLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6Zmx1dHRlcl9yaXZlcnBvZC9mbHV0dGVyX3JpdmVycG9kLmRhcnQnOwoKaW1wb3J0ICdkYXRhL3N0b3JlLmRhcnQnOwppbXBvcnQgJ3N0YXRlL2FwcF9zdGF0ZS5kYXJ0JzsKaW1wb3J0ICd1aS9hcHBfc2hlbGwuZGFydCc7CmltcG9ydCAndWkvc2NyZWVucy9vbmJvYXJkaW5nLmRhcnQnOwppbXBvcnQgJ3VpL3RoZW1lLmRhcnQnOwoKdm9pZCBtYWluKCkgYXN5bmMgewogIFdpZGdldHNGbHV0dGVyQmluZGluZy5lbnN1cmVJbml0aWFsaXplZCgpOwogIGZpbmFsIHN0b3JlID0gU3RvcmUoKTsKICBhd2FpdCBzdG9yZS5sb2FkKCk7CiAgcnVuQXBwKFByb3ZpZGVyU2NvcGUoY2hpbGQ6IEtsYXJibGlja0FwcChzdG9yZTogc3RvcmUpKSk7Cn0KCmNsYXNzIEtsYXJibGlja0FwcCBleHRlbmRzIENvbnN1bWVyU3RhdGVmdWxXaWRnZXQgewogIGZpbmFsIFN0b3JlIHN0b3JlOwogIGNvbnN0IEtsYXJibGlja0FwcCh7c3VwZXIua2V5LCByZXF1aXJlZCB0aGlzLnN0b3JlfSk7CgogIEBvdmVycmlkZQogIENvbnN1bWVyU3RhdGU8S2xhcmJsaWNrQXBwPiBjcmVhdGVTdGF0ZSgpID0+IF9LbGFyYmxpY2tBcHBTdGF0ZSgpOwp9CgpjbGFzcyBfS2xhcmJsaWNrQXBwU3RhdGUgZXh0ZW5kcyBDb25zdW1lclN0YXRlPEtsYXJibGlja0FwcD4gewogIEBvdmVycmlkZQogIHZvaWQgaW5pdFN0YXRlKCkgewogICAgc3VwZXIuaW5pdFN0YXRlKCk7CiAgICBXaWRnZXRzQmluZGluZy5pbnN0YW5jZS5hZGRQb3N0RnJhbWVDYWxsYmFjaygoXykgewogICAgICByZWYucmVhZChhcHBTdGF0ZVByb3ZpZGVyLm5vdGlmaWVyKS5sb2FkKCk7CiAgICB9KTsKICB9CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCkgewogICAgZmluYWwgbW9kZSA9IHJlZi53YXRjaChhcHBTdGF0ZVByb3ZpZGVyKS5zdG9yZS5zZXR0aW5nc1snZGFya01vZGUnXSBhcyBTdHJpbmc/ID8/ICdzeXN0ZW0nOwogICAgZmluYWwgdGhlbWVNb2RlID0gc3dpdGNoIChtb2RlKSB7CiAgICAgICdsaWdodCcgPT4gVGhlbWVNb2RlLmxpZ2h0LAogICAgICAnZGFyaycgPT4gVGhlbWVNb2RlLmRhcmssCiAgICAgIF8gPT4gVGhlbWVNb2RlLnN5c3RlbSwKICAgIH07CiAgICByZXR1cm4gTWF0ZXJpYWxBcHAoCiAgICAgIHRpdGxlOiAnS2xhcmJsaWNrJywKICAgICAgZGVidWdTaG93Q2hlY2tlZE1vZGVCYW5uZXI6IGZhbHNlLAogICAgICB0aGVtZTogQXBwVGhlbWUubGlnaHQoKSwKICAgICAgZGFya1RoZW1lOiBBcHBUaGVtZS5kYXJrKCksCiAgICAgIHRoZW1lTW9kZTogdGhlbWVNb2RlLAogICAgICBsb2NhbGl6YXRpb25zRGVsZWdhdGVzOiBjb25zdCBbCiAgICAgICAgR2xvYmFsTWF0ZXJpYWxMb2NhbGl6YXRpb25zLmRlbGVnYXRlLAogICAgICAgIEdsb2JhbFdpZGdldHNMb2NhbGl6YXRpb25zLmRlbGVnYXRlLAogICAgICAgIEdsb2JhbEN1cGVydGlub0xvY2FsaXphdGlvbnMuZGVsZWdhdGUsCiAgICAgIF0sCiAgICAgIHN1cHBvcnRlZExvY2FsZXM6IGNvbnN0IFtMb2NhbGUoJ2RlJywgJ0RFJyldLAogICAgICBsb2NhbGU6IGNvbnN0IExvY2FsZSgnZGUnLCAnREUnKSwKICAgICAgaG9tZTogX0hvbWVHYXRlKHN0b3JlOiB3aWRnZXQuc3RvcmUpLAogICAgKTsKICB9Cn0KCmNsYXNzIF9Ib21lR2F0ZSBleHRlbmRzIENvbnN1bWVyV2lkZ2V0IHsKICBmaW5hbCBTdG9yZSBzdG9yZTsKICBjb25zdCBfSG9tZUdhdGUoe3JlcXVpcmVkIHRoaXMuc3RvcmV9KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0LCBXaWRnZXRSZWYgcmVmKSB7CiAgICBmaW5hbCBsb2FkZWQgPSBzdG9yZS5pc0xvYWRlZCB8fCByZWYud2F0Y2goYXBwU3RhdGVQcm92aWRlcikuc3RvcmUuaXNMb2FkZWQ7CiAgICBpZiAoIWxvYWRlZCkgewogICAgICByZXR1cm4gY29uc3QgU2NhZmZvbGQoYm9keTogQ2VudGVyKGNoaWxkOiBDaXJjdWxhclByb2dyZXNzSW5kaWNhdG9yKCkpKTsKICAgIH0KICAgIHJldHVybiBzdG9yZS5hY2NvdW50cy5pc0VtcHR5ID8gY29uc3QgT25ib2FyZGluZ1NjcmVlbigpIDogY29uc3QgQXBwU2hlbGwoKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'data/store.dart';
+import 'state/app_state.dart';
+import 'ui/app_shell.dart';
+import 'ui/screens/onboarding.dart';
+import 'ui/theme.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final store = Store();
+  await store.load();
+  runApp(ProviderScope(child: KlarblickApp(store: store)));
+}
+
+class KlarblickApp extends ConsumerStatefulWidget {
+  final Store store;
+  const KlarblickApp({super.key, required this.store});
+
+  @override
+  ConsumerState<KlarblickApp> createState() => _KlarblickAppState();
+}
+
+class _KlarblickAppState extends ConsumerState<KlarblickApp> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref.read(appStateProvider.notifier).load();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final mode = ref.watch(appStateProvider).store.settings['darkMode'] as String? ?? 'system';
+    final themeMode = switch (mode) {
+      'light' => ThemeMode.light,
+      'dark' => ThemeMode.dark,
+      _ => ThemeMode.system,
+    };
+    return MaterialApp(
+      title: 'Klarblick',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
+      themeMode: themeMode,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('de', 'DE')],
+      locale: const Locale('de', 'DE'),
+      home: _HomeGate(store: widget.store),
+    );
+  }
+}
+
+class _HomeGate extends ConsumerWidget {
+  final Store store;
+  const _HomeGate({required this.store});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final loaded = store.isLoaded || ref.watch(appStateProvider).store.isLoaded;
+    if (!loaded) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+    return store.accounts.isEmpty ? const OnboardingScreen() : const AppShell();
+  }
+}

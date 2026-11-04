@@ -1,1 +1,117 @@
-YS5pZCA9PSB0LmFjY291bnRJZCkubWFwKChhKSA9PiBhLm5hbWUpLmZpcnN0T3JOdWxsID8/ICcnLAogICAgICAgICAgICAgICAgICAgICAgICBkaXNjcmVldDogZGlzY3JlZXQsCiAgICAgICAgICAgICAgICAgICAgICAgIG9uVGFwOiAoKSA9PiBOYXZpZ2F0b3Iub2YoY29udGV4dCkucHVzaChNYXRlcmlhbFBhZ2VSb3V0ZShidWlsZGVyOiAoXykgPT4gVHJhbnNhY3Rpb25EZXRhaWxTY3JlZW4odHJhbnNhY3Rpb25JZDogdC5pZCkpKSwKICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICBjaGlsZENvdW50OiBkYXkudmFsdWUubGVuZ3RoLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgICksCiAgICAgICAgICBdKSwKICAgICAgICBTbGl2ZXJUb0JveEFkYXB0ZXIoY2hpbGQ6IFNpemVkQm94KGhlaWdodDogODAgKyBNZWRpYVF1ZXJ5Lm9mKGNvbnRleHQpLnBhZGRpbmcuYm90dG9tKSksCiAgICAgIF0pLAogICAgKTsKICB9CgogIFdpZGdldCBfY2hpcChTdHJpbmcgbGFiZWwsIGJvb2wgYWN0aXZlLCB2b2lkIEZ1bmN0aW9uKGJvb2wpIG9uQ2hhbmdlZCkgewogICAgZmluYWwgdGhlbWUgPSBUaGVtZS5vZihjb250ZXh0KTsKICAgIHJldHVybiBGaWx0ZXJDaGlwKAogICAgICBsYWJlbDogVGV4dChsYWJlbCksCiAgICAgIHNlbGVjdGVkOiBhY3RpdmUsCiAgICAgIG9uU2VsZWN0ZWQ6IG9uQ2hhbmdlZCwKICAgICAgc2VsZWN0ZWRDb2xvcjogdGhlbWUuY29sb3JTY2hlbWUucHJpbWFyeS53aXRoVmFsdWVzKGFscGhhOiAwLjEyKSwKICAgICAgY2hlY2ttYXJrQ29sb3I6IHRoZW1lLmNvbG9yU2NoZW1lLnByaW1hcnksCiAgICApOwogIH0KCiAgc3RhdGljIFN0cmluZyBfZGF5TGFiZWwoRGF0ZVRpbWUgZCkgewogICAgZmluYWwgbm93ID0gRGF0ZVRpbWUubm93KCk7CiAgICBmaW5hbCB0b2RheSA9IERhdGVUaW1lKG5vdy55ZWFyLCBub3cubW9udGgsIG5vdy5kYXkpOwogICAgZmluYWwgeWVzdGVyZGF5ID0gdG9kYXkuc3VidHJhY3QoY29uc3QgRHVyYXRpb24oZGF5czogMSkpOwogICAgaWYgKGQgPT0gdG9kYXkpIHJldHVybiAnSGV1dGUnOwogICAgaWYgKGQgPT0geWVzdGVyZGF5KSByZXR1cm4gJ0dlc3Rlcm4nOwogICAgcmV0dXJuIERhdGVGb3JtYXQoJ0UsIGRkLiBNTU0uJywgJ2RlX0RFJykuZm9ybWF0KGQpOwogIH0KfQoKdm9pZCBzaG93Q2F0ZWdvcnlQaWNrZXIoQnVpbGRDb250ZXh0IGNvbnRleHQsIFdpZGdldFJlZiByZWYsIFRyYW5zYWN0aW9uIHQpIHsKICBmaW5hbCBlbmdpbmUgPSByZWYucmVhZChlbmdpbmVQcm92aWRlcik7CiAgZmluYWwgc3RvcmUgPSByZWYucmVhZChzdG9yZVByb3ZpZGVyKTsKICBzaG93TW9kYWxCb3R0b21TaGVldCgKICAgIGNvbnRleHQ6IGNvbnRleHQsCiAgICBzaG93RHJhZ0hhbmRsZTogdHJ1ZSwKICAgIGJ1aWxkZXI6IChjdHgpID0+IFNhZmVBcmVhKAogICAgICBjaGlsZDogQ29sdW1uKG1haW5BeGlzU2l6ZTogTWFpbkF4aXNTaXplLm1pbiwgY2hpbGRyZW46IFsKICAgICAgICBQYWRkaW5nKAogICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5hbGwoMTYpLAogICAgICAgICAgY2hpbGQ6IFRleHQoJ0thdGVnb3JpZSBmw7xyICR7dC5jb3VudGVycGFydHlOYW1lfScsIHN0eWxlOiBUaGVtZS5vZihjdHgpLnRleHRUaGVtZS50aXRsZU1lZGl1bSksCiAgICAgICAgKSwKICAgICAgICBGbGV4aWJsZSgKICAgICAgICAgIGNoaWxkOiBHcmlkVmlldy5idWlsZGVyKAogICAgICAgICAgICBzaHJpbmtXcmFwOiB0cnVlLAogICAgICAgICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLnN5bW1ldHJpYyhob3Jpem9udGFsOiAxNiksCiAgICAgICAgICAgIGdyaWREZWxlZ2F0ZTogY29uc3QgU2xpdmVyR3JpZERlbGVnYXRlV2l0aEZpeGVkQ3Jvc3NBeGlzQ291bnQoY3Jvc3NBeGlzQ291bnQ6IDQsIGNoaWxkQXNwZWN0UmF0aW86IDAuOSksCiAgICAgICAgICAgIGl0ZW1Db3VudDogZW5naW5lLmNhdGVnb3JpZXMubGVuZ3RoLAogICAgICAgICAgICBpdGVtQnVpbGRlcjogKGN0eCwgaSkgewogICAgICAgICAgICAgIGZpbmFsIGMgPSBlbmdpbmUuY2F0ZWdvcmllc1tpXTsKICAgICAgICAgICAgICBmaW5hbCBjb2xvciA9IHBhcnNlSGV4Q29sb3IoYy5jb2xvcik7CiAgICAgICAgICAgICAgcmV0dXJuIElua1dlbGwoCiAgICAgICAgICAgICAgICBvblRhcDogKCkgewogICAgICAgICAgICAgICAgICBzdG9yZS51cHNlcnRUcmFuc2FjdGlvbih0LmNvcHlXaXRoKGNhdGVnb3J5SWQ6IGMuaWQsIGNhdGVnb3J5UmVhc29uOiAnTWFudWVsbCB6dWdlb3JkbmV0JykpOwogICAgICAgICAgICAgICAgICBOYXZpZ2F0b3IucG9wKGN0eCk7CiAgICAgICAgICAgICAgICAgIFNjYWZmb2xkTWVzc2VuZ2VyLm9mKGNvbnRleHQpLnNob3dTbmFja0JhcigKICAgICAgICAgICAgICAgICAgICBTbmFja0JhcigKICAgICAgICAgICAgICAgICAgICAgIGNvbnRlbnQ6IGNvbnN0IFRleHQoJ0thdGVnb3JpZSBnZcOkbmRlcnQg4oCTIGF1Y2ggZsO8ciBmcsO8aGVyZSBVbXPDpHR6ZSDDvGJlcm5laG1lbj8nKSwKICAgICAgICAgICAgICAgICAgICAgIGFjdGlvbjogU25hY2tCYXJBY3Rpb24oCiAgICAgICAgICAgICAgICAgICAgICAgIGxhYmVsOiAnQWxsZSDDpG5kZXJuJywKICAgICAgICAgICAgICAgICAgICAgICAgb25QcmVzc2VkOiAoKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgZmluYWwgcmVsYXRlZCA9IHN0b3JlLnRyYW5zYWN0aW9ucy53aGVyZSgoeCkgPT4geC5tZXJjaGFudElkID09IHQubWVyY2hhbnRJZCB8fCB4LmNvdW50ZXJwYXJ0eU5hbWUgPT0gdC5jb3VudGVycGFydHlOYW1lKS50b0xpc3QoKTsKICAgICAgICAgICAgICAgICAgICAgICAgICBmb3IgKGZpbmFsIHggaW4gcmVsYXRlZCkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3RvcmUudXBzZXJ0VHJhbnNhY3Rpb24oeC5jb3B5V2l0aChjYXRlZ29yeUlkOiBjLmlkKSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgIHN0b3JlLnVwc2VydFJ1bGUoUnVsZSgKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlkOiAncnVsZV8ke0RhdGVUaW1lLm5vdygpLm1pY3Jvc2Vjb25kc1NpbmNlRXBvY2h9JywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpZWxkOiAnSMOkbmRsZXInLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgb3BlcmF0b3I6ICdlbnRow6RsdCcsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZTogdC5jb3VudGVycGFydHlOYW1lLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgYWN0aW9uOiAnS2F0ZWdvcmllJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFjdGlvblZhbHVlOiBjLmlkLAogICAgICAgICAgICAgICAgICAgICAgICAgICkpOwogICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogQ29sdW1uKG1haW5BeGlzU2l6ZTogTWFpbkF4aXNTaXplLm1pbiwgY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDM2LAogICAgICAgICAgICAgICAgICAgIGhlaWdodDogMzYsCiAgICAgICAgICAgICAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbihjb2xvcjogY29sb3Iud2l0aFZhbHVlcyhhbHBoYTogMC4xMiksIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDEwKSksCiAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IEljb24oX2ljb25Gb3IoYy5pY29uKSwgY29sb3I6IGNvbG9yLCBzaXplOiAyMCksCiAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgIGNvbnN0IFNpemVkQm94KGhlaWdodDogNCksCiAgICAgICAgICAgICAgICAgIFRleHQoYy5uYW1lLCBzdHlsZTogVGhlbWUub2YoY3R4KS50ZXh0VGhlbWUubGFiZWxTbWFsbCwgbWF4TGluZXM6IDIsIHRleHRBbGlnbjogVGV4dEFsaWduLmNlbnRlciwgb3ZlcmZsb3c6IFRleHRPdmVyZmxvdy5lbGxpcHNpcyksCiAgICAgICAgICAgICAgICBdKSwKICAgICAgICAgICAgICApOwogICAgICAgICAgICB9LAogICAgICAgICAgKSwKICAgICAgICApLAogICAgICBdKSwKICAgICksCiAgKTsKfQoKSWNvbkRhdGEgX2ljb25Gb3IoU3RyaW5nIG5hbWUpID0+IHN3aXRjaCAobmFtZSkgewogICAgICAnaG91c2UnID0+IEljb25zLmhvbWVfb3V0bGluZWQsCiAgICAgICdsaWdodG5pbmcnID0+IEljb25zLmJvbHRfb3V0bGluZWQsCiAgICAgICdkcm9wJyA9PiBJY29ucy53YXRlcl9kcm9wX291dGxpbmVkLAogICAgICAnd2lmaS1oaWdoJyA9PiBJY29ucy53aWZpLAogICAgICAndGVsZXZpc2lvbicgPT4gSWNvbnMudHZfb3V0bGluZWQsCiAgICAgICdiYXNrZXQnID0+IEljb25zLnNob3BwaW5nX2Jhc2tldF9vdXRsaW5lZCwKICAgICAgJ2NhcnQnID0+IEljb25zLnNob3BwaW5nX2NhcnRfb3V0bGluZWQsCiAgICAgICdicmVhZCcgPT4gSWNvbnMuYmFrZXJ5X2RpbmluZ19vdXRsaW5lZCwKICAgICAgJ3N0b3JlZnJvbnQnID0+IEljb25zLnN0b3JlZnJvbnRfb3V0bGluZWQsCiAgICAgICdjYXInID0+IEljb25zLmRpcmVjdGlvbnNfY2FyX291dGxpbmVkLAogICAgICAndHJhaW4nID0+IEljb25zLnRyYWluX291dGxpbmVkLAogICAgICAnZ2FzLXB1bXAnID0+IEljb25zLmxvY2FsX2dhc19zdGF0aW9uX291dGxpbmVkLAogICAgICAncC1zcXVhcmUnID0+IEljb25zLmxvY2FsX3Bhcmtpbmdfb3V0bGluZWQsCiAgICAgICd3cmVuY2gnID0+IEljb25zLmJ1aWxkX291dGxpbmVkLAogICAgICAncGxheS1jaXJjbGUnID0+IEljb25zLnBsYXlfY2lyY2xlX291dGxpbmUsCiAgICAgICdwbGF5JyA9PiBJY29ucy5wbGF5X2Fycm93LAogICAgICAnbXVzaWMtbm90ZXMnID0+IEljb25zLm11c2ljX25vdGVfb3V0bGluZWQsCiAgICAgICduZXdzcGFwZXInID0+IEljb25zLm5ld3NwYXBlcl9vdXRsaW5lZCwKICAgICAgJ2Nsb3VkJyA9PiBJY29ucy5jbG91ZF9vdXRsaW5lZCwKICAgICAgJ2JhcmJlbGwnID0+IEljb25zLmZpdG5lc3NfY2VudGVyX291dGxpbmVkLAogICAgICAnc2hpZWxkLWNoZWNrJyA9PiBJY29ucy5zaGllbGRfb3V0bGluZWQsCiAgICAgICdoZWFydCcgPT4gSWNvbnMuZmF2b3JpdGVfb3V0bGluZSwKICAgICAgJ3N0ZXRob3Njb3BlJyA9PiBJY29ucy5tZWRpY2FsX3NlcnZpY2VzX291dGxpbmVkLAogICAgICAncGlsbCcgPT4gSWNvbnMubWVkaWNhdGlvbl9vdXRsaW5lZCwKICAgICAgJ2dsYXNzZXMnID0+IEljb25zLnZpc2liaWxpdHlfb3V0bGluZWQsCiAgICAgICdmb3JrLWtuaWZlJyA9PiBJY29ucy5yZXN0YXVyYW50X291dGxpbmVkLAogICAgICAnYmFnJyA9PiBJY29ucy5zaG9wcGluZ19iYWdfb3V0bGluZWQsCiAgICAgICdmaWxtLXNsYXRlJyA9PiBJY29ucy5tb3ZpZV9vdXRsaW5lZCwKICAgICAgJ3BhbGV0dGUnID0+IEljb25zLnBhbGV0dGVfb3V0bGluZWQsCiAgICAgICd0LXNoaXJ0JyA9PiBJY29ucy5jaGVja3Jvb21fb3V0bGluZWQsCiAgICAgICdkZXZpY2UtbW9iaWxlJyA9PiBJY29ucy5kZXZpY2VzX291dGxpbmVkLAogICAgICAncGlnZ3ktYmFuaycgPT4gSWNvbnMuc2F2aW5nc19vdXRsaW5lZCwKICAgICAgJ2JhbmsnID0+IEljb25zLmFjY291bnRfYmFsYW5jZV9vdXRsaW5lZCwKICAgICAgJ3JlY2VpcHQnID0+IEljb25zLnJlY2VpcHRfb3V0bGluZWQsCiAgICAgICdhcnJvdy1jaXJjbGUtZG93bicgPT4gSWNvbnMuYXJyb3dfY2lyY2xlX2Rvd25fb3V0bGluZWQsCiAgICAgICdicmllZmNhc2UnID0+IEljb25zLndvcmtfb3V0bGluZSwKICAgICAgJ2Fycm93LXUtdXAtbGVmdCcgPT4gSWNvbnMudW5kb19vdXRsaW5lZCwKICAgICAgJ2Fycm93cy1sZWZ0LXJpZ2h0JyA9PiBJY29ucy5zd2FwX2hvcml6LAogICAgICAnbW9uZXknID0+IEljb25zLnBheW1lbnRzX291dGxpbmVkLAogICAgICAnZG90cy10aHJlZScgPT4gSWNvbnMubW9yZV9ob3JpeiwKICAgICAgXyA9PiBJY29ucy5jYXRlZ29yeV9vdXRsaW5lZCwKICAgIH07Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../data/models.dart';
+import '../../state/app_state.dart';
+import '../theme.dart';
+import '../widgets.dart';
+import '../screens/transaction_detail.dart';
+
+class TransactionsTab extends ConsumerStatefulWidget {
+  const TransactionsTab({super.key});
+
+  @override
+  ConsumerState<TransactionsTab> createState() => _TransactionsTabState();
+}
+
+class _TransactionsTabState extends ConsumerState<TransactionsTab> {
+  final _search = TextEditingController();
+  String? _categoryFilter;
+
+  @override
+  Widget build(BuildContext context) {
+    final app = ref.watch(appStateProvider);
+    final store = app.store;
+    final engine = ref.read(engineProvider);
+    final discreet = store.settings['discreetMode'] == true;
+    var txs = app.result?.transactions ?? store.transactions;
+
+    final q = _search.text.trim().toLowerCase();
+    if (q.isNotEmpty) {
+      txs = txs.where((t) =>
+          t.counterpartyName.toLowerCase().contains(q) ||
+          t.purpose.toLowerCase().contains(q) ||
+          (t.counterpartyIban?.toLowerCase().contains(q) ?? false) ||
+          (t.note?.toLowerCase().contains(q) ?? false)).toList();
+    }
+    if (_categoryFilter != null) txs = txs.where((t) => t.categoryId == _categoryFilter).toList();
+    txs = [...txs]..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
+
+    final byDay = <DateTime, List<Transaction>>{};
+    for (final t in txs) {
+      byDay.putIfAbsent(DateTime(t.bookingDate.year, t.bookingDate.month, t.bookingDate.day), () => []).add(t);
+    }
+    final days = byDay.entries.toList()..sort((a, b) => b.key.compareTo(a.key));
+
+    return Scaffold(
+      body: CustomScrollView(slivers: [
+        SliverAppBar(
+          title: const Text('Umsätze'),
+          floating: true,
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(110),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+              child: Column(children: [
+                TextField(
+                  controller: _search,
+                  decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Suche…', isDense: true),
+                  onChanged: (_) => setState(() {}),
+                ),
+                const SizedBox(height: 8),
+                SizedBox(
+                  height: 36,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      for (final c in engine.categories.where((c) => c.kind == CategoryKind.ausgabe && c.parentId == null))
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: FilterChip(
+                            label: Text(c.name),
+                            selected: _categoryFilter == c.id,
+                            onSelected: (_) => setState(() => _categoryFilter = _categoryFilter == c.id ? null : c.id),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              ]),
+            ),
+          ),
+        ),
+        if (days.isEmpty)
+          const SliverFillRemaining(child: EmptyState(icon: Icons.receipt_long_outlined, text: 'Noch keine Umsätze.'))
+        else
+          for (final day in days)
+            SliverMainAxisGroup(slivers: [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 4),
+                  child: Text(AmountFormat.date.format(day.key), style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Theme.of(context).colorScheme.secondary)),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  (context, i) {
+                    final t = day.value[i];
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: TransactionRow(
+                        t: t,
+                        category: engine.categoryById(t.categoryId),
+                        accountName: store.accounts.where((a) => a.id == t.accountId).map((a) => a.name).firstOrNull ?? '',
+                        discreet: discreet,
+                        onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => TransactionDetailScreen(transactionId: t.id))),
+                      ),
+                    );
+                  },
+                  childCount: day.value.length,
+                ),
+              ),
+            ]),
+        const SliverToBoxAdapter(child: SizedBox(height: 80)),
+      ]),
+    );
+  }
+}

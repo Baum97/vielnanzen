@@ -1,1 +1,195 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyL3NlcnZpY2VzLmRhcnQnOwoKaW1wb3J0ICcuLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICd0aGVtZS5kYXJ0JzsKCi8vLyBBbW91bnRUZXh0OiB0YWJlbGxhcmlzY2hlIFppZmZlcm4sIGVjaHRlcyBNaW51cywgb3B0aW9uYWwgRGlza3JldC1Nb2R1cy4KY2xhc3MgQW1vdW50VGV4dCBleHRlbmRzIFN0YXRlbGVzc1dpZGdldCB7CiAgZmluYWwgaW50IGNlbnRzOwogIGZpbmFsIFRleHRTdHlsZT8gc3R5bGU7CiAgZmluYWwgYm9vbCBzaWduZWQ7CiAgZmluYWwgYm9vbCBkaXNjcmVldDsKCiAgY29uc3QgQW1vdW50VGV4dCh0aGlzLmNlbnRzLCB7c3VwZXIua2V5LCB0aGlzLnN0eWxlLCB0aGlzLnNpZ25lZCA9IGZhbHNlLCB0aGlzLmRpc2NyZWV0ID0gZmFsc2V9KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0ZXh0ID0gc2lnbmVkID8gQW1vdW50Rm9ybWF0LnNpZ25lZChjZW50cywgZGlzY3JlZXQ6IGRpc2NyZWV0KSA6IEFtb3VudEZvcm1hdC5mb3JtYXQoY2VudHMsIGRpc2NyZWV0OiBkaXNjcmVldCk7CiAgICBmaW5hbCBjb2xvciA9IGNlbnRzID4gMCAmJiBzaWduZWQgPyBBcHBDb2xvcnMucG9zaXRpdmUgOiBudWxsOwogICAgcmV0dXJuIFRleHQoCiAgICAgIHRleHQsCiAgICAgIHN0eWxlOiAoc3R5bGUgPz8gRGVmYXVsdFRleHRTdHlsZS5vZihjb250ZXh0KS5zdHlsZSkuY29weVdpdGgoCiAgICAgICAgICAgIGZvbnRGZWF0dXJlczogY29uc3QgW0ZvbnRGZWF0dXJlLnRhYnVsYXJGaWd1cmVzKCldLAogICAgICAgICAgICBjb2xvcjogY29sb3IgPz8gKHN0eWxlPy5jb2xvciksCiAgICAgICAgICApLAogICAgKTsKICB9Cn0KCi8vLyBUcmFuc2FjdGlvblJvdzogNjQgcHQgaG9jaCwgQXZhdGFyIDQwLCBOYW1lICsgS2F0ZWdvcmllwrdLb250bywgQmV0cmFnIHJlY2h0cy4KY2xhc3MgVHJhbnNhY3Rpb25Sb3cgZXh0ZW5kcyBTdGF0ZWxlc3NXaWRnZXQgewogIGZpbmFsIFRyYW5zYWN0aW9uIHQ7CiAgZmluYWwgQ2F0ZWdvcnk/IGNhdGVnb3J5OwogIGZpbmFsIFN0cmluZyBhY2NvdW50TmFtZTsKICBmaW5hbCBib29sIGRpc2NyZWV0OwogIGZpbmFsIFZvaWRDYWxsYmFjaz8gb25UYXA7CgogIGNvbnN0IFRyYW5zYWN0aW9uUm93KHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMudCwgdGhpcy5jYXRlZ29yeSwgdGhpcy5hY2NvdW50TmFtZSA9ICcnLCB0aGlzLmRpc2NyZWV0ID0gZmFsc2UsIHRoaXMub25UYXB9KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgZmluYWwgY2F0Q29sb3IgPSBjYXRlZ29yeSAhPSBudWxsID8gcGFyc2VIZXhDb2xvcihjYXRlZ29yeSEuY29sb3IpIDogQXBwQ29sb3JzLnRleHRUZXJ0aWFyeUxpZ2h0OwogICAgZmluYWwgbWVyY2hhbnROYW1lID0gdC5jb3VudGVycGFydHlOYW1lLmlzRW1wdHkgPyAnVW5iZWthbm50JyA6IHQuY291bnRlcnBhcnR5TmFtZTsKICAgIGZpbmFsIG1vbm9ncmFtID0gbWVyY2hhbnROYW1lLnJlcGxhY2VBbGwoUmVnRXhwKHInW15BLVphLXowLTkgXScpLCAnJyk7CiAgICBmaW5hbCBpbml0aWFscyA9IG1vbm9ncmFtLmlzRW1wdHkKICAgICAgICA/ICc/JwogICAgICAgIDogbW9ub2dyYW0uc3BsaXQoUmVnRXhwKHInXHMrJykpLndoZXJlKChwKSA9PiBwLmlzTm90RW1wdHkpLm1hcCgocCkgPT4gcFswXSkudGFrZSgyKS5qb2luKCkudG9VcHBlckNhc2UoKTsKICAgIHJldHVybiBJbmtXZWxsKAogICAgICBvblRhcDogb25UYXAsCiAgICAgIGNoaWxkOiBTaXplZEJveCgKICAgICAgICBoZWlnaHQ6IDY0LAogICAgICAgIGNoaWxkOiBSb3coY2hpbGRyZW46IFsKICAgICAgICAgIENvbnRhaW5lcigKICAgICAgICAgICAgd2lkdGg6IDQwLAogICAgICAgICAgICBoZWlnaHQ6IDQwLAogICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKGNvbG9yOiBjYXRDb2xvci53aXRoVmFsdWVzKGFscGhhOiAwLjEyKSwgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMTIpKSwKICAgICAgICAgICAgY2hpbGQ6IENlbnRlcihjaGlsZDogVGV4dChpbml0aWFscywgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5oZWFkbGluZU1lZGl1bT8uY29weVdpdGgoY29sb3I6IGNhdENvbG9yLCBmb250U2l6ZTogMTUpKSksCiAgICAgICAgICApLAogICAgICAgICAgY29uc3QgU2l6ZWRCb3god2lkdGg6IDEyKSwKICAgICAgICAgIEV4cGFuZGVkKAogICAgICAgICAgICBjaGlsZDogQ29sdW1uKAogICAgICAgICAgICAgIG1haW5BeGlzQWxpZ25tZW50OiBNYWluQXhpc0FsaWdubWVudC5jZW50ZXIsCiAgICAgICAgICAgICAgIGNyb3NzQXhpc0FsaWdubWVudDogQ3Jvc3NBeGlzQWxpZ25tZW50LnN0YXJ0LAogICAgICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgIFRleHQobWVyY2hhbnROYW1lLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmhlYWRsaW5lTWVkaXVtLCBtYXhMaW5lczogMSwgb3ZlcmZsb3c6IFRleHRPdmVyZmxvdy5lbGxpcHNpcyksCiAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgJyR7Y2F0ZWdvcnk/Lm5hbWUgPz8gJ1Vua2F0ZWdvcmllc2llcnQnfSDCtyAke2FjY291bnROYW1lJHt0LnBlbmRpbmcgPyAnIMK3IHZvcmdlbWVya3QnIDogJyd9JywKICAgICAgICAgICAgICAgICAgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5U21hbGw/LmNvcHlXaXRoKGNvbG9yOiB0aGVtZS5jb2xvclNjaGVtZS5zZWNvbmRhcnkpLAogICAgICAgICAgICAgICAgICBtYXhMaW5lczogMSwKICAgICAgICAgICAgICAgICBvdmVyZmxvdzogVGV4dE92ZXJmbG93LmVsbGlwc2lzLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICksCiAgICAgICAgICAgIEFt b3VudFRleHQodC5hbW91bnRDZW50cywgc2lnbmVkOiB0cnVlLCBkaXNjcmVldDogZGlzY3JlZXQsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUuaGVhZGxpbmVNZWRpdW0pLAogICAgICAgICAgICAgXSwKICAgICAgICAgICAgXSwKICAgICAgKSwKICAgICk7CiAgfQp9CgovLy8gQ2FyZC1Lb21wb25lbnRlOiBTdXJmYWNlLCBSYWRpdXMgMjAsIFBhZGRpbmcgMTYsIG9wdGlvbmFsZXIgVGl0ZWwgbWl0IOKAnkFsbGXigJwuCmNsYXNzIEFwcENhcmQgZXh0ZW5kcyBTdGF0ZWxlc3NXaWRnZXQgewogIGZpbmFsIFN0cmluZz8gdGl0bGU7CiAgZmluYWwgVm9pZENhbGxiYWNrPyBvblNlZUFsbDsKICBmaW5hbCBXaWRnZXQgY2hpbGQ7CiAgZmluYWwgRWRnZUluc2V0cyBwYWRkaW5nOwoKICBjb25zdCBBcHBDYXJkKHtzdXBlci5rZXksIHRoaXMudGl0bGUsIHRoaXMub25TZWVBbGwsIHJlcXVpcmVkIHRoaXMuY2hpbGQsIHRoaXMucGFkZGluZyA9IGNvbnN0IEVkZ2VJbnNldHMuYWxsKDE2KX0pOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGZpbmFsIHRoZW1lID0gVGhlbWUub2YoY29udGV4dCk7CiAgICByZXR1cm4gQ2FyZCgKICAgICAgY2hpbGQ6IFBhZGRpbmcoCiAgICAgICAgcGFkZGluZzogcGFkZGluZywKICAgICAgICBjaGlsZDogQ29sdW1uKAogICAgICAgICAgY3Jvc3NBeGlzQWxpZ25tZW50OiBDcm9zc0F4aXNBbGlnbm1lbnQuc3RhcnQsCiAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICBpZiAodGl0bGUgIT0gbnVsbCkKICAgICAgICAgICAgICBSb3coY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgIFRleHQodGl0bGUhLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmhlYWRsaW5lTWVkaXVtKSwKICAgICAgICAgICAgICAgIGNvbnN0IFNwYWNlcigpLAogICAgICAgICAgICAgICAgaWYgKG9uU2VlQWxsICE9IG51bGwpCiAgICAgICAgICAgICAgICAgIFRleHRCdXR0b24ob25QcmVzc2VkOiBvblNlZUFsbCwgY2hpbGQ6IGNvbnN0IFRleHQoJ0FsbGUnKSksCiAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgXSksCiAgICAgICAgICAgIGlmICh0aXRsZSAhPSBudWxsKSBjb25zdCBTaXplZEJveChoZWlnaHQ6IDgpLAogICAgICAgICAgICBjaGlsZCwKICAgICAgICAgIF0sCiAgICAgICAgKSwKICAgICAgKSwKICAgICk7CiAgfQp9CgpjbGFzcyBQcmltYXJ5QnV0dG9uIGV4dGVuZHMgU3RhdGVsZXNzV2lkZ2V0IHsKICBmaW5hbCBTdHJpbmcgbGFiZWw7CiAgZmluYWwgVm9pZENhbGxiYWNrPyBvblByZXNzZWQ7CiAgY29uc3QgUHJpbWFyeUJ1dHRvbih7c3VwZXIua2V5LCByZXF1aXJlZCB0aGlzLmxhYmVsLCB0aGlzLm9uUHJlc3NlZH0pOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpID0+IEZpbGxlZEJ1dHRvbihvblByZXNzZWQ6IG9uUHJlc3NlZCwgY2hpbGQ6IFRleHQobGFiZWwpKTsKfQoKY2xhc3MgU2Vjb25kYXJ5QnV0dG9uIGV4dGVuZHMgU3RhdGVsZXNzV2lkZ2V0IHsKICBmaW5hbCBTdHJpbmcgbGFiZWw7CiAgZmluYWwgVm9pZENhbGxiYWNrPyBvblByZXNzZWQ7CiAgY29uc3QgU2Vjb25kYXJ5QnV0dG9uKHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMubGFiZWwsIHRoaXMub25QcmVzc2VkfSk7CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCkgPT4gRmlsbGVkQnV0dG9uLnRvbmFsKG9uUHJlc3NlZDogb25QcmVzc2VkLCBjaGlsZDogVGV4dChsYWJlbCkpOwp9CgovLy8gQmFubmVyIGbDvHIgU3lzdGVtenVzdMOkbmRlIChUQU4gZsOkbGxpZywgQWJydWYgZmVobGdlc2NobGFnZW4pLgpjbGFzcyBCYW5uZXIgZXh0ZW5kcyBTdGF0ZWxlc3NXaWRnZXQgewogIGZpbmFsIFN0cmluZyB0ZXh0OwogIGZpbmFsIENvbG9yIGNvbG9yOwogIGZpbmFsIFN0cmluZz8gYWN0aW9uTGFiZWw7CiAgZmluYWwgVm9pZENhbGxiYWNrPyBvbkFjdGlvbjsKCiAgY29uc3QgQmFubmVyKHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMudGV4dCwgcmVxdWlyZWQgdGhpcy5jb2xvciwgdGhpcy5hY3Rpb25MYWJlbCwgdGhpcy5vbkFjdGlvbn0pOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGZpbmFsIHRoZW1lID0gVGhlbWUub2YoY29udGV4dCk7CiAgICByZXR1cm4gQ29udGFpbmVyKAogICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLnN5bW1ldHJpYyhob3Jpem9udGFsOiAxMiwgdmVydGljYWw6IDEwKSwKICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbihjb2xvcjogY29sb3Iud2l0aFZhbHVlcyhhbHBoYTogMC4xMiksIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDE0KSksCiAgICAgIGNoaWxkOiBSb3coY2hpbGRyZW46IFsKICAgICAgICBJY29uKEljb25zLmluZm9fb3V0bGluZSwgY29sb3I6IGNvbG9yLCBzaXplOiAyMCksCiAgICAgICAgY29uc3QgU2l6ZWRCb3god2lkdGg6IDEwKSwKICAgICAgICBFeHBhbmRlZChjaGlsZDogVGV4dCh0ZXh0LCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmJvZHlNZWRpdW0pKSwKICAgICAgICBpZiAoYWN0aW9uTGFiZWwgIT0gbnVsbCkKICAgICAgICAgIFRleHRCdXR0b24ob25QcmVzc2VkOiBvbkFjdGlvbiwgY2hpbGQ6IFRleHQoYWN0aW9uTGFiZWwhLCBzdHlsZTogVGV4dFN0eWxlKGNvbG9yOiBjb2xvcikpKSwKICAgICAgXSksCiAgICApOwogIH0KfQoKLy8vIEVtcHR5U3RhdGU6IGZlaW5lcyBJY29uLCBlaW4gU2F0eiwgZWluIEJ1dHRvbi4KY2xhc3MgRW1wdHlTdGF0ZSBleHRlbmRzIFN0YXRlbGVzc1dpZGdldCB7CiAgZmluYWwgSWNvbkRhdGEgaWNvbjsKICBmaW5hbCBTdHJpbmcgdGV4dDsKICBmaW5hbCBTdHJpbmc/IGJ1dHRvbkxhYmVsOwogIGZpbmFsIFZvaWRDYWxsYmFjaz8gb25CdXR0b247CgogIGNvbnN0IEVtcHR5U3RhdGUoe3N1cGVyLmtleSwgcmVxdWlyZWQgdGhpcy5pY29uLCByZXF1aXJlZCB0aGlzLnRleHQsIHRoaXMuYnV0dG9uTGFiZWwsIHRoaXMub25CdXR0b259KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgcmV0dXJuIENlbnRlcigKICAgICAgY2hpbGQ6IFBhZGRpbmcoCiAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5hbGwoMzIpLAogICAgICAgIGNoaWxkOiBDb2x1bW4obWFpbkF4aXNTaXplOiBNYWluQXhpc1NpemUubWluLCBjaGlsZHJlbjogWwogICAgICAgICAgSWNvbihpY29uLCBzaXplOiA0OCwgY29sb3I6IHRoZW1lLmNvbG9yU2NoZW1lLnNlY29uZGFyeSksCiAgICAgICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDEyKSwKICAgICAgICAgIFRleHQodGV4dCwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5TGFyZ2UsIHRleHRBbGlnbjogVGV4dEFsaWduLmNlbnRlciksCiAgICAgICAgICBpZiAoYnV0dG9uTGFiZWwgIT0gbnVsbCkgLi4uWwogICAgICAgICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDE2KSwKICAgICAgICAgICAgUHJpbWFyeUJ1dHRvbihsYWJlbDogYnV0dG9uTGFiZWwhLCBvblByZXNzZWQ6IG9uQnV0dG9uKSwKICAgICAgICAgIF0sCiAgICAgICAgXSksCiAgICAgICksCiAgICApOwogIH0KfQoKLy8vIEtvcGllcmVuIGluIGRpZSBad2lzY2hlbmFibGFnZSBtaXQgSGFwdGlrLgp2b2lkIGNvcHlUb0NsaXBib2FyZChCdWlsZENvbnRleHQgY29udGV4dCwgU3RyaW5nIHRleHQpIHsKICBDbGlwYm9hcmQuc2V0RGF0YShDbGlwYm9hcmREYXRhKHRleHQ6IHRleHQpKTsKICBIYXB0aWNGZWVkYmFjay5zZWxlY3Rpb25DbGljaygpOwp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../data/models.dart';
+import 'theme.dart';
+
+/// AmountText: tabellarische Ziffern, echtes Minus, optional Diskret-Modus.
+class AmountText extends StatelessWidget {
+  final int cents;
+  final TextStyle? style;
+  final bool signed;
+  final bool discreet;
+
+  const AmountText(this.cents, {super.key, this.style, this.signed = false, this.discreet = false});
+
+  @override
+  Widget build(BuildContext context) {
+    final text = signed ? AmountFormat.signed(cents, discreet: discreet) : AmountFormat.format(cents, discreet: discreet);
+    final color = cents > 0 && signed ? AppColors.positive : null;
+    return Text(
+      text,
+      style: (style ?? DefaultTextStyle.of(context).style).copyWith(
+            fontFeatures: const [FontFeature.tabularFigures()],
+            color: color ?? (style?.color),
+          ),
+    );
+  }
+}
+
+/// TransactionRow: 64 pt hoch, Avatar 40, Name + Kategorie·Konto, Betrag rechts.
+class TransactionRow extends StatelessWidget {
+  final Transaction t;
+  final Category? category;
+  final String accountName;
+  final bool discreet;
+  final VoidCallback? onTap;
+
+  const TransactionRow({super.key, required this.t, this.category, this.accountName = '', this.discreet = false, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final catColor = category != null ? parseHexColor(category!.color) : AppColors.textTertiaryLight;
+    final merchantName = t.counterpartyName.isEmpty ? 'Unbekannt' : t.counterpartyName;
+    final monogram = merchantName.replaceAll(RegExp(r'[^A-Za-z0-9 ]'), '');
+    final initials = monogram.isEmpty
+        ? '?'
+        : monogram.split(RegExp(r'\s+')).where((p) => p.isNotEmpty).map((p) => p[0]).take(2).join().toUpperCase();
+    return InkWell(
+      onTap: onTap,
+      child: SizedBox(
+        height: 64,
+        child: Row(children: [
+          Container(
+            width: 40,
+            height: 40,
+            decoration: BoxDecoration(color: catColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(12)),
+            child: Center(child: Text(initials, style: theme.textTheme.headlineMedium?.copyWith(color: catColor, fontSize: 15))),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+               crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                Text(merchantName, style: theme.textTheme.headlineMedium, maxLines: 1, overflow: TextOverflow.ellipsis),
+                 Text(
+                  '${category?.name ?? 'Unkategoriesiert'} · ${accountName${t.pending ? ' · vorgemerkt' : ''}',
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
+                  maxLines: 1,
+                 overflow: TextOverflow.ellipsis,
+                ),
+             ],
+            ),
+            AmountText(t.amountCents, signed: true, discreet: discreet, style: theme.textTheme.headlineMedium),
+             ],
+            ],
+      ),
+    );
+  }
+}
+
+/// Card-Komponente: Surface, Radius 20, Padding 16, optionaler Titel mit „Alle“.
+class AppCard extends StatelessWidget {
+  final String? title;
+  final VoidCallback? onSeeAll;
+  final Widget child;
+  final EdgeInsets padding;
+
+  const AppCard({super.key, this.title, this.onSeeAll, required this.child, this.padding = const EdgeInsets.all(16)});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Card(
+      child: Padding(
+        padding: padding,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+            if (title != null)
+              Row(children: [
+                Text(title!, style: theme.textTheme.headlineMedium),
+                const Spacer(),
+                if (onSeeAll != null)
+                  TextButton(onPressed: onSeeAll, child: const Text('Alle')),
+               ],
+              ]),
+            if (title != null) const SizedBox(height: 8),
+            child,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class PrimaryButton extends StatelessWidget {
+  final String label;
+  final VoidCallback? onPressed;
+  const PrimaryButton({super.key, required this.label, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) => FilledButton(onPressed: onPressed, child: Text(label));
+}
+
+class SecondaryButton extends StatelessWidget {
+  final String label;
+  final VoidCallback? onPressed;
+  const SecondaryButton({super.key, required this.label, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) => FilledButton.tonal(onPressed: onPressed, child: Text(label));
+}
+
+/// Banner für Systemzustände (TAN fällig, Abruf fehlgeschlagen).
+class Banner extends StatelessWidget {
+  final String text;
+  final Color color;
+  final String? actionLabel;
+  final VoidCallback? onAction;
+
+  const Banner({super.key, required this.text, required this.color, this.actionLabel, this.onAction});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(14)),
+      child: Row(children: [
+        Icon(Icons.info_outline, color: color, size: 20),
+        const SizedBox(width: 10),
+        Expanded(child: Text(text, style: theme.textTheme.bodyMedium)),
+        if (actionLabel != null)
+          TextButton(onPressed: onAction, child: Text(actionLabel!, style: TextStyle(color: color))),
+      ]),
+    );
+  }
+}
+
+/// EmptyState: feines Icon, ein Satz, ein Button.
+class EmptyState extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  final String? buttonLabel;
+  final VoidCallback? onButton;
+
+  const EmptyState({super.key, required this.icon, required this.text, this.buttonLabel, this.onButton});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          Icon(icon, size: 48, color: theme.colorScheme.secondary),
+          const SizedBox(height: 12),
+          Text(text, style: theme.textTheme.bodyLarge, textAlign: TextAlign.center),
+          if (buttonLabel != null) ...[
+            const SizedBox(height: 16),
+            PrimaryButton(label: buttonLabel!, onPressed: onButton),
+          ],
+        ]),
+      ),
+    );
+  }
+}
+
+/// Kopieren in die Zwischenablage mit Haptik.
+void copyToClipboard(BuildContext context, String text) {
+  Clipboard.setData(ClipboardData(text: text));
+  HapticFeedback.selectionClick();
+}

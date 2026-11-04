@@ -1,1 +1,49 @@
-aW1wb3J0ICcuLi8uLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICcuLi9lbmdpbmUvbm9ybWFsaXplLmRhcnQnOwoKLy8vIERlbW8tRGF0ZW5zYXR6OiBTeW50aGV0aXNjaCUsIGxva2FsIGVyemV1Z3RlIFVtc8OkdHplIGbDvHIgZGVuIGVyc3RlbiBTdGFydCwKLy8vIHdlbm4gbm9jaCBrZWluZSBCYW5rIHZlcmJ1bmRlbiBpc3QuIEF1c3NjaGxpZcOfbGljaCBsb2thbCBnZW5lcmllcnQg4oCTCi8vLyBlcyBmaW5kZXQga2VpbiBOZXR6d2Vya3ZlcmtlaHIgc3RhdHQuCgpjbGFzcyBEZW1vRGF0YSB7CiAgc3RhdGljIExpc3Q8VHJhbnNhY3Rpb24+IGdlbmVyYXRlKFN0cmluZyBhY2NvdW50SWQsIHtpbnQgbW9udGhzID0gNn0pIHsKICAgIGZpbmFsIG91dCA9IDxUcmFuc2FjdGlvbj5bXTsKICAgIGZpbmFsIG5vdyA9IERhdGVUaW1lLm5vdygpOwogICAgdmFyIG4gPSAwOwogICAgU3RyaW5nIGlkKCkgPT4gJ2RlbW9fJHthY2NvdW50SWR9XyR7bisrfSc7CgogICAgdm9pZCBhZGQoRGF0ZVRpbWUgZGF0ZSwgaW50IGNlbnRzLCBTdHJpbmcgbmFtZSwgU3RyaW5nIHB1cnBvc2UsIHtTdHJpbmc/IGNyZWRpdG9ySWQsIFN0cmluZz8gbWFuZGF0ZVJlZiwgU3RyaW5nPyBlbmRUb0VuZH0pIHsKICAgICAgb3V0LmFkZChUcmFuc2FjdGlvbigKICAgICAgICBpZDogaWQoKSwKICAgICAgICBhY2NvdW50SWQ6IGFjY291bnRJZCwKICAgICAgICBib29raW5nRGF0ZTogZGF0ZSwKICAgICAgICBhbW91bnRDZW50czogY2VudHMsCiAgICAgICAgY291bnRlcnBhcnR5TmFtZTogbmFtZSwKICAgICAgICBwdXJwb3NlOiBwdXJwb3NlLAogICAgICAgIGNyZWRpdG9ySWQ6IGNyZWRpdG9ySWQsCiAgICAgICAgbWFuZGF0ZVJlZjogbWFuZGF0ZVJlZiwKICAgICAgICBlbmRUb0VuZFJlZjogZW5kVG9FbmQsCiAgICAgICAgZGVkdXBIYXNoOiBkZWR1cEhhc2goYWNjb3VudElkLCBkYXRlLCBjZW50cywgZW5kVG9FbmQsICckbmFtZSAkcHVycG9zZScpLAogICAgICApKTsKICAgIH0KCiAgICBmb3IgKHZhciBtID0gbW9udGhzIC0gMTsgbSA+PSAwOyBtLS0pIHsKICAgICAgZmluYWwgbW9udGhTdGFydCA9IERhdGVUaW1lKG5vdy55ZWFyLCBub3cubW9udGggLSBtLCAxKTsKICAgICAgZmluYWwgZGltID0gRGF0ZVRpbWUobW9udGhTdGFydC55ZWFyLCBtb250aFN0YXJ0Lm1vbnRoICsgMSwgMCkuZGF5OwoKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgMSksIDI4NTAwMCwgJ0FyYmVpdGdlYmVyIEdtYkgnLCAnR2VoYWx0IE5vdmVtYmVyJywgZW5kVG9FbmQ6ICdFJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgMiksIC0xMjAwMDAsICdWZXJtaWV0ZXIgU2NobWlkdCcsICdNaWV0ZScsIGVuZFRvRW5kOiAnTSRtJyk7CiAgICAgIGFkZChEYXRlVGltZShtb250aFN0YXJ0LnllYXIsIG1vbnRoU3RhcnQubW9udGgsIDMpLCAtNDk5OSwgJ05ldGZsaXggSW50ZXJuYXRpb25hbCcsICdTVldaK0FCTyBORVRGTElYJywgY3JlZGl0b3JJZDogJ0RFMjZaWlowMDAwMDAwMDAwMScsIG1hbmRhdGVSZWY6ICdNQU5ELU5GTFgtJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgMyksIC05OTksICdTcG90aWZ5IEFCJywgJ1NWV1orQUJPIFNQT1RJRlknLCBtYW5kYXRlUmVmOiAnTUFORC1TUE8tJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgNSksIC01NTk5LCAnVGVsZWtvbSBEZXV0c2NobGFuZCcsICdTVldaK01vYmlsZnVuaycsIGNyZWRpdG9ySWQ6ICdERTk4WlpaMDk5OTk5OTk5OTknLCBtYW5kYXRlUmVmOiAnTUFORC1URUwtJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgNSksIC0xMDk5LCAnVEsgVGVjaG5pa2VyIEtyYW5rZW5rYXNzZScsICdCZWl0cmFnJywgbWFuZGF0ZVJlZjogJ01BTkQtVEstJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgNyksIC0xNzk5LCAnU3RhZHR3ZXJrZSBCZWlzcGllbHN0YWR0JywgJ1N0cm9tIEFic2NobGFnJywgbWFuZGF0ZVJlZjogJ01BTkQtU1ctJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgMTApLCAtMTI5OSwgJ0ZpdG5lc3MgRmlyc3QnLCAnQmVpdHJhZycsIG1hbmRhdGVSZWY6ICdNQU5ELUZGLSRtJyk7CiAgICAgIGFkZChEYXRlVGltZShtb250aFN0YXJ0LnllYXIsIG1vbnRoU3RhcnQubW9udGgsIDEyKSwgLTc5OSwgJ0JBUk1FUicsICdadXNhdHpiZWl0cmFnJywgbWFuZGF0ZVJlZjogJ01BTkQtQkEtJG0nKTsKICAgICAgYWRkKERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgMTUpLCAtNDk5MCwgJ0FSR0UgUnVuZGZ1bmtiZWl0cmFnJywgJ1J1bmRmdW5rYmVpdHJhZycsIGNyZWRpdG9ySWQ6ICdERTk4WlpaMDk5OTk5OTk5OTknLCBtYW5kYXRlUmVmOiAnTUFORC1BUkQtJG0nKTsKCiAgICAgIGZpbmFsIHJuZCA9IG1vbnRoU3RhcnQubWlsbGlzZWNvbmRzU2luY2VFcG9jaCAlIDk3OwogICAgICBmb3IgKHZhciBkID0gMTsgZCA8PSBkaW07IGQgKz0gMiArIChybmQgJSAzKSkgewogICAgICAgIGZpbmFsIGRheSA9IERhdGVUaW1lKG1vbnRoU3RhcnQueWVhciwgbW9udGhTdGFydC5tb250aCwgZC5jbGFtcCgxLCBkaW0pKTsKICAgICAgICBmaW5hbCBwaWNrID0gKGQgKyBybmQpICUgNjsKICAgICAgICBzd2l0Y2ggKHBpY2spIHsKICAgICAgICAgIGNhc2UgMDoKICAgICAgICAgICAgYWRkKGRheSwgLSgxMjAwICsgKGQgKiAzNykgJSA0NTAwKSwgJ1JFV0UgU0FHVCBEQU5LRSAgezEwMDAgKyBkfSBCRVJMSU4nLCAnS0FSVEVOWkFITFVORycsIGVuZFRvRW5kOiAnSyRkJyk7CiAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgIGNhc2UgMToKICAgICAgICAgICAgYWRkKGRheSwgLSg4MDAgKyAoZCAqIDUzKSAlIDI1MDApLCAnRURFS0EgTUFSVFQnLCAnS0FSVEVOWkFITFVORycsIGVuZFRvRW5kOiAnRSRkJyk7CiAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgY2FzZSAyOgogICAgICAgICAgICBhZGQoZGF5LCAtKDQ1MCArIChkICogMTEpICUgOTAwKSwgJ0LDpGNrZXJlaSBNw7xsbGVyJywgJ0tBUlRFTlpBSExVTkcnLCBlbmRUb0VuZDogJ0IkZCcpOwogICAgICAgICAgIGJyZWFrOwogICAgICAgICAgY2FzZSAzOgogICAgICAgICAgICBhZGQoZGF5LCAtKDI1MDAgKyAoZCAqIDcxKSAlIDgwMDApLCAnU2hlbGwgVGFua3N0ZWxsZScsICdLQVJURU5aQUhMVU5HJywgZW5kVG9FbmQ6ICdTJGQnKTsKICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgY2FzZSA0OgogICAgICAgICAgICBhZGQoZGF5LCAtKDY5OSArIChkICogMTMpICUgMTgwMCksICdNY0RvbmFsZHMnLCAnS0FSVEVOWkFITFVORycsIGVuZFRvRW5kOiAnTSRkJyk7CiAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgY2FzZSA1OgogICAgICAgICAgICBhZGQoZGF5LCAtKDE1MDAgKyAoZCAqIDI5KSAlIDYwMDApLCAnREIgQmFobicsICdMYXN0c2NocmlmdCBUaWNrZXQnLCBlbmRUb0VuZDogJ1QkZCcpOwogICAgICAgICAgICBicmVhawogICAgICAgIH0KICAgICAgfQogICAgfQoKICAgIG91dC5zb3J0KChhLCBiKSA9PiBiLmJvb2tpbmdEYXRlLmNvbXBhcmVUbyhhLmJvb2tpbmdEYXRlKSk7CiAgICByZXR1cm4gb3V0OwogIH0KfQo=
+import '../../data/models.dart';
+import '../engine/normalize.dart';
+
+/// Demo-Datensatz: synthetische, lokal erzeugte Umsätze für den ersten Start,
+/// wenn noch keine Bank verbunden ist. Ausschließlich lokal generiert –
+/// es findet kein Netzwerkverkehr statt.
+class DemoData {
+  static List<Transaction> generate(String accountId, {int months = 6}) {
+    final out = <Transaction>[];
+    final now = DateTime.now();
+    var n = 0;
+    String id() => 'demo_${accountId}_${n++}';
+
+    void add(DateTime date, int cents, String name, String purpose, {String? creditorId, String? mandateRef, String? endToEnd}) {
+      out.add(Transaction(
+        id: id(),
+        accountId: accountId,
+        bookingDate: date,
+        amountCents: cents,
+        counterpartyName: name,
+        purpose: purpose,
+        creditorId: creditorId,
+        mandateRef: mandateRef,
+        endToEndRef: endToEnd,
+        dedupHash: dedupHash(accountId, date, cents, endToEnd, '$name $purpose'),
+      ));
+    }
+
+    for (var m = months - 1; m >= 0; m--) {
+      final ms = DateTime(now.year, now.month - m, 1);
+      add(DateTime(ms.year, ms.month, 1), 285000, 'Arbeitgeber GmbH', 'Gehalt', endToEnd: 'E$m');
+      add(DateTime(ms.year, ms.month, 2), -120000, 'Vermieter Schmidt', 'Miete', endToEnd: 'M$m');
+      add(DateTime(ms.year, ms.month, 3), -4999, 'Netflix International', 'SVWZ+ABO NETFLIX', creditorId: 'DE26ZZZ00000000001', mandateRef: 'MAND-NFLX-$m');
+      add(DateTime(ms.year, ms.month, 3), -999, 'Spotify AB', 'SVWZ+ABO SPOTIFY', mandateRef: 'MAND-SPO-$m');
+      add(DateTime(ms.year, ms.month, 5), -5599, 'Telekom Deutschland', 'SVWZ+Mobilfunk', creditorId: 'DE98ZZZ09999999999', mandateRef: 'MAND-TEL-$m');
+      add(DateTime(ms.year, ms.month, 5), -1099, 'TK Techniker Krankenkasse', 'Beitrag', mandateRef: 'MAND-TK-$m');
+      add(DateTime(ms.year, ms.month, 7), -1799, 'Stadtwerke Beispielstadt', 'Strom Abschlag', mandateRef: 'MAND-SW-$m');
+      add(DateTime(ms.year, ms.month, 10), -3200, 'Allianz Versicherung', 'SVWZ+Beitrag KFZ', mandateRef: 'MAND-ALL-$m');
+      add(DateTime(ms.year, ms.month, 12), -899, 'ARD ZDF Deutschlandradio', 'SVWZ+Rundfunk', creditorId: 'DE98ZZZ09999999998', mandateRef: 'MAND-ARD-$m');
+      add(DateTime(ms.year, ms.month, 15), -4590, 'REWE Sagt Danke', 'KARTENZAHLUNG 4711', endToEnd: 'K$m-1');
+      add(DateTime(ms.year, ms.month, 18), -1250, 'REWE Markt GmbH', 'KARTENZAHLUNG 0042', endToEnd: 'K$m-2');
+      add(DateTime(ms.year, ms.month, 20), -2499, 'Stadtwerke Beispielstadt', 'Wasser Abschlag', mandateRef: 'MAND-SW2-$m');
+      add(DateTime(ms.year, ms.month, 22), -799, 'Fitness First GmbH', 'SVWZ+MITGLIED', mandateRef: 'MAND-FF-$m');
+      add(DateTime(ms.year, ms.month, 25), -1500, 'KFZ Steuer', 'SEPA-LASTSCHRIFT', endToEnd: 'S$m');
+      add(DateTime(ms.year, ms.month, 26), -890, 'HanseMerkur Krankenkasse', 'Beitrag Zusatz', mandateRef: 'MAND-HMK-$m');
+    }
+    return out;
+  }
+}

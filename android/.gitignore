@@ -1,1 +1,15 @@
-Z3JhZGxlLXdyYXBwZXIuamFyCi8uZ3JhZGxlCi9jYXB0dXJlcy8KL2dyYWRsZXcKL2dyYWRsZXcuYmF0Ci9sb2NhbC5wcm9wZXJ0aWVzCkdlbmVyYXRlZFBsdWdpblJlZ2lzdHJhbnQuamF2YQouY3h4LwoKIyBSZW1lbWJlciB0byBuZXZlciBwdWJsaWNseSBzaGFyZSB5b3VyIGtleXN0b3JlCiMgU2VlIGh0dHBzOi8vZmx1dHRlci5kZXYvdG8vcmVmZXJlbmNlLWtleXN0b3JlCmtleS5wcm9wZXJ0aWVzCioqLyoua2V5c3RvcmUKKi8qLmtleXN0b3JlCioqLyouamtzCg==
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Remember to never publicly share your keystore
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+*/*.keystore
+**/*.jks

@@ -1,1 +1,136 @@
-aW1wb3J0ICdkYXJ0OmNvbnZlcnQnOwoKaW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvc2VydmljZXMuZGFydCcgc2hvdyByb290QnVuZGxlOwoKaW1wb3J0ICcuLi8uLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICcuLi8uLi9kYXRhL3N0b3JlLmRhcnQnOwppbXBvcnQgJ2NhdGVnb3JpemUuZGFydCc7CmltcG9ydCAnY29udHJhY3RzLmRhcnQnOwppbXBvcnQgJ2luc2lnaHRzLmRhcnQnOwoKLy8vIEZhc3NhZGUgw7xiZXIgZGllIGdlc2FtdGUgQW5hbHlzZS1QaXBlbGluZS4KLy8vIEzDpHVmdCBzeW5jaHJvbiB1bmQgc2NobmVsbCBnZW51ZyAoPDIgcyBmw7xyIDEwayBVbXPDpHR6ZSk7IGbDvHIgZGllIFVJIG9wdGlvbmFsIGluIGVpbmVtIElzb2xhdGUuCgpjbGFzcyBFbmdpbmUgewogIEVuZ2luZSh0aGlzLnN0b3JlKTsKCiAgZmluYWwgU3RvcmUgc3RvcmU7CgogIGxhdGUgTGlzdDxDYXRlZ29yeT4gY2F0ZWdvcmllczsKICBsYXRlIE1hcDxTdHJpbmcsIFN0cmluZz4gbWVyY2hhbnREaWN0aW9uYXJ5OwogIGxhdGUgTWFwPFN0cmluZywgU3RyaW5nPiBjcmVkaXRvcklkTWFwOwoKICBib29sIF9zZWVkTG9hZGVkID0gZmFsc2U7CgogIEZ1dHVyZTx2b2lkPiBsb2FkU2VlZERhdGEoKSBhc3luYyB7CiAgICBpZiAoX3NlZWRMb2FkZWQpIHJldHVybjsKICAgIGNhdGVnb3JpZXMgPSBhd2FpdCBfbG9hZENhdGVnb3JpZXMoKTsKICAgIGZpbmFsIG1lcmNoYW50c0pzb24gPSBqc29uRGVjb2RlKGF3YWl0IHJvb3RCdW5kbGUubG9hZFN0cmluZygnYXNzZXRzL2RhdGEvbWVyY2hhbnRzLmpzb24nKSkgYXMgTWFwPFN0cmluZywgZHluYW1pYz47CiAgICBtZXJjaGFudERpY3Rpb25hcnkgPSB7CiAgICAgIGZvciAoZmluYWwgbSBpbiBtZXJjaGFudHNKc29uWydtZXJjaGFudHMnXSBhcyBMaXN0KQogICAgICAgIChtWydwYXR0ZXJuJ10gYXMgU3RyaW5nKS50b1VwcGVyQ2FzZSgpOiAobVsnY2F0ZWdvcnknXSBhcyBTdHJpbmcpLAogICAgfTsKICAgIGZpbmFsIGNyZWRpdG9ySnNvbiA9IGpzb25EZWNvZGUoYXdhaXQgcm9vdEJ1bmRsZS5sb2FkU3RyaW5nKCdhc3NldHMvZGF0YS9jcmVkaXRvcl9pZHMuanNvbicpKSBhcyBNYXA8U3RyaW5nLCBkeW5hbWljPjsKICAgIGNyZWRpdG9ySWRNYXAgPSB7CiAgICAgIGZvciAoZmluYWwgYyBpbiBjcmVkaXRvckpzb25bJ2NyZWRpdG9ySWRzJ10gYXMgTGlzdCkgY1snY2lkJ10gYXMgU3RyaW5nOiBjWydjYXRlZ29yeSddIGFzIFN0cmluZywgICAgfTsKICAgIF9zZWVkTG9hZGVkID0gdHJ1ZTsKICB9CgogIEZ1dHVyZTxMaXN0PENhdGVnb3J5Pj4gX2xvYWRDYXRlZ29yaWVzKCkgYXN5bmMgewogICAgZmluYWwganNvbiA9IGpzb25EZWNvZGUoYXdhaXQgcm9vdEJ1bmRsZS5sb2FkU3RyaW5nKCdhc3NldHMvZGF0YS9jYXRlZ29yaWVzLmpzb24nKSkgYXMgTWFwPFN0cmluZywgZHluYW1pYz47CiAgICBmaW5hbCBvdXQgPSA8Q2F0ZWdvcnk+W107CiAgICBmb3IgKGZpbmFsIGMgaW4ganNvblsnY2F0ZWdvcmllcyddIGFzIExpc3QpIHsKICAgICAgb3V0LmFkZChDYXRlZ29yeS5mcm9tSnNvbihjIGFzIE1hcDxTdHJpbmcsIGR5bmFtaWM+KSk7CiAgICAgIGZvciAoZmluYWwgY2ggaW4gKGNbJ2NoaWxkcmVuJ10gYXMgTGlzdD8gPz8gW10pKSB7CiAgICAgICAgZmluYWwgbSA9IE1hcDxTdHJpbmcsIGR5bmFtaWM+LmZyb20oY2ggYXMgTWFwPFN0cmluZywgZHluYW1pYz4pOwogICAgICAgIG1bJ3BhcmVudElkJ10gPSBjWydpZCddOwogICAgICAgIG91dC5hZGQoQ2F0ZWdvcnkuZnJvbUpzb24obSkpOwogICAgICB9CiAgICB9CiAgICByZXR1cm4gb3V0OwogIH0KCiAgQ2F0ZWdvcnk/IGNhdGVnb3J5QnlJZChTdHJpbmc/IGlkKSB7CiAgICBpZiAoaWQgPT0gbnVsbCkgcmV0dXJuIG51bGw7CiAgICBmb3IgKGZpbmFsIGMgaW4gY2F0ZWdvcmllcykgewogICAgICBpZiAoYy5pZCA9PSBpZCkgcmV0dXJuIGM7CiAgICB9CiAgICByZXR1cm4gbnVsbDsKICB9CgogIC8vLyBLb21wbGV0dGUgUGlwZWxpbmUgw7xiZXIgYWxsZSBUcmFuc2FrdGlvbmVuIGRlcyBTdG9yZXMuCiAgRnV0dXJlPEVuZ2luZVJlc3VsdD4gcnVuKHtMaXN0PFRyYW5zYWN0aW9uPj8gb25seX0pIGFzeW5jIHsKICAgIGF3YWl0IGxvYWRTZWVkRGF0YSgpOwogICAgZmluYWwgdHhzID0gb25seSA/PyBzdG9yZS50cmFuc2FjdGlvbnM7CiAgICBmaW5hbCBjYXRlZ29yaXplciA9IENhdGVnb3JpemVyKG1lcmNoYW50RGljdGlvbmFyeTogbWVyY2hhbnREaWN0aW9uYXJ5LCBjcmVkaXRvcklkTWFwOiBjcmVkaXRvcklkTWFwLCBydWxlczogc3RvcmUucnVsZXMpOwoKICAgIGZpbmFsIHVwZGF0ZWQgPSA8VHJhbnNhY3Rpb24+W107CiAgICBmaW5hbCB1bmNhdGVnb3JpemVkID0gPFRyYW5zYWN0aW9uPltdOwogICAgZm9yIChmaW5hbCB0IGluIHR4cykgewogICAgICBpZiAodC5jYXRlZ29yeUlkICE9IG51bGwgJiYgdC5jYXRlZ29yeUlkIS5pc05vdEVtcHR5KSB7CiAgICAgICAgdXBkYXRlZC5hZGQodCk7CiAgICAgICAgY29udGludWU7CiAgICAgIH0KICAgICAgZmluYWwgciA9IGNhdGVnb3JpemVyLmNhdGVnb3JpemUodCk7CiAgICAgIGlmIChyLmNhdGVnb3J5SWQuaXNFbXB0eSkgewogICAgICAgIHVuY2F0ZWdvcml6ZWQuYWRkKHQpOwogICAgICAgIHVwZGF0ZWQuYWRkKHQpOwogICAgICB9IGVsc2UgewogICAgICAgIHVwZGF0ZWQuYWRkKHQuY29weVdpdGgoY2F0ZWdvcnlJZDogci5jYXRlZ29yeUlkLCBtZXJjaGFudElkOiByLm1lcmNoYW50SWQsIGNhdGVnb3J5UmVhc29uOiByLnJlYXNvbikpOwogICAgICB9CiAgICB9CgogICAgZmluYWwgdHJhbnNmZXJzID0gX2RldGVjdFRyYW5zZmVycyh1cGRhdGVkLCBzdG9yZS5hY2NvdW50cyk7CiAgICBmaW5hbCBkZWR1cGVkID0gX2RlZHVwKHVwZGF0ZWQpOwoKICAgIGZpbmFsIGRldGVjdG9yID0gQ29udHJhY3REZXRlY3RvcigpOwogICAgZmluYWwgY29udHJhY3RzID0gZGV0ZWN0b3IuZGV0ZWN0KGRlZHVwZWQsIGlkR2VuOiAoKSA9PiAnYyR7RGF0ZVRpbWUubm93KCkubWljcm9zZWNvbmRzU2luY2VFcG9jaH0ke2RlZHVwZWQubGVuZ3RofScpOwoKICAgIGZpbmFsIGluc2lnaHRFbmdpbmUgPSBJbnNpZ2h0RW5naW5lKCgpID0+IERhdGVUaW1lLm5vdygpKTsKICAgIGZpbmFsIGluc2lnaHRzID0gaW5zaWdodEVuZ2luZS5jb21wdXRlKHR4czogZGVkdXBlZCwgY29udHJhY3RzOiBjb250cmFjdHMsIGFjY291bnRzOiBzdG9yZS5hY2NvdW50cyk7CgogICAgcmV0dXJuIEVuZ2luZVJlc3VsdCgKICAgICAgdHJhbnNhY3Rpb25zOiBkZWR1cGVkLm1hcCgodCkgPT4gdHJhbnNmZXJzLmNvbnRhaW5zKHQuaWQpID8gdC5jb3B5V2l0aChpc1RyYW5zZmVyOiB0cnVlKSA6IHQpLnRvTGlzdCgpLAogICAgICBjb250cmFjdHM6IGNvbnRyYWN0cywKICAgICAgaW5zaWdodHM6IGluc2lnaHRzLAogICAgICB1bmNhdGVnb3JpemVkQ291bnQ6IHVuY2F0ZWdvcml6ZWQubGVuZ3RoLAogICAgKTsKICB9CgogIFNldDxTdHJpbmc+IF9kZXRlY3RUcmFuc2ZlcnMoTGlzdDxUcmFuc2FjdGlvbj4gdHhzLCBMaXN0PEFjY291bnQ+IGFjY291udHMpIHsKICAgIGZpbmFsIGliYW5zID0gYWNjb3VudHMubWFwKChhKSA9PiBhLmliYW4pLnRvU2V0KCk7CiAgICBmaW5hbCBpZHMgPSA8U3RyaW5nPnt9OwogICAgZmluYWwgYnlBbW91bnQgPSA8aW50LCBMaXN0PFRyYW5zYWN0aW9uPj4+e307CiAgICBmb3IgKGZpbmFsIHQgaW4gdHhzKSB7CiAgICAgIGJ5QW1vdW50LnB1dElmQWJzZW50KHQuYW1vdW50Q2VudHMuYWJzKCksICgpID0+IFtdKS5hZGQodCk7CiAgICB9CiAgICBmb3IgKGZpbmFsIHQgaW4gdHhzKSB7CiAgICAgIGlmICh0LmNvdW50ZXJwYXJ0eUliYW4gIT0gbnVsbCAmJiBpYmFucy5jb250YWlucyh0LmNvdW50ZXJwYXJ0eUliYW4pKSB7CiAgICAgICAgaWRzLmFkZCh0LmlkKTsKICAgICAgICBjb250aW51ZTsKICAgICAgfQogICAgICBmaW5hbCBjYW5kaWRhdGVzID0gYnlBbW91bnRbdC5hbW91bnRDZW50cy5hYnMoKV0gPz8gW107CiAgICAgIGZvciAoZmluYWwgb3RoZXIgaW4gY2FuZGlkYXRlcykgewogICAgICAgIGlmIChvdGhlci5pZCA9PSB0LmlkKSBjb250aW51ZTsKICAgICAgICBpZiAob3RoZXIuYW1vdW50Q2VudHMgPT0gLXQuYW1vdW50Q2VudHMgJiYKICAgICAgICAgICAgb3RoZXIuYWNjb3VudElkICE9IHQuYWNjb3VudElkICYmCiAgICAgICAgICAgIG90aGVyLmJvb2tpbmdEYXRlLmRpZmZlcmVuY2UodC5ib29raW5nRGF0ZSkuaW5EYXlzLmFicygpIDw9IDMpIHsKICAgICAgICAgIGlkcy5hZGQodC5pZCk7CiAgICAgICAgICBpZHMuYWRkKG90aGVyLmlkKTsKICAgICAgICB9CiAgICAgIH0KICAgIH0KICAgIHJldHVybiBpZHM7CiAgfQoKICBMaXN0PFRyYW5zYWN0aW9uPiBfZGVkdXAoTGlzdDxUcmFuc2FjdGlvbj4gdHhzKSB7CiAgICBmaW5hbCBzZWVuID0gPFN0cmluZz57fTsKICAgIGZpbmFsIG91dCA9IDxUcmFuc2FjdGlvbj5bXTsKICAgIGZvciAoZmluYWwgdCBpbiB0eHMpIHsKICAgICAgaWYgKHNlZW4uYWRkKHQuZGVkdXBIYXNoKSkgb3V0LmFkZCh0KTsKICAgIH0KICAgIHJldHVybiBvdXQ7CiAgfQo9CgpjbGFzcyBFbmdpbmVSZXN1bHQgewogIGZpbmFsIExpc3Q8VHJhbnNhY3Rpb24+IHRyYW5zYWN0aW9uczsKICBmaW5hbCBMaXN0PENvbnRyYWN0PiBjb250cmFjdHM7CiAgZmluYWwgTGlzdDxJbnNpZ2h0PiBpbnNpZ2h0czsKICBmaW5hbCBpbnQgdW5jYXRlZ29yaXplZENvdW50OwoKICBjb25zdCBFbmdpbmVSZXN1bHQoewogICAgcmVxdWlyZWQgdGhpcy50cmFuc2FjdGlvbnMsCiAgICByZXF1aXJlZCB0aGlzLmNvbnRyYWN0cywKICAgIHJlcXVpcmVkIHRoaXMuaW5zaWdodHMsCiAgICByZXF1aXJlZCB0aGlzLnVuY2F0ZWdvcml6ZWRDb3VudCwKICB9KTsKfQo=
+import 'dart:convert';
+
+import 'package:flutter/services.dart' show rootBundle;
+
+import '../../data/models.dart';
+import '../../data/store.dart';
+import 'categorize.dart';
+import 'contracts.dart';
+import 'insights.dart';
+import 'normalize.dart';
+
+/// Ergebnis einer Analyse-Lauf.
+class EngineResult {
+  final List<Transaction> transactions;
+  final List<Contract> contracts;
+  final List<Insight> insights;
+  final int uncategorizedCount;
+
+  const EngineResult({
+    required this.transactions,
+    required this.contracts,
+    required this.insights,
+    required this.uncategorizedCount,
+  });
+}
+
+/// Analyse-Engine: lädt Seed-Daten (Kategorien, Händler, Gläubiger-IDs),
+/// kategorisiert Umsätze, erkennt Verträge und leitet Insights ab.
+class Engine {
+  Engine(this.store);
+
+  final Store store;
+
+  List<Category> categories = [];
+  List<Merchant> merchants = [];
+  Map<String, String> creditorCategories = {};
+  Categorizer? _categorizer;
+
+  Category? categoryById(String? id) => _categorizer?.categoryById(id);
+
+  Merchant? merchantById(String? id) {
+    if (id == null) return null;
+    for (final m in merchants) {
+      if (m.id == id) return m;
+    }
+    return null;
+  }
+
+  Future<void> loadSeedData() async {
+    try {
+      final catJson = jsonDecode(await rootBundle.loadString('assets/data/categories.json')) as Map<String, dynamic>;
+      final flat = <Category>[];
+      void walk(List<dynamic> list, String? parent) {
+        for (final e in list) {
+          final m = e as Map<String, dynamic>;
+          flat.add(Category.fromJson({...m, 'parentId': parent}));
+          final children = m['children'] as List?;
+          if (children != null) walk(children, m['id'] as String);
+        }
+      }
+      walk(catJson['categories'] as List, null);
+      categories = flat;
+    } catch (_) {
+      categories = [];
+    }
+
+    try {
+      final merchJson = jsonDecode(await rootBundle.loadString('assets/data/merchants.json')) as Map<String, dynamic>;
+      merchants = (merchJson['merchants'] as List)
+          .map((e) => Merchant(
+                id: (e as Map<String, dynamic>)['id'] as String,
+                normalizedName: e['normalizedName'] as String,
+                displayName: e['displayName'] as String,
+                defaultCategoryId: e['category'] as String?,
+              ))
+          .toList();
+    } catch (_) {
+      merchants = [];
+    }
+
+    try {
+      final credJson = jsonDecode(await rootBundle.loadString('assets/data/creditor_ids.json')) as Map<String, dynamic>;
+      creditorCategories = {
+        for (final e in credJson['creditorIds'] as List)
+          (e as Map<String, dynamic>)['id'] as String: e['category'] as String,
+      };
+    } catch (_) {
+      creditorCategories = {};
+    }
+
+    _categorizer = Categorizer(categories: categories, merchants: merchants, creditorCategories: creditorCategories)..index();
+  }
+
+  /// Führt die Analyse über alle gespeicherten Umsätze aus.
+  Future<EngineResult> run() async {
+    if (_categorizer == null) await loadSeedData();
+    final cat = _categorizer!;
+
+    final txs = store.transactions.map((t) {
+      if (t.categoryId != null && t.categoryId!.isNotEmpty) return t;
+      final r = cat.categorize(t);
+      return t.copyWith(categoryId: r.categoryId, merchantId: r.merchantId, categoryReason: r.reason);
+    }).toList();
+
+    final detector = ContractDetector();
+    final contracts = <Contract>[];
+    for (final entry in detector.group(txs).entries) {
+      final c = detector.detect(entry.key, entry.value);
+      if (c != null) contracts.add(c);
+    }
+
+    // Vertrags-IDs an Transaktionen hängen
+    final withContracts = txs.map((t) {
+      for (final c in contracts) {
+        if (c.transactionIds.contains(t.id)) return t.copyWith(contractId: c.id);
+      }
+      return t;
+    }).toList();
+
+    final insights = InsightEngine(DateTime.now()).run(withContracts, contracts);
+    final uncategorized = withContracts.where((t) => (t.categoryId ?? '').isEmpty && !t.isTransfer && !t.excluded).length;
+
+    return EngineResult(
+      transactions: withContracts,
+      contracts: contracts,
+      insights: insights,
+      uncategorizedCount: uncategorized,
+    );
+  }
+
+  /// Lädt Demo-Daten, falls noch keine Bank verbunden ist (rein lokal, kein Netzwerk).
+  Future<void> loadSeedDemoIfEmpty() async {
+    if (store.transactions.isNotEmpty || store.accounts.isEmpty) return;
+    // Wird vom Onboarding selbst aufgerufen – hier nur Platzhalter.
+  }
+}

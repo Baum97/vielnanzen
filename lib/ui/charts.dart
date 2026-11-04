@@ -1,1 +1,301 @@
-aW1wb3J0ICdkYXJ0Om1hdGgnIGFzIG1hdGg7CgppbXBvcnQgJ3BhY2thZ2U6Zmx1dHRlci9tYXRlcmlhbC5kYXJ0JzsKCmltcG9ydCAndGhlbWUuZGFydCc7CmltcG9ydCAnd2lkZ2V0cy5kYXJ0JzsKCi8vLyBLb250b3N0YW5kLUxpbmllOiAyIHB0IEFjY2VudCwgRmzDpGNoZSAxMiAlIOKGkiAwICUsIGRyZWkgSGFpcmxpbmVzLAovLy8gU2NydWIgemVpZ3QgRGF0dW0gKyBTYWxkbywgUHJvZ25vc2UgZ2VzdHJpY2hlbHQuCmNsYXNzIExpbmVDaGFydCBleHRlbmRzIFN0YXRlZnVsV2lkZ2V0IHsKICBmaW5hbCBMaXN0PChEYXRlVGltZSBkYXRlLCBpbnQgY2VudHMpPiBwb2ludHM7CiAgZmluYWwgaW50PyBmb3JlY2FzdENlbnRzOwogIGZpbmFsIERhdGVUaW1lPyBmb3JlY2FzdERhdGU7CiAgZmluYWwgQ29sb3I/IGxpbmVDb2xvcjsKCiAgY29uc3QgTGluZUNoYXJ0KHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMucG9pbnRzLCB0aGlzLmZvcmVjYXN0Q2VudHMsIHRoaXMuZm9yZWNhc3REYXRlLCB0aGlzLmxpbmVDb2xvcn0pOwoKICBAb3ZlcnJpZGUKICBTdGF0ZTxMaW5lQ2hhcnQ+IGNyZWF0ZVN0YXRlKCkgPT4gX0xpbmVDaGFydFN0YXRlKCk7Cn0KCmNsYXNzIF9MaW5lQ2hhcnRTdGF0ZSBleHRlbmRzIFN0YXRlPExpbmVDaGFydD4gewogIGludD8gaG92ZXJJbmRleDsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgZmluYWwgbGluZSA9IHdpZGdldC5saW5lQ29sb3IgPz8gdGhlbWUuY29sb3JTY2hlbWUucHJpbWFyeTsKICAgIGlmICh3aWRnZXQucG9pbnRzLmxlbmd0aCA8IDIpIHsKICAgICAgcmV0dXJuIFNpemVkQm94KGhlaWdodDogMTIwLCBjaGlsZDogQ2VudGVyKGNoaWxkOiBUZXh0KCdOb2NoIGtlaW5lIFZlcmxhdWZzZGF0ZW4nLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmJvZHlTbWFsbCkpKTsKICAgIH0KICAgIHJldHVybiBMYXlvdXRCdWlsZGVyKGJ1aWxkZXI6IChjb250ZXh0LCBjb25zdHJhaW50cykgewogICAgICBmaW5hbCB3ID0gY29uc3RyYWludHMubWF4V2lkdGg7CiAgICAgIGZpbmFsIGggPSAxMjAuMDsKICAgICAgZmluYWwgYWxsID0gWy4uLndpZGdldC5wb2ludHNdOwogICAgICBpZiAod2lkZ2V0LmZvcmVjYXN0Q2VudHMgIT0gbnVsbCAmJiB3aWRnZXQuZm9yZWNhc3REYXRlICE9IG51bGwpIHsKICAgICAgICBhbGwuYWRkKCh3aWRnZXQuZm9yZWNhc3REYXRlISwgd2lkZ2V0LmZvcmVjYXN0Q2VudHMhKSk7CiAgICAgIH0KICAgICAgZmluYWwgbWluViA9IGFsbC5tYXAoKHApID0+IHAuJDIpLnJlZHVjZShtYXRoLm1pbikudG9Eb3VibGUoKTsKICAgICAgZmluYWwgbWF4ViA9IGFsbC5tYXAoKHApID0+IHAuJDIpLnJlZHVjZShtYXRoLm1heCkudG9Eb3VibGUoKTsKICAgICAgZmluYWwgcmFuZ2UgPSAobWF4ViAtIG1pblYpLmFicygpIDwgMSA/IDEuMCA6IChtYXhWIC0gbWluVik7CiAgICAgIGZpbmFsIHBhZCA9IHJhbmdlICogMC4wODsKICAgICAgZmluYWwgbG8gPSBtaW5WIC0gcGFkLCBoaSA9IG1heFYgKyBwYWQ7CgogICAgICBkb3VibGUgeChpbnQgaSkgPT4gOCArICh3IC0gMTYpICogKGFsbC5sZW5ndGggPT0gMSA/IDAuNSA6IGkgLyAoYWxsLmxlbmd0aCAtIDEpKTsKICAgICAgZG91YmxlIHkoaW50IHYpID0+IDggKyAoaCAtIDE2KSAqICgxIC0gKHYgLSBsbykgLyAoaGkgLSBsbykpOwoKICAgICAgcmV0dXJuIEdlc3R1cmVEZXRlY3RvcigKICAgICAgICBvbkhvcml6b250YWxEcmFnVXBkYXRlOiAoZCkgewogICAgICAgICAgZmluYWwgaSA9ICgoZC5sb2NhbFBvc2l0aW9uLmR4IC0gOCkgLyAodyAtIDE2KSAqIChhbGwubGVuZ3RoIC0gMSkpLnJvdW5kKCkuY2xhbXAoMCwgYWxsLmxlbmd0aCAtIDEpOwogICAgICAgICAgaWYgKGkgIT0gaG92ZXJJbmRleCkgc2V0U3RhdGUoKCkgPT4gaG92ZXJJbmRleCA9IGkpOwogICAgICAgIH0sCiAgICAgICAgb25Ib3Jpem9udGFsRHJhZ0VuZDogKF8pID0+IHNldFN0YXRlKCgpID0+IGhvdmVySW5kZXggPSBudWxsKSwKICAgICAgICBvblRhcFVwOiAoXykgPT4gc2V0U3RhdGUoKCkgPT4gaG92ZXJJbmRleCA9IG51bGwpLAogICAgICAgIGNoaWxkOiBTaXplZEJveCgKICAgICAgICAgIGhlaWdodDogaCArIDIwLAogICAgICAgICAgY2hpbGQ6IFN0YWNrKGNoaWxkcmVuOiBbCiAgICAgICAgICAgIEN1c3RvbVBhaW50KAogICAgICAgICAgICAgIHNpemU6IFNpemUodywgaCksCiAgICAgICAgICAgICAgcGFpbnRlcjogX0xpbmVQYWludGVyKAogICAgICAgICAgICAgICAgcG9pbnRzOiBhbGwsCiAgICAgICAgICAgICAgICB4OiB4LAogICAgICAgICAgICAgICAgeTogeSwKICAgICAgICAgICAgICAgIGxpbmVDb2xvcjogbGluZSwKICAgICAgICAgICAgICAgIGZvcmVjYXN0SW5kZXg6IHdpZGdldC5mb3JlY2FzdENlbnRzICE9IG51bGwgPyB3aWRnZXQucG9pbnRzLmxlbmd0aCA6IG51bGwsCiAgICAgICAgICAgICAgICBzZXBhcmF0b3JDb2xvcjogdGhlbWUuY29sb3JTY2hlbWUub3V0bGluZSwKICAgICAgICAgICAgICApLAogICAgICAgICAgICApLAogICAgICAgICAgICBpZiAoaG92ZXJJbmRleCAhPSBudWxsICYmIGhvdmVySW5kZXghIDwgYWxsLmxlbmd0aCkKICAgICAgICAgICAgICBQb3NpdGlvbmVkKAogICAgICAgICAgICAgICAgbGVmdDogeChob3ZlckluZGV4ISkuY2xhbXAoMCwgdyAtIDkwKSwKICAgICAgICAgICAgICAgIHRvcDogMCwKICAgICAgICAgICAgICAgIGNoaWxkOiBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKGhvcml6b250YWw6IDgsIHZlcnRpY2FsOiA0KSwKICAgICAgICAgICAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgICAgICAgICAgICBjb2xvcjogdGhlbWUuY29sb3JTY2hlbWUuc3VyZmFjZSwKICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcig4KSwKICAgICAgICAgICAgICAgICAgICBib3JkZXI6IEJvcmRlci5hbGwoY29sb3I6IHRoZW1lLmNvbG9yU2NoZW1lLm91dGxpbmUpLAogICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICBjaGlsZDogVGV4dCgKICAgICAgICAgICAgICAgICAgICAnJHtBbW91bnRGb3JtYXQuZGF0ZVNob3J0LmZvcm1hdChhbGwbaG92ZXJJbmRleCFdLiQxKX0gJHtBbW91bnRGb3JtYXQuZm9ybWF0KGFsbFtob3ZlckluZGV4IV0uJDIpfScsCiAgICAgICAgICAgICAgICAgICAgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5sYWJlbFNtYWxsLAogICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICApLAogICAgICAgICAgXSksCiAgICAgICAgKSwKICAgICAgKTsKICAgIH0pOwogIH0KfQoKY2xhc3MgX0xpbmVQYWludGVyIGV4dGVuZHMgQ3VzdG9tUGFpbnRlciB7CiAgZmluYWwgTGlzdDwoRGF0ZVRpbWUsIGludCk+IHBvaW50czsKICBmaW5hbCBkb3VibGUgRnVuY3Rpb24oaW50KSB4OwogIGZpbmFsIGRvdWJsZSBGdW5jdGlvbihpbnQpIHk7CiAgZmluYWwgQ29sb3IgbGluZUNvbG9yOwogIGZpbmFsIGludD8gZm9yZWNhc3RJbmRleDsKICBmaW5hbCBDb2xvciBzZXBhcmF0b3JDb2xvcjsKCiAgX0xpbmVQYWludGVyKHtyZXF1aXJlZCB0aGlzLnBvaW50cywgcmVxdWlyZWQgdGhpcy54LCByZXF1aXJlZCB0aGlzLnksIHJlcXVpcmVkIHRoaXMubGluZUNvbG9yLCB0aGlzLmZvcmVjYXN0SW5kZXgsIHJlcXVpcmVkIHRoaXMuc2VwYXJhdG9yQ29sb3J9KTsKCiAgQG92ZXJyaWRlCiAgdm9pZCBwYWludChDYW52YXMgY2FudmFzLCBTaXplIHNpemUpIHsKICAgIGZpbmFsIHBhdGggPSBQYXRoKCk7CiAgICBmb3IgKHZhciBpID0gMDsgaSA8IHBvaW50cy5sZW5ndGg7IGkrKykgewogICAgICBmaW5hbCBweCA9IHgoaSksIHB5ID0geShwb2ludHNbaV0uJDIpOwogICAgICBpZiAoaSA9PSAwKSB7CiAgICAgICAgcGF0aC5tb3ZlVG8ocHgsIHB5KTsKICAgICAgfSBlbHNlIHsKICAgICAgICBwYXRoLmxpbmVUbyhweCwgcHkpOwogICAgICB9CiAgICB9CiAgICBmb3IgKHZhciBpID0gMTsgaSA8PSAzOyBpKyspIHsKICAgICAgZmluYWwgaHkgPSBzaXplLmhlaWdodCAqIGkgLyA0OwogICAgICBmaW5hbCBwYWludCA9IFBhaW50KCkKICAgICAgICAuLmNvbG9yID0gc2VwYXJhdG9yQ29sb3Iud2l0aFZhbHVlcyhhbHBoYTogMC42KQogICAgICAgIC4uc3Ryb2tlV2lkdGggPSAwLjU7CiAgICAgIGNhbnZhcy5kcmF3TGluZShPZmZzZXQoMCwgaHkpLCBPZmZzZXQoc2l6ZS53aWR0aCwgaHkpLCBwYWludCk7CiAgICB9CiAgICBmaW5hbCBhcmVhID0gUGF0aC5mcm9tKHBhdGgpCiAgICAgIC4ubGluZVRvKHgocG9pbnRzLmxlbmd0aCAtIDEpLCBzaXplLmhlaWdodCkKICAgICAgLi5saW5lVG8oeCgwKSwgc2l6ZS5oZWlnaHQpCiAgICAgIC4uY2xvc2UoKTsKICAgIGZpbmFsIGZpbGwgPSBQYWludCgpCiAgICAgIC4uc2hhZGVyID0gTGluZWFyR3JhZGllbnQoCiAgICAgICAgYmVnaW46IEFsaWdubWVudC50b3BDZW50ZXIsCiAgICAgICAgZW5kOiBBbGlnbm1lbnQuYm90dG9tQ2VudGVyLAogICAgICAgIGNvbG9yczogW2xpbmVDb2xvci53aXRoVmFsdWVzKGFscGhhOiAwLjEyKSwgbGluZUNvbG9yLndpdGhWYWx1ZXMoYWxwaGE6IDAuMCldLAogICAgICApLmNyZWF0ZVNoYWRlcihSZWN0LmZyb21MVFdIKDAsIDAsIHNpemUud2lkdGgsIHNpemUuaGVpZ2h0KSk7CiAgICBjYW52YXMuZHJhd1BhdGgoYXJlYSwgZmlsbCk7CgogICAgZmluYWwgc29saWQgPSBQYXRoKCk7CiAgICBmaW5hbCBzcGxpdCA9IGZvcmVjYXN0SW5kZXggPz8gcG9pbnRzLmxlbmd0aDsKICAgIGZvciAodmFyIGkgPSAwOyBpIDwgcG9pbnRzLmxlbmd0aDsgaSsrKSB7CiAgICAgIGZpbmFsIHB4ID0geChpKSwgcHkgPSB5KHBvaW50c1tpXS4kMik7CiAgICAgIGlmIChpIDwgc3BsaXQpIHsKICAgICAgICBpZiAoaSA9PSAwKSB7CiAgICAgICAgICBzb2xpZC5tb3ZlVG8ocHgsIHB5KTsKICAgICAgICB9IGVsc2UgewogICAgICAgICAgc29saWQubGluZVRvKHB4LCBweSk7CiAgICAgICAgfQogICAgICB9CiAgICB9CiAgICBjYW52YXMuZHJhd1BhdGgoCiAgICAgIHNvbGlkLAogICAgICBQYWludCgpCiAgICAgICAgLi5jb2xvciA9IGxpbmVDb2xvcgogICAgICAgIC4uc3Ryb2tlV2lkdGggPSAyCiAgICAgICAgLi5zdHlsZSA9IFBhaW50aW5nU3R5bGUuc3Ryb2tlCiAgICAgICAgLi5zdHJva2VDYXAgPSBTdHJva2VDYXAucm91bmQsCiAgICApOwoKICAgIGlmIChmb3JlY2FzdEluZGV4ICE9IG51bGwgJiYgcG9pbnRzLmxlbmd0aCA+PSAyKSB7CiAgICAgIGZpbmFsIGRhc2hlZCA9IFBhdGgoKTsKICAgICAgZGFzaGVkLm1vdmVUbyh4KHNwbGl0IC0gMSksIHkocG9pbnRzW3NwbGl0IC0gMV0uJDIpKTsKICAgICAgZm9yICh2YXIgaSA9IHNwbGl0OyBpIDwgcG9pbnRzLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgZGFzaGVkLmxpbmVUbyh4KGkpLCB5KHBvaW50c1tpXS4kMikpOwogICAgICB9CiAgICAgIGZpbmFsIGRhc2hQYWludCA9IFBhaW50KCkKICAgICAgICAuLmNvbG9yID0gbGluZUNvbG9yLndpdGhWYWx1ZXMoYWxwaGE6IDAuNikKICAgICAgICAuLnN0cm9rZVdpZHRoID0gMgogICAgICAgIC4uc3R5bGUgPSBQYWludGluZ1N0eWxlLnN0cm9rZTsKICAgICAgX2RyYXdEYXNoZWRQYXRoKGNhbnZhcywgZGFzaGVkLCBkYXNoUGFpbnQsIDUsIDQpOwogICAgfQogIH0KCiAgdm9pZCBfZHJhd0Rhc2hlZFBhdGgoQ2FudmFzIGNhbnZhcywgUGF0aCBwYXRoLCBQYWludCBwYWludCwgZG91YmxlIGRhc2gsIGRvdWJsZSBnYXApIHsKICAgIGZvciAoZmluYWwgbWV0cmljIGluIHBhdGguY29tcHV0ZU1ldHJpY3MoKSkgewogICAgICB2YXIgZGlzdGFuY2UgPSAwLjA7CiAgICAgIHdoaWxlIChkaXN0YW5jZSA8IG1ldHJpYy5sZW5ndGgpIHsKICAgICAgICBmaW5hbCBsZW4gPSBtYXRoLm1pbihkYXNoLCBtZXRyaWMubGVuZ3RoIC0gZGlzdGFuY2UpOwogICAgICAgIGNhbnZhcy5kcmF3UGF0aChtZXRyaWMuZXh0cmFjdFBhdGgoZGlzdGFuY2UsIGRpc3RhbmNlICsgbGVuKSwgcGFpbnQpOwogICAgICAgIGRpc3RhbmNlICs9IGRhc2ggKyBnYXA7CiAgICAgIH0KICAgIH0KICB9CgogIEBvdmVycmlkZQogIGJvb2wgc2hvdWxkUmVwYWludChjb3ZhcmlhbnQgQ3VzdG9tUGFpbnRlciBvbGREZWxlZ2F0ZSkgPT4gdHJ1ZTsKfQoKLy8vIERvbnV0OiBSaW5nIDE0IHB0LCAywrAgTMO8Y2tlLCBtYXguIDYgU2VnbWVudGUgKyDigJ5Tb25zdGlnZXPigJwsIFN1bW1lIGluIGRlciBNaXR0ZS4KY2xhc3MgRG9udXRDaGFydCBleHRlbmRzIFN0YXRlbGVzc1dpZGdldCB7CiAgZmluYWwgTGlzdDwoU3RyaW5nIGxhYmVsLCBpbnQgY2VudHMsIENvbG9yIGNvbG9yKT4gc2VnbWVudHM7CiAgZmluYWwgU3RyaW5nIGNlbnRlckxhYmVsOwoKICBjb25zdCBEb251dENoYXJ0KHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMuc2VnbWVudHMsIHJlcXVpcmVkIHRoaXMuY2VudGVyTGFiZWx9KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgcmV0dXJuIFNpemVkQm94KAogICAgICBoZWlnaHQ6IDE4MCwKICAgICAgY2hpbGQ6IFJvdyhjaGlsZHJlbjogWwogICAgICAgIFNpemVkQm94KAogICAgICAgICAgd2lkdGg6IDE4MCwKICAgICAgICAgIGhlaWdodDogMTgwLAogICAgICAgICAgY2hpbGQ6IEN1c3RvbVBhaW50KHBhaW50ZXI6IF9Eb251dFBhaW50ZXIoc2VnbWVudHMpKSwKICAgICAgICApLAogICAgICAgIGNvbnN0IFNpemVkQm94KHdpZHRoOiAxNiksCiAgICAgICAgRXhwYW5kZWQoCiAgICAgICAgICBjaGlsZDogQ29sdW1uKAogICAgICAgICAgICBtYWluQXhpc0FsaWdubWVudDogTWFpbkF4aXNBbGlnbm1lbnQuY2VudGVyLAogICAgICAgICAgICBjcm9zc0F4aXNBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5zdGFydCwKICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICBUZXh0KGNlbnRlckxhYmVsLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLnRpdGxlTWVkaXVtKSwKICAgICAgICAgICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDgpLAogICAgICAgICAgICAgIGZvciAoZmluYWwgcyBpbiBzZWdtZW50cy50YWtlKDYpKQogICAgICAgICAgICAgICAgUGFkZGluZygKICAgICAgICAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5zeW1tZXRyaWModmVydGljYWw6IDIpLAogICAgICAgICAgICAgICAgICBjaGlsZDogUm93KGNoaWxkcmVuOiBbCiAgICAgICAgICAgICAgICAgICAgQ29udGFpbmVyKHdpZHRoOiAxMCwgaGVpZ2h0OiAxMCwgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbihjb2xvcjogcy4kMywgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMykpKSwKICAgICAgICAgICAgICAgICAgICBjb25zdCBTaXplZEJveCh3aWR0aDogOCksCiAgICAgICAgICAgICAgICAgICAgRXhwYW5kZWQoY2hpbGQ6IFRleHQocy4kMSwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5U21hbGwsIG1heExpbmVzOiAxLCBvdmVyZmxvdzogVGV4dE92ZXJmbG93LmVsbGlwc2lzKSksCiAgICAgICAgICAgICAgICAgICAgQW1vdW50VGV4dChzLiQyLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmJvZHlTbWFsbCksCiAgICAgICAgICAgICAgICAgICAgIF0pLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgXSwKICAgICAgICAgICksCiAgICAgICAgKSwKICAgICAgXSksCiAgICApOwogIH0KfQoKY2xhc3MgX0RvbnV0UGFpbnRlciBleHRlbmRzIEN1c3RvbVBhaW50ZXIgewogIGZpbmFsIExpc3Q8KFN0cmluZywgaW50LCBDb2xvcik+IHNlZ21lbnRzOwogIF9Eb251dFBhaW50ZXIodGhpcy5zZWdtZW50cyk7CgogIEBvdmVycmlkZQogIHZvaWQgcGFpbnQoQ2FudmFzIGNhbnZhcywgU2l6ZSBzaXplKSB7CiAgICBmaW5hbCB0b3RhbCA9IHNlZ21lbnRzLmZvbGQ8aW50PigwLCAoYSwgcykgPT4gYSArIHMuJDIuYWJzKCkpOwogICAgaWYgKHRvdGFsID09IDApIHJldHVybjsKICAgIGZpbmFsIGNlbnRlciA9IE9mZnNldChzaXplLndpZHRoIC8gMiwgc2l6ZS5oZWlnaHQgLyAyKTsKICAgIGZpbmFsIHJhZGl1cyA9IHNpemUud2lkdGggLyAyIC0gNzsKICAgIHZhciBzdGFydCA9IC1tYXRoLnBpIC8gMjsKICAgIGZvciAoZmluYWwgcyBpbiBzZWdtZW50cykgewogICAgICBmaW5hbCBzd2VlcCA9IChzLiQyLmFicygpIC8gdG90YWwpICogMiAqIG1hdGgucGkgLSAoMiAqIG1hdGgucGkgLyAzNjApICogMjsKICAgICAgY2FudmFzLmRyYXdBcmMoCiAgICAgICAgUmVjdC5mcm9tQ2lyY2xlKGNlbnRlcjogY2VudGVyLCByYWRpdXM6IHJhZGl1cyksCiAgICAgICAgc3RhcnQsCiAgICAgICAgc3dlZXAuY2xhbXAoMC4wMSwgMiAqIG1hdGgucGkpLAogICAgICAgIGZhbHNlLAogICAgICAgIFBhaW50KCkKICAgICAgICAgIC4uY29sb3IgPSBzLiQzCiAgICAgICAgICAuLnN0eWxlID0gUGFpbnRpbmdTdHlsZS5zdHJva2UKICAgICAgICAgIC4uc3Ryb2tlV2lkdGggPSAxNAogICAgICAgICAgLi5zdHJva2VDYXAgPSBTdHJva2VDYXAucm91bmQsCiAgICAgICk7CiAgICAgIHN0YXJ0ICs9IHN3ZWVwICsgKDIgKiBtYXRoLnBpIC8gMzYwKSAqIDI7CiAgICB9CiAgfQoKICBAb3ZlcnJpZGUKICBib29sIHNob3VsZFJlcGFpbnQoY292YXJpYW50IEN1c3RvbVBhaW50ZXIgb2xkRGVsZWdhdGUpID0+IHRydWU7Cn0KCi8vLyBCYWxrZW4gKE1vbmF0c3ZlcmdsZWljaCk6IG9iZW4gZ2VydW5kZXQsIGFrdHVlbGxlciBNb25hdCBhY2NlbnQuCmNsYXNzIEJhckNoYXJ0IGV4dGVuZHMgU3RhdGVsZXNzV2lkZ2V0IHsKICBmaW5hbCBMaXN0PChTdHJpbmcgbGFiZWwsIGludCBjZW50cyk+IGJhcnM7CiAgZmluYWwgYm9vbCBwb3NpdGl2ZTsKCiAgY29uc3QgQmFyQ2hhcnQoe3N1cGVyLmtleSwgcmVxdWlyZWQgdGhpcy5iYXJzLCB0aGlzLnBvc2l0aXZlID0gZmFsc2V9KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgaWYgKGJhcnMuaXNFbXB0eSkgcmV0dXJuIGNvbnN0IFNpemVkQm94LnNocmluaygpOwogICAgZmluYWwgbWF4ViA9IGJhcnMubWFwKChiKSA9PiBiLiQyLmFicygpKS5yZWR1Y2UobWF0aC5tYXgpLnRvRG91YmxlKCkuY2xhbXAoMSwgZG91YmxlLmluZmluaXR5KTsKICAgIHJldHVybiBTaXplZEJveCgKICAgICAgaGVpZ2h0OiAxMjAsCiAgICAgIGNoaWxkOiBSb3coCiAgICAgICAgY3Jvc3NBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5lbmQsCiAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgYmFycy5sZW5ndGg7IGkrKykKICAgICAgICAgICAgRXhwYW5kZWQoCiAgICAgICAgICAgICAgIGNoaWxkOiBDb2x1bW4oCiAgICAgICAgICAgICAgICBtYWluQXhpc0FsaWdubWVudDogTWFpbkF4aXNBbGlnbm1lbnQuZW5kLAogICAgICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgICAgRmxleGlibGUoCiAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IEZyYWN0aW9uYWxseVNpemVkQm94KAogICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0RmFjdG9yOiAoYmFyc1tpXS4kMi5hYnMoKSAvIG1heFYpLmNsYW1wKDAuMDIsIDEuMCksCiAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBpID09IGJhcnMubGVuZ3RoIC0gMSA/IHRoZW1lLmNvbG9yU2NoZW1lLnByaW1hcnkgOiB0aGVtZS5jb2xvclNjaGVtZS5zZWNvbmRhcnkud2l0aFZhbHVlcyhhbHBoYTogMC40KSwKICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IGNvbnN0IEJvcmRlclJhZGl1cy52ZXJ0aWNhbCh0b3A6IFJhZGl1cy5jaXJjdWxhcig2KSksCiAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiA0KSwKICAgICAgICAgICAgICAgICAgIFRleHQoYmFyc1tpXS4kMSwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5sYWJlbFNtYWxsPy5jb3B5V2l0aChjb2xvcjogdGhlbWUuY29sb3JTY2hlbWUuc2Vjb25kYXJ5KSksCiAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICksCiAgICAgICAgICAgXSwKICAgICAgKSwKICAgICk7CiAgfQp9Cg==
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+
+import 'theme.dart';
+import 'widgets.dart';
+
+/// Kontostand-Linie: 2 pt Accent, Fläche 12 % → 0 %, drei Hairlines,
+/// Scrub zeigt Datum + Saldo, Prognose gestrichelt.
+class LineChart extends StatefulWidget {
+  final List<(DateTime date, int cents)> points;
+  final int? forecastCents;
+  final DateTime? forecastDate;
+  final Color? lineColor;
+
+  const LineChart({super.key, required this.points, this.forecastCents, this.forecastDate, this.lineColor});
+
+  @override
+  State<LineChart> createState() => _LineChartState();
+}
+
+class _LineChartState extends State<LineChart> {
+  int? hoverIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final line = widget.lineColor ?? theme.colorScheme.primary;
+    if (widget.points.length < 2) {
+      return SizedBox(height: 120, child: Center(child: Text('Noch keine Verlaufsdaten', style: theme.textTheme.bodySmall)));
+    }
+    return LayoutBuilder(builder: (context, constraints) {
+      final w = constraints.maxWidth;
+      final h = 120.0;
+      final all = [...widget.points];
+      if (widget.forecastCents != null && widget.forecastDate != null) {
+        all.add((widget.forecastDate!, widget.forecastCents!));
+      }
+      final minV = all.map((p) => p.$2).reduce(math.min).toDouble();
+      final maxV = all.map((p) => p.$2).reduce(math.max).toDouble();
+      final range = (maxV - minV).abs() < 1 ? 1.0 : (maxV - minV);
+      final pad = range * 0.08;
+      final lo = minV - pad, hi = maxV + pad;
+
+      double x(int i) => 8 + (w - 16) * (all.length == 1 ? 0.5 : i / (all.length - 1));
+      double y(int v) => 8 + (h - 16) * (1 - (v - lo) / (hi - lo));
+
+      return GestureDetector(
+        onHorizontalDragUpdate: (d) {
+          final i = ((d.localPosition.dx - 8) / (w - 16) * (all.length - 1)).round().clamp(0, all.length - 1);
+          if (i != hoverIndex) setState(() => hoverIndex = i);
+        },
+        onHorizontalDragEnd: (_) => setState(() => hoverIndex = null),
+        onTapUp: (_) => setState(() => hoverIndex = null),
+        child: SizedBox(
+          height: h + 20,
+          child: Stack(children: [
+            CustomPaint(
+              size: Size(w, h),
+              painter: _LinePainter(
+                points: all,
+                x: x,
+                y: y,
+                lineColor: line,
+                forecastIndex: widget.forecastCents != null ? widget.points.length : null,
+                separatorColor: theme.colorScheme.outline,
+              ),
+            ),
+            if (hoverIndex != null && hoverIndex! < all.length)
+              Positioned(
+                left: x(hoverIndex!).clamp(0, w - 90),
+                top: 0,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surface,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: theme.colorScheme.outline),
+                  ),
+                  child: Text(
+                    '${AmountFormat.dateShort.format(allhoverIndex!].$1)} ${AmountFormat.format(all[hoverIndex!].$2)}',
+                    style: theme.textTheme.labelSmall,
+                  ),
+                ),
+              ),
+          ]),
+        ),
+      );
+    });
+  }
+}
+
+class _LinePainter extends CustomPainter {
+  final List<(DateTime, int)> points;
+  final double Function(int) x;
+  final double Function(int) y;
+  final Color lineColor;
+  final int? forecastIndex;
+  final Color separatorColor;
+
+  _LinePainter({required this.points, required this.x, required this.y, required this.lineColor, this.forecastIndex, required this.separatorColor});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final path = Path();
+    for (var i = 0; i < points.length; i++) {
+      final px = x(i), py = y(points[i].$2);
+      if (i == 0) {
+        path.moveTo(px, py);
+      } else {
+        path.lineTo(px, py);
+      }
+    }
+    for (var i = 1; i <= 3; i++) {
+      final hy = size.height * i / 4;
+      final paint = Paint()
+        ..color = separatorColor.withValues(alpha: 0.6)
+        ..strokeWidth = 0.5;
+      canvas.drawLine(Offset(0, hy), Offset(size.width, hy), paint);
+    }
+    final area = Path.from(path)
+      ..lineTo(x(points.length - 1), size.height)
+      ..lineTo(x(0), size.height)
+      ..close();
+    final fill = Paint()
+      ..shader = LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [lineColor.withValues(alpha: 0.12), lineColor.withValues(alpha: 0.0)],
+      ).createShader(Rect.fromLTWH(0, 0, size.width, size.height));
+    canvas.drawPath(area, fill);
+
+    final solid = Path();
+    final split = forecastIndex ?? points.length;
+    for (var i = 0; i < points.length; i++) {
+      final px = x(i), py = y(points[i].$2);
+      if (i < split) {
+        if (i == 0) {
+          solid.moveTo(px, py);
+        } else {
+          solid.lineTo(px, py);
+        }
+      }
+    }
+    canvas.drawPath(
+      solid,
+      Paint()
+        ..color = lineColor
+        ..strokeWidth = 2
+        ..style = PaintingStyle.stroke
+        ..strokeCap = StrokeCap.round,
+    );
+
+    if (forecastIndex != null && points.length >= 2) {
+      final dashed = Path();
+      dashed.moveTo(x(split - 1), y(points[split - 1].$2));
+      for (var i = split; i < points.length; i++) {
+        dashed.lineTo(x(i), y(points[i].$2));
+      }
+      final dashPaint = Paint()
+        ..color = lineColor.withValues(alpha: 0.6)
+        ..strokeWidth = 2
+        ..style = PaintingStyle.stroke;
+      _drawDashedPath(canvas, dashed, dashPaint, 5, 4);
+    }
+  }
+
+  void _drawDashedPath(Canvas canvas, Path path, Paint paint, double dash, double gap) {
+    for (final metric in path.computeMetrics()) {
+      var distance = 0.0;
+      while (distance < metric.length) {
+        final len = math.min(dash, metric.length - distance);
+        canvas.drawPath(metric.extractPath(distance, distance + len), paint);
+        distance += dash + gap;
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+
+/// Donut: Ring 14 pt, 2° Lücke, max. 6 Segmente + „Sonstiges“, Summe in der Mitte.
+class DonutChart extends StatelessWidget {
+  final List<(String label, int cents, Color color)> segments;
+  final String centerLabel;
+
+  const DonutChart({super.key, required this.segments, required this.centerLabel});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SizedBox(
+      height: 180,
+      child: Row(children: [
+        SizedBox(
+          width: 180,
+          height: 180,
+          child: CustomPaint(painter: _DonutPainter(segments)),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(centerLabel, style: theme.textTheme.titleMedium),
+              const SizedBox(height: 8),
+              for (final s in segments.take(6))
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 2),
+                  child: Row(children: [
+                    Container(width: 10, height: 10, decoration: BoxDecoration(color: s.$3, borderRadius: BorderRadius.circular(3))),
+                    const SizedBox(width: 8),
+                    Expanded(child: Text(s.$1, style: theme.textTheme.bodySmall, maxLines: 1, overflow: TextOverflow.ellipsis)),
+                    AmountText(s.$2, style: theme.textTheme.bodySmall),
+                     ]),
+                ),
+               ),
+            ],
+          ),
+        ),
+      ]),
+    );
+  }
+}
+
+class _DonutPainter extends CustomPainter {
+  final List<(String, int, Color)> segments;
+  _DonutPainter(this.segments);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final total = segments.fold<int>(0, (a, s) => a + s.$2.abs());
+    if (total == 0) return;
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = size.width / 2 - 7;
+    var start = -math.pi / 2;
+    for (final s in segments) {
+      final sweep = (s.$2.abs() / total) * 2 * math.pi - (2 * math.pi / 360) * 2;
+      canvas.drawArc(
+        Rect.fromCircle(center: center, radius: radius),
+        start,
+        sweep.clamp(0.01, 2 * math.pi),
+        false,
+        Paint()
+          ..color = s.$3
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 14
+          ..strokeCap = StrokeCap.round,
+      );
+      start += sweep + (2 * math.pi / 360) * 2;
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+
+/// Balken (Monatsvergleich): oben gerundet, aktueller Monat accent.
+class BarChart extends StatelessWidget {
+  final List<(String label, int cents)> bars;
+  final bool positive;
+
+  const BarChart({super.key, required this.bars, this.positive = false});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    if (bars.isEmpty) return const SizedBox.shrink();
+    final maxV = bars.map((b) => b.$2.abs()).reduce(math.max).toDouble().clamp(1, double.infinity);
+    return SizedBox(
+      height: 120,
+      child: Row(
+        crossAlignment: CrossAxisAlignment.end,
+        children: [
+          for (var i = 0; i < bars.length; i++)
+            Expanded(
+               child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Flexible(
+                    child: FractionallySizedBox(
+                      heightFactor: (bars[i].$2.abs() / maxV).clamp(0.02, 1.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: i == bars.length - 1 ? theme.colorScheme.primary : theme.colorScheme.secondary.withValues(alpha: 0.4),
+                          borderRadius: const BorderRadius.vertical(top: Radius.circular(6)),
+                        ),
+                     ),
+                    const SizedBox(height: 4),
+                   Text(bars[i].$1, style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
+                ],
+              ),
+              ),
+             ),
+           ],
+      ),
+    );
+  }
+}

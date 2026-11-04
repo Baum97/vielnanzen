@@ -1,1 +1,6 @@
-ewogICJjcmVkaXRvcklkcyI6IFsKICAgIHsgImlkIjogIkRFOThaWlowOTk5OTk5OTk5OSIsICJuYW1lIjogIkFSRCBaREYgRGV1dHNjaGxhbmRyYWRpbyBCZWl0cmFnc3NlcnZpY2UiLCAiY2F0ZWdvcnkiOiAicnVuZGZ1bmsiIH0sCiAgICB7ICJpZCI6ICJERTI2WlpaMDAwMDAwMDAwMDEiLCAibmFtZSI6ICJOZXRmbGl4IEludGVybmF0aW9uYWwgQi5WLiIsICJjYXRlZ29yeSI6ICJzdHJlYW1pbmctdmlkZW8iIH0KICBdCn0K
+{
+  "creditorIds": [
+    { "id": "DE98ZZZ09999999999", "name": "ARD ZDF Deutschlandradio Beitragsservice", "category": "rundfunk" },
+    { "id": "DE26ZZZ00000000001", "name": "Netflix International B.V.", "category": "streaming-video" }
+  ]
+}

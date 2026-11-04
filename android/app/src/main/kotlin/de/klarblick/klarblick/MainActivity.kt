@@ -1,1 +1,5 @@
-cGFja2FnZSBkZS5rbGFyYmxpY2sua2xhcmJsaWNrCgppbXBvcnQgaW8uZmx1dHRlci5lbWJlZGRpbmcuYW5kcm9pZC5GbHV0dGVyQWN0aXZpdHkKCmNsYXNzIE1haW5BY3Rpdml0eSA6IEZsdXR0ZXJBY3Rpdml0eSgpCg==
+package de.klarblick.klarblick
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()

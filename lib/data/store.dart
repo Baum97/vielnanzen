@@ -1,1 +1,303 @@
-aW1wb3J0ICdkYXJ0OmNvbnZlcnQnOwppbXBvcnQgJ2RhcnQ6aW8nOwoKaW1wb3J0ICdwYWNrYWdlOmVuY3J5cHQvZW5jcnlwdC5kYXJ0JyBhcyBlbmM7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyL2ZvdW5kYXRpb24uZGFydCc7CmltcG9ydCAncGFja2FnZTpwYXRoX3Byb3ZpZGVyL3BhdGhfcHJvdmlkZXIuZGFydCc7CgppbXBvcnQgJ21vZGVscy5kYXJ0JzsKaW1wb3J0ICdzZWN1cmVfa2V5LmRhcnQnOwoKLy8vIFZlcnNjaGzDvHNzZWx0ZSwgcmVpbiBsb2thbGUgUGVyc2lzdGVueiBhbGxlciBBcHAtRGF0ZW4uCi8vLyBEYXRlaTogQUVTLTI1Ni1HQ00tdmVyc2NobMO8c3NlbHRlcyBKU09OIGltIEFwcC1Eb2t1bWVudGVudmVyemVpY2huaXMuCi8vLyBTY2huaXR0c3RlbGxlIGbDvHIgZWluZSBzcMOkdGVyZSBTUUxDaXBoZXIvZHJpZnQtQW5iaW5kdW5nIGJsZWlidCBvZmZlbi4KY2xhc3MgU3RvcmUgZXh0ZW5kcyBDaGFuZ2VOb3RpZmllciB7CiAgU3RvcmUoe1NlY3VyZUtleVN0b3JlPyBrZXlTdG9yZX0pIDogX2tleVN0b3JlID0ga2V5U3RvcmUgPz8gTG9jYWxTZWN1cmVLZXlTdG9yZSgpOwoKICBmaW5hbCBTZWN1cmVLZXlTdG9yZSBfa2V5U3RvcmU7CgogIGVuYy5FbmNyeXB0ZXI/IF9lbmNyeXB0ZXI7CiAgRmlsZT8gX2ZpbGU7CgogIGZpbmFsIExpc3Q8QWNjb3VudD4gYWNjb3VudHMgPSBbXTsKICBmaW5hbCBMaXN0PFRyYW5zYWN0aW9uPiB0cmFuc2FjdGlvbnMgPSBbXTsKICBmaW5hbCBMaXN0PE1lcmNoYW50PiBtZXJjaGFudHMgPSBbXTsKICBmaW5hbCBMaXN0PENvbnRyYWN0PiBjb250cmFjdHMgPSBbXTsKICBmaW5hbCBMaXN0PFJ1bGU+IHJ1bGVzID0gW107CiAgZmluYWwgTGlzdDxCdWRnZXQ+IGJ1ZGdldHMgPSBbXTsKICBmaW5hbCBMaXN0PEdvYWw+IGdvYWxzID0gW107CiAgZmluYWwgTGlzdDxJbnNpZ2h0PiBpbnNpZ2h0cyA9IFtdOwogIGZpbmFsIExpc3Q8TmV0d29ya0xvZ0VudHJ5PiBuZXR3b3JrTG9nID0gW107CiAgZmluYWwgTGlzdDxCYW5rQ29ubmVjdGlvbj4gY29ubmVjdGlvbnMgPSBbXTsKCiAgZmluYWwgTWFwPFN0cmluZywgZHluYW1pYz4gc2V0dGluZ3MgPSB7CiAgICAnZGlzY3JlZXRNb2RlJzogZmFsc2UsCiAgICAnZGFya01vZGUnOiAnc3lzdGVtJywKICAgICdhY2NlbnRDb2xvcic6ICcjMkY1QkVBJywKICAgICdtb250aFN0YXJ0JzogJzEnLAogICAgJ3JlZnJlc2hPbk9wZW4nOiB0cnVlLAogICAgJ25vdGlmaWNhdGlvbnMnOiB0cnVlLAogICAgJ2FwcExvY2snOiB0cnVlLAogICAgJ2hpZGVJblN3aXRjaGVyJzogdHJ1ZSwKICAgICdzZWxlY3RlZEFjY291bnRJZHMnOiA8U3RyaW5nPltdLAogIH07CgogIGJvb2wgX2xvYWRlZCA9IGZhbHNlOwogIGJvb2wgZ2V0IGlzTG9hZGVkID0+IF9sb2FkZWQ7CiAgdm9pZCBmb3JjZUxvYWRlZEZvclRlc3QoKSA9PiBfbG9hZGVkID0gdHJ1ZTsKCiAgRnV0dXJlPHZvaWQ+IGxvYWQoKSBhc3luYyB7CiAgICBpZiAoX2xvYWRlZCkgcmV0dXJuOwogICAgZmluYWwga2V5ID0gYXdhaXQgX2tleVN0b3JlLmdldE9yQ3JlYXRlRGF0YWJhc2VLZXkoKTsKICAgIGZpbmFsIGRlcml2ZWQgPSBMb2NhbFNlY3VyZUtleVN0b3JlLmRlcml2ZUtleShrZXkpOwogICAgX2VuY3J5cHRlciA9IGVuYy5FbmNyeXB0ZXIoZW5jLkFFUyhlbmMuS2V5KGRlcml2ZWQpLCBtb2RlOiBlbmMuQUVTTW9kZS5nY20pKTsKICAgIGZpbmFsIGRpciA9IGF3YWl0IGdldEFwcGxpY2F0aW9uRG9jdW1lbnRzRGlyZWN0b3J5KCk7CiAgICBfZmlsZSA9IEZpbGUoJyR7ZGlyLnBhdGh9L2tsYXJibGljay5kYi5lbmMnKTsKICAgIGlmIChhd2FpdCBfZmlsZSEuZXhpc3RzKCkpIHsKICAgICAgdHJ5IHsKICAgICAgICBmaW5hbCBpdiA9IGVuYy5JVihkZXJpdmVkLnN1Ymxpc3QoMCwgMTIpKTsKICAgICAgICBmaW5hbCBlbmNyeXB0ZWQgPSBlbmMuRW5jcnlwdGVkLmZyb21CYXNlNjQoYXdhaXQgX2ZpbGUhLnJlYWRBc1N0cmluZygpKTsKICAgICAgICBmaW5hbCBwbGFpbiA9IF9lbmNyeXB0ZXIhLmRlY3J5cHQoZW5jcnlwdGVkLCBpdjogaXYpOwogICAgICAgIF9hcHBseUpzb24oanNvbkRlY29kZShwbGFpbikgYXMgTWFwPFN0cmluZywgZHluYW1pYz4pOwogICAgICB9IGNhdGNoIChfKSB7CiAgICAgICAgLy8gRGF0ZWkgYmVzY2jDpGRpZ3Qg4oCTIHN0YXJ0ZSBsZWVyLCBEYXRlbiBibGVpYmVuIGxva2FsIGVyaGFsdGVuIHdvIG3DtmdsaWNoLgogICAgICB9CiAgICB9CiAgICBfbG9hZGVkID0gdHJ1ZTsKICAgIG5vdGlmeUxpc3RlbmVycygpOwogIH0KCiAgdm9pZCBfYXBwbHlKc29uKE1hcDxTdHJpbmcsIGR5bmFtaWM+IGopIHsKICAgIGFjY291bnRzCiAgICAgIC4uY2xlYXIoKQogICAgICAuLmFkZEFsbCgoalsnYWNjb3VudHMnXSBhcyBMaXN0PyA/PyBbXSkubWFwKChlKSA9PiBBY2NvdW50LmZyb21Kc29uKGUgYXMgTWFwPFN0cmluZywgZHluYW1pYz4pKSk7CiAgICB0cmFuc2FjdGlvbnMKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWyd0cmFuc2FjdGlvbnMnXSBhcyBMaXN0PyA/PyBbXSkubWFwKChlKSA9PiBUcmFuc2FjdGlvbi5mcm9tSnNvbihlIGFzIE1hcDxTdHJpbmcsIGR5bmFtaWM+KSkpOwogICAgbWVyY2hhbnRzCiAgICAgIC4uY2xlYXIoKQogICAgICAuLmFkZEFsbCgoalsnbWVyY2hhbnRzJ10gYXMgTGlzdD8gPz8gW10pLm1hcCgoZSkgPT4gTWVyY2hhbnQoCiAgICAgICAgICAgIGlkOiBlWydpZCddIGFzIFN0cmluZywKICAgICAgICAgICAgbm9ybWFsaXplZE5hbWU6IGVbJ25vcm1hbGl6ZWROYW1lJ10gYXMgU3RyaW5nLAogICAgICAgICAgICBkaXNwbGF5TmFtZTogZVsnZGlzcGxheU5hbWUnXSBhcyBTdHJpbmcsCiAgICAgICAgICAgIGRlZmF1bHRDYXRlZ29yeUlkOiBlWydkZWZhdWx0Q2F0ZWdvcnlJZCddIGFzIFN0cmluZz8sCiAgICAgICAgICApKSk7CiAgICBjb250cmFjdHMKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWydjb250cmFjdHMnXSBhcyBMaXN0PyA/PyBbXSkubWFwKChlKSA9PiBDb250cmFjdC5mcm9tSnNvbihlIGFzIE1hcDxTdHJpbmcsIGR5bmFtaWM+KSkpOwogICAgcnVsZXMKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWydydWxlcyddIGFzIExpc3Q/ID8/IFtdKS5tYXAoKGUpID0+IFJ1bGUuZnJvbUpzb24oZSBhcyBNYXA8U3RyaW5nLCBkeW5hbWljPikpKTsKICAgIGJ1ZGdldHMKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWydidWRnZXRzJ10gYXMgTGlzdD8gPz8gW10pLm1hcCgoZSkgPT4gQnVkZ2V0LmZyb21Kc29uKGUgYXMgTWFwPFN0cmluZywgZHluYW1pYz4pKSk7CiAgICBnb2FscwogICAgICAuLmNsZWFyKCkKICAgICAgLi5hZGRBbGwoKGpbJ2dvYWxzJ10gYXMgTGlzdD8gPz8gW10pLm1hcCgoZSkgPT4gR29hbC5mcm9tSnNvbihlIGFzIE1hcDxTdHJpbmcsIGR5bmFtaWM+KSkpOwogICAgaW5zaWdodHMKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWydpbnNpZ2h0cyddIGFzIExpc3Q/ID8/IFtdKS5tYXAoKGUpID0+IEluc2lnaHQuZnJvbUpzb24oZSBhcyBNYXA8U3RyaW5nLCBkeW5hbWljPykpKTsKICAgIG5ldHdvcmtMb2cKICAgICAgLi5jbGVhcigpCiAgICAgIC4uYWRkQWxsKChqWyduZXR3b3JrTG9nJ10gYXMgTGlzdD8gPz8gW10pLm1hcCgoZSkgPT4gTmV0d29ya0xvZ0VudHJ5LmZyb21Kc29uKGUgYXMgTWFwPFN0cmluZywgZHluYW1pYz4pKSk7CiAgICBjb25uZWN0aW9ucwogICAgICAuLmNsZWFyKCkKICAgICAgLi5hZGRBbGwoKGpbJ2Nvbm5lY3Rpb25zJ10gYXMgTGlzdD8gPz8gW10pLm1hcCgoZSkgPT4gQmFua0Nvbm5lY3Rpb24uZnJvbUpzb24oZSBhcyBNYXA8U3RyaW5nLCBkeW5hbWljPykpKTsKICAgIGZpbmFsIHMgPSBqWydzZXR0aW5ncyddIGFzIE1hcDxTdHJpbmcsIGR5bmFtaWM+PzsKICAgIGlmIChzICE9IG51bGwpIHNldHRpbmdzLmFkZEFsbChzKTsKICB9CgogIE1hcDxTdHJpbmcsIGR5bmFtaWM+IF90b0pzb24oKSA9PiB7CiAgICAgICAgJ3ZlcnNpb24nOiAxLAogICAgICAgICdhY2NvdW50cyc6IGFjY291bnRzLm1hcCgoZSkgPT4gZS50b0pzb24oKSkudG9MaXN0KCksCiAgICAgICAgJ3RyYW5zYWN0aW9ucyc6IHRyYW5zYWN0aW9ucy5tYXAoKGUpID0+IGUudG9Kc29uKCkpLnRvTGlzdCgpLAogICAgICAgICdtZXJjaGFudHMnOiBtZXJjaGFudHMKICAgICAgICAgICAgLm1hcCgobSkgPT4geydpZCc6IG0uaWQsICdub3JtYWxpemVkTmFtZSc6IG0ubm9ybWFsaXplZE5hbWUsICdkaXNwbGF5TmFtZSc6IG0uZGlzcGxheU5hbWUsICdkZWZhdWx0Q2F0ZWdvcnlJZCc6IG0uZGVmYXVsdENhdGVnb3J5SWR9KQogICAgICAgICAgICAudG9MaXN0KCksCiAgICAgICAgJ2NvbnRyYWN0cyc6IGNvbnRyYWN0cy5tYXAoKGUpID0+IGUudG9Kc29uKCkpLnRvTGlzdCgpLAogICAgICAgICdydWxlcyc6IHJ1bGVzLm1hcCgoZSkgPT4gZS50b0pzb24oKSkudG9MaXN0KCksCiAgICAgICAgJ2J1ZGdldHMnOiBidWRnZXRzLm1hcCgoZSkgPT4gZS50b0pzb24oKSkudG9MaXN0KCksCiAgICAgICAgJ2dvYWxzJzogZ29hbHMubWFwKChlKSA9PiBlLnRvSnNvbigpKS50b0xpc3QoKSwKICAgICAgICAnaW5zaWdodHMnOiBpbnNpZ2h0cy5tYXAoKGUpID0+IGUudG9Kc29uKCkpLnRvTGlzdCgpLAogICAgICAgICduZXR3b3JrTG9nJzogbmV0d29ya0xvZy5tYXAoKGUpID0+IGUudG9Kc29uKCkpLnRvTGlzdCgpLAogICAgICAgICdjb25uZWN0aW9ucyc6IGNvbm5lY3Rpb25zLm1hcCgoZSkgPT4gZS50b0pzb24oKSkudG9MaXN0KCksCiAgICAgICAgJ3NldHRpbmdzJzogc2V0dGluZ3MsCiAgICAgIH07CgogIEZ1dHVyZTx2b2lkPiBzYXZlKCkgYXN5bmMgewogICAgaWYgKF9lbmNyeXB0ZXIgPT0gbnVsbCB8fCBfZmlsZSA9PSBudWxsKSByZXR1cm47CiAgICBmaW5hbCBrZXkgPSBhd2FpdCBfa2V5U3RvcmUuZ2V0T3JDcmVhdGVEYXRhYmFzZUtleSgpOwogICAgZmluYWwgZGVyaXZlZCA9IExvY2FsU2VjdXJlS2V5U3RvcmUuZGVyaXZlS2V5KGtleSk7CiAgICBmaW5hbCBpdiA9IGVuYy5JVihkZXJpdmVkLnN1Ymxpc3QoMCwgMTIpKTsKICAgIGZpbmFsIGVuY3J5cHRlZCA9IF9lbmNyeXB0ZXIhLmVuY3J5cHQoanNvbkVuY29kZShfdG9Kc29uKCkpLCBpdjogaXYpOwogICAgYXdhaXQgX2ZpbGUhLndyaXRlQXNTdHJpbmcoZW5jcnlwdGVkLmJhc2U2NCk7CiAgfQoKICB2b2lkIHVwZGF0ZVNldHRpbmdzKE1hcDxTdHJpbmcsIGR5bmFtaWM+IHBhdGNoKSB7CiAgICBzZXR0aW5ncy5hZGRBbGwocGF0Y2gpOwogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIGFkZE5ldHdvcmtMb2coU3RyaW5nIGhvc3QsIFN0cmluZyBwdXJwb3NlKSB7CiAgICBuZXR3b3JrTG9nLmluc2VydCgKICAgICAgMCwKICAgICAgTmV0d29ya0xvZ0VudHJ5KGlkOiBEYXRlVGltZS5ub3coKS5taWNyb3NlY29uZHNTaW5jZUVwb2NoLnRvU3RyaW5nKCksIGhvc3Q6IGhvc3QsIHRpbWVzdGFtcDogRGF0ZVRpbWUubm93KCksIHB1cnBvc2U6IHB1cnBvc2UpLAogICAgKTsKICAgIGlmIChuZXR3b3JrTG9nLmxlbmd0aCA+IDUwMCkgbmV0d29ya0xvZy5yZW1vdmVMYXN0KCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHVwc2VydEFjY291bnQoQWNjb3VudCBhKSB7CiAgICBmaW5hbCBpID0gYWNjb3VudHMuaW5kZXhXaGVyZSgoZSkgPT4gZS5pZCA9PSBhLmlkKTsKICAgIGlmIChpID49IDApIHsKICAgICAgYWNjb3VudHNbaV0gPSBhOwogICAgfSBlbHNlIHsKICAgICAgYWNjb3VudHMuYWRkKGEpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHJlbW92ZUFjY291bnQoU3RyaW5nIGlkKSB7CiAgICBhY2NvdW50cy5yZW1vdmVXaGVyZSgoZSkgPT4gZS5pZCA9PSBpZCk7CiAgICB0cmFuc2FjdGlvbnMucmVtb3ZlV2hlcmUoKHQpID0+IHQuYWNjb3VudElkID09IGlkKTsKICAgIG5vdGlmeUxpc3RlbmVycygpOwogICAgc2F2ZSgpOwogIH0KCiAgdm9pZCB1cHNlcnRUcmFuc2FjdGlvbnMoTGlzdDxUcmFuc2FjdGlvbj4gbGlzdCkgewogICAgZm9yIChmaW5hbCB0IGluIGxpc3QpIHsKICAgICAgZmluYWwgaSA9IHRyYW5zYWN0aW9ucy5pbmRleFdoZXJlKChlKSA9PiBlLmRlZHVwSGFzaCA9PSB0LmRlZHVwSGFzaCk7CiAgICAgIGlmIChpID49IDApIHsKICAgICAgICB0cmFuc2FjdGlvbnNbaV0gPSB0LmNvcHlXaXRoKGNhdGVnb3J5SWQ6IHRyYW5zYWN0aW9uc1tpXS5jYXRlZ29yeUlkLCBleGNsdWRlZDogdHJhbnNhY3Rpb25zW2ldLmV4Y2x1ZGVkLCBub3RlOiB0cmFuc2FjdGlvbnNbaV0ubm90ZSwgdGFnczogdHJhbnNhY3Rpb25zW2ldLnRhZ3MpOwogICAgICB9IGVsc2UgewogICAgICAgIHRyYW5zYWN0aW9ucy5hZGQodCk7CiAgICAgIH0KICAgIH0KICAgIG5vdGlmeUxpc3RlbmVycygpOwogICAgc2F2ZSgpOwogIH0KCiAgdm9pZCB1cHNlcnRUcmFuc2FjdGlvbihUcmFuc2FjdGlvbiB0KSB7CiAgICBmaW5hbCBpID0gdHJhbnNhY3Rpb25zLmluZGV4V2hlcmUoKGUpID0+IGUuaWQgPT0gdC5pZCk7CiAgICBpZiAoaSA+PSAwKSB7CiAgICAgIHRyYW5zYWN0aW9uc1tpXSA9IHQ7CiAgICB9IGVsc2UgewogICAgICB0cmFuc2FjdGlvbnMuYWRkKHQpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHVwc2VydENvbnRyYWN0KENvbnRyYWN0IGMpIHsKICAgIGZpbmFsIGkgPSBjb250cmFjdHMuaW5kZXhXaGVyZSgoZSkgPT4gZS5pZCA9PSBjLmlkKTsKICAgIGlmIChpID49IDApIHsKICAgICAgY29udHJhY3RzW2ldID0gYzsKICAgIH0gZWxzZSB7CiAgICAgIGNvbnRyYWN0cy5hZGQoYyk7CiAgICB9CiAgICBub3RpZnlMaXN0ZW5lcnMoKTsKICAgIHNhdmUoKTsKICB9CgogIHZvaWQgcmVtb3ZlQ29udHJhY3QoU3RyaW5nIGlkKSB7CiAgICBjb250cmFjdHMucmVtb3ZlV2hlcmUoKGUpID0+IGUuaWQgPT0gaWQpOwogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHVwc2VydFJ1bGUoUnVsZSByKSB7CiAgICBmaW5hbCBpID0gcnVsZXMuaW5kZXhXaGVyZSgoZSkgPT0gZS5pZCA9PSByLmlkKTsKICAgIGlmIChpID49IDApIHsKICAgICAgcnVsZXNbaV0gPSByOwogICAgfSBlbHNlIHsKICAgICAgcnVsZXMuYWRkKHIpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHJlbW92ZVJ1bGUoU3RyaW5nIGlkKSB7CiAgICBydWxlcy5yZW1vdmVXaGVyZSgoZSkgPT0gZS5pZCA9PSBpZCk7CiAgICBub3RpZnlMaXN0ZW5lcnMoKTsKICAgIHNhdmUoKTsKICB9CgogIHZvaWQgdXBzZXJ0QnVkZ2V0KEJ1ZGdldCBiKSB7CiAgICBmaW5hbCBpID0gYnVkZ2V0cy5pbmRleFdoZXJlKChlKSA9PiBlLmlkID09IGIuaWQpOwogICAgaWYgKGkgPj0gMCkgewogICAgICBidWRnZXRzW2ldID0gYjsKICAgIH0gZWxzZSB7CiAgICAgIGJ1ZGdldHMuYWRkKGIpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHVwc2VydEdvYWwoR29hbCBnKSB7CiAgICBmaW5hbCBpID0gZ29hbHMuaW5kZXhXaGVyZSgoZSkgPT0gZy5pZCA9PSBnLmlkKTsKICAgIGlmIChpID49IDApIHsKICAgICAgZ29hbHNbaV0gPSBnOwogICAgfSBlbHNlIHsKICAgICAgZ29hbHMuYWRkKGcpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIHVwc2VydEluc2lnaHQoSW5zaWdodCBpKSB7CiAgICBmaW5hbCBpZHggPSBpbnNpZ2h0cy5pbmRleFdoZXJlKChlKSA9PiBlLmlkID09IGkuaWQpOwogICAgaWYgKGlkeCA+PSAwKSB7CiAgICAgIGluc2lnaHRzW2lkeF0gPSBpOwogICAgfSBlbHNlIHsKICAgICAgaW5zaWdodHMuYWRkKGkpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICB2b2lkIGRpc21pc3NJbnNpZ2h0KFN0cmluZyBpZCkgewogICAgZmluYWwgaSA9IGluc2lnaHRzLmluZGV4V2hlcmUoKGUpID0+IGUuaWQgPT0gaWQpOwogICAgaWYgKGkgPj0gMCkgewogICAgICBpbnNpZ2h0c1tpXSA9IEluc2lnaHQoCiAgICAgICAgaWQ6IGluc2lnaHRzW2ldLmlkLAogICAgICAgIHR5cGU6IGluc2lnaHRzW2ldLnR5cGUsCiAgICAgICAgdGl0bGU6IGluc2lnaHRzW2ldLnRpdGxlLAogICAgICAgIGRldGFpbDogaW5zaWdodHNbaV0uZGV0YWlsLAogICAgICAgIHBvdGVudGlhbENlbnRzUGVyWWVhcjogaW5zaWdodHNbaV0ucG90ZW50aWFsQ2VudHNQZXJZZWFyLAogICAgICAgIGNyZWF0ZWRBdDogaW5zaWdodHNbaV0uY3JlYXRlZEF0LAogICAgICAgIGRpc21pc3NlZEF0OiBEYXRlVGltZS5ub3coKSwKICAgICAgICBwYXlsb2FkSnNvbjogaW5zaWdodHNbaV0ucGF5bG9hZEpzb24sCiAgICAgICk7CiAgICAgIG5vdGlmeUxpc3RlbmVycygpOwogICAgICBzYXZlKCk7CiAgICB9CiAgfQoKICB2b2lkIHVwc2VydE1lcmNoYW50KE1lcmNoYW50IG0pIHsKICAgIGZpbmFsIGkgPSBtZXJjaGFudHMuaW5kZXhXaGVyZSgoZSkgPT0gZS5ub3JtYWxpemVkTmFtZSA9PSBtLm5vcm1hbGl6ZWROYW1lKTsKICAgIGlmIChpID49IDApIHsKICAgICAgbWVyY2hhbnRzW2ldID0gbTsKICAgIH0gZWxzZSB7CiAgICAgIG1lcmNoYW50cy5hZGQobSk7CiAgICB9CiAgICBub3RpZnlMaXN0ZW5lcnMoKTsKICAgIHNhdmUoKTsKICB9CgogIHZvaWQgdXBzZXJ0Q29ubmVjdGlvbihCYW5rQ29ubmVjdGlvbiBjKSB7CiAgICBmaW5hbCBpID0gY29ubmVjdGlvbnMuaW5kZXhXaGVyZSgoZSkgPT0gZS5pZCA9PSBjLmlkKTsKICAgIGlmIChpID49IDApIHsKICAgICAgY29ubmVjdGlvbnNbaV0gPSBjOwogICAgfSBlbHNlIHsKICAgICAgY29ubmVjdGlvbnMuYWRkKGMpOwogICAgfQogICAgbm90aWZ5TGlzdGVuZXJzKCk7CiAgICBzYXZlKCk7CiAgfQoKICBMaXN0PFRyYW5zYWN0aW9uPiB0cmFuc2FjdGlvbnNGb3JBY2NvdW50cyhTZXQ8U3RyaW5nPiBhY2NvdW50SWRzKSA9PgogICAgICB0cmFuc2FjdGlvbnMud2hlcmUoKHQpID0+IGFjY291bnRJZHMuaXNFbXB0eSB8fCBhY2NvdW50SWRzLmNvbnRhaW5zKHQuYWNjb3VudElkKSkudG9MaXN0KCkKICAgICAgICAuLnNvcnQoKGEsIGIpID0+IGIuYm9va2luZ0RhdGUuY29tcGFyZVRvKGEuYm9va2luZ0RhdGUpKTsKfQo=
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:encrypt/encrypt.dart' as enc;
+import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
+
+import 'models.dart';
+import 'secure_key.dart';
+
+/// Verschlüsselte, rein lokale Persistenz aller App-Daten.
+/// Datei: AES-256-GCM-verschlüsseltes JSON im App-Dokumentenverzeichnis.
+/// Schnittstelle für eine spätere SQLCipher/drift-Anbindung bleibt offen.
+class Store extends ChangeNotifier {
+  Store({SecureKeyStore? keyStore}) : _keyStore = keyStore ?? LocalSecureKeyStore();
+
+  final SecureKeyStore _keyStore;
+
+  enc.Encrypter? _encrypter;
+  File? _file;
+
+  final List<Account> accounts = [];
+  final List<Transaction> transactions = [];
+  final List<Merchant> merchants = [];
+  final List<Contract> contracts = [];
+  final List<Rule> rules = [];
+  final List<Budget> budgets = [];
+  final List<Goal> goals = [];
+  final List<Insight> insights = [];
+  final List<NetworkLogEntry> networkLog = [];
+  final List<BankConnection> connections = [];
+
+  final Map<String, dynamic> settings = {
+    'discreetMode': false,
+    'darkMode': 'system',
+    'accentColor': '#2F5BEA',
+    'monthStart': '1',
+    'refreshOnOpen': true,
+    'notifications': true,
+    'appLock': true,
+    'hideInSwitcher': true,
+    'selectedAccountIds': <String>[],
+  };
+
+  bool _loaded = false;
+  bool get isLoaded => _loaded;
+  void forceLoadedForTest() => _loaded = true;
+
+  Future<void> load() async {
+    if (_loaded) return;
+    final key = await _keyStore.getOrCreateDatabaseKey();
+    final derived = LocalSecureKeyStore.deriveKey(key);
+    _encrypter = enc.Encrypter(enc.AES(enc.Key(derived), mode: enc.AESMode.gcm));
+    final dir = await getApplicationDocumentsDirectory();
+    _file = File('${dir.path}/klarblick.db.enc');
+    if (await _file!.exists()) {
+      try {
+        final iv = enc.IV(derived.sublist(0, 12));
+        final encrypted = enc.Encrypted.fromBase64(await _file!.readAsString());
+        final plain = _encrypter!.decrypt(encrypted, iv: iv);
+        _applyJson(jsonDecode(plain) as Map<String, dynamic>);
+      } catch (_) {
+        // Datei beschädigt – starte leer, Daten bleiben lokal erhalten wo möglich.
+      }
+    }
+    _loaded = true;
+    notifyListeners();
+  }
+
+  void _applyJson(Map<String, dynamic> j) {
+    accounts
+      ..clear()
+      ..addAll((j['accounts'] as List? ?? []).map((e) => Account.fromJson(e as Map<String, dynamic>)));
+    transactions
+      ..clear()
+      ..addAll((j['transactions'] as List? ?? []).map((e) => Transaction.fromJson(e as Map<String, dynamic>)));
+    merchants
+      ..clear()
+      ..addAll((j['merchants'] as List? ?? []).map((e) => Merchant(
+            id: e['id'] as String,
+            normalizedName: e['normalizedName'] as String,
+            displayName: e['displayName'] as String,
+            defaultCategoryId: e['defaultCategoryId'] as String?,
+          )));
+    contracts
+      ..clear()
+      ..addAll((j['contracts'] as List? ?? []).map((e) => Contract.fromJson(e as Map<String, dynamic>)));
+    rules
+      ..clear()
+      ..addAll((j['rules'] as List? ?? []).map((e) => Rule.fromJson(e as Map<String, dynamic>)));
+    budgets
+      ..clear()
+      ..addAll((j['budgets'] as List? ?? []).map((e) => Budget.fromJson(e as Map<String, dynamic>)));
+    goals
+      ..clear()
+      ..addAll((j['goals'] as List? ?? []).map((e) => Goal.fromJson(e as Map<String, dynamic>)));
+    insights
+      ..clear()
+      ..addAll((j['insights'] as List? ?? []).map((e) => Insight.fromJson(e as Map<String, dynamic?)));
+    networkLog
+      ..clear()
+      ..addAll((j['networkLog'] as List? ?? []).map((e) => NetworkLogEntry.fromJson(e as Map<String, dynamic>)));
+    connections
+      ..clear()
+      ..addAll((j['connections'] as List? ?? []).map((e) => BankConnection.fromJson(e as Map<String, dynamic?)));
+    final s = j['settings'] as Map<String, dynamic>?;
+    if (s != null) settings.addAll(s);
+  }
+
+  Map<String, dynamic> _toJson() => {
+        'version': 1,
+        'accounts': accounts.map((e) => e.toJson()).toList(),
+        'transactions': transactions.map((e) => e.toJson()).toList(),
+        'merchants': merchants
+            .map((m) => {'id': m.id, 'normalizedName': m.normalizedName, 'displayName': m.displayName, 'defaultCategoryId': m.defaultCategoryId})
+            .toList(),
+        'contracts': contracts.map((e) => e.toJson()).toList(),
+        'rules': rules.map((e) => e.toJson()).toList(),
+        'budgets': budgets.map((e) => e.toJson()).toList(),
+        'goals': goals.map((e) => e.toJson()).toList(),
+        'insights': insights.map((e) => e.toJson()).toList(),
+        'networkLog': networkLog.map((e) => e.toJson()).toList(),
+        'connections': connections.map((e) => e.toJson()).toList(),
+        'settings': settings,
+      };
+
+  Future<void> save() async {
+    if (_encrypter == null || _file == null) return;
+    final key = await _keyStore.getOrCreateDatabaseKey();
+    final derived = LocalSecureKeyStore.deriveKey(key);
+    final iv = enc.IV(derived.sublist(0, 12));
+    final encrypted = _encrypter!.encrypt(jsonEncode(_toJson()), iv: iv);
+    await _file!.writeAsString(encrypted.base64);
+  }
+
+  void updateSettings(Map<String, dynamic> patch) {
+    settings.addAll(patch);
+    notifyListeners();
+    save();
+  }
+
+  void addNetworkLog(String host, String purpose) {
+    networkLog.insert(
+      0,
+      NetworkLogEntry(id: DateTime.now().microsecondsSinceEpoch.toString(), host: host, timestamp: DateTime.now(), purpose: purpose),
+    );
+    if (networkLog.length > 500) networkLog.removeLast();
+    save();
+  }
+
+  void upsertAccount(Account a) {
+    final i = accounts.indexWhere((e) => e.id == a.id);
+    if (i >= 0) {
+      accounts[i] = a;
+    } else {
+      accounts.add(a);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void removeAccount(String id) {
+    accounts.removeWhere((e) => e.id == id);
+    transactions.removeWhere((t) => t.accountId == id);
+    notifyListeners();
+    save();
+  }
+
+  void upsertTransactions(List<Transaction> list) {
+    for (final t in list) {
+      final i = transactions.indexWhere((e) => e.dedupHash == t.dedupHash);
+      if (i >= 0) {
+        transactions[i] = t.copyWith(categoryId: transactions[i].categoryId, excluded: transactions[i].excluded, note: transactions[i].note, tags: transactions[i].tags);
+      } else {
+        transactions.add(t);
+      }
+    }
+    notifyListeners();
+    save();
+  }
+
+  void upsertTransaction(Transaction t) {
+    final i = transactions.indexWhere((e) => e.id == t.id);
+    if (i >= 0) {
+      transactions[i] = t;
+    } else {
+      transactions.add(t);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void upsertContract(Contract c) {
+    final i = contracts.indexWhere((e) => e.id == c.id);
+    if (i >= 0) {
+      contracts[i] = c;
+    } else {
+      contracts.add(c);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void removeContract(String id) {
+    contracts.removeWhere((e) => e.id == id);
+    notifyListeners();
+    save();
+  }
+
+  void upsertRule(Rule r) {
+    final i = rules.indexWhere((e) == e.id == r.id);
+    if (i >= 0) {
+      rules[i] = r;
+    } else {
+      rules.add(r);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void removeRule(String id) {
+    rules.removeWhere((e) == e.id == id);
+    notifyListeners();
+    save();
+  }
+
+  void upsertBudget(Budget b) {
+    final i = budgets.indexWhere((e) => e.id == b.id);
+    if (i >= 0) {
+      budgets[i] = b;
+    } else {
+      budgets.add(b);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void upsertGoal(Goal g) {
+    final i = goals.indexWhere((e) == g.id == g.id);
+    if (i >= 0) {
+      goals[i] = g;
+    } else {
+      goals.add(g);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void upsertInsight(Insight i) {
+    final idx = insights.indexWhere((e) => e.id == i.id);
+    if (idx >= 0) {
+      insights[idx] = i;
+    } else {
+      insights.add(i);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void dismissInsight(String id) {
+    final i = insights.indexWhere((e) => e.id == id);
+    if (i >= 0) {
+      insights[i] = Insight(
+        id: insights[i].id,
+        type: insights[i].type,
+        title: insights[i].title,
+        detail: insights[i].detail,
+        potentialCentsPerYear: insights[i].potentialCentsPerYear,
+        createdAt: insights[i].createdAt,
+        dismissedAt: DateTime.now(),
+        payloadJson: insights[i].payloadJson,
+      );
+      notifyListeners();
+      save();
+    }
+  }
+
+  void upsertMerchant(Merchant m) {
+    final i = merchants.indexWhere((e) == e.normalizedName == m.normalizedName);
+    if (i >= 0) {
+      merchants[i] = m;
+    } else {
+      merchants.add(m);
+    }
+    notifyListeners();
+    save();
+  }
+
+  void upsertConnection(BankConnection c) {
+    final i = connections.indexWhere((e) == e.id == c.id);
+    if (i >= 0) {
+      connections[i] = c;
+    } else {
+      connections.add(c);
+    }
+    notifyListeners();
+    save();
+  }
+
+  List<Transaction> transactionsForAccounts(Set<String> accountIds) =>
+      transactions.where((t) => accountIds.isEmpty || accountIds.contains(t.accountId)).toList()
+        ..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
+}

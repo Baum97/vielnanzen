@@ -1,1 +1,72 @@
-aW1wb3J0ICdkYXJ0OmNvbnZlcnQnOwoKaW1wb3J0ICdwYWNrYWdlOmNyeXB0by9jcnlwdG8uZGFydCc7CgovLy8gU2Nocml0dCAxKzIgZGVyIEFuYWx5c2UtUGlwZWxpbmU6IE5vcm1hbGlzaWVyZW4gdW5kIERlZHVwbGl6aWVyZW4uCgovLy8gWmVybGVndCBTRVBBLVNjaGzDvHNzZWx3w7ZydGVyIChFUkVGKywgTVJFRissIENSRUQrLCBTVldaKyAuLi4pIGF1cyBkZW0gVmVyd2VuZHVuZ3N6d2Vjay4KTWFwPFN0cmluZywgU3RyaW5nPiBwYXJzZVNlcGFQdXJwb3NlKFN0cmluZyBwdXJwb3NlKSB7CiAgZmluYWwgcmVzdWx0ID0gPFN0cmluZywgU3RyaW5nPnt9OwogIGZpbmFsIHJlZ2V4ID0gUmVnRXhwKHInKEVSRUZ8TVJFRnxDUkVEfFNWV1p8QUJWQXxBQldFfEFCV1p8UktUT3xEQkVUfEtSRUZ8UlJFRnxPQU1UKVwrKC4qPykoPz1ccytbQS1aXXszLDV9XCt8JCknLCBjYXNlU2Vuc2l0aXZlOiBmYWxzZSk7CiAgZm9yIChmaW5hbCBtIGluIHJlZ2V4LmFsbE1hdGNoZXMocHVycG9zZSkpIHsKICAgIHJlc3VsdFttLmdyb3VwKDEpIS50b1VwcGVyQ2FzZSgpXSA9IG0uZ3JvdXAoMikhLnRyaW0oKTsKICB9CiAgcmV0dXJuIHJlc3VsdDsKfQoKLy8vIEJlcmVpbmlndCBIw6RuZGxlcm5hbWVuOiBSZWNodHNmb3JtZW4sIEZpbGlhbG51bW1lcm4sIEthcnRlbnphaGx1bmdzLVByw6RmaXhlLAovLy8gT3J0c2FuZ2FiZW4gdW5kIFp1ZmFsbHNrZW5udW5nZW4gZW50ZmVybmVuLgovLy8gQmVpc3BpZWw6IOKAnlJFV0UgU0FHVCBEQU5LRSA0NzExIFNUVVRUR0FSVOKAnCDihpIg4oCeUkVXReKAnApTdHJpbmcgbm9ybWFsaXplTWVyY2hhbnROYW1lKFN0cmluZyByYXcpIHsKICB2YXIgcyA9IHJhdy50b1VwcGVyQ2FzZSgpLnRyaW0oKTsKICBzID0gcy5yZXBsYWNlQWxsKFJlZ0V4cChyJ1xzKycpLCAnICcpOwogIGNvbnN0IHByZWZpeGVzID0gWwogICAgJ0tBUlRFTlpBSExVTkcnLCAnUE9TLVpBSExVTkcnLCAnUE9TIFpBSExVTkcnLCAnTEFTVFNDSFJJRlQnLCAnRUxWJywgJ1NFUEEtTEFTVFNDSFJJRlQnLAogICAgJ0RBVUVSQVVGVFJBRycsICdVRUJFUldFSVNVORycsICdHVVRTQ0hSSUZUJywnQ0FTSCcsICdBVE0nLCAnQVVUT01BVCcsCiAgXTsKICBmb3IgKGZpbmFsIHAgaW4gcHJlZml4ZXMpIHsKICAgIGlmIChzLnN0YXJ0c1dpdGgoJyRwICcpKSBzID0gcy5zdWJzdHJpbmcKHMubGVuZ3RoICsgMSkudHJpbSgpOwogIH0KICBzID0gcy5yZXBsYWNlQWxsKFJlZ0V4cChyJ1xiKEdNQkgsQUd8S0d8T0hHfFNFfEJPfFZ8VlwuPyBWXC4/ID9WXC4/fEVcLj8gP1ZcLj98VUcpXGJcLj8nKSwgJyAnKTsKICBzID0gcy5yZXBsYWNlQWxsKFJlZ0V4cChyJ1xiXGR7Myw2fVxiJyksICcgJyk7CiAgcyA9IHMucmVwbGFjZUFsbChSZWdFeHAocidcYig/PVtBLVowLTldKlxkKVtBLVpdezIsfVwqP1tBLVowLTldK1xiJyksICcgJyk7CiAgcyA9IHMucmVwbGFjZUFsbChSZWdFeHAocidcYihERXxERVV8REVVVFNDSExBTkR8U1RVVFRHQVJUfE1VRU5DSEVOfEJFUkxJTnxIQU1CVVJHfEtPRUxOfEZSQU5LRlVSVHxMRUlQWklHfERVRVNTRUxET1JGKVxiJyksICcgJyk7CiAgcyA9IHMucmVwbGFjZUFsbChSZWdFeHAocidccysnKSwgJyAnKS50cmltKCk7CiAgcyA9IHMucmVwbGFjZUFsbChSZWdFeHAoIlteQS1aMC05ICYrJy1dIiksICcnKTsKICBzID0gcy5yZXBsYWNlQWxsKFJlZ0V4cChyJ1xzKycpLCAnICcpLnRyaW0oKTsKICByZXR1cm4gczsKfQoKLy8vIERlZHVwLUhhc2ggYXVzIEtvbnRvLCBCdWNodW5nc2RhdHVtLCBCZXRyYWcsIEVuZC10by1FbmQtUmVmZXJlbnogdW5kIG5vcm1hbGlzaWVydGVtIFp3ZWNrLgpTdHJpbmcgZGVkdXBIYXNoKFN0cmluZyBhY2NvdW50SWQsIERhdGVUaW1lIGJvb2tpbmdEYXRlLCBpbnQgYW1vdW50Q2VudHMsIFN0cmluZz8gZW5kVG9FbmRSZWYsIFN0cmluZyBwdXJwb3NlKSB7CiAgZmluYWwgbm9ybWFsaXplZFB1cnBvc2UgPSBub3JtYWxpemVNZXJjaGFudE5hbWUocHVycG9zZSk7CiAgZmluYWwgaW5wdXQgPSAnJGFjY291bnRJZHwke2Jvb2tpbmdEYXRlLnRvSXNvODYwMVN0cmluZygpLnN1YnN0cmluZygwLCAxMCl9fCRhbW91bnRDZW50c3wke2VuZFRvRW5kUmVmID8/ICcnfXwkbm9ybWFsaXplZFB1cnBvc2UnOwogIHJldHVybiBzaGEyNTYuY29udmVydCh1dGY4LmVuY29kZShpbnB1dCkpLnRvU3RyaW5nKCk7Cn0KCi8vLyBQcsO8ZnQsIG9iIHp3ZWkgQnVjaHVuZ2VuIGRhc3NlbGJlIFZvcmdhbmdzcGFhciBzaW5kICh2b3JnZW1lcmt0IOKGkiBnZWJ1Y2h0KS4KYm9vbCBpc1BlbmRpbmdNYXRjaChEYXRlVGltZSBwZW5kaW5nRGF0ZSwgRGF0ZVRpbWUgYm9va2VkRGF0ZSwgaW50IHBlbmRpbmdBbW91bnQsIGludCBib29rZWRBbW91bnQsIHtpbnQgbWF4RGF5cyA9IDV9KSB7CiAgaWYgKHBlbmRpbmdBbW91bnQgIT0gYm9va2VkQW1vdW50KSByZXR1cm4gZmFsc2U7CiAgcmV0dXJuIGJvb2tlZERhdGUuZGlmZmVyZW5jZShwZW5kaW5nRGF0ZSkuaW5EYXlzLmFicygpIDw9IG1heERheXM7Cn0K
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
+
+/// Schritt 1+2 der Analyse-Pipeline: Normalisieren und Deduplizieren.
+
+/// Zerlegt SEPA-Schlüsselwörter (EREF+, MREF+, CRED+, SVWZ+ ...) aus dem Verwendungszweck.
+Map<String, String> parseSepaPurpose(String purpose) {
+  final result = <String, String>{};
+  final regex = RegExp(r'(EREF|MREF|CRED|SVWZ|ABVA|ABWE|ABWZ|RKTO|DBET|KREF|RREF|OAMT)\+([^\s]+)', caseSensitive: false);
+  for (final m in regex.allMatches(purpose)) {
+    result[m.group(1)!.toUpperCase()] = m.group(2)!.trim();
+  }
+  return result;
+}
+
+/// Bereinigt Händlernamen: Rechtsformen, Filialnummern, Kartenzahlungs-Präfixe,
+/// Ortsangaben und Zufallskennungen entfernen.
+/// Beispiel: "REWE SAGT DANKE 4711 STUTTGART" -> "REWE"
+String normalizeMerchantName(String raw) {
+  var s = raw.toUpperCase().trim();
+  s = s.replaceAll(RegExp(r'\s+'), ' ');
+  const prefixes = [
+    'KARTENZAHLUNG',
+    'POS-ZAHLUNG',
+    'POS ZAHLUNG',
+    'LASTSCHRIFT',
+    'ELV',
+    'SEPA-LASTSCHRIFT',
+    'DAUERAUFTRAG',
+    'UEBERWEISUNG',
+    'UEBERW.',
+    'GUTSCHRIFT',
+    'EINZAHLAUTOMAT',
+    'AUSZAHLAUTOMAT',
+  ];
+  for (final p in prefixes) {
+    if (s.startsWith('$p ')) s = s.substring(p.length + 1);
+  }
+  s = s.replaceAll(RegExp(r'\b(GMBH|AG|KG|OHG|SE|UG|E\.? ?V\.?|V\.? ?V\.? ?V\.?)\b\.?'), ' ');
+  s = s.replaceAll(RegExp(r'\b\d{3,}\b'), ' ');
+  s = s.replaceAll(RegExp(r'\b(DE|DEU|DEUTSCHLAND|STUTTGART|MUENCHEN|MÜNCHEN|BERLIN|HAMBURG|KOELN|KÖLN|FRANKFURT|LEIPZIG|DUESSELDORF|DÜSSELDORF)\b'), ' ');
+  s = s.replaceAll(RegExp(r'\s+'), ' ').trim();
+  return s;
+}
+
+/// Stabile Dedup-Hash für eine Buchung (SHA-256, hex).
+String dedupHash(String accountId, DateTime date, int amountCents, String? endToEndRef, String text) {
+  final input = '$accountId|${date.toIso8601String()}|$amountCents|${endToEndRef ?? ''}|$text';
+  return sha256.convert(utf8.encode(input)).toString();
+}
+
+/// Parst einen de-DE Geldbetrag ("1.234,56" oder "-12,90") in Cent.
+int? parseAmountCents(String raw) {
+  var s = raw.trim().replaceAll('€', '').replaceAll('EUR', '').trim();
+  s = s.replaceAll('.', '').replaceAll(',', '.');
+  final v = double.tryParse(s);
+  if (v == null) return null;
+  return (v * 100).round();
+}
+
+/// Parst ein de-DE Datum ("dd.MM.yyyy" oder ISO).
+DateTime? parseDate(String raw) {
+  final s = raw.trim();
+  final m = RegExp(r'^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$').firstMatch(s);
+  if (m != null) {
+    var y = int.parse(m.group(3)!);
+    if (y < 100) y += 2000;
+    return DateTime(y, int.parse(m.group(2)!), int.parse(m.group(1)!));
+  }
+  return DateTime.tryParse(s);
+}

@@ -1,1 +1,6 @@
-aW1wb3J0IEZsdXR0ZXIKaW1wb3J0IFVJS2l0CgpjbGFzcyBTY2VuZURlbGVnYXRlOiBGbHV0dGVyU2NlbmVEZWxlZ2F0ZSB7Cgp9Cg==
+import Flutter
+import UIKit
+
+class SceneDelegate: FlutterSceneDelegate {
+
+}

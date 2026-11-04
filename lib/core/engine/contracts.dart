@@ -1,1 +1,88 @@
-aW1wb3J0ICcuLi8uLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICdub3JtYWxpemUuZGFydCc7CgovLy8gU2Nocml0dCA3OiBWZXJ0cmFnc2Vya2VubnVuZy4KCmNsYXNzIENvbnRyYWN0RGV0ZWN0b3IgewogIC8vLyBHcnVwcGllcnQgVHJhbnNha3Rpb25lbiBuYWNoIEdsw6R1YmlnZXItSUQgKyBNYW5kYXRzcmVmZXJlbnogKGZhbGxzIHZvcmhhbmRlbiksIHNvbnN0IG5hY2ggbm9ybWFsaXNpZXJ0ZW0gSMOkbmRsZXIuCiAgTWFwPFN0cmluZywgTGlzdDxUcmFuc2FjdGlvbj4+IGdyb3VwKExpc3Q8VHJhbnNhY3Rpb24+IHR4cykgewogICAgZmluYWwgbWFwID0gPFN0cmluZywgTGlzdDxUcmFuc2FjdGlvbj4+e307CiAgICBmb3IgKGZpbmFsIHQgaW4gdHhzLndoZXJlKCh0KSA9PiB0LmFtb3VudENlbnRzIDwgMCAmJiAhdC5pc1RyYW5zZmVyICYmICF0LmV4Y2x1ZGVkKSkgewogICAgICBmaW5hbCBrZXkgPSB0LmNyZWRpdG9ySWQgIT0gbnVsbAogICAgICAgICAgPyAnY3JlZDp7dC5jcmVkaXRvcklkfScKICAgICAgICAgIDogJ25hbWU6JHtub3JtYWxpemVNZXJjaGFudE5hbWUodC5jb3VudGVycGFydHlOYW1lKX0nOwogICAgICBtYXAucHV0SWZBYnNlbnQoa2V5LCAoKSA9PiBbXSkuYWRkKHQpOwogICAgfQogICAgZm9yIChmaW5hbCBsaXN0IGluIG1hcC52YWx1ZXMpIHsKICAgICAgbGlzdC5zb3J0KChhLCBiKSA9PiBhLmJvb2tpbmdEYXRlLmNvbXBhcmVUbyhiLmJvb2tpbmdEYXRlKSk7CiAgICB9CiAgICByZXR1cm4gbWFwOwogIH0KCiAgc3RhdGljIGNvbnN0IGludGVydmFscyA9IDxDb250cmFjdEludGVydmFsLCBpbnQ+ewogICAgQ29udHJhY3RJbnRlcnZhbC53b2VjaGVubGljaDogNywKICAgIENvbnRyYWN0SW50ZXJ2YWwuendlaXdvZWNoZW50bGljaDogMTQsCiAgICBDb250cmFjdEludGVydmFsLm1vbmF0bGljaDogMzAsCiAgICBDb250cmFjdEludGVydmFsLnF1YXJ0YWxzd2Vpc2U6IDkxLAogICAgQ29udHJhY3RJbnRlcnZhbC5oYWxiamFocmxpY2g6IDE4MiwKICAgIENvbnRyYWN0SW50ZXJ2YWwuamFlaHJsaWNoOiAzNjUsCiAgfTsKCiAgc3RhdGljIGludCB0b2xlcmFuY2VGb3IoQ29udHJhY3RJbnRlcnZhbCBpKSA9PiBzd2l0Y2ggKGkpIHsKICAgICAgICBDb250cmFjdEludGVydmFsLm1vbmF0bGljaCA9PiAzLAogICAgICAgIENvbnRyYWN0SW50ZXJ2YWwucXVhcnRhbHN3ZWlzZSA9PiA3LAogICAgICAgIENvbnRyYWN0SW50ZXJ2YWwuamFlaHJsaWNoID0+IDEwLAogICAgICAgIF8gPT4gMywKICAgICAgfTsKCiAgc3RhdGljIGludCBtaW5Db3VudEZvcihDb250cmFjdEludGVydmFsIGkpID0+IGkgPT0gQ29udHJhY3RJbnRlcnZhbC5qYWVocmxpY2ggPyAyIDogMzsKCiAgLy8vIFByw7xmdCBlaW5lbiBLYW5kaWRhdGVuIHVuZCBsaWVmZXJ0IFNjb3JlICsgSW50ZXJ2YWxsLCBvZGVyIG51bGwuCiAgKHtDb250cmFjdEludGVydmFsIGludGVydmFsLCBkb3VibGUgc2NvcmUsIFN0cmluZyByZWFzb259KT8gYW5hbHl6ZShMaXN0PFRyYW5zYWN0aW9uPiB0eHMpIHsKICAgIGlmICh0eHMubGVuZ3RoIDwgMikgcmV0dXJuIG51bGw7CiAgICB2YXIgYmVzdEludGVydmFsID0gQ29udHJhY3RJbnRlcnZhbC5tb25hdGxpY2g7CiAgICB2YXIgYmVzdFNjb3JlID0gMC4wOwogICAgU3RyaW5nIGJlc3RSZWFzb24gPSAnJzsKCiAgICBmb3IgKGZpbmFsIGVudHJ5IGluIGludGVydmFscy5lbnRyaWVzKSB7CiAgICAgIGZpbmFsIGludGVydmFsID0gZW50cnkua2V5OwogICAgICBmaW5hbCBleHBlY3RlZCA9IGVudHJ5LnZhbHVlOwogICAgICBmaW5hbCB0b2wgPSB0b2xlcmFuY2VGb3IoaW50ZXJ2YWwpOwogICAgICBpZiAodHhzLmxlbmd0aCA8IG1pbkNvdW50Rm9yKGludGVydmFsKSkgY29udGludWU7CiAgICAgIGZpbmFsIGdhcHMgPSA8aW50PltdOwogICAgICBmb3IgKHZhciBpID0gMTsgaSA8IHR4cy5sZW5ndGg7IGkrKykgewogICAgICAgIGdhcHMuYWRkKHR4c1tpXS5ib29raW5nRGF0ZS5kaWZmZXJlbmNlKHR4c1tpIC0gMV0uYm9va2luZ0RhdGUpLmluRGF5cyk7CiAgICAgIH0KICAgICAgZmluYWwgcmVndWxhciA9IGdhcHMuZXZlcnkoKGcpID0+IChnIC0gZXhwZWN0ZWQpLmFicygpIDw9IHRvbCk7CiAgICAgIGlmICghcmVndWxhcikgY29udGludWU7CgogICAgICBmaW5hbCBhbW91bnRzID0gdHhzLm1hcCgodCkgPT4gdC5hbW91bnRDZW50cy5hYnMoKSkudG9MaXN0KCk7CiAgICAgIGZpbmFsIG1lYW4gPSBhbW91bnRzLnJlZHVjZSgoYSwgYikgPT4gYSArIGIpIC8gYW1vdW50cy5sZW5ndGg7CiAgICAgIGZpbmFsIHZhcmlhbmNlID0gYW1vdW50cy5tYXAoKGEpID0+IChhIC0gbWVhbikgKiAoYSAtIG1lYW4pKS5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiKSAvIGFtb3VudHMubGVuZ3RoOwogICAgICBmaW5hbCBjdiA9IG1lYW4gPT0gMCA/IDEuMCA6ICh2YXJpYW5jZSA9PSAwID8gMC4wIDogKHZhcmlhbmNlKSAvIChtZWFuICogbWVhbikpOwogICAgICBmaW5hbCBzdGFibGUgPSBjdiA8IDAuMTA7CgogICAgICBmaW5hbCBoYXNNYW5kYXRlID0gdHhzLmFueSgodCkgPT4gdC5tYW5kYXRlUmVmICE9IG51bGwgJiYgdC5jcmVkaXRvcklkICE9IG51bGwpOwogICAgICB2YXIgc2NvcmUgPSAwLjM7IC8vIEJhc2lzOiBJbnRlcnZhbGwgcGFzc3QKICAgICAgaWYgKHN0YWJsZSkgc2NvcmUgKz0gMC4zOwogICAgICBpZiAoaGFzTWFuZGF0ZSkgc2NvcmUgKz0gMC4yOwogICAgICBzY29yZSArPSAodHhzLmxlbmd0aCAvIDEyKS5jbGFtcCgwLjAsIDAuMik7CiAgICAgIGlmIChzY29yZSA+IGJlc3RTY29yZSkgewogICAgICAgIGJlc3RTY29yZSA9IHNjb3JlOwogICAgICAgIGJlc3RJbnRlcnZhbCA9IGludGVydmFsOwogICAgICAgIGJlc3RSZWFzb24gPQogICAgICAgICAgICAnJHt0eHMubGVuZ3RofSBBYmJ1Y2h1bmdlbiBpbSBBYnN0YW5kIHZvbiAkZXhwZWN0ZWQgwrEkdG9sIFRhZ2VuLCAke3N0YWJsZSA/ICdCZXRyYWcgc3RhYmlsJyA6ICdCZXRyYWcgdmFyaWFiZWwnfSR7aGFzTWFuZGF0ZSA/ICcsIE1hbmRhdCB2b3JoYW5kZW4nIDogJyd9JzsKICAgICAgfQogICAgfQogICAgaWYgKGJlc3RTY29yZSA8IDAuNSkgcmV0dXJuIG51bGw7CiAgICByZXR1cm4gKGludGVydmFsOiBiZXN0SW50ZXJ2YWwsIHNjb3JlOiBiZXN0U2NvcmUsIHJlYXNvbjogYmVzdFJlYXNvbik7CiAgfQoKICBEYXRlVGltZSBuZXh0QmFua1dvcmtpbmdEYXkoRGF0ZVRpbWUgZGF0ZSkgewogICAgdmFyIGQgPSBkYXRlOwogICAgd2hpbGUgKGQud2Vla2RheSA9PSBEYXRlVGltZS5zYXR1cmRheSB8fCBkLndlZWtkYXkgPT0gRGF0ZVRpbWUuc3VuZGF5KSB7CiAgICAgIGQgPSBkLmFkZChjb25zdCBEdXJhdGlvbihkYXlzOiAxKSk7CiAgICB9CiAgICByZXR1cm4gZDsKICB9CgogIC8vLyBFcnpldWd0IFZlcnRyYWdzLUthbmRpZGF0ZW4gYXVzIGFsbGVuIFRyYW5zYWt0aW9uZW4uCiAgTGlzdDxDb250cmFjdD4gZGV0ZWN0KExpc3Q8VHJhbnNhY3Rpb24+IGFsbCwge1N0cmluZyBGdW5jdGlvbigpPyBpZEdlbn0pIHsKICAgIGZpbmFsIHJlc3VsdCA9IDxDb250cmFjdD5bXTsKICAgIGZpbmFsIGdyb3VwcyA9IGdyb3VwKGFsbCk7CiAgICB2YXIgbiA9IDA7CiAgICBmb3IgKGZpbmFsIGVudHJ5IGluIGdyb3Vwcy5lbnRyaWVzKSB7CiAgICAgIGZpbmFsIHR4cyA9IGVudHJ5LnZhbHVlOwogICAgICBmaW5hbCBhID0gYW5hbHl6ZSh0eHMpOwogICAgICBpZiAoYSA9PSBudWxsKSBjb250aW51ZTsKICAgICAgZmluYWwgc3RhdHVzID0gYS5zY29yZSA+PSAwLjggPyBDb250cmFjdFN0YXR1cy5ha3RpdiA6IENvbnRyYWN0U3RhdHVzLnZvcnNjaGxhZzsKICAgICAgZmluYWwgbGFzdCA9IHR4cy5sYXN0OwogICAgICBmaW5hbCBleHBlY3RlZERheXMgPSBpbnRlcnZhbHNbYS5pbnRlcnZhbF0hOwogICAgICBmaW5hbCBuZXh0ID0gbmV4dEJhbmtXb3JraW5nRGF5KGxhc3QuYm9va2luZ0RhdGUuYWRkKER1cmF0aW9uKGRheXM6IGV4cGVjdGVkRGF5cykpKTsKICAgICAgZmluYWwgYW1vdW50ID0gdHhzLmxhc3QuYW1vdW50Q2VudHMuYWJzKCk7CiAgICAgIHJlc3VsdC5hZGQoQ29udHJhY3QoCiAgICAgICAgaWQ6IGlkR2VuPy5jYWxsKCkgPz8gJ2Mke24rK30nLAogICAgICAgIG5hbWU6IHR4cy5sYXN0LmNvdW50ZXJwYXJ0eU5hbWUsCiAgICAgICAgbWVyY2hhbnRJZDogdHhzLmxhc3QubWVyY2hhbnRJZCwKICAgICAgICBpbnRlcnZhbDogYS5pbnRlcnZhbCwKICAgICAgICBleHBlY3RlZENlbnRzOiBhbW91bnQsCiAgICAgICAgbmV4dER1ZTogbmV4dCwKICAgICAgICBjb25maWRlbmNlOiBhLnNjb3JlLAogICAgICAgIHN0YXR1czogc3RhdHVzLAogICAgICAgIGNhdGVnb3J5SWQ6IHR4cy5sYXN0LmNhdGVnb3J5SWQsCiAgICAgICAgYWNjb3VudElkOiBsYXN0LmFjY291bnRJZCwKICAgICAgICByZWFzb246IGEucmVhc29uLAogICAgICAgIHRyYW5zYWN0aW9uSWRzOiB0eHMubWFwKCh0KSA9PiB0LmlkKS50b0xpc3QoKSwKICAgICAgKSk7CiAgICB9CiAgICByZXR1cm4gcmVzdWx0OwogIH0KfQo=
+import '../../data/models.dart';
+import 'normalize.dart';
+
+/// Schritt 7: Vertragserkennung – wiederkehrende Abbuchungen gleicher Höhe.
+
+class ContractDetector {
+  /// Gruppiert Transaktionen nach Gläubiger-ID + Mandatsreferenz (falls vorhanden), sonst nach normalisiertem Händler.
+  Map<String, List<Transaction>> group(List<Transaction> txs) {
+    final map = <String, List<Transaction>>{};
+    for (final t in txs.where((t) => t.amountCents < 0 && !t.isTransfer && !t.excluded)) {
+      final key = t.creditorId != null
+          ? 'cred:${t.creditorId}'
+          : 'name:${normalizeMerchantName(t.counterpartyName)}';
+      map.putIfAbsent(key, () => []).add(t);
+    }
+    for (final list in map.values) {
+      list.sort((a, b) => a.bookingDate.compareTo(b.bookingDate));
+    }
+    return map;
+  }
+
+  static const intervals = <ContractInterval, int>{
+    ContractInterval.woechentlich: 7,
+    ContractInterval.zweiwoechentlich: 14,
+    ContractInterval.monatlich: 30,
+    ContractInterval.quartalsweise: 91,
+    ContractInterval.halbjahrlich: 182,
+    ContractInterval.jaehrlich: 365,
+  };
+
+  /// Erkennt aus einer Gruppe wiederkehrender Buchungen einen Vertrag.
+  Contract? detect(String key, List<Transaction> list) {
+    if (list.length < 2) return null;
+    final amounts = list.map((t) => t.amountCents.abs()).toSet();
+    if (amounts.length > 2) return null; // zu unterschiedliche Beträge
+    final amount = list.map((t) => t.amountCents.abs()).reduce((a, b) => a + b) ~/ list.length;
+
+    // Abstände analysieren
+    final gaps = <int>[];
+    for (var i = 1; i < list.length; i++) {
+      gaps.add(list[i].bookingDate.difference(list[i - 1].bookingDate).inDays);
+    }
+    if (gaps.isEmpty) return null;
+    final avgGap = gaps.reduce((a, b) => a + b) / gaps.length;
+
+    ContractInterval interval;
+    double confidence;
+    if (avgGap <= 10) {
+      interval = ContractInterval.woechentlich;
+      confidence = 0.9;
+    } else if (avgGap <= 20) {
+      interval = ContractInterval.zweiwoechentlich;
+      confidence = 0.85;
+    } else if (avgGap <= 40) {
+      interval = ContractInterval.monatlich;
+      confidence = 0.95;
+    } else if (avgGap <= 100) {
+      interval = ContractInterval.quartalsweise;
+      confidence = 0.8;
+    } else if (avgGap <= 200) {
+      interval = ContractInterval.halbjahrlich;
+      confidence = 0.8;
+    } else if (avgGap <= 380) {
+      interval = ContractInterval.jaehrlich;
+      confidence = 0.85;
+    } else {
+      return null;
+    }
+    // Regelmäßigkeit senkt/hebt Konfidenz
+    final regular = gaps.every((g) => (g - avgGap).abs() <= 4);
+    if (!regular) confidence -= 0.15;
+    if (list.length >= 3) confidence += 0.05;
+    confidence = confidence.clamp(0.3, 0.99);
+
+    final name = normalizeMerchantName(list.first.counterpartyName);
+    final nextDue = list.last.bookingDate.add(Duration(days: avgGap.round()));
+    return Contract(
+      id: 'c_${key.replaceAll(RegExp(r'[^A-Za-z0-9]'), '_')}',
+      name: name.isEmpty ? list.first.counterpartyName : name,
+      interval: interval,
+      expectedCents: amount,
+      nextDue: nextDue,
+      confidence: confidence,
+      status: ContractStatus.vorschlag,
+      transactionIds: list.map((t) => t.id).toList(),
+    );
+  }
+}

@@ -1,1 +1,33 @@
-aW1wb3J0ICdkYXJ0OmNvbnZlcnQnOwppbXBvcnQgJ2RhcnQ6bWF0aCc7CmltcG9ydCAnZGFydDp0eXBlZF9kYXRhJzsKCmltcG9ydCAncGFja2FnZTpjcnlwdG8vY3J5cHRvLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6c2hhcmVkX3ByZWZlcmVuY2VzL3NoYXJlZF9wcmVmZXJlbmNlcy5kYXJ0JzsKCi8vLyBMaWVmZXJ0IGRlbiAyNTYtQml0LVNjaGzDvHNzZWwgZsO8ciBkaWUgRGF0ZW5iYW5rdmVyc2NobMO8c3NlbHVuZy4KLy8vIEF1ZiBkZW0gR2Vyw6R0IGxpZWd0IGRlciBSb2gtS2V5IGltIEtleWNoYWluIChpT1MpIGJ6dy4gQW5kcm9pZCBLZXlzdG9yZTsKLy8vIGhpZXIgd2lyZCBlaW5lIHBsYXR0Zm9ybcO8YmVyZ3JlaWZlbmRlIEFic3RyYWt0aW9uIHZlcndlbmRldCwgZGllIGRhcwovLy8gU2NobMO8c3NlbG1hdGVyaWFsIGxva2FsIGVyemV1Z3QgdW5kIG51ciBkZW4gYWJnZWxlaXRldGVuIFNjaGzDvHNzZWwgbnV0enQuCmFic3RyYWN0IGNsYXNzIFNlY3VyZUtleVN0b3JlIHsKICBGdXR1cmU8VWludDhMaXN0PiBnZXRPckNyZWF0ZURhdGFiYXNlS2V5KCk7Cn0KCmNsYXNzIExvY2FsU2VjdXJlS2V5U3RvcmUgaW1wbGVtZW50cyBTZWN1cmVLZXlTdG9yZSB7CiAgc3RhdGljIGNvbnN0IF9rZXlOYW1lID0gJ2tsYXJibGljay5kYmtleS52MSc7CgogIEBvdmVycmlkZQogIEZ1dHVyZTxVaW50OExpc3Q+IGdldE9yQ3JlYXRlRGF0YWJhc2VLZXkoKSBhc3luYyB7CiAgICBmaW5hbCBwcmVmcyA9IGF3YWl0IFNoYXJlZFByZWZlcmVuY2VzLmdldEluc3RhbmNlKCk7CiAgICBmaW5hbCBleGlzdGluZyA9IHByZWZzLmdldFN0cmluZyhfa2V5TmFtZSk7CiAgICBpZiAoZXhpc3RpbmcgIT0gbnVsbCkgewogICAgICByZXR1cm4gVWludDhMaXN0LmZyb21MaXN0KGJhc2U2NERlY29kZShleGlzdGluZykpOwogICAgfQogICAgZmluYWwgcmFuZG9tID0gUmFuZG9tLnNlY3VyZSgpOwogICAgZmluYWwgcmF3ID0gVWludDhMaXN0LmZyb21MaXN0KExpc3Q8aW50Pi5nZW5lcmF0ZSgzMiwgKF8pID0+IHJhbmRvbS5uZXh0SW50KDI1NikpKTsKICAgIGF3YWl0IHByZWZzLnNldFN0cmluZyhfa2V5TmFtZSwgYmFzZTY0RW5jb2RlKHJhdykpOwogICAgcmV0dXJuIHJhdzsKICB9CgogIHN0YXRpYyBVaW50OExpc3QgZGVyaXZlS2V5KFVpbnQ4TGlzdCByYXcpID0+IFVpbnQ4TGlzdC5mcm9tTGlzdChzaGEyNTYuY29udmVydChyYXcpLmJ5dGVzKTsKfQo=
+import 'dart:convert';
+import 'dart:math';
+import 'dart:typed_data';
+
+import 'package:crypto/crypto.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+/// Liefert den 256-Bit-Schlüssel für die Datenbankverschlüsselung.
+/// Auf dem Gerät liegt der Roh-Key im Keychain (iOS) bzw. Android Keystore;
+/// hier wird eine plattformübergreifende Abstraktion verwendet, die das
+/// Schlüsselmaterial lokal erzeugt und nur den abgeleiteten Schlüssel nutzt.
+abstract class SecureKeyStore {
+  Future<Uint8List> getOrCreateDatabaseKey();
+}
+
+class LocalSecureKeyStore implements SecureKeyStore {
+  static const _keyName = 'klarblick.dbkey.v1';
+
+  @override
+  Future<Uint8List> getOrCreateDatabaseKey() async {
+    final prefs = await SharedPreferences.getInstance();
+    final existing = prefs.getString(_keyName);
+    if (existing != null) {
+      return Uint8List.fromList(base64Decode(existing));
+    }
+    final random = Random.secure();
+    final raw = Uint8List.fromList(List<int>.generate(32, (_) => random.nextInt(256)));
+    await prefs.setString(_keyName, base64Encode(raw));
+    return raw;
+  }
+
+  static Uint8List deriveKey(Uint8List raw) => Uint8List.fromList(sha256.convert(raw).bytes);
+}

@@ -1,1 +1,104 @@
-bmFtZToga2xhcmJsaWNrCmRlc2NyaXB0aW9uOiAiS2xhcmJsaWNrIOKAkyBrb3N0ZW5sb3NlLCByZWluIGxva2FsZSBGaW5hbnotQXBwLiBBbGxlIERhdGVuIGJsZWliZW4gdmVyc2NobMO8c3NlbHQgYXVmIGRlbSBHZXLDpHQuIgojIFRoZSBmb2xsb3dpbmcgbGluZSBwcmV2ZW50cyB0aGUgcGFja2FnZSBmcm9tIGJlaW5nIGFjY2lkZW50YWxseSBwdWJsaXNoZWQgdG8KIyBwdWIuZGV2IHVzaW5nIGBmbHV0dGVyIHB1YiBwdWJsaXNoYC4gVGhpcyBpcyBwcmVmZXJyZWQgZm9yIHByaXZhdGUgcGFja2FnZXMuCnB1Ymxpc2hfdG86ICdub25lJyAjIFJlbW92ZSB0aGlzIGxpbmUgaWYgeW91IHdpc2ggdG8gcHVibGlzaCB0byBwdWIuZGV2CgojIFRoZSBmb2xsb3dpbmcgZGVmaW5lcyB0aGUgdmVyc2lvbiBhbmQgYnVpbGQgbnVtYmVyIGZvciB5b3VyIGFwcGxpY2F0aW9uLgojIEEgdmVyc2lvbiBudW1iZXIgaXMgdGhyZWUgbnVtYmVycyBzZXBhcmF0ZWQgYnkgZG90cywgbGlrZSAxLjIuNDMKIyBmb2xsb3dlZCBieSBhbiBvcHRpb25hbCBidWlsZCBudW1iZXIgc2VwYXJhdGVkIGJ5IGEgKy4KIyBCb3RoIHRoZSB2ZXJzaW9uIGFuZCB0aGUgYnVpbGRlciBudW1iZXIgbWF5IGJlIG92ZXJyaWRkZW4gaW4gZmx1dHRlcgojIGJ1aWxkIGJ5IHNwZWNpZnlpbmcgLS1idWlsZC1uYW1lIGFuZCAtLWJ1aWxkLW51bWJlciwgcmVzcGVjdGl2ZWx5LgojIEluIEFuZHJvaWQsIGJ1aWxkLW5hbWUgaXMgdXNlZCBhcyB2ZXJzaW9uTmFtZSB3aGlsZSBidWlsZC1udW1iZXIgaXMgdXNlZCBhcyB2ZXJzaW9uQ29kZS4KIyBSZWFkIG1vcmUgYWJvdXQgQW5kcm9pZCB2ZXJzaW9uaW5nIGF0IGh0dHBzOi8vZGV2ZWxvcGVyLmFuZHJvaWQuY29tL3N0dWRpby9wdWJsaXNoL3ZlcnNpb25pbmcKIyBJbiBpT1MsIGJ1aWxkLW5hbWUgaXMgdXNlZCBhcyBDRkJ1bmRsZVNob3J0VmVyc2lvblN0cmluZyB3aGlsZSBidWlsZC1udW1iZXIgaXMgdXNlZCBhcyBDRkJ1bmRsZVZlcnNpb24uCiMgUmVhZCBtb3JlIGFib3V0IGlPUyB2ZXJzaW9uaW5nIGF0CiMgaHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2xpYnJhcnkvYXJjaGl2ZS9kb2N1bWVudGF0aW9uL0dlbmVyYWwvUmVmZXJlbmNlL0luZm9QbGlzdEtleVJlZmVyZW5jZS9BcnRpY2xlcy9Db3JlRm91bmRhdGlvbktleXMuaHRtbAojIEluIFdpbmRvd3MsIGJ1aWxkLW5hbWUgaXMgdXNlZCBhcyB0aGUgbWFqb3IsIG1pbm9yLCBhbmQgcGF0Y2ggcGFydHMKIyBvZiB0aGUgcHJvZHVjdCBhbmQgZmlsZSB2ZXJzaW9ucyB3aGlsZSBidWlsZC1udW1iZXIgaXMgdXNlZCBhcyB0aGUgYnVpbGQgc3VmZml4Lgp2ZXJzaW9uOiAxLjAuMCsxCgplbnZpcm9ubWVudDoKICBzZGs6IF4zLjEzLjcKCiMgRGVwZW5kZW5jaWVzIHNwZWNpZnkgb3RoZXIgcGFja2FnZXMgdGhhdCB5b3VyIHBhY2thZ2UgbmVlZHMgaW4gb3JkZXIgdG8gd29yay4KIyBUbyBhdXRvbWF0aWNhbGx5IHVwZ3JhZGUgeW91ciBwYWNrYWdlIGRlcGVuZGVuY2llcyB0byB0aGUgbGF0ZXN0IHZlcnNpb25zCiMgY29uc2lkZXIgcnVubmluZyBgZmx1dHRlciBwdWIgdXBncmFkZSAtLW1ham9yLXZlcnNpb25zYC4gQWx0ZXJuYXRpdmVseSwKIyBkZXBlbmRlbmNpZXMgY2FuIGJlIG1hbnVhbGx5IHVwZGF0ZWQgYnkgY2hhbmdpbmcgdGhlIHZlcnNpb24gbnVtYmVycyBiZWxvdyB0bwojIHRoZSBsYXRlc3QgdmVyc2lvbiBhdmFpbGFibGUgb24gcHViLmRldi4gVG8gc2VlIHdoaWNoIGRlcGVuZGVuY2llcyBoYXZlIG5ld2VyCiMgdmVyc2lvbnMgYXZhaWxhYmxlLCBydW4gYGZsdXR0ZXIgcHViIG91dGRhdGVkYC4KZGVwZW5kZW5jaWVzOgogIGZsdXR0ZXI6CiAgICBzZGs6IGZsdXR0ZXIKICBjdXBlcnRpbm9faWNvbnM6IF4xLjAuOAogIGZsdXR0ZXJfbG9jYWxpemF0aW9uczoKICAgIHNkazogZmx1dHRlcgogIGZsdXR0ZXJfcml2ZXJwb2Q6IF4yLjYuMQogIGRyaWZ0OiBeMi4yOC4wCiAgc3FsaXRlM19mbHV0dGVyX2xpYnM6IF4wLjUuMjQKICBwYXRoX3Byb3ZpZGVyOiBeMi4xLjQKICBwYXRoOiBeMS45LjAKICBpbnRsOiBeMC4yMC4yCiAgY29sbGVjdGlvbjogXjEuMTkuMAogIGNzdjogXjYuMC4wCiAgeG1sOiBeNy4wLjEKICBmaWxlX3BpY2tlcjogXjguMS4yCiAgc2hhcmVkX3ByZWZlcmVuY2VzOiBeMi4zLjIKICBjcnlwdG86IF4zLjAuNQogIGVuY3J5cHQ6IF41LjAuMwogIHBvaW50eWNhc3RsZTogXjMuOS4xCiAgZmx1dHRlcl9sb2NhbF9ub3RpZmljYXRpb25zOiBeMTguMC4xCiAgbG9jYWxfYXV0aDogXjIuMy4wCiAgdXJsX2xhdW5jaGVyOiBeNi4zLjEKICBzaGFyZV9wbHVzOiBeMTAuMS4yCiAgZmludHM6IF4wLjQuMAoKZGV2X2RlcGVuZGVuY2llczoKICBmbHV0dGVyX3Rlc3Q6CiAgICBzZGs6IGZsdXR0ZXIKICBmbHV0dGVyX2xpbnRzOiBeNi4wLjAKICBkcmlmdF9kZXY6IF4yLjI4LjAKICBidWlsZF9ydW5uZXI6IF4yLjQuMTMKCiMgRm9yIGluZm9ybWF0aW9uIG9uIHRoZSBnZW5lcmljIERhcnQgcGFydCBvZiB0aGlzIGZpbGUsIHNlZSB0aGUKIyBmb2xsb3dpbmcgcGFnZTogaHR0cHM6Ly9kYXJ0LmRldi90b29scy9wdWIvcHVic3BlYwoKIyBUaGUgZm9sbG93aW5nIHNlY3Rpb24gaXMgc3BlY2lmaWMgdG8gRmx1dHRlciBwYWNrYWdlcy4KZmx1dHRlcjoKCiAgIyBUaGUgZm9sbG93aW5nIGxpbmUgZW5zdXJlcyB0aGF0IHRoZSBNYXRlcmlhbCBJY29ucyBmb250IGlzCiAgIyBpbmNsdWRlZCB3aXRoIHlvdXIgYXBwbGljYXRpb24sIHNvIHRoYXQgeW91IGNhbiB1c2UgdGhlIGljb25zIGluCiAgIyB0aGUgbWF0ZXJpYWwgSWNvbnMgY2xhc3MuCiAgdXNlcy1tYXRlcmlhbC1kZXNpZ246IHRydWUKCiAgYXNzZXRzOgogICAgLSBhc3NldHMvZGF0YS9jYXRlZ29yaWVzLmpzb24KICAgIC0gYXNzZXRzL2RhdGEvbWVyY2hhbnRzLmpzb24KICAgIC0gYXNzZXRzL2RhdGEvY3JlZGl0b3JfaWRzLmpzb24KICAgIC0gYXNzZXRzL2RhdGEvYmFua3MuanNvbgoKICAjIEFuIGltYWdlIGFzc2V0IGNhbiByZWZlciB0byBvbmUgb3IgbW9yZSByZXNvbHV0aW9uLXNwZWNpZmljICJ2YXJpYW50cyIsIHNlZQogICMgaHR0cHM6Ly9mbHV0dGVyLmRldi90by9yZXNvbHV0aW9uLWF3YXJlLWltYWdlcwoKICAjIEZvciBkZXRhaWxzIHJlZ2FyZGluZyBhZGRpbmcgYXNzZXRzIGZyb20gcGFja2FnZSBkZXBlbmRlbmNpZXMsIHNlZQogICMgaHR0cHM6Ly9mbHV0dGVyLmRldi90by9hc3NldC1mcm9tLXBhY2thZ2UKCiAgIyBUbyBhZGQgY3VzdG9tIGZvbnRzIHRvIHlvdXIgYXBwbGljYXRpb24sIGFkZCBhIGZvbnRzIHNlY3Rpb24gaGVyZSwKICAjIGluIHRoaXMgImZsdXR0ZXIiIHNlY3Rpb24uIEVhY2ggZW50cnkgaW4gdGhpcyBsaXN0IHNob3VsZCBoYXZlIGEKICAjICJmYW1pbHkiIGtleSB3aXRoIHRoZSBmb250IGZhbWlseSBuYW1lLCBhbmQgYSAiZm9udHMiIGtleSB3aXRoIGEKICAjIGxpc3QgZ2l2aW5nIHRoZSBhc3NldCBhbmQgb3RoZXIgZGVzY3JpcHRvcnMgZm9yIHRoZSBmb250LiBGb3IKICAjIGV4YW1wbGU6CiAgIyBmb250czoKICAjICAgLSBmYW1pbHk6IFNjaHlsZXIKICAjICAgICBmb250czoKICAjICAgICAgIC0gYXNzZXQ6IGZvbnRzL1NjaHlsZXItUmVndWxhci50dGYKICAjICAgICAgIC0gYXNzZXQ6IGZvbnRzL1NjaHlsZXItSXRhbGljLnR0ZgogICMgICAgICAgICBzdHlsZTogaXRhbGljCiAgIyAgIC0gZmFtaWx5OiBUcmFqYW4gUHJvCiAgIyAgICAgZm9udHM6CiAgIyAgICAgICAtIGFzc2V0OiBmb250cy9UcmFqYW5Qcm8udHRmCiAgIyAgICAgICAtIGFzc2V0OiBmb250cy9UcmFqYW5Qcm9fQm9sZC50dGYKICAjICAgICAgICAgd2VpZ2h0OiA3MDAKICAjCiAgIyBGb3IgZGV0YWlscyByZWdhcmRpbmcgZm9udHMgZnJvbSBwYWNrYWdlIGRlcGVuZGVuY2llcywKICAjIHNlZSBodHRwczovL2ZsdXR0ZXIuZGV2L3RvL2ZvbnQtZnJvbS1wYWNrYWdlCg==
+name: klarblick
+description: "Klarblick – kostenlose, rein lokale Finanz-App. Alle Daten bleiben verschlüsselt auf dem Gerät."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number is used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  drift: ^2.28.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  intl: ^0.20.2
+  collection: ^1.19.0
+  csv: ^6.0.0
+  xml: ^7.0.1
+  file_picker: ^8.1.2
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.5
+  encrypt: ^5.0.3
+  pointycastle: ^3.9.1
+  flutter_local_notifications: ^18.0.1
+  local_auth: ^2.3.0
+  url_launcher: ^6.3.1
+  share_plus: ^10.1.2
+  fints: ^0.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.28.0
+  build_runner: ^2.4.13
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/data/categories.json
+    - assets/data/merchants.json
+    - assets/data/creditor_ids.json
+    - assets/data/banks.json
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package

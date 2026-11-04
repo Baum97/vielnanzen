@@ -1,1 +1,41 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX3JpdmVycG9kL2ZsdXR0ZXJfcml2ZXJwb2QuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX3Rlc3QvZmx1dHRlcl90ZXN0LmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6a2xhcmJsaWNrL2RhdGEvbW9kZWxzLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6a2xhcmJsaWNrL2RhdGEvc3RvcmUuZGFydCc7CmltcG9ydCAncGFja2FnZTprbGFyYmxpY2svbWFpbi5kYXJ0JzsKaW1wb3J0ICdwYWNrYWdlOmtsYXJibGljay91aS9hcHBfc2hlbGwuZGFydCc7CmltcG9ydCAncGFja2FnZTprbGFyYmxpY2svdWkvc2NyZWVucy9vbmJvYXJkaW5nLmRhcnQnOwoKdm9pZCBtYWluKCkgewogIHRlc3RXaWRnZXRzKCdPbmJvYXJkaW5nIHJlbmRlcnQgdW5kIGVycmVpY2hiYXInLCAodGVzdGVyKSBhc3luYyB7CiAgICBmaW5hbCBzdG9yZSA9IFN0b3JlKCk7CiAgICBzdG9yZS5zZXR0aW5nc1snbG9hZGVkJ10gPSB0cnVlOwogICAgc3RvcmUuZm9yY2VMb2FkZWRGb3JUZXN0KCk7CiAgICBhd2FpdCB0ZXN0ZXIucHVtcFdpZGdldChQcm92aWRlclNjb3BlKGNoaWxkOiBLbGFyYmxpY2tBcHAoc3RvcmU6IHN0b3JlKSkpOwogICAgYXdhaXQgdGVzdGVyLnB1bXAoKTsKICAgIGF3YWl0IHRlc3Rlci5wdW1wKGNvbnN0IER1cmF0aW9uKG1pbGxpc2Vjb25kczogNTAwKSk7CiAgICBhd2FpdCB0ZXN0ZXIucHVtcCgpOwogICAgYXdhaXQgdGVzdGVyLnB1bXAoY29uc3QgRHVyYXRpb24obWlsbGlzZWNvbmRzOiA1MDApKTsKICAgIGF3YWl0IHRlc3Rlci5wdW1wKCk7CiAgICBleHBlY3QoZmluZC5ieVR5cGUoT25ib2FyZGluZ1NjcmVlbiksIGZpbmRzT25lV2lkZ2V0KTsKICAgIGV4cGVjdChmaW5kLnRleHQoIkxvcyBnZWh0J3MiKSwgZmluZHNPbmVXaWRnZXQpOwogIH0pOwoKICB0ZXN0V2lkZ2V0cygnQXBwU2hlbGwgcmVuZGVydCBhbGxlIDUgVGFicyBiZWkgdm9yaGFuZGVuZW4gS29udGVuJywgKHRlc3RlcikgYXN5bmMgewogICAgZmluYWwgc3RvcmUgPSBTdG9yZSgpOwogICAgc3RvcmUuYWNjb3VudHMuYWRkKGNvbnN0IEFjY291bnQoaWQ6ICdhMScsIGliYW46ICdERTAwJywgbmFtZTogJ0dpcm8nLCB0eXBlOiBBY2NvdW50VHlwZS5naXJvLCBiYWxhbmNlQ2VudHM6IDEwMDApKTsKICAgIHN0b3JlLnNldHRpbmdzWydsb2FkZWQnXSA9IHRydWU7CiAgICBzdG9yZS5mb3JjZUxvYWRlZEZvclRlc3QoKTsKICAgIGF3YWl0IHRlc3Rlci5wdW1wV2lkZ2V0KFByb3ZpZGVyU2NvcGUoY2hpbGQ6IEtsYXJibGlja0FwcChzdG9yZTogc3RvcmUpKSk7CiAgICBhd2FpdCB0ZXN0ZXIucHVtcCgpOwogICAgYXdhaXQgdGVzdGVyLnB1bXAoY29uc3QgRHVyYXRpb24obWlsbGlzZWNvbmRzOiA1MDApKTsKICAgIGF3YWl0IHRlc3Rlci5wdW1wKCk7CiAgICBhd2FpdCB0ZXN0ZXIucHVtcChjb25zdCBEdXJhdGlvbihtaWxsaXNlY29uZHM6IDUwMCkpOwogICAgYXdhaXQgdGVzdGVyLnB1bXAoKTsKICAgIGV4cGVjdChmaW5kLmJ5VHlwZShBcHBTaGVsbCksIGZpbmRzT25lV2lkZ2V0KTsKICAgIGZvciAoZmluYWwgbGFiZWwgaW4gWyfDnGJlcnNpY2h0JywgJ1Vtc8OkdHplJywgJ0FuYWx5c2UnLCAnVmVydHLDpGdlJywgJ1NwYXJlbiddKSB7CiAgICAgIGV4cGVjdChmaW5kLnRleHQobGFiZWwpLCBmaW5kc1dpZGdldHMpOwogICAgfQogIH0pOwp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:klarblick/data/models.dart';
+import 'package:klarblick/data/store.dart';
+import 'package:klarblick/main.dart';
+import 'package:klarblick/ui/app_shell.dart';
+import 'package:klarblick/ui/screens/onboarding.dart';
+
+void main() {
+  testWidgets('Onboarding rendert und erreichbar', (tester) async {
+    final store = Store();
+    store.settings['loaded'] = true;
+    store.forceLoadedForTest();
+    await tester.pumpWidget(ProviderScope(child: KlarblickApp(store: store)));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump();
+    expect(find.byType(OnboardingScreen), findsOneWidget);
+    expect(find.text("Los geht's"), findsOneWidget);
+  });
+
+  testWidgets('AppShell rendert alle 5 Tabs bei vorhandenen Konten', (tester) async {
+    final store = Store();
+    store.accounts.add(const Account(id: 'a1', iban: 'DE00', name: 'Giro', type: AccountType.giro, balanceCents: 1000));
+    store.settings['loaded'] = true;
+    store.forceLoadedForTest();
+    await tester.pumpWidget(ProviderScope(child: KlarblickApp(store: store)));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump();
+    expect(find.byType(AppShell), findsOneWidget);
+    for (final label in ['Übersicht', 'Umsätze', 'Analyse', 'Verträge', 'Sparen']) {
+      expect(find.text(label), findsWidgets);
+    }
+  });
+}

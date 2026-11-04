@@ -1,1 +1,129 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX3JpdmVycG9kL2ZsdXR0ZXJfcml2ZXJwb2QuZGFydCc7CmltcG9ydCAncGFja2FnZTppbnRsL2ludGwuZGFydCc7CgppbXBvcnQgJy4uLy4uL3N0YXRlL2FwcF9zdGF0ZS5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL29uYm9hcmRpbmcuZGFydCc7CmltcG9ydCAnLi4vdGhlbWUuZGFydCc7CgpjbGFzcyBTZXR0aW5nc1NjcmVlbiBleHRlbmRzIENvbnN1bWVyV2lkZ2V0IHsKICBjb25zdCBTZXR0aW5nc1NjcmVlbih7c3VwZXIua2V5fSk7CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCwgV2lkZ2V0UmVmIHJlZikgewogICAgZmluYWwgc3RvcmUgPSByZWYud2F0Y2goYXBwU3RhdGVQcm92aWRlcikuc3RvcmU7CiAgICBmaW5hbCBzID0gc3RvcmUuc2V0dGluZ3M7CgogICAgcmV0dXJuIFNjYWZmb2xkKAogICAgICBhcHBCYXI6IEFwcEJhcih0aXRsZTogY29uc3QgVGV4dCgnRWluc3RlbGx1bmdlbicpKSwKICAgICAgYm9keTogTGlzdFZpZXcoY2hpbGRyZW46IFsKICAgICAgICBfZ3JvdXAoY29udGV4dCwgJ0JhbmtlbiAmIEtvbnRlbicsIFsKICAgICAgICAgIExpc3RUaWxlKAogICAgICAgICAgICBsZWFkaW5nOiBjb25zdCBJY29uKEljb25zLmFjY291bnRfYmFsYW5jZV9vdXRsaW5lZCksCiAgICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdCYW5rIGhpbnp1ZsO8Z2VuJyksCiAgICAgICAgICAgIHN1YnRpdGxlOiBUZXh0KCcke3N0b3JlLmNvbm5lY3Rpb25zLmxlbmd0aH0gVmVyYmluZHVuZ2VuIMK3ICR7c3RvcmUuYWNjb3VudHMubGVuZ3RofSBLb250ZW4nKSwKICAgICAgICAgICAgb25UYXA6ICgpID0+IE5hdmlnYXRvci5vZihjb250ZXh0KS5wdXNoKE1hdGVyaWFsUGFnZVJvdXRlKGJ1aWxkZXI6IChfKSA9PiBjb25zdCBPbmJvYXJkaW5nU2NyZWVuKCkpKSwKICAgICAgICAgICksCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgbGVhZGluZzogY29uc3QgSWNvbihJY29ucy5maWxlX3VwbG9hZF9vdXRsaW5lZCksCiAgICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdEYXRlaSBpbXBvcnRpZXJlbicpLAogICAgICAgICAgICBvblRhcDogKCkgPT4gTmF2aWdhdG9yLm9mKGNvbnRleHQpLnB1c2goTWF0ZXJpYWxQYWdlUm91dGUoYnVpbGRlcjogKF8pID0+IGNvbnN0IEltcG9ydFNjcmVlbigpKSksCiAgICAgICAgICApLAogICAgICAgIF0pLAogICAgICAgIF9ncm91cChjb250ZXh0LCAnQWt0dWFsaXNpZXJ1bmcnLCBbCiAgICAgICAgICBTd2l0Y2hMaXN0VGlsZSgKICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0JlaW0gw5ZmZm5lbiBha3R1YWxpc2llcmVuJyksCiAgICAgICAgICAgIHZhbHVlOiBzWydyZWZyZXNoT25PcGVuJ10gPT0gdHJ1ZSwKICAgICAgICAgICAgb25DaGFuZ2VkOiAodikgPT4gc3RvcmUudXBkYXRlU2V0dGluZ3MoeydyZWZyZXNoT25PcGVuJzogdn0pLAogICAgICAgICAgKSwKICAgICAgICBdKSwKICAgICAgICBfZ3JvdXAoY29udGV4dCwgJ1NpY2hlcmhlaXQnLCBbCiAgICAgICAgICBTd2l0Y2hMaXN0VGlsZSgKICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0FwcC1TcGVycmUgKEJpb21ldHJpZS9QSU4pJyksCiAgICAgICAgICAgIHZhbHVlOiBzWydhcHBMb2NrJ10gPT0gdHJ1ZSwKICAgICAgICAgICAgb25DaGFuZ2VkOiAodikgPT4gc3RvcmUudXBkYXRlU2V0dGluZ3MoeydhcHBMb2NrJzogdn0pLAogICAgICAgICAgKSwKICAgICAgICAgIFN3aXRjaExpc3RUaWxlKAogICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0luaGFsdCBpbSBBcHAtV2VjaHNlciB2ZXJiZXJnZW4nKSwKICAgICAgICAgICAgdmFsdWU6IHNbJ2hpZGVJblN3aXRjaGVyJ10gPT0gdHJ1ZSwKICAgICAgICAgICAgb25DaGFuZ2VkOiAodikgPT4gc3RvcmUudXBkYXRlU2V0dGluZ3MoeydoaWRlSW5Td2l0Y2hlcic6IHZ9KSwKICAgICAgICAgICksCiAgICAgICAgXSksCiAgICAgICAgX2dyb3VwKGNvbnRleHQsICdEYXJzdGVsbHVuZycsIFsKICAgICAgICAgIFN3aXRjaExpc3RUaWxlKAogICAgICAgICAgICB0aXRsZTogY29uc3QgVGV4dCgnRGlza3JldC1Nb2R1cycpLAogICAgICAgICAgICBzdWJ0aXRsZTogY29uc3QgVGV4dCgnQmV0csOkZ2UgYWxzIOKAouKAouKAoiBhdXNibGVuZGVuJyksCiAgICAgICAgICAgIHZhbHVlOiBzWydkaXNjcmVldE1vZGUnXSA9PSB0cnVlLAogICAgICAgICAgICBvbkNoYW5nZWQ6ICh2KSA9PiBzdG9yZS51cGRhdGVTZXR0aW5ncyh7J2Rpc2NyZWV0TW9kZSc6IHZ9KSwKICAgICAgICAgICksCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0Vyc2NoZWludW5nc2JpbGQnKSwKICAgICAgICAgICAgdHJhaWxpbmc6IERyb3Bkb3duQnV0dG9uPFN0cmluZz4oCiAgICAgICAgICAgICAgdmFsdWU6IHNbJ2RhcmtNb2RlJ10gYXMgU3RyaW5nLAogICAgICAgICAgICAgdW5kZXJsaW5lOiBjb25zdCBTaXplZEJveC5zaHJpbmsoKSwKICAgICAgICAgICAgICBpdGVtczogY29uc3QgWwogICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0odmFsdWU6ICdzeXN0ZW0nLCBjaGlsZDogVGV4dCgnU3lzdGVtJykpLAogICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0odmFsdWU6ICdsaWdodCcsIGNoaWxkOiBUZXh0KCdIZWxsJyksCiAgICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0odmFsdWU6ICdkYXJrJywgY2hpbGQ6IFRleHQoJ8O8bmtlbCcpKSwKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICBvbkNoYW5nZWQ6ICh2KSB7CiAgICAgICAgICAgICAgICBpZiAodiAhPSBudWxsKSBzdG9yZS51cGRhdGVTZXR0aW5ncyh7J2RhcmtNb2RlJzogdn0pOwogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICksCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0JlbmFjaHJpY2h0aWd1bmdlbicsKSwKICAgICAgICAgICAgc3VidGl0bGU6IGNvbnN0IFRleHQoJ051ciBsb2thbCwgbnVyIG5hY2ggWnVzdGltbXVuZycpLAogICAgICAgICAgICAgdmFsdWU6IHNbJ25vdGlmaWNhdGlvbnMnXSA9PSB0cnVlLAogICAgICAgICAgICBvbkNoYW5nZWQ6ICh2KSA9PiBzdG9yZS51cGRhdGVTZXR0aW5ncyh7J25vdGlmaWNhdGlvbnMnOiB2fSksCiAgICAgICAgICApLAogICAgICAgIF0pLAogICAgICAgIF9ncm91cChjb250ZXh0LCAnVHJhbnNwYXJlbnonLCBbCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgbGVhZGluZzogY29uc3QgSWNvbihJY29ucy53aWZpX3RldGhlcmluZyksCiAgICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdOZXR6d2Vyay1Qcm90b2tvbGwnKSwKICAgICAgICAgICAgc3VidGl0bGU6IFRleHQoJyR7c3RvcmUubmV0d29ya0xvZy5sZW5ndGh9IFZlcmJpbmR1bmdlbiBwcm90b2tvbGxpZXJ0JyksCiAgICAgICAgICAgIG9uVGFwOiAoKSA9PiBOYXZpZ2F0b3Iub2YoY29udGV4dCkucHVzaChNYXRlcmlhbFBhZ2VSb3V0ZShidWlsZGVyOiAoXykgPT4gY29uc3QgTmV0d29ya0xvZ1NjcmVlbigpKSksCiAgICAgICAgICApLAogICAgICAgIF0pLAogICAgICAgIF9ncm91cChjb250ZXh0LCAnVHJhc3BhcmVuIHJlbmsgRGF0ZW4nLCBbCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgbGVhZGluZzogY29uc3QgSWNvbihJY29ucy5kZWxldGVfb3V0bGluZSwgY29sb3I6IEFwcENvbG9ycy5jcml0aWNhbCksCiAgICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdBbGxlIERhdGVuIGzDtnNjaGVuJyksIHN0eWxlOiBUZXh0U3R5bGUoY29sb3I6IEFwcENvbG9ycy5jcml0aWNhbCkpLAogICAgICAgICAgICBvblRhcDogKCkgPT4gX2NvbmZpcm1EZWxldGUoY29udGV4dCwgcmVmKSwKICAgICAgICAgICksCiAgICAgICAgXSksCiAgICAgICAgX2dyb3VwKGNvbnRleHQsICfDvGJlciwgIFsKICAgICAgICAgY29uc3QgTGlzdFRpbGUoCiAgICAgICAgICAgIGxlYWRpbmc6IGNvbnN0IEljb24oSWNvbnMuaW5mb19vdXRsaW5lKSwKICAgICAgICAgICAgdGl0bGU6IGNvbnN0IFRleHQoJ0tsYXJibGljaaygMS4wLjAnKSwKICAgICAgICAgICAgc3VidGl0bGU6IGNvbnN0IFRleHQoJ1F1ZWxsb2ZmZW4gKEdQTC0zLjApIMK3IHJlaW4gbG9rYWwgwrMgbm9rZW4gU2VydmVyIMK3IGtlaW5lIFdlcmJ1bmcnKSwKICAgICAgICApLAogICAgICAgIF0pLAogICAgICAgIFNpeGVkQm94KGhlaWdodDogIDQwKSwKICAgICAgXSwKICAgIF0pLAogICApOwogIH0KCiAgV2lkZ2V0IF9ncm91cChCdWlsZENvbnRleHQgY29udGV4dCwgU3RyaW5nIHRpdGxlLCBMaXN0PFdpZGdldD4gY2hpbGRyZW4pID0+IENvbHVtbigoCiAgICAgICAgY3Jvc3NBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5zdGFydCwKICAgICAgICBjaGlsZHJlbjogWwogICAgICAgIFBhZGRpbmcoCiAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5mcm9tTFJUQigyMCwgMjQsIDIwLCA4KSwKICAgICAgICAgIFRleHQodGl0bGUsIHN0eWxlOiBUaGVtZS5vZihjb250ZXh0KS50ZXh0VGhlbWUuaGVhZGxpbmVNZWRpdW0pLAogICAgICAgIF0sCiAgICAgICAgLi4uY2hpbGRyZW4sCiAgICAgICksCiAgICAgKTsKCiAgdm9pZCBfY29uZmlybURlbGV0ZShCdWlsZENvbnRleHQgY29udGV4dCwgV2lkZ2V0UmVmIHJlZikgewogICAgZmluYWwgY29udHJvbGxlciA9IFRleHRFZGl0aW5nQ29udHJvbGxlcigpOwogICAgc2hvd0RpYWxvZygKICAgICAgY29udGV4dDogY29udGV4dCwKICAgICAgYnVpbGRlcjogKGN0eCkgPT4gQWxlcnREaWFsb2coCiAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdBbGxlIERhdGVuIGzDtnNjaGVuPycpLAogICAgICAgIGNvbnRlbnQ6IENvbHVtbihtYWluQXhpc1NpemU6IE1haW5BeGlzU2l6ZS5taW4sIGNoaWxkcmVuOiBbCiAgICAgICAgICBjb25zdCBUZXh0KCdBbGxlIGxva2FsZW4gS29udGVuIHVuZCBVbXPDpHR6ZSB3ZXJkZW4gdW53aWRlcnJydWZ0bGljaCBnZWzDtnNjaHQuIEdpYiB6dXIgQmVzdMOkdHRpZ3VuZyBMw5ZTRlNIRU4gZWluLicpLAogICAgICAgICBUZXh0RmllbGQoY29udHJvbGxlcjogY29udHJvbGxlciwgZGVjb3JhdGlvbjogY29uc3QgSW5wdXREZWNvcmF0aW9uKGxhYmVsVGV4dDogJ8O2TM5ZNDSEVOSycpKSwKICAgICAgICBdKSwKICAgICAgICBhY3Rpb25zOiBbCiAgICAgICAgICBUZXh0QnV0dG9uKG9uUHJlc3NlZDogKCkgPT4gTmF2aWdhdG9yLnBvcChjdHgpLCBjaGlsZDogY29uc3QgVGV4dCgnQWJyZWNoZW4nKSksCiAgICAgICAgICBGaWxsZWRCdXR0b24oCiAgICAgICAgICAgIG9uUHJlc3NlZDogY29udHJvbGxlci50ZXh0ID09ICfCq8O2TM5ZNDSEVOJwogICAgICAgICAgICAgID8gKCkgewogICAgICAgICAgICAgICAgZmluYWwgc3RvcmUgPSByZWYucmVhZChzdG9yZVByb3ZpZGVyKTsKICAgICAgICAgICAgICAgIHN0b3JlLnRyYW5zYWN0aW9ucy5jbGVhcigpOwogICAgICAgICAgICAgICAgc3RvcmUuYWNjb3VudHMuY2xlYXIoKTsKICAgICAgICAgICAgICAgIHN0b3JlLmNvbnRyYWN0cy5jbGVhcigpOwogICAgICAgICAgICAgICAgc3RvcmUuaW5zaWdodHMuY2xlYXIoKTsKICAgICAgICAgICAgICAgIHN0b3JlLnNhdmUoKTsKICAgICAgICAgICAgICAgIE5hdmlnYXRvci5wb3AoY3R4KTsKICAgICAgICAgICAgICAgIE5hdmlnYXRvci5wb3AoY29udGV4dCk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgOiBudWxsLAogICAgICAgICAgICBjaGlsZDogY29uc3QgVGV4dCgCTDtnNjaGVuJyksCiAgICAgICAgICksCiAgICAgICAgXSksCiAgICAgICAgKTsKICB9Cn0KCmNsYXNzIE5ldHdvcmtMb2dTY3JlZW4gZXh0ZW5kcyBDb25zdW1lcldpZGdldCB7CiAgY29uc3QgTmV0d29ya0xvZ1NjcmVlbig7c3VwZXIua2V5fSk7CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCwgV2lkZ2V0UmVmIHJlZikgewogICAgZmluYWwgc3RvcmUgPSByZWYud2F0Y2goYXBwU3RhdGVQcm92aWRlcikuc3RvcmU7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgcmV0dXJuIFNjYWZmb2xkKAogICAgICBhcHBCYXI6IEFwcEJhcih0aXRsZTogY29uc3QgVGV4dCgnTmV0enarioay1Qcm90b2tvbGwnKSksCiAgICAgIGJvZHk6IENvbHVtbigoY2hpbGRyZW46IFsKICAgICAgICBQYWRkaW5nKAogICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5hbGwoMjApLAogICAgICAgICAgY2hpbGQ6IFRleHQoCiAgICAgICAgICAgICAnS2xhcmJsaWNrIHZlcmJpbmRldCBzaWNoIGF1c3NjaGxpZcOfbGljaCBtaXQgZGVpbmVuIEJhbmtlbi4gS2VpbiBlaWdlbmVyIFNlcnZlciwga2VpbiBUcmFja2luZy4nLAogICAgICAgICAgICAgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5TGFyZ2UsCiAgICAgICAgICApLAogICAgICAgICApLAogICAgICAgIEV4cGFuZGVkKAogICAgICAgICAgY2hpbGQ6IHN0b3JlLm5ldHdvcmtMb2cuaXNFbXB0eQ8KICAgICAgICAgICAgICAgID8gY29uc3QgQ2VudGVyKGNoaWxkOiBUZXh0KCdOb2NoIGtlaW5lIE5ldHp3ZXJrdmVyYmluZHVuZyBwcm90b2tvbGxpZXJ0LicpKQogICAgICAgICAgICAgICAgOiBMaXN0Vmllddy5zZXBhcmF0ZWQoCiAgICAgICAgICAgICAgICAgIGl0ZW1Db3VudDogc3RvcmUubmV0d29ya0xvZy5sZW5ndGgsCiAgICAgICAgICAgICAgICAgIHNlcGFyYXRvckJ1aWxkZXI6IChfLCBfKSA9PiBEaXZpZGVyKGNvbG9yOiB0aGVtZS5jb2xvclNjaGVtZS5vdXRsaW5lLCBoZWlnaHQ6IDEpLAogICAgICAgICAgICAgICAgIGl0ZW1CdWlsZGVyOiAoY29udGV4dCwgaSkgPT4gewogICAgICAgICAgICAgICAgICBmaW5hbCBlID0gc3RvcmUubmV0d29ya0xvZ1tpXTsKICAgICAgICAgICAgICAgICAgIHJldHVybiBMaXN0VGlsZSgKICAgICAgICAgICAgICAgICAgIGxlYWRpbmc6IGNvbnN0IEljb24oSWNvbnMuZG5zX291dGxpbmVkKSwKICAgICAgICAgICAgICAgICAgICB0aXRsZTogVGV4dChlLmhvc3QpLAogICAgICAgICAgICAgICAgICAgIHN1YnRpdGxlOiBUZXh0KGUucHVycG9zZSksCiAgICAgICAgICAgICAgICAgICAgIHRyYWlsaW5nOiBUZXh0KERhdGVGb3JtYXQoJ2RkLk1NLiBISC6bW0nLCAnZGVfREUnKS5mb3JtYXQoZS50aW1lc3RhbXApLCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLmxhYmVsU21hbGwpLAogICAgICAgICAgICAgICAgICAgICk7CiAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICApLAogICAgICAgICApLAogICAgICBdKSwKICAgICAgKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../state/app_state.dart';
+import '../theme.dart';
+import 'onboarding.dart';
+
+class SettingsScreen extends ConsumerWidget {
+  const SettingsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final store = ref.watch(appStateProvider).store;
+    final theme = Theme.of(context);
+
+    return Scaffold(
+      appBar: AppBar(title: const Text('Einstellungen')),
+      body: ListView(children: [
+        const SizedBox(height: 8),
+        _section(theme, 'Darstellung'),
+        SwitchListTile(
+          title: const Text('Diskret-Modus'),
+          subtitle: const Text('Beträge werden als •••,•• € angezeigt'),
+          value: store.settings['discreetMode'] == true,
+          onChanged: (v) => _patch(ref, {'discreetMode': v}),
+        ),
+        ListTile(
+          title: const Text('Farbschema'),
+          trailing: DropdownButton<String>(
+            value: store.settings['darkMode'] as String? ?? 'system',
+            underline: const SizedBox.shrink(),
+            items: const [
+              DropdownMenuItem(value: 'system', child: Text('System')),
+              DropdownMenuItem(value: 'light', child: Text('Hell')),
+              DropdownMenuItem(value: 'dark', child: Text('Dunkel')),
+            ],
+            onChanged: (v) => _patch(ref, {'darkMode': v}),
+          ),
+        ),
+        const Divider(),
+        _section(theme, 'Sicherheit'),
+        SwitchListTile(
+          title: const Text('App-Sperre (Biometrie/PIN)'),
+          value: store.settings['appLock'] == true,
+          onChanged: (v) => _patch(ref, {'appLock': v}),
+        ),
+        SwitchListTile(
+          title: const Text('Im App-Switcher verbergen'),
+          value: store.settings['hideInSwitcher'] == true,
+          onChanged: (v) => _patch(ref, {'hideInSwitcher': v}),
+        ),
+        const Divider(),
+        _section(theme, 'Daten'),
+        ListTile(
+          leading: const Icon(Icons.file_upload_outlined),
+          title: const Text('Datei importieren'),
+          subtitle: const Text('CSV, CAMT.053 oder MT940'),
+          onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ImportScreen())),
+        ),
+        ListTile(
+          leading: const Icon(Icons.refresh),
+          title: const Text('Analyse neu ausführen'),
+          onTap: () => ref.read(appStateProvider.notifier).runAnalysis(),
+        ),
+        ListTile(
+          leading: Icon(Icons.delete_outline, color: AppColors.critical),
+          title: Text('Alle Daten löschen', style: TextStyle(color: AppColors.critical)),
+          onTap: () => _confirmReset(context, ref),
+        ),
+        const Divider(),
+        _section(theme, 'Rechtliches'),
+        ListTile(
+          title: const Text('Datenschutzerklärung'),
+          subtitle: const Text('Alle Daten bleiben lokal & verschlüsselt auf diesem Gerät.'),
+          onTap: () => showAboutDialog(
+            context: context,
+            applicationName: 'Klarblick',
+            applicationVersion: '1.0.0',
+            children: const [Text('Klarblick verarbeitet alle Daten ausschließlich lokal und AES-256-GCM-verschlüsselt. Es gibt keine Konten, keine Cloud und keine Tracker. Netzwerkverkehr findet nur bei expliziter Bankverbindung (FinTS) statt und wird im Netzwerk-Log protokolliert.')],
+          ),
+        ),
+        ListTile(
+          title: const Text('Lizenz (GPL-3.0)'),
+          onTap: () => showLicensePage(context: context, applicationName: 'Klarblick'),
+        ),
+        const SizedBox(height: 40),
+      ]),
+    );
+  }
+
+  Widget _section(ThemeData theme, String title) => Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+        child: Text(title, style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.primary, fontWeight: FontWeight.bold)),
+      );
+
+  void _patch(WidgetRef ref, Map<String, dynamic> patch) {
+    final store = ref.read(appStateProvider).store;
+    store.updateSettings(patch);
+    store.save();
+  }
+
+  void _confirmReset(BuildContext context, WidgetRef ref) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Alle Daten löschen?'),
+        content: const Text('Konten, Umsätze, Verträge und Einstellungen werden unwiderruflich gelöscht.'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Abbrechen')),
+          FilledButton(
+            style: FilledButton.styleFrom(backgroundColor: AppColors.critical),
+            onPressed: () {
+              final store = ref.read(appStateProvider).store;
+              store.accounts.clear();
+              store.transactions.clear();
+              store.contracts.clear();
+              store.insights.clear();
+              store.budgets.clear();
+              store.save();
+              Navigator.pop(ctx);
+              Navigator.pop(context);
+            },
+            child: const Text('Löschen'),
+          ),
+        ],
+      ),
+    );
+  }
+}

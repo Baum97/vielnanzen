@@ -1,1 +1,114 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX3JpdmVycG9kL2ZsdXR0ZXJfcml2ZXJwb2QuZGFydCc7CmltcG9ydCAncGFja2FnZTppbnRsL2ludGwuZGFydCc7CgppbXBvcnQgJy4uLy4uL2RhdGEvbW9kZWxzLmRhcnQnOwppbXBvcnQgJy4uLy4uL3N0YXRlL2FwcF9zdGF0ZS5kYXJ0JzsKaW1wb3J0ICcuLi9jaGFydHMuZGFydCc7CmltcG9ydCAnLi4vdGhlbWUuZGFydCc7CmltcG9ydCAnLi4vd2lkZ2V0cy5kYXJ0JzsKCmNsYXNzIEFuYWx5c2lzVGFiIGV4dGVuZHMgQ29uc3VtZXJTdGF0ZWZ1bFdpZGdldCB7CiAgY29uc3QgQW5hbHlzaXNUYWIoe3N1cGVyLmtleX0pOwoKICBAb3ZlcnJpZGUKICBDb25zdW1lclN0YXRlPEFuYWx5c2lzVGFiPiBjcmVhdGVTdGF0ZSgpID0+IF9BbmFseXNpc1RhYlN0YXRlKCk7Cn0KCmNsYXNzIF9BbmFseXNpc1RhYlN0YXRlIGV4dGVuZHMgQ29uc3VtZXJTdGF0ZTxBbmFseXNpc1RhYj4gewogIGludCBfc2VnbWVudCA9IDA7IC8vIDAgQXVzZ2FiZW4sIDEgRWlubmFobWVuLCAyIENhc2hmbG93LCAzIEjDpG5kbGVyCiAgRGF0ZVRpbWUgX21vbnRoID0gRGF0ZVRpbWUoRGF0ZVRpbWUubm93KCkueWVhciwgRGF0ZVRpbWUubm93KCkubW9udGgsIDEpOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGZpbmFsIGFwcCA9IHJlZi53YXRjaChhcHBTdGF0ZVByb3ZpZGVyKTsKICAgIGZpbmFsIHN0b3JlID0gYXBwLnN0b3JlOwogICAgZmluYWwgZW5naW5lID0gcmVmLnJlYWQoZW5naW5lUHJvdmlkZXIpOwogICAgZmluYWwgdGhlbWUgPSBUaGVtZS5vZihjb250ZXh0KTsKICAgIGZpbmFsIGRpc2NyZWV0ID0gc3RvcmUuc2V0dGluZ3NbJ2Rpc2NyZWV0TW9kZSddID09IHRydWU7CiAgICBmaW5hbCB0eHMgPSAoYXBwLnJlc3VsdD8udHJhbnNhY3Rpb25zID8/IHN0b3JlLnRyYW5zYWN0aW9ucykKICAgICAgICAud2hlcmUoKHQpID0+ICF0LmV4Y2x1ZGVkICYmICF0LmlzVHJhbnNmZXIgJiYgdC5ib29raW5nRGF0ZS55ZWFyID09IF9tb250aC55ZWFyICYmIHQuYm9va2luZ0RhdGUubW9udGggPT0gX21vbnRoLm1vbnRoKQogICAgICAgIC50b0xpc3QoKTsKCiAgICByZXR1cm4gU2NhZmZvbGQoCiAgICAgIGJvZHk6IEN1c3RvbVNjcm9sbFZpZXcoc2xpdmVyczogWwogICAgICAgIFNsaXZlckFwcEJhcigKICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdBbmFseXNlJyksCiAgICAgICAgICBmbG9hdGluZzogdHJ1ZSwKICAgICAgICAgIGJvdHRvbTogUHJlZmVycmVkU2l6ZSgKICAgICAgICAgICAgcHJlZmVycmVkU2l6ZTogY29uc3QgU2l6ZS5mcm9tSGVpZ2h0KDg4KSwKICAgICAgICAgICAgY2hpbGQ6IFBhZGRpbmcoCiAgICAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5mcm9tTFRSQigyMCwgMCwgMjAsIDgpLAogICAgICAgICAgICAgIGNoaWxkOiBDb2x1bW4oY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgIFJvdyhjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICBJY29uQnV0dG9uKG9uUHJlc3NlZDogKCkgPT0gc2V0U3RhdGUoKCkgPT4gX21vbnRoID0gRGF0ZVRpbWUoX21vbnRoLnllYXIsIF9tb250aC5tb250aCAtIDEpKSwgaWNvbjogY29uc3QgSWNvbihJY29ucy5jaGV2cm9uX2xlZnQpKSwKICAgICAgICAgICAgICAgICAgRXhwYW5kZWQoCiAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IEdlc3R1cmVEZXRlY3RvcigKICAgICAgICAgICAgICAgICAgICAgIG9uVGFwOiAoKSB7fSwKICAgICAgICAgICAgICAgICAgICAgIGNoaWxkOiBUZXh0KERhdGVGb3JtYXQoJ01NTU0geXl5xJywgJ2RlX0RFJykpLmZvcm1hdChfbW9udGgpLCB0ZXh0QWxpZ246IFRleHRBbGlnbi5jZW50ZXIsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUudGl0bGVNZWRpdW0pLAogICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgISwKICAgICAgICAgICAgICAgICAgIEljb25CdXR0b24ob25QcmVzc2VkOiAoKSA9PiBzZXRTdGF0ZSgoKSA9PiBfbW9udGggPSBEYXRlVGltZShfbW9udGgueWVhciwgX21vbnRoLm1vbnRoICsgMSkpLCBpY29uOiBjb25zdCBJY29uKEljb25zLmNoZXZyb25fcmlnaHQpKSwKICAgICAgICAgICAgICAgIF0pLAogICAgICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiA0KSwKICAgICAgICAgICAgICAgIFNlZ21lbnRlZEJ1dHRvbjxpbnQ+KAogICAgICAgICAgICAgICAgICBzZWdtZW50czogY29uc3QgWwogICAgICAgICAgICAgICAgICAgIEJ1dHRvblNlZ21lbnQodmFsdWU6IDAsIGxhYmVsOiBUZXh0KCdBdXNnYWJlbicpKSwKICAgICAgICAgICAgICAgICAgICBCdXR0b25TZWdtZW50KHZhbHVlOiAxLCBsYWJlbDogVGV4dCgnRWlubmFobWVuJykpLAogICAgICAgICAgICAgICAgICAgIEJ1dHRvblNlZ21lbnQodmFsdWU6IDIsIGxhYmVsOiBUZXh0KCdDYXNoZmxvdycpKSwKICAgICAgICAgICAgICAgICAgICBCdXR0b25TZWdtZW50KHZhbHVlOiAzLCBsYWJlbDogVGV4dCgnSMOkbmRsZXInKSksCiAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgIHNlbGVjdGVkOiB7X3NlZ21lbnR9LAogICAgICAgICAgICAgICAgICBvblNlbGVjdGlvbkNoYW5nZWQ6IChzKSA9PiBzZXRTdGF0ZSgoKSA9PiBfc2VnbWVudCA9IHMuZmlyc3QpLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICBdKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICksCiAgICAgICAgKSwKICAgICAgICBTbGl2ZXJUb0JveEFkYXB0ZXIoCiAgICAgICAgICBjaGlsZDogUGFkZGluZygKICAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5mcm9tTFRSQigyMCwgOCwgMjAsIDgwKSwKICAgICAgICAgICAgY2hpbGQ6IHN3aXRjaCAoX3NlZ21lbnQpIHsKICAgICAgICAgICAgICAwID0+IF9leHBlbnNlc1ZpZXcodHhzLCBlbmdpbmUsIGRpc2NyZWV0LCB0aGVtZSksCiAgICAgICAgICAgICAgMSA9PiBfaW5jb21lVmlldyh0eHMsIGVuZ2luZSwgZGlzY3JlZXQsIHRoZW1lKSwKICAgICAgICAgICAgICAyID0+IF9jYXNoZmxvd1ZpZXcoc3RvcmUsIGRpc2NyZWV0LCB0aGVtZSksCiAgICAgICAgICAgICAgXyA9PiBfbWVyY2hhbnRWaWV3KHR4cywgZGlzY3JlZXQsIHRoZW1lKSwKICAgICAgICAgICAgfSwKICAgICAgICAgICksCiAgICAgICAgKSwKICAgICAgXSksCiAgICApOwogIH0KCiAgV2lkZ2V0IF9leHBlbnNlc1ZpZXcoTGlzdDxUcmFuc2FjdGlvbj4gdHhzLCBkeW5hbWljIGVuZ2luZSwgYm9vbCBkaXNjcmVldCwgVGhlbWVEYXRhIHRoZW1lKSB7CiAgICBmaW5hbCBleHBlbnNlcyA9IHR4cy53aGVyZSgodCkgPT4gdC5hbW91bnRDZW50cyA8IDApLnRvTGlzdCgpOwogICAgZmluYWwgYnlDYXQgPSA8U3RyaW5nLCBpbnQ+e307CiAgICBmb3IgKGZpbmFsIHQgaW4gZXhwZW5zZXMpIHsKICAgICAgZmluYWwgY2F0ID0gdC5jYXRlZ29yeUlkID8/ICdzb25zdGlnZXMnOwogICAgICBieUNhdFtjYXRdID0gKGJ5Q2F0W2NhdF0gPz8gMCkgKyB0LmFtb3VudENlbnRzLmFicygpOwogICAgfQogICAgZmluYWwgc29ydGVkID0gYnlDYXQuZW50cmllcy50b0xpc3QoKS4uc29ydCgoYSwgYikgPT4gYi52YWx1ZS5jb21wYXJlVG8oYS52YWx1ZSkpOwogICAgZmluYWwgdG9wID0gc29ydGVkLnRha2UoNikudG9MaXN0KCk7CiAgICBmaW5hbCByZXN0ID0gc29ydGVkLnNraXAoNikuZm9sZDxpbnQ+KDAsIChhLCBlKSA9PiBhICsgZS52YWx1ZSk7CiAgICBmaW5hbCB0b3RhbCA9IGV4cGVuc2VzLmZvbGQ8aW50PigwLCAoYSwgdCkgPT4gYSArIHQuYW1vdW50Q2VudHMuYWJzKCkpOwogICAgZmluYWwgTGlzdDwoU3RyaW5nLCBpbnQsIENvbG9yKT4gc2VnbWVudHMgPSBbCiAgICAgIGZvciAoZmluYWwgZSBpbiB0b3ApCiAgICAgICAgKGVuZ2luZS5jYXRlZ29yeUJ5SWQoZS5rZXkpPy5uYW1lID8/ICdTb25zdGlnZXMnLCBlLnZhbHVlLCBwYXJzZUhleENvbG9yKGVuZ2luZS5jYXRlZ29yeUJ5SWQoZS5rZXkpPy5jb2xvciA/PyAnIzlBOUVBNScpKSwKICAgICAgaWYgKHJlc3QgPiAwKSAoJ1NvbnN0aWdlcycsIHJlc3QsIEFwcENvbG9ycy50ZXh0VGVydGlhcnlMaWdodCksCiAgICBdOwogICAgcmV0dXJuIENvbHVtbihjaGlsZHJlbjogWwogICAgICBBcHBDYXJkKAogICAgICAgIGNoaWxkOiBEb251dENoYXJ0KHNlZ21lbnRzOiBzZWdtZW50cywgY2VudGVyTGFiZWw6IEFtb3VudEZvcm1hdC5mb3JtYXQodG90YWwsIGRpc2NyZWV0OiBkaXNjcmVldCkpLAogICAgICApLAogICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDEyKSwKICAgICAgQXBwQ2FyZCgKICAgICAgICB0aXRsZTogJ0thdGVnb3JpZW4nLAogICAgICAgIGNoaWxkOiBDb2x1bW4oY2hpbGRyZW46IFsKICAgICAgICAgIGZvciAoZmluYWwgZSBpbiBzb3J0ZWQudGFrZSgxMCkpCiAgICAgICAgICAgIExpc3RUaWxlKAogICAgICAgICAgICAgIGRlbnNlOiB0cnVlLAogICAgICAgICAgICAgIGNvbnRlbnRQYWRkaW5nOiBFZGdlSW5zZXRzLnplcm8sCiAgICAgICAgICAgICAgbGVhZGluZzogQ29udGFpbmVyKAogICAgICAgICAgICAgICAgd2lkdGg6IDM2LAogICAgICAgICAgICAgICAgaGVpZ2h0OiAzNiwKICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBwYXJzZUhleENvbG9yKGVuZ2luZS5jYXRlZ29yeUJ5SWQoZS5rZXkpPy5jb2xvciA/PyAnIzlBOUVBNScpLndpdGhWYWx1ZXMoYWxwaGE6IDAuMTIpLAogICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcigxMCksCiAgICAgICAgICAgICAgICAgICBjaGlsZDogY2VudGVyKGNoaWxkOiBjb25zdCBJY29uKEljb25zLmNhdGVnb3J5X291dGxpbmVkLCBzaXplOiAyMCksCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICB0aXRsZTogVGV4dChlbmdpbmUuY2F0ZWdvcnlCeUlkKGUua2V5KT8ubmFtZSA/PyAnU29uc3RpZ2VzJyksCiAgICAgICAgICAgICAgc3VidGl0bGU6IFRleHQoJyR7ZS52YWx1ZSAvIHRvdGFsICogMTAwKS5yb3VuZCgpfSAlJyksCiAgICAgICAgICAgICAgdHJhaWxpbmc6IEFtb3VudFRleHQoLWUudmFsdWUsIGRpc2NyZWV0OiBkaXNjcmVldCwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5TWVkaXVtKSwKICAgICAgICAgICAgKSwKICAgICAgICBdKSwKICAgICAgKSwKICAgIF0pOwogIH0KCiAgV2lkZ2V0IF9pbmNvbWVWaWV3KExpc3Q8VHJhbnNhY3Rpb24+IHR4cywgZHluYW1pYyBlbmdpbmUsIGJvb2wgZGlzY3JlZXQsIFRoZW1lRGF0YSB0aGVtZSkgewogICAgZmluYWwgaW5jb21lID0gdHhzLndoZXJlKCh0KSA9PiB0LmFtb3VudENlbnRzID4gMCkudG9MaXN0KCk7CiAgICBmaW5hbCB0b3RhbCA9IGluY29tZS5mb2xkPGludD4oMCwgKGEsIHQpID0+IGEgKyB0LmFtb3VudENlbnRzKTsKICAgIHJldHVybiBBcHBDYXJkKAogICAgICB0aXRsZTogJ0Vpbm5haG1lbiAke0RhdGVGb3JtYXQoJ01NTU0nLCAnZGVfREUnKS5mb3JtYXQoX21vbnRoKX0nLAogICAgICBjaGlsZDogQ29sdW1uKGNoaWxkcmVuOiBbCiAgICAgICAgQW1vdW50VGV4dCh0b3RhbCwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS50aXRsZUxhcmdlLCBzaWduZWQ6IHRydWUsIGRpc2NyZWV0OiBkaXNjcmVldCksCiAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiA4KSwKICAgICAgICBmb3IgKGZpbmFsIHQgaW4gaW5jb21lLnRha2UoMTApKQogICAgICAgICAgTGlzdFRpbGUoCiAgICAgICAgICAgIGRlbnNlOiB0cnVlLAogICAgICAgICAgICBjb250ZW50UGFkZGluZzogRWRnZUluc2V0cy56ZXJvLAogICAgICAgICAgICB0aXRsZTogVGV4dCh0LmNvdW50ZXJwYXJ0eU5hbWUpLAogICAgICAgICAgICBzdWJ0aXRsZTogVGV4dChBbW91bnRGb3JtYXQuZGF0ZS5mb3JtYXQodC5ib29raW5nRGF0ZSkpLAogICAgICAgICAgICB0cmFpbGluZzogQW1vdW50VGV4dCh0LmFtb3VudENlbnRzLCBzaWduZWQ6IHRydWUsIGRpc2NyZWV0OiBkaXNjcmVldCwgc3R5bGU6IHRoZW1lLnRleHRUaGVtZS5ib2R5TWVkaXVtPy5jb3B5V2l0aChjb2xvcjogQXBwQ29sb3JzLnBvc2l0aXZlKSksCiAgICAgICAgICApLAogICAgICBdKSwKICAgICk7CiAgfQoKICBXaWRnZXQgX2Nhc2hmbG93VmlldyhkeW5hbWljIHN0b3JlLCBib29sIGRpc2NyZWV0LCBUaGVtZURhdGEgdGhlbWUpIHsKICAgIGZpbmFsIHR4cyA9IHN0b3JlLnRyYW5zYWN0aW9ucy53aGVyZSgodCkgPT4gIXQuZXhjbHVkZWQgJiYgIXQuaXNUcmFuc2ZlcikudG9MaXN0KCk7CiAgICBmaW5hbCBtb250aGx5ID0gPFN0cmluZywgTGlzdDxudW0+Pnt9OwogICAgZm9yIChmaW5hbCB0IGluIHR4cykgewogICAgICBmaW5hbCBrZXkgPSAnJHt0LmJvb2tpbmdEYXRlLnllYXJ9LSR7dC5ib29raW5nRGF0ZS5tb250aC50b1N0cmluZygpLnBhZExlZnQoMiwgJzAnKX0nOwogICAgICBmaW5hbCBjdXIgPSBtb250aGx5LnB1dElmQWJzZW50KGtleSwgKCkgPT4gPG51bT5bMCwgMF0pOwogICAgICBpZiAodC5hbW91bnRDZW50cyA+IDApIHsKICAgICAgICBjdXJbMF0gPSBjdXJbMF0gKyB0LmFtb3VudENlbnRzOwogICAgICB9IGVsc2UgewogICAgICAgIGN1clsxXSA9IGN1clsxXSArIHQuYW1vdW50Q2VudHMuYWJzKCk7CiAgICAgIH0KICAgIH0KICAgIGZpbmFsIGtleXMgPSBtb250aGx5LmtleXMudG9MaXN0KCkuLnNvcnQoKTsKICAgIGZpbmFsIGJhcnMgPSBrZXlzLnRha2UoMTIpLm1hcCgoaykgewogICAgICBmaW5hbCB2ID0gbW9udGhseVtrXSE7CiAgICAgIHJldHVybiAoay5zdWJzdHJpbmcoNSksIHZbMV0udG9JbnQoKSk7CiAgICB9KS50b0xpc3QoKTsKICAgIHJldHVybiBBcHBDYXJkKAogICAgICB0aXRsZTogJ0Nhc2hmbG93ICgxMiBNb25hdGUpJywKICAgICAgY2hpbGQ6IENvbHVtbihjaGlsZHJlbjogWwogICAgICAgIEJhckNoYXJ0KGJhcnM6IGJhcnMpLAogICAgICAgIGNvbnN0IFNpemVkQm94KGhlaWdodDogMTIpLAogICAgICAgIGZvciAoZmluYWwgayBpbiBrZXlzLmxlbmd0aCA+IDYgPyBrZXlzLnN1Ymxpc3Qoa2V5cy5sZW5ndGggLSA2KS5yZXZlcnNlZCA6IGtleXMucmV2ZXJzZWQpCiAgICAgICAgICBCdWlsZGVyKGJ1aWxkZXI6IChjb250ZXh0KSB7CiAgICAgICAgICAgIGZpbmFsIHYgPSBtb250aGx5W2tdITsKICAgICAgICAgICBmaW5hbCBtb250aCA9IERhdGVGb3JtYXQoJ01NTU0geXl5eScsICdkZV9ERScpLmZvcm1hdChEYXRlVGltZShpbnQucGFyc2Uoay5zdWJzdHJpbmcoMCwgNCkpLCBpbnQucGFyc2Uoay5zdWJzdHJpbmcoNSkpLCAxKSk7CiAgICAgICAgICAgIHJldHVybiBMaXN0VGlsZSgKICAgICAgICAgICAgIGRlbnNlOiB0cnVlLAogICAgICAgICAgICAgY29udGVudFBhZGRpbmc6IEVkZ2VJbnNldHMuemVybywKICAgICAgICAgICAgICB0aXRsZTogVGV4dChtb250aCksCiAgICAgICAgICAgICAgdHJhaWxpbmc6IFJvdyhtYWluQXhpc1NpemU6IE1haW5BeGlzU2l6ZS5taW4sIGNoaWxkcmVuOiBbCiAgICAgICAgICAgICAgICBBbW91bnRUZXh0KHZbMF0udG9JbnQoKSwgc2lnbmVkOiB0cnVlLCBkaXNjcmVldDogZGlzY3JlZXQsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUuYm9keVNtYWxsPy5jb3B5V2l0aChjb2xvcjogQXBwQ29sb3JzLnBvc2l0aXZlKSksCiAgICAgICAgICAgICAgICBjb25zdCBTaXplZEJveCh3aWR0aDogMTIpLAogICAgICAgICAgICAgICAgQW1vdW50VGV4dCgtdlsxXS50b0ludCgpLCBkaXNjcmVldDogZGlzY3JlZXQsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUuYm9keVNtYWxsKSwKICAgICAgICAgICAgICBdKSwKICAgICAgICAgICAgKTsKICAgICAgICAgIH0pLAogICAgICBdKSwKICAgICk7CiAgfQoKICBXaWRnZXQgX21lcmNoYW50VmlldyhMaXN0PFRyYW5zYWN0aW9uPiB0eHMsIGJvb2wgZGlzY3JlZXQsIFRoZW1lRGF0YSB0aGVtZSkgewogICAgZmluYWwgYnlNZXJjaGFudCA9IDxTdHJpbmcsIChpbnQgc3VtLCBpbnQgY291bnQpPnt9OwogICAgZm9yIChmaW5hbCB0IGluIHR4cy53aGVyZSgodCkgPT4gdC5hbW91bnRDZW50cyA8IDApKSB7CiAgICAgIGZpbmFsIGN1ciA9IGJ5TWVyY2hhbnRbdC5jb3VudGVycGFydHlOYW1lXSA/PyAoMCwgMCk7CiAgICAgIGJ5TWVyY2hhbnRbdC5jb3VudGVycGFydHlOYW1lXSA9IChjdXIuJDEgKyB0LmFtb3VudENlbnRzLmFicygpLCBjdXIuJDIgKyAxKTsKICAgIH0KICAgIGZpbmFsIHNvcnRlZCA9IGJ5TWVyY2hhbnQuZW50cmllcy50b0xpc3QoKS4uc29ydCgoYSwgYikgPT4gYi52YWx1ZS4kMS5jb21wYXJlVG8oYS52YWx1ZS4kMSkpOwogICAgcmV0dXJuIEFwcENhcmQoCiAgICAgIHRpdGxlOiAnSMOkbmRsZXItUmFuZ2xpc3RlJywKICAgICAgY2hpbGQ6IENvbHVtbihjaGlsZHJlbjogWwogICAgICAgIGZvciAoZmluYWwgZSBpbiBzb3J0ZWQudGFrZSgxNSkpCiAgICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgICAgZGVuc2U6IHRydWUsCiAgICAgICAgICAgIGNvbnRlbnRQYWRkaW5nOiBFZGdlSW5zZXRzLnplcm8sCiAgICAgICAgICAgICB0aXRsZTogVGV4dChlLmtleSwgbWF4TGluZXM6IDEsIG92ZXJmbG93OiBUZXh0T3ZlcmZsb3cuZWxsaXBzaXMpLAogICAgICAgICAgIHN1YnRpdGxlOiBUZXh0KCcke2UudmFsdWUuJDJ9w5cgwrcgw5ggJHtBbW91bnRGb3JtYXQuZm9ybWF0KChlLnZhbHVlLiQxIC8gZS52YWx1ZS4kMikucm91bmQoKSl9JyksCiAgICAgICAgICAgIHRyYWlsaW5nOiBBbW91bnRUZXh0KC1lLnZhbHVlLiQxLCBkaXNjcmVldDogZGlzY3JlZXQsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUuYm9keU1lZGl1bSksCiAgICAgICAgICApLAogICAgICBdKSwKICAgICk7CiAgfQp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../data/models.dart';
+import '../../state/app_state.dart';
+import '../theme.dart';
+import '../widgets.dart';
+
+/// Analyse: Ausgaben nach Kategorie im gewählten Monat + Abo-Übersicht.
+class AnalysisTab extends ConsumerStatefulWidget {
+  const AnalysisTab({super.key});
+
+  @override
+  ConsumerState<AnalysisTab> createState() => _AnalysisTabState();
+}
+
+class _AnalysisTabState extends ConsumerState<AnalysisTab> {
+  int _monthOffset = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    final app = ref.watch(appStateProvider);
+    final store = app.store;
+    final engine = ref.read(engineProvider);
+    final theme = Theme.of(context);
+    final discreet = store.settings['discreetMode'] == true;
+    final now = DateTime.now();
+    final month = DateTime(now.year, now.month - _monthOffset, 1);
+    final next = DateTime(month.year, month.month + 1, 1);
+
+    final txs = (app.result?.transactions ?? store.transactions)
+        .where((t) => t.amountCents < 0 && !t.excluded && !t.isTransfer && !t.bookingDate.isBefore(month) && t.bookingDate.isBefore(next))
+        .toList();
+
+    final byCat = <String, int>{};
+    for (final t in txs) {
+      final key = t.categoryId ?? 'sonstiges';
+      byCat[key] = (byCat[key] ?? 0) + t.amountCents.abs();
+    }
+    final rows = byCat.entries.toList()..sort((a, b) => b.value.compareTo(a.value));
+    final total = rows.fold<int>(0, (a, e) => a + e.value);
+
+    final monthlyContracts = store.contracts
+        .where((c) => c.status == ContractStatus.aktiv || c.status == ContractStatus.gekuendigt)
+        .fold<double>(0, (a, c) => a + c.monthlyCents);
+
+    return Scaffold(
+      body: CustomScrollView(slivers: [
+        SliverAppBar(
+          title: const Text('Analyse'),
+          floating: true,
+          actions: [
+            IconButton(icon: const Icon(Icons.chevron_left), onPressed: () => setState(() => _monthOffset++)),
+            IconButton(icon: const Icon(Icons.chevron_right), onPressed: _monthOffset == 0 ? null : () => setState(() => _monthOffset--)),
+          ],
+        ),
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 80),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(AmountFormat.monthYear.format(month), style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.secondary)),
+              AmountText(-total, style: theme.textTheme.displayLarge?.copyWith(fontSize: 32), discreet: discreet),
+              Text('Ausgaben im Monat', style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary)),
+              const SizedBox(height: 16),
+              AppCard(
+                title: 'Nach Kategorie',
+                child: rows.isEmpty
+                    ? const Text('Keine Ausgaben in diesem Monat.')
+                    : Column(children: [
+                        for (final e in rows)
+                          Builder(builder: (context) {
+                            final cat = engine.categoryById(e.key);
+                            final share = total > 0 ? e.value / total : 0;
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 6),
+                              child: Row(children: [
+                                Container(
+                                  width: 36,
+                                  height: 36,
+                                  decoration: BoxDecoration(
+                                    color: parseHexColor(cat?.color ?? '#9A9EA5').withValues(alpha: 0.12),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: const Icon(Icons.category_outlined, size: 20),
+                                ),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                    Text(cat?.name ?? 'Sonstiges', style: theme.textTheme.bodyMedium),
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(4),
+                                      child: LinearProgressIndicator(value: share, minHeight: 5),
+                                    ),
+                                  ]),
+                                ),
+                                const SizedBox(width: 12),
+                                AmountText(-e.value, style: theme.textTheme.bodyMedium, discreet: discreet),
+                              ]),
+                            );
+                          }),
+                      ]),
+              ),
+              const SizedBox(height: 12),
+              AppCard(
+                title: 'Monatliche Abos gesamt',
+                child: AmountText(-monthlyContracts.round(), style: theme.textTheme.headlineMedium, discreet: discreet),
+              ),
+            ]),
+          ),
+        ),
+      ]),
+    );
+  }
+}

@@ -1,1 +1,52 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXJfcml2ZXJwb2QvZmx1dHRlcl9yaXZlcnBvZC5kYXJ0JzsKCmltcG9ydCAnLi4vY29yZS9lbmdpbmUvZW5naW5lLmRhcnQnOwppbXBvcnQgJy4uL2RhdGEvbW9kZWxzLmRhcnQnOwppbXBvcnQgJy4uL2RhdGEvc3RvcmUuZGFydCc7CgpmaW5hbCBzdG9yZVByb3ZpZGVyID0gUHJvdmlkZXI8U3RvcmU+KChyZWYpID0+IFN0b3JlKCkpOwoKZmluYWwgZW5naW5lUHJvdmlkZXIgPSBQcm92aWRlcjxFbmdpbmU+KChyZWYpID0+IEVuZ2luZShyZWYud2F0Y2goc3RvcmVQcm92aWRlcikpKTsKCi8vLyBHZWxhZGVuZXIgWnVzdGFuZDogU3RvcmUgKyBFbmdpbmUtRXJnZWJuaXMuCmNsYXNzIEFwcFN0YXRlIHsKICBmaW5hbCBTdG9yZSBzdG9yZTsKICBmaW5hbCBFbmdpbmVSZXN1bHQ/IHJlc3VsdDsKICBmaW5hbCBib29sIGFuYWx5emluZzsKCiAgY29uc3QgQXBwU3RhdGUoe3JlcXVpcmVkIHRoaXMuc3RvcmUsIHRoaXMucmVzdWx0LCB0aGlzLmFuYWx5emluZyA9IGZhbHNlfSk7CgogIEFwcFN0YXRlIGNvcHlXaXRoKHtTdG9yZT8gc3RvcmUsIEVuZ2luZVJlc3VsdD8gcmVzdWx0LCBib29sPyBhbmFseXppbmd9KSA9PiAgICAgICBBcHBTdGF0ZShzdG9yZTogc3RvcmUgPz8gdGhpcy5zdG9yZSwgcmVzdWx0OiByZXN1bHQgPz8gdGhpcy5yZXN1bHQsIGFuYWx5emluZzogYW5hbHl6aW5nID8/IHRoaXMuYW5hbHl6aW5nKTsKfQoKZmluYWwgYXBwU3RhdGVQcm92aWRlciA9IFN0YXRlTm90aWZpZXJQcm92aWRlcjxBcHBTdGF0ZU5vdGlmaWVyLCBBcHBTdGF0ZT4oKHJlZikgewogIHJldHVybiBBcHBTdGF0ZU5vdGlmaWVyKHJlZik7Cn0pOwoKY2xhc3MgQXBwU3RhdGVOb3RpZmllciBleHRlbmRzIFN0YXRlTm90aWZpZXI8QXBwU3RhdGU+IHsKICBBcHBTdGF0ZU5vdGlmaWVyKHRoaXMucmVmKSA6IHN1cGVyKEFwcFN0YXRlKHN0b3JlOiByZWYucmVhZChzdG9yZVByb3ZpZGVyKSkpOwoKICBmaW5hbCBSZWYgcmVmOwoKICBGdXR1cmU8dm9pZD4gbG9hZCgpIGFzeW5jIHsKICAgIGF3YWl0IHN0YXRlLnN0b3JlLmxvYWQoKTsKICAgIGF3YWl0IHJlZi5yZWFkKGVuZ2luZVByb3ZpZGVyKS5sb2FkU2VlZERhdGEoKTsKICAgIGF3YWl0IHJ1bkFuYWx5c2lzKCk7CiAgfQoKICBGdXR1cmU8dm9pZD4gcnVuQW5hbHlzaXMoKSBhc3luYyB7CiAgICBzdGF0ZSA9IHN0YXRlLmNvcHlXaXRoKGFuYWx5emluZzogdHJ1ZSk7CiAgICBmaW5hbCBlbmdpbmUgPSByZWYucmVhZChlbmdpbmVQcm92aWRlcik7CiAgICBmaW5hbCByZXN1bHQgPSBhd2FpdCBlbmdpbmUucnVuKCk7CiAgICBzdGF0ZS5zdG9yZS51cHNlcnRUcmFuc2FjdGlvbnMocmVzdWx0LnRyYW5zYWN0aW9ucyk7CiAgICBmb3IgKGZpbmFsIGMgaW4gcmVzdWx0LmNvbnRyYWN0cykgewogICAgICBmaW5hbCBleGlzdGluZyA9IHN0YXRlLnN0b3JlLmNvbnRyYWN0cy53aGVyZSgoZSkgPT0gZS5uYW1lID09IGMubmFtZSAmJiBlLnN0YXR1cyAhPSBDb250cmFjdFN0YXR1cy5pZ25vcmllcnQpLnRvTGlzdCgpOwogICAgICBpZiAoZXhpc3RpbmcuaXNFbXB0eSkgc3RhdGUuc3RvcmUudXBzZXJ0Q29udHJhY3QoYyk7CiAgICB9CiAgICBmb3IgKGZpbmFsIGkgaW4gcmVzdWx0Lmluc2lnaHRzKSB7CiAgICAgIGZpbmFsIGR1cCA9IHN0YXRlLnN0b3JlLmluc2lnaHRzLmFueSgoZSkgPT0gIWUuZGlzbWlzc2VkICYmIGUudGl0bGUgPT0gaS50aXRsZSk7CiAgICAgIGlmICghZHVwKSBzdGF0ZS5zdG9yZS51cHNlcnRJbnNpZ2h0KGkpOwogICAgfQogICAgc3RhdGUgPSBzdGF0ZS5jb3B5V2l0aChyZXN1bHQ6IHJlc3VsdCwgYW5hbHl6aW5nOiBmYWxzZSk7CiAgfQp9Cg==
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../core/engine/engine.dart';
+import '../data/models.dart';
+import '../data/store.dart';
+
+final storeProvider = Provider<Store>((ref) => Store());
+
+final engineProvider = Provider<Engine>((ref) => Engine(ref.watch(storeProvider)));
+
+/// Geladener Zustand: Store + Engine-Ergebnis.
+class AppState {
+  final Store store;
+  final EngineResult? result;
+  final bool analyzing;
+
+  const AppState({required this.store, this.result, this.analyzing = false});
+
+  AppState copyWith({Store? store, EngineResult? result, bool? analyzing}) =>       AppState(store: store ?? this.store, result: result ?? this.result, analyzing: analyzing ?? this.analyzing);
+}
+
+final appStateProvider = StateNotifierProvider<AppStateNotifier, AppState>((ref) {
+  return AppStateNotifier(ref);
+});
+
+class AppStateNotifier extends StateNotifier<AppState> {
+  AppStateNotifier(this.ref) : super(AppState(store: ref.read(storeProvider)));
+
+  final Ref ref;
+
+  Future<void> load() async {
+    await state.store.load();
+    await ref.read(engineProvider).loadSeedData();
+    await runAnalysis();
+  }
+
+  Future<void> runAnalysis() async {
+    state = state.copyWith(analyzing: true);
+    final engine = ref.read(engineProvider);
+    final result = await engine.run();
+    state.store.upsertTransactions(result.transactions);
+    for (final c in result.contracts) {
+      final existing = state.store.contracts.where((e) == e.name == c.name && e.status != ContractStatus.ignoriert).toList();
+      if (existing.isEmpty) state.store.upsertContract(c);
+    }
+    for (final i in result.insights) {
+      final dup = state.store.insights.any((e) == !e.dismissed && e.title == i.title);
+      if (!dup) state.store.upsertInsight(i);
+    }
+    state = state.copyWith(result: result, analyzing: false);
+  }
+}

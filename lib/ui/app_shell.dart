@@ -1,1 +1,53 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyX3JpdmVycG9kL2ZsdXR0ZXJfcml2ZXJwb2QuZGFydCc7CgppbXBvcnQgJ3RhYnMvaG9tZV90YWIuZGFydCc7CmltcG9ydCAndGFicy90cmFuc2FjdGlvbnNfdGFiLmRhcnQnOwppbXBvcnQgJ3RhYnMvYW5hbHlzaXNfdGFiLmRhcnQnOwppbXBvcnQgJ3RhYnMvY29udHJhY3RzX3RhYi5kYXJ0JzsKaW1wb3J0ICd0YWJzL3NhdmluZ3NfdGFiLmRhcnQnOwppbXBvcnQgJ3NjcmVlbnMvc2V0dGluZ3Nfc2NyZWVuLmRhcnQnOwoKY2xhc3MgQXBwU2hlbGwgZXh0ZW5kcyBDb25zdW1lclN0YXRlZnVsV2lkZ2V0IHsKICBjb25zdCBBcHBTaGVsbCh7c3VwZXIua2V5fSk7CgogIEBvdmVycmlkZQogIENvbnN1bWVyU3RhdGU8QXBwU2hlbGw+IGNyZWF0ZVN0YXRlKCkgPT4gX0FwcFNoZWxsU3RhdGUoKTsKfQoKY2xhc3MgX0FwcFNoZWxsU3RhdGUgZXh0ZW5kcyBDb25zdW1lclN0YXRlPEFwcFNoZWxsPiB7CiAgaW50IF9pbmRleCA9IDA7CgogIHN0YXRpYyBjb25zdCBfdGFicyA9IFsKICAgICgnw5xiZXJzaWNodCcsIEljb25zLmhvbWVfb3V0bGluZWQsIEljb25zLmhvbWUpLAogICAgKCdVbXPDpHR6ZScsIEljb25zLmxpc3Rfb3V0bGluZWQsIEljb25zLmxpc3QpLAogICAgKCdBbmFseXNlJywgSWNvbnMucGllX2NoYXJ0X291dGxpbmUsIEljb25zLnBpZV9jaGFydCksCiAgICAoJ1ZlcnRyw6RnZScsIEljb25zLnJlcGVhdF9vdXRsaW5lZCwgSWNvbnMucmVwZWF0KSwKICAgICgnU3BhcmVuJywgSWNvbnMuc2F2aW5nc19vdXRsaW5lZCwgSWNvbnMuc2F2aW5ncyksCiAgXTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCBwYWdlcyA9IFsKICAgICAgSG9tZVRhYihvbk9wZW5TZXR0aW5nczogKCkgPT4gTmF2aWdhdG9yLm9mKGNvbnRleHQpLnB1c2goTWF0ZXJpYWxQYWdlUm91dGUoYnVpbGRlcjogKF8pID0+IGNvbnN0IFNldHRpbmdzU2NyZWVuKCkpKSksCiAgICAgIGNvbnN0IFRyYW5zYWN0aW9uc1RhYigpLAogICAgICBjb25zdCBBbmFseXNpc1RhYigpLAogICAgICBjb25zdCBDb250cmFjdHNUYWIoKSwKICAgICAgY29uc3QgU2F2aW5nc1RhYigpLAogICAgXTsKICAgIHJldHVybiBTY2FmZm9sZCgKICAgICAgYm9keTogcGFnZXNbX2luZGV4XSwKICAgICAgYm90dG9tTmF2aWdhdGlvbkJhcjogTmF2aWdhdGlvbkJhcigKICAgICAgICBzZWxlY3RlZEluZGV4OiBfaW5kZXgsCiAgICAgICAgb25EZXN0aW5hdGlvblNlbGVjdGVkOiAoaSkgPT4gc2V0U3RhdGUoKCkgPT0gX2luZGV4ID0gaSksCiAgICAgICAgZGVzdGluYXRpb25zOiBbCiAgICAgICAgICBmb3IgKGZpbmFsIHQgaW4gX3RhYnMpCiAgICAgICAgICAgIE5hdmlnYXRpb25EZXN0aW1hdGlvbihpY29uOiBJY29uKHQuJDIpLCBzZWxlY3RlZEljb246IEljb24odC4kMyksIGxhYmVsOiB0LiQxKSwKICAgICAgICBdLAogICAgICApLAogICAgKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'tabs/home_tab.dart';
+import 'tabs/overview_tab.dart';
+import 'tabs/transactions_tab.dart';
+import 'tabs/analysis_tab.dart';
+import 'tabs/contracts_tab.dart';
+import 'tabs/savings_tab.dart';
+import 'screens/settings_screen.dart';
+
+class AppShell extends ConsumerStatefulWidget {
+  const AppShell({super.key});
+
+  @override
+  ConsumerState<AppShell> createState() => _AppShellState();
+}
+
+class _AppShellState extends ConsumerState<AppShell> {
+  int _index = 0;
+
+  static const _tabs = [
+    ('Übersicht', Icons.home_outlined, Icons.home),
+    ('Überblick', Icons.bar_chart_outlined, Icons.bar_chart),
+    ('Umsätze', Icons.list_alt_outlined, Icons.list_alt),
+    ('Analyse', Icons.pie_chart_outline, Icons.pie_chart),
+    ('Verträge', Icons.repeat_outlined, Icons.repeat),
+    ('Sparen', Icons.savings_outlined, Icons.savings),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final pages = [
+      HomeTab(onOpenSettings: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SettingsScreen()))),
+      const OverviewTab(),
+      const TransactionsTab(),
+      const AnalysisTab(),
+      const ContractsTab(),
+      const SavingsTab(),
+    ];
+    return Scaffold(
+      body: pages[_index],
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _index,
+        onDestinationSelected: (i) => setState(() => _index = i),
+        destinations: [
+          for (final t in _tabs)
+            NavigationDestination(icon: Icon(t.$2), selectedIcon: Icon(t.$3), label: t.$1),
+        ],
+      ),
+    );
+  }
+}

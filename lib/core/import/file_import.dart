@@ -1,1 +1,100 @@
-aW1wb3J0ICdwYWNrYWdlOmNzdi9jc3YuZGFydCc7CmltcG9ydCAncGFja2FnZTp4bWwveG1sLmRhcnQnOwoKaW1wb3J0ICcuLi8uLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICcuLi9lbmdpbmUvbm9ybWFsaXplLmRhcnQnOwoKLy8vIERhdGVpLUltcG9ydDogQ0FNVC4wNTMgKFhNTCksIE1UOTQwIHVuZCBDU1Yg4oCTIGRlciBQZmxpY2h0LUZhbGxiYWNrIGbDvHIgQmFua2VuIG9obmUgRmluVFMuCgpjbGFzcyBQYXJzZWRJbXBvcnQgewogIGZpbmFsIExpc3Q8VHJhbnNhY3Rpb24+IHRyYW5zYWN0aW9uczsKICBmaW5hbCBpbnQgZHVwbGljYXRlc1NraXBwZWQ7CiAgZmluYWwgTGlzdDxMaXN0PFN0cmluZz4+IGNzdlByZXZpZXc7CgogIGNvbnN0IFBhcnNlZEltcG9ydCh7cmVxdWlyZWQgdGhpcy50cmFuc2FjdGlvbnMsIHRoaXMuZHVwbGljYXRlc1NraXBwZWQgPSAwLCB0aGlzLmNzdlByZXZpZXcgPSBjb25zdCBbXX0pOwp9CgplbnVtIEltcG9ydEZvcm1hdCB7IGNhbXQwNTMsIG10OTQwLCBjc3YsIHVua25vd24gfQoKSW1wb3J0Rm9ybWF0IGRldGVjdEZvcm1hdChTdHJpbmcgY29udGVudCkgewogIGZpbmFsIHRyaW1tZWQgPSBjb250ZW50LnRyaW1MZWZ0KCk7CiAgaWYgKHRyaW1tZWQuc3RhcnRzV2l0aCgnPD94bWwnKSB8fCB0cmltbWVkLnN0YXJ0c1dpdGgoJzxEb2N1bWVudCcpKSByZXR1cm4gSW1wb3J0Rm9ybWF0LmNhbXQwNTM7CiAgaWYgKFJlZ0V4cChyJ146MjA6JykuaGFzTWF0Y2godHJpbW1lZCkgfHwgdHJpbW1lZC5zdGFydHNXaXRoKCc6MjA6JykpIHJldHVybiBJbXBvcnRGb3JtYXQubXQ5NDA7CiAgaWYgKHRyaW1tZWQuY29udGFpbnMoJzsnKSB8fCB0cmltbWVkLmNvbnRhaW5zKCcsJykpIHJldHVybiBJbXBvcnRGb3JtYXQuY3N2OwogIHJldHVybiBJbXBvcnRGb3JtYXQudW5rbm93bjsKfQoKY2xhc3MgRmlsZUltcG9ydGVyIHsKICBzdGF0aWMgaW50IF9jZW50c0Zyb21TdHJpbmcoU3RyaW5nIHMpIHsKICAgIHZhciB2ID0gcy50cmltKCkucmVwbGFjZUFsbChSZWdFeHAocidbXlyskLC5cLV0nKSwgJycpOwogICAgaWYgKHYuY29udGFpbnMoJywnKSAmJiB2LmNvbnRhaW5zKCcuJykpIHsKICAgICAgdiA9IHYucmVwbGFjZUFsbCgnLicsICcnKS5yZXBsYWNlQWxsKCcsJywgJy4nKTsKICAgIH0gZWxzZSBpZiAodi5jb250YWlucygnLCcpKSB7CiAgICAgIHYgPSB2LnJlcGxhY2VBbGwoJywnLCAnLicpOwogICAgfQogICAgZmluYWwgZCA9IGRvdWJsZS50cnlQYXJzZSh2KSA/PyAwOwogICAgcmV0dXJuIChkICogMTAwKS5yb3VuZCgpOwogIH0KCiAgc3RhdGljIERhdGVUaW1lIF9wYXJzZURhdGUoU3RyaW5nIHMpIHsKICAgIHMgPSBzLnRyaW0oKTsKICAgIHZhciBtID0gUmVnRXhwKHInXihcZHs0fSktKFxkezJ9KS0oXGR7Mn0pJykuZmlyc3RNYXRjaChzKTsKICAgIGlmIChtICE9IG51bGwpIHJldHVybiBEYXRlVGltZShpbnQucGFyc2UobVsxXSEpLCBpbnQucGFyc2UobVsyXSEpLCBpbnQucGFyc2UobVszXSEpKTsKICAgIG0gPSBSZWdFeHAocidcKFxkezJ9KVwuKFxkezJ9KVxuKFxkezR9KScpLmZpcnN0TWF0Y2gocyk7CiAgICBpZiAobSAhPSBudWxsKSByZXR1cm4gRGF0ZVRpbWUoaW50LnBhcnNlKG1bM10hKSwgaW50LnBhcnNlKG1bMl0pKSwgaW50LnBhcnNlKG1bMV0pKSk7CiAgICBtID0gUmVnRXhwKHInXihcZHsyfSkvKFxkezJ9KS8oXGR7NH0pJykuZmlyc3RNYXRjaChzKTsKICAgIGlmIChtICE9IG51bGwpIHJldHVybiBEYXRlVGltZShpbnQucGFyc2UobVszXSEpLCBpbnQucGFyc2UobVsyXSEpLCBpbnQucGFyc2UobVsxXSEpKTsKICAgIHJldHVybiBEYXRlVGltZS5ub3coKTsKICB9CgogIFBhcnNlZEltcG9ydCBwYXJzZShTdHJpbmcgY29udGVudCwge3JlcXVpcmVkIFN0cmluZyBhY2NvdW50SWQsIE1hcDxTdHJpbmcsIGludD4/IGNvbHVtbk1hcHBpbmd9KSB7CiAgICBmaW5hbCBmb3JtYXQgPSBkZXRlY3RGb3JtYXQoY29udGVudCk7CiAgICByZXR1cm4gc3dpdGNoIChmb3JtYXQpIHsKICAgICAgSW1wb3J0Rm9ybWF0LmNhbXQwNTMgPT4gX3BhcnNlQ2FtdChjb250ZW50LCBhY2NvdW50SWQpLAogICAgICBJbXBvcnRGb3JtYXQubXQ5NDAgPT4gX3BhcnNlTXQ5NDAoY29udGVudCwgYWNjb3VudElkKSwKICAgICAgSW1wb3J0Rm9ybWF0LmNzdiA9PiBfcGFyc2VDc3YoY29udGVudCwgYWNjb3VudElkLCBjb2x1bW5NYXBwaW5nKSwKICAgICAgSW1wb3J0Rm9ybWF0LnVua25vd24gPT4gY29uc3QgUGFyc2VkSW1wb3J0KHRyYW5zYWN0aW9uczogW10pLAogICAgfTsKICB9CgogIFBhcnNlZEltcG9ydCBfcGFyc2VDYW10KFN0cmluZyB4bWwsIFN0cmluZyBhY2NvdW50SWQpIHsKICAgIGZpbmFsIGRvYyA9IFhtbERvY3VtZW50LnBhcnNlKHhtbCk7CiAgICBmaW5hbCBvdXQgPSA8VHJhbnNhY3Rpb24+W107CiAgICB2YXIgaSA9IDA7CiAgICBmb3IgKGZpbmFsIGVudHJ5IGluIGRvYy5maW5kQWxsRWxlbWVudHMoJ050cnknKSkgewogICAgICBmaW5hbCBhbW91bnRFbCA9IGVudHJ5LmZpbmRFbGVtZW50cygnQW10JykuZmlyc3RPck51bGw7CiAgICAgIGlmIChhbW91bnRFbCA9PSBudWxsKSBjb250aW51ZTsKICAgICAgZmluYWwgYW1vdW50ID0gX2NlbnRzRnJvbVN0cmluZyhhbW91bnRFbC5pbm5lclRleHQpOwogICAgICBmaW5hbCBjcmVkaXREZWJpdCA9IGVudHJ5LmZpbmRFbGVtZW50cygnQ2R0RGJ0SW5kJykuZmlyc3RPck51bGw/LmlubmVyVGV4dCA/PyAnREJJVCc7CiAgICAgIGZpbmFsIGNlbnRzID0gY3JlZGl0RGViaXQgPT0gJ0NSRFQnID8gYW1vdW50LmFicygpIDogLWFtb3VudC5hYnMoKTsKICAgICAgZmluYWwgZGF0ZUVsID0gZW50cnkuZmluZEVsZW1lbnRzKCdCb29rZ0R0JykuZmlyc3RPck51bGw/PyBlbnRyeS5maW5kQWxsRWxlbWVudHMoJ1ZhbER0JykuZmlyc3RPck51bGw7CiAgICAgIGZpbmFsIGRhdGUgPSBkYXRlRWxgIT0gbnVsbCA/IF9wYXJzZURhdGUoZGF0ZUVsLmlubmVyVGV4dCkgOiBEYXRlVGltZS5ub3coKTsKICAgICAgZmluYWwgbmFtZSA9IGVudHJ5LmZpbmRBbGxFbGVtZW50cygnTm0nKS5tYXAoKGUpID0+IGUuaW5uZXJUZXh0KS5qb2luKCAnJyk7CiAgICAgIGZpbmFsIHB1cnBvc2UgPSBbCiAgICAgICAgLi4uZW50cnkuZmluZEFsbEVsZW1lbnRzKCdBZGGRGxOdHJ5SW5mJykubWFwKChlKSA9PiBlLmlubmVyVGV4dCksCiAgICAgICAgLi4uZW50cnkuZmluZEFsbEVsZW1lbnRzKCdVc3RyZCcpLm1hcCgoZSkgPT4gZS5pbm5lclRleHQpLAogICAgICBdLmpvaW4oJyAnKS50cmltKCk7CiAgICAgIGZpbmFsIGliYW4gPSBlbnRyeS5maW5kQWxsRWxlbWVudHMoJ0lCQU4nKS5tYXAoKGUpID0+IGUuaW5uZXJUZXh0KS5maXJzdE9yTnVsbDsKICAgICAgZmluYWwgZW5kVG9FbmQgPSBlbnRyeS5maW5kQWxsRWxlbWVudHMoJ0VuZFRvRW5kSWQnKS5tYXAoKGUpID0+IGUuaW5uZXJUZXh0KS5maXJzdE9yTnVsbDsKICAgICAgZmluYWwgbWFuZGF0ZSA9IGVudHJ5LmZpbmRBbGxFbGVtZW50cygnTW5kdElkJykubWFwKChlKSA9PiBlLmlubmVyVGV4dCkuZmlyc3RPck51bGw7CiAgICAgIGZpbmFsIGNyZWRpdG9yID0gZW50cnkuZmluZEFsbEVsZW1lbnRzKCdDZHRySWQnKS5tYXAoKGUpID0+IGUuaW5uZXJUZXh0KS5maXJzdE9yTnVsbDsKICAgICAgZmluYWwgaGFzaCA9IGRlZHVwSGFzaChhY2NvdW50SWQsIGRhdGUsIGNlbnRzLCBlbmRUb0VuZCwgcHVycG9zZSk7CiAgICAgIG91dC5hZGQoVHJhbnNhY3Rpb24oCiAgICAgICAgaWQ6ICdpbXBfY2FtdF8ke2FjY291bnRJZH1fJGknLAogICAgICAgIGFjY291bnRJZDogYWNjb3VudElkLAogICAgICAgIGJvb2tpbmdEYXRlOiBkYXRlLAogICAgICAgIGFtb3VudENlbnRzOiBjZW50cywKICAgICAgICBjb3VudGVycGFydHlOYW1lOiBuYW1lLmlzRW1wdHkgPyAnVW5iZWthbm50JyA6IG5hbWUsCiAgICAgICAgY291bnRlcnBhcnR5SWJhbjogaWJhbiwKICAgICAgICBwdXJwb3NlOiBwdXJwb3NlLAogICAgICAgIG1hbmRhdGVSZWY6IG1hbmRhdGUsCiAgICAgICAgY3JlZGl0b3JJZDogY3JlZGl0b3IsCiAgICAgICAgZW5kVG9FbmRSZWY6IGVuZFRvRW5kLAogICAgICAgIGRlZHVwSGFzaDogaGFzaCwKICAgICAgKSk7CiAgICAgIGkrKzsKICAgIH0KICAgIHJldHVybiBQYXJzZWRJbXBvcnQodHJhbnNhY3Rpb25zOiBvdXQpOwogIH0KCiAgUGFyc2VkSW1wb3J0IF9wYXJzZU10OTQwKFN0cmluZyBjb250ZW50LCBTdHJpbmcgYWNjb3VudElkKSB7CiAgICBmaW5hbCBvdXQgPSA8VHJhbnNhY3Rpb24+W107CiAgICB2YXIgaSA9IDA7CiAgICBmaW5hbCBsaW5lcyA9IGNvbnRlbnQuc3BsaXQoUmVnRXhwKHInXHI/XG4nKSk7CiAgICBEYXRlVGltZSBjdXJyZW50RGF0ZSA9IERhdGVUaW1lLm5vdygpOwogICAgZm9yIChmaW5hbCBsaW5lIGluIGxpbmVzKSB7CiAgICAgIGlmIChsaW5lLnN0YXJ0c1dpdGgoJzo2MTonKSkgewogICAgICAgIGZpbmFsIGJvZHkgPSBsaW5lLnN1YnN0cmluZyg0KTsKICAgICAgICBmaW5hbCBkbSA9IFJlZ0V4cChyJ14oXGR7Nn0pKFxkezR9KT8oQ3xEfFJDfFJEKScpLmZpcnN0TWF0Y2goYm9keSk7CiAgICAgICAgaWYgKGRtICE9IG51bGwpIHsKICAgICAgICAgIGZpbmFsIHkgPSBpbnQucGFyc2UoJzIwJHtkbS5ncm91cCgxKSEuc3Vic3RyaW5nKDAsIDIpfScpOwogICAgICAgICAgZmluYWwgbW8gPSBpbnQucGFyc2UoZG0uZ3JvdXAoMSkhLnN1YnN0cmluZygyLCA0KSk7CiAgICAgICAgICBmaW5hbCBkID0gaW50LnBhcnNlKGRtLmdyb3VwKDEpIS5zdWJzdHJpbmcoNCwgNikpOwogICAgICAgICAgY3VycmVudERhdGUgPSBEYXRlVGltZSh5LCBtbywgZCk7CiAgICAgICAgfQogICAgICAgIGZpbmFsIHJlc3QgPSBib2R5LnJlcGxhY2VGaXJzdChSZWdFeHAocidce1xkezZ9KFxkezR9KT9bQS1aXXszLDR9JyksICcpOwogICAgICAgIGZpbmFsIGFtb3VudFN0ciA9IHJlc3Quc3BsaXQoUmVnRXhwKHInW0EtWl17M30nKSkuZmlyc3QucmVwbGFjZUFsbCgnLCcsICcuJyk7CiAgICAgICAgZmluYWwgY2VudHMgPSBfY2VudHNGcm9tU3RyaW5nKGFtb3VudFN0cik7CiAgICAgICAgZmluYWwgaXNEZWJpdCA9IGRtPy5ncm91cCgzKSA9PSAnRCcgfHwgZG0/Lmdyb3VwKDMpID09ICdSRCc7CiAgICAgICAgZmluYWwgc2lnbmVkID0gaXNEZWJpdCA/IC1jZW50cy5hYnMoKSA6IGNlbnRzLmFicygpOwogICAgICAgIGZpbmFsIHB1cnBvc2UgPSBib2R5LmNvbnRhaW5zKCc/JykgPyBib2R5LnNwbGl0KCc/JyksLmxhc3QucmVwbGFjZUFsbCgnPycsICcgJyksdHJpbSgpIDogJycpOwogICAgICAgIGZpbmFsIGhhc2ggPSBkZWR1cEhhc2goYWNjb3VudElkLCBjdXJyZW50RGF0ZSwgc2lnbmVkLCBudWxsLCBwdXJwb3NlKTsKICAgICAgICBvdXQuYWRkKFRyYW5zYWN0aW9uKAogICAgICAgICAgaWQ6ICdpbXBfbXQ5NDhfJHthY2NvdW50SWR9XyRpJywKICAgICAgICAgIGFjY291bnRJZDogYWNjb3VudElkLAogICAgICAgICAgYm9va2luZ0RhdGU6IGN1cnJlbnREYXRlLAogICAgICAgICAgYW1vdW50Q2VudHM6IHNpZ25lZCwKICAgICAgICAgIGNvdW50ZXJwYXJ0eU5hbWU6IHB1cnBvc2UuaXNFbXB0eSA/ICdVbmJla2FubnQnIDogcHVycG9zZS5zcGxpdCgnICcpLmZpcnN0LAogICAgICAgICAgcHVycG9zZTogcHVycG9zZSwKICAgICAgICAgIGRlZHVwSGFzaDogaGFzaCwKICAgICAgICApKTsKICAgICAgICBpKys7CiAgICAgIH0KICAgIH0KICAgIHJldHVybiBQYXJzZWRJbXBvcnQodHJhbnNhY3Rpb25zOiBvdXQpOwogIH0KCiAgUGFyc2VkSW1wb3J0IF9wYXJzZUNzdihTdHJpbmcgY29udGVudCwgU3RyaW5nIGFjY291bnRJZCwgTWFwPFN0cmluZywgaW50Pj8gbWFwcGluZykgewogICAgZmluYWwgZmlyc3RMaW5lID0gY29udGVudC5zcGxpdChSZWdFeHAocidcclx8XG4nKSkuZmlyc3Q7CiAgICBmaW5hbCBkZWxpbWl0ZXIgPSBmaXJzdExpbmUuY29udGFpbnMoJzsnKSAmJiAhZmlyc3RMaW5lLmNvbnRhaW5zKCcsJykgPyAnOycgOiAnLCc7CiAgICBmaW5hbCByb3dzID0gQ3N2VG9MaXN0Q29udmVydGVyKGVvbDogJ1xuJywgZmllbGREZWxpbWl0ZXI6IGRlbGltaXRlcikuY29udmVydChjb250ZW50KTsKICAgIGlmIChyb3dzLmlzRW1wdHkpIHJldHVybiBjb25zdCBQYXJzZWRJbXBvcnQodHJhbnNhY3Rpb25zOiBbXSk7CiAgICBmaW5hbCBwcmV2aWV3ID0gcm93cy50YWtlKDUpLm1hcCgocikgPT4gci5tYXAoKGUpID0+IGUudG9TdHJpbmcoKSkudG9MaXN0KCkpLnRvTGlzdCgpOwogICAgZmluYWwgaGVhZGVyID0gcm93cy5maXJzdC5tYXAoKGUpID0+IGUudG9TdHJpbmcoKS50b0xvd2VyQ2FzZSgpKS50b0xpc3QoKTsKICAgIGludCBmaW5kQ29sKExpc3Q8U3RyaW5nPiBuYW1lcykgewogICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGhlYWRlci5sZW5ndGg7IGkrKykgewogICAgICAgIGlmIChuYW1lcy5hbnkoKG4pID0+IGhlYWRlcltpXS5jb250YWlucyhuKSkpIHJldHVybiBpOwogICAgICB9CiAgICAgIHJldHVybiAtMTsKICAgIH0KCiAgICBmaW5hbCBkYXRlQ29sID0gZmluZENvbChbJ2RhdHVtJywgJ2RhdGUnLCAnYnVjaHVuZyddKTsKICAgIGZpbmFsIGFtb3VudENvbCA9IGZpbmRDb2woWydiZXRyYWcnLCAnYW1vdW50JywgJ3Vtc2F0eicsICd3ZXJ0J10pOwogICAgZmluYWwgbmFtZUNvbCA9IGZpbmRDb2woWydlbXBmw6RuZ2VyJywgJ25hbWUnLCAnYmVndWVuc3RpZ3RlcicsICdwYXllZScsICdow6RuZGxlcicsICdoYWVuZGxlciddKTsKICAgIGZpbmFsIHB1cnBvc2VDb2wgPSBmaW5kQ29sKFsnendlY2snLCAndmVyd2VuZHVuZ3N6d2VjaycsICdwdXJwb3NlJywgJ2Jlc2NocmVpYnVuZycsICd0ZXh0J10pOwogICAgZmluYWwgaWJhbkNvbCA9IGZpbmRDb2woWydpYmFuJywgJ2tvbnRvJ10pOwoKICAgIGZpbmFsIG91dCA9IDxUcmFuc2FjdGlvbj5bXTsKICAgIGZvciAodmFyIGkgPSAxOyBpIDwgcm93cy5sZW5ndGg7IGkrKykgewogICAgICBmaW5hbCByb3cgPSByb3dzW2ldOwogICAgICBTdHJpbmcgY2VsbChpbnQgYykgPT4gYyA+PSAwICYmIGMgPCByb3cubGVuZ3RoID8gcm93W2NdLnRvU3RyaW5nKCkgOiAnJzsKICAgICAgZmluYWwgZGF0ZSA9IF9wYXJzZURhdGUoY2VsbChkYXRlQ29sKSk7CiAgICAgIHZhciBjZW50cyA9IF9jZW50c0Zyb21TdHJpbmcoY2VsbChhbW91bnRDb2wpKTsKICAgICAgaWYgKGNlbnRzIDwgMCkgY2VudHMgPSAtY2VudHMuYWJzKCk7CiAgICAgIGZpbmFsIG5hbWUgPSBjZWxsKG5hbWVDb2wpOwogICAgICBmaW5hbCBwdXJwb3NlID0gY2VsbChwdXJwb3NlQ29sKTsKICAgICAgZmluYWwgaGFzaCA9IGRlZHVwSGFzaChhY2NvdW50SWQsIGRhdGUsIGNlbnRzLCBudWxsLCAnJG5hbWUgJHB1cnBvc2UnKTsKICAgICAgb3V0LmFkZChUcmFuc2FjdGlvbigKICAgICAgICAgaWQ6ICdpbXBfY3N2XyR7YWNjb3VudElkfV8kaScsCiAgICAgICAgIGFjY291bnRJZDogYWNjb3VudElkLAogICAgICAgICBib29raW5nRGF0ZTogZGF0ZSwKICAgICAgICAgYW1vdW50Q2VudHM6IGNlbnRzLAogICAgICAgICBjb3VudGVycGFydHlOYW1lOiBuYW1lLmlzRW1wdHkgPyAnVW5iZWthbm50JyA6IG5hbWUsCiAgICAgICAgIGNvdW50ZXJwYXJ0eUliYW46IGNlbGwoaWJhbkNvbCkuaXNFbXB0eSA/IG51bGwgOiBjZWxsKGliYW5Db2wpLAogICAgICAgICBwdXJwb3NlOiBwdXJwb3NlLAogICAgICAgIGRlZHVwSGFzaDogaGFzaCwKICAgICAgICApKTsKICAgIH0KICAgIHJldHVybiBQYXJzZWRJbXBvcnQodHJhbnNhY3Rpb25zOiBvdXQsIGNzdlByZXZpZXc6IHByZXZpZXcpOwogIH0KfQo=
+import 'dart:convert';
+
+import '../../data/models.dart';
+import '../engine/normalize.dart';
+
+/// Ergebnis eines Datei-Imports.
+class ParseImport {
+  final List<Transaction> transactions;
+  final int duplicates;
+  const ParseImport(this.transactions, this.duplicates);
+}
+
+/// Importiert CSV (Semikolon, de-DE) und MT940/CAMT-ähnliche Exporte.
+/// Erkennt das Format automatisch am Inhalt.
+class FileImport {
+  ParseImport parse(String content, {required String accountId}) {
+    final lines = const LineSplitter().convert(content).where((l) => l.trim().isNotEmpty).toList();
+    if (lines.isEmpty) return const ParseImport([], 0);
+
+    if (content.contains(':20:') || content.contains(':25:') || RegExp(r'^:61:').hasMatch(content)) {
+      return _parseMt940(content, accountId);
+    }
+    return _parseCsv(lines, accountId);
+  }
+
+  /// CSV: erwartet Kopfzeile mit Spalten wie Datum;Gegenkonto;Verwendungszweck;Betrag
+  ParseImport _parseCsv(List<String> lines, String accountId) {
+    final header = lines.first.toLowerCase();
+    int iDate = header.indexOf('datum');
+    int iName = header.indexOf('gegenkonto');
+    if (iName < 0) iName = header.indexOf('empfänger');
+    int iPurpose = header.indexOf('verwendungszweck');
+    int iAmount = header.indexOf('betrag');
+    if (iDate < 0 || iAmount < 0) {
+      // Fallback: feste Reihenfolge Datum;Name;Zweck;Betrag
+      iDate = 0; iName = 1; iPurpose = 2; iAmount = 3;
+    }
+    final out = <Transaction>[];
+    var dups = 0;
+    var n = 0;
+    for (var i = 1; i < lines.length; i++) {
+      final cols = lines[i].split(';');
+      if (cols.length <= iAmount) continue;
+      final date = parseDate(cols[iDate]);
+      final amount = parseAmountCents(cols[iAmount]);
+      if (date == null || amount == null) continue;
+      final name = iName < cols.length ? cols[iName].replaceAll('"', '').trim() : '';
+      final purpose = iPurpose >= 0 && iPurpose < cols.length ? cols[iPurpose].replaceAll('"', '').trim() : '';
+      final sepa = parseSepaPurpose(purpose);
+      final hash = dedupHash(accountId, date, amount, sepa['EREF'], '$name $purpose');
+      out.add(Transaction(
+        id: 'imp_${accountId}_${n++}',
+        accountId: accountId,
+        bookingDate: date,
+        amountCents: amount,
+        counterpartyName: name,
+        purpose: purpose,
+        creditorId: sepa['CRED'],
+        mandateRef: sepa['MREF'],
+        endToEndRef: sepa['EREF'],
+        dedupHash: hash,
+      ));
+    }
+    return ParseImport(out, dups);
+  }
+
+  /// MT940: :61: Buchungen und :86: Verwendungszweck.
+  ParseImport _parseMt940(String content, String accountId) {
+    final out = <Transaction>[];
+    var n = 0;
+    final stmt = RegExp(r':61:([^\r\n]+)(?:\r?\n:86:([^\r\n]+))?').allMatches(content);
+    for (final m in stmt) {
+      final f61 = m.group(1) ?? '';
+      final f86 = (m.group(2) ?? '').replaceAll('?', '');
+      // Format: Valuta[Buchung]C/DBetragNenzi...Buchungstext
+      final dm = RegExp(r'^(\d{6})(\d{4})?(C|D)([\d.,]+)').firstMatch(f61);
+      if (dm == null) continue;
+      final valuta = dm.group(1)!;
+      final date = DateTime(2000 + int.parse(valuta.substring(0, 2)), int.parse(valuta.substring(2, 4)), int.parse(valuta.substring(4, 6)));
+      final debit = dm.group(3) == 'D';
+      final amount = parseAmountCents(dm.group(4)!) ?? 0;
+      final cents = debit ? -amount.abs() : amount.abs();
+      final purpose = f86.trim();
+      final sepa = parseSepaPurpose(purpose);
+      out.add(Transaction(
+        id: 'imp_${accountId}_${n++}',
+        accountId: accountId,
+        bookingDate: date,
+        amountCents: cents,
+        counterpartyName: sepa['ABWE'] ?? sepa['RKTO'] ?? 'Unbekannt',
+        purpose: purpose,
+        creditorId: sepa['CRED'],
+        mandateRef: sepa['MREF'],
+        endToEndRef: sepa['EREF'],
+        dedupHash: dedupHash(accountId, date, cents, sepa['EREF'], purpose),
+      ));
+    }
+    return ParseImport(out, 0);
+  }
+}

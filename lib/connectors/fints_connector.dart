@@ -1,1 +1,128 @@
-aW1wb3J0ICdwYWNrYWdlOmZpbnRzL2ZpbnRzLmRhcnQnIGFzIGZpbnRzOwoKaW1wb3J0ICcuLi9kYXRhL21vZGVscy5kYXJ0JzsKaW1wb3J0ICcuLi9kYXRhL3N0b3JlLmRhcnQnOwppbXBvcnQgJ2JhbmtfY29ubmVjdG9yLmRhcnQnOwoKLy8vIEZpblRTIDMuMCBkaXJla3QgenVyIEJhbmsg4oCTIGtlaW4gZWlnZW5lciBTZXJ2ZXIgZGF6d2lzY2hlbi4KLy8vIEthcHNlbHQgZGFzIGBmaW50c2AtUGFrZXQgaGludGVyIFtCYW5rQ29ubmVjdG9yXSwgZGFtaXQgZWluIFdlY2hzZWwKLy8vIGF1ZiBmaW50cy1ycyAoZmx1dHRlcl9ydXN0X2JyaWRnZSkgZGllIEFwcCBuaWNodCB1bWJhdXQuCi8vLwovLy8gUHJvZHVrdHJlZ2lzdHJpZXJ1bmcgYmVpIGRlciBEZXV0c2NoZW4gS3JlZGl0d2lydHNjaGFmdCBpc3QgVm9yYXVzc2V0enVuZwovLy8gKElEIGtvbW10IG5hY2ggY2EuIDEw4oCTMTUgV2Vya3RhZ2VuKTsgUGxhdHpoYWx0ZXIgc2llaGUgW3Byb2R1Y3RJZF0uCmNsYXNzIEZpbnRzQ29ubmVjdG9yIGltcGxlbWVudHMgQmFua0Nvbm5lY3RvciB7CiAgRmludHNDb25uZWN0b3IoewogICAgcmVxdWlyZWQgdGhpcy5zdG9yZSwKICAgIHJlcXVpcmVkIHRoaXMuYmx6LAogICAgcmVxdWlyZWQgdGhpcy5maW50c1VybCwKICAgIHJlcXVpcmVkIHRoaXMudXNlcklkLAogICAgdGhpcy5waW4sCiAgICB0aGlzLnByb2R1Y3RJZCA9ICdLTEFSQkxJQ0tQTEFDRUhPTERFUicsCiAgICB0aGlzLm9uVGFuQ2hhbGxlbmdlLAogIH0pOwoKICBmaW5hbCBTdG9yZSBzdG9yZTsKICBmaW5hbCBTdHJpbmcgYmx6OwogIGZpbmFsIFN0cmluZyBmaW50c1VybDsKICBmaW5hbCBTdHJpbmcgdXNlcklkOwogIGZpbmFsIFN0cmluZz8gcGluOwogIGZpbmFsIFN0cmluZyBwcm9kdWN0SWQ7CgogIC8vLyBXaXJkIGF1ZmdlcnVmZW4sIHdlbm4gZGllIEJhbmsgZWluZSBUQU4vRnJlaWdhYmUgdmVybGFuZ3QgKE83LUZsb3cpLgogIGZpbmFsIEZ1dHVyZTxTdHJpbmc/PiBGdW5jdGlvbihmaW50cy5UYW5DaGFsbGVuZ2UgY2hhbGxlbmdlKT8gb25UYW5DaGFsbGVuZ2U7CgogIGZpbnRzLkZpblRzQ2xpZW50PyBfY2xpZW50OwoKICBAb3ZlcnJpZGUKICBTdHJpbmcgZ2V0IGlkID0+ICdmaW50c18kYmx6JzsKCiAgQG92ZXJyaWRlCiAgU3RyaW5nIGdldCBsYWJlbCA9PiAnRmluVFMgJGJseic7CgogIGZpbnRzLkZpblRzQ2xpZW50IF9idWlsZENsaWVudCgpIHsKICAgIGZpbmFsIGNvbmZpZyA9IGZpbnRzLkZpblRzQ29uZmlnKAogICAgICB1cmw6IFVyaS5wYXJzZShmaW50c1VybCksCiAgICAgIGJhbmtDb2RlOiBibHosCiAgICAgIHVzZXJJZDogdXNlcklkLAogICAgICBwcm9kdWN0SWQ6IHByb2R1Y3RJZCwKICAgICAgcHJvZHVjdFZlcnNpb246ICcxLjAnLAogICAgKTsKICAgIGZpbmFsIG9wdGlvbnMgPSBmaW50cy5GaW5Uc0NsaWVudE9wdGlvbnMoCiAgICAgIHRhbkNhbGxiYWNrOiAoY2hhbGxlbmdlKSBhc3luYyB7CiAgICAgICAgaWYgKG9uVGFuQ2hhbGxlbmdlID09IG51bGwpIHJldHVybiBmaW50cy5UYW5BbnN3ZXIuY2FuY2VsbGVkOwogICAgICAgIGlmIChjaGFsbGVuZ2UuaXNEZWNvdXBsZWQpIHJldHVybiBmaW50cy5UYW5BbnN3ZXIuYXBwcm92ZWQ7CiAgICAgICAgZmluYWwgdGFuID0gYXdhaXQgb25UYW5DaGFsbGVuZ2UhKGNoYWxsZW5nZSk7CiAgICAgICAgaWYgKHRhbiA9PSBudWxsIHx8IHRhbi5pc0VtcHR5KSByZXR1cm4gZmludHMuVGFuQW5zd2VyLmNhbmNlbGxlZDsKICAgICAgICByZXR1cm4gZmludHMuVGFuQW5zd2VyLnRhbih0YW4pOwogICAgICB9LAogICAgICBsb2dnZXI6IChkaXJlY3Rpb24sIG1lc3NhZ2UpIHt9LAogICAgKTsKICAgIHJldHVybiBmaW50cy5GaW5UczNDbGllbnQoY29uZmlnOiBjb25maWcsIHBpbjogcGluID8/ICcnLCBvcHRpb25zOiBvcHRpb25zKTsKICB9CgogIEBvdmVycmlkZQogIEZ1dHVyZTxDb25uZWN0b3JSZXN1bHQ+IGZldGNoQWNjb3VudHMoKSBhc3luYyB7CiAgICB0cnkgewogICAgICBfY2xpZW50ID8/PSBfYnVpbGRDbGllbnQoKTsKICAgICAgc3RvcmUuYWRkTmV0d29ya0xvZyhVcmkucGFyc2UoZmludHNVcmwpLmhvc3QsICdLb250ZW4gYWJydWZlbiAoJGJseiknKTsKICAgICAgZmluYWwgYWNjb3VudHMgPSBhd2FpdCBfY2xpZW50IS5nZXRBY2NvdW50cygpOwogICAgICBmaW5hbCBtYXBwZWQgPSBhY2NvdW50cwogICAgICAgICAgLm1hcCgoYSkgPT4gQWNjb3VudCgKICAgICAgICAgICAgICAgIGlkOiAnYWNjXyR7YS5pYmFuID8/IGEuYWNjb3VudE51bWJlciA/PyBEYXRlVGltZS5ub3coKS5taWNyb3NlY29uZHNTaW5jZUVwb2NofScsCiAgICAgICAgICAgICAgICAgY29ubmVjdGlvbklkOiBpZCwKICAgICAgICAgICAgICAgIGliYW46IGEuaWJhbiA/PyAnJywKICAgICAgICAgICAgICAgIG5hbWU6IGEucHJvZHVjdE5hbWUgPz8gJ0tvbnRvJywKICAgICAgICAgICAgICAgIHR5cGU6IF9tYXBUeXBlKGEuY2F0ZWdvcnkpLAogICAgICAgICAgICAgICkpOwogICAgICAgICAgLnRvTGlzdCgpOwogICAgICByZXR1cm4gQ29ubmVjdG9yUmVzdWx0KGFjY291bnRzOiBtYXBwZWQpOwogICAgfSBvbiBmaW50cy5GaW5Uc1BpbkV4Y2VwdGlvbiBjYXRjaCAoZSkgewogICAgICByZXR1cm4gQ29ubmVjdG9yUmVzdWx0KGVycm9yOiAnUElOIGZhbHNjaDogJGUnKTsKICAgIH0gb24gZmludHMuRmluVHNUb2dpblJlZnVzZWRFeGNlcHRpb24gY2F0Y2ggKGUpIHsKICAgICAgcmV0dXJuIENvbm5lY3RvclJlc3VsdChlcnJvcjogJ0FubWVsZHVuZyBhYmdlbGVobnQ6ICRlLiBEaWUgUElOIHdpaXJkIG5pY2h0IGF1dG9tYXRpc2NoIGVybmV1dCBnZXNlbmRldC4nKTsKICAgIH0gb24gZmludHMuRmluVFNUcmFuc3BvcnRFeGNlcHRpb24gY2F0Y2ggKGUpIHsKICAgICAgcmV0dXJuIENvbm5lY3RvclJlc3VsdChlcnJvcjogJ0JhbmsgbmljaHQgZXJyZWljaGJhcjogJHtlLm1lc3NhZ2V9Jyk7CiAgICB9IGNhdGNoIChlKSB7CiAgICAgIHJldHVybiBDb25uZWN0b3JSZXN1bHQoZXJyb3I6ICdWZXJiaW5kdW5nc2ZlaGxlcjogJGUnKTsKICAgIH0KICB9CgogIEBvdmVycmlkZQogIEZ1dHVyZTxDb25uZWN0b3JSZXN1bHQ+IGZldGNoVHJhbnNhY3Rpb25zKEFjY291bnQgYWNjb3VudCwge0RhdGVUaW1lPyBmcm9tfSkgYXN5bmMgewogICAgdHJ5IHsKICAgICAgX2NsaWVudCA/Pz0gX2J1aWxkQ2xpZW50KCk7CiAgICAgIHN0b3JlLmFkZE5ldHdvcmtMb2coVXJpLnBhcnNlKGZpbnRzVXJsKS5ob3N0LCAnVW1zYXR6YWJydWYgKCRibHopJyk7CiAgICAgIGZpbmFsIGZpbnRzQWNjb3VudCA9IGZpbnRzLkFjY291bnQoYmFua0NvZGU6IGJseiwgaWJhbjogYWNjb3VudC5pYmFuLCBhY2NvdW50TnVtYmVyOiBhY2NvdW50LmliYW4pOwogICAgICBmaW5hbCB0eHMgPSBhd2FpdCBfY2xpZW50IS5nZXRUcmFuc2FjdGlvbnMoZmludHNBY2NvdW50LCBmcm9tOiBmcm9tKTsKICAgICAgZmluYWwgbWFwcGVkID0gdHhzCiAgICAgICAgICAubWFwKCh0KSA9PiBUcmFuc2FjdGlvbigKICAgICAgICAgICAgICAgIGlkOiAnZmludHNfJHthY2NvdW50LmlkfV8keyh0LmJvb2tpbmdEYXRlID8/IHQudmFsdWVEYXRlKS5taWNyb3NlY29uZHNTaW5jZUVwb2NofV8ke3QuYW1vdW50Lm1pbm9yVW5pdHN9JywKICAgICAgICAgICAgICAgIGFjY291bnRJZDogYWNjb3VudC5pZCwKICAgICAgICAgICAgICAgIGJvb2tpbmdEYXRlOiB0LmJvb2tpbmdEYXRlID8/IHQudmFsdWVEYXRlLAogICAgICAgICAgICAgICAgdmFsdWVEYXRlOiB0LnZhbHVlRGF0ZSwKICAgICAgICAgICAgICAgIGFtb3VudENlbnRzOiB0LmFtb3VudC5taW5vclVuaXRzLAogICAgICAgICAgICAgICAgY291bnRlcnBhcnR5TmFtZTogdC5jb3VudGVycGFydHlOYW1lID8/ICcgdC5wdXJwb3NlID8/ICdVbmJla2FubnQnLAogICAgICAgICAgICAgICAgY291bnRlcnBhcnR5SWJhbjogdC5jb3VudGVycGFydHlJYmFuLAogICAgICAgICAgICAgICAgcHVycG9zZTogdC5wdXJwb3NlID8/ICcnLAogICAgICAgICAgICAgICAgbWFuZGF0ZVJlZjogdC5tYW5kYXRlSWQsCiAgICAgICAgICAgICAgICBjcmVkaXRvcklkOiB0LmNyZWRpdG9ySWQsCiAgICAgICAgICAgICAgICBlbmRUb0VuZFJlZjogdC5lbmRUb0VuZElkLAogICAgICAgICAgICAgICAgZ3ZjOiB0LnRyYW5zYWN0aW9uQ29kZSwKICAgICAgICAgICAgICAgIHBlbmRpbmc6IHQuc3RhdHVzID09IGZpbnRzLlRyYW5zYWN0aW9uU3RhdHVzLnBlbmRpbmcsCiAgICAgICAgICAgICAgICBkZWR1cEhhc2g6ICcke2FjY291bnQuaWR9fCR7KHQuYm9va2luZ0RhdGUgPz8gdC52YWx1ZURhdGUpLnRvSXNvODYwMVN0cmluZygpfXwkJHt0LmFtb3VudC5taW5vclVuaXRzfXwke3QuZW5kVG9FbmRJZCA/PyB0LnB1cnBvc2UgPz8gJyd9JywKICAgICAgICAgICAgICApKQogICAgICAgICAgLnRvTGlzdCgpOwogICAgICByZXR1cm4gQ29ubmVjdG9yUmVzdWx0KHRyYW5zYWN0aW9uczogbWFwcGVkKTsKICAgIH0gb24gZmludHMuRmluVFNTdXNwZW5kZWRFeGNlcHRpb24gY2F0Y2ggKGUpIHsKICAgICAgcmV0dXJuIENvbm5lY3RvclJlc3VsdChuZWVkc1RhbjogdHJ1ZSwgdGFuQ2hhbGxlbmdlOiAnVEFOLUZyZWlnYWJlIG7DtnRpZzogJHtlLmNoYWxsZW5nZS5tZXNzYWdlfScsIGVycm9yOiAnVEFOIGbDpGxsaWcnKTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgcmV0dXJuIENvbm5lY3RvclJlc3VsdChlcnJvcjogJ0FicnVmIGZlaGxnZXNjaGxhZ2VuOiAkZScpOwogICAgfQogIH0KCiAgc3RhdGljIEFjY291bnRUeXBlIF9tYXBUeXBlKGZpbnRzLkFjY291bnRDYXRlZ29yeSBjKSA9PiBzd2l0Y2ggKGMpIHsKICAgICAgICBmaW50cy5BY2NvdW50Q2F0ZWdvcnkuY3JlZGl0Q2FyZCA9PiBBY2NvdW50VHlwZS5rcmVkaXRrYXJ0ZSwKICAgICAgICBmaW50cy5BY2NvdW50Q2F0ZWdvcnkuc2F2aW5ncyB8fCBmaW50cy5BY2NvdW50Q2F0ZWdvcnkuZml4ZWREZXBvc2l0ID0+IEFjY291bnRUeXBlLnRhZ2VzZ2VsZCwKICAgICAgICBfID0+IEFjY291bnRUeXBlLmdpcm8sCiAgICAgIH07Cn0K
+import 'package:fints/fints.dart' as fints;
+
+import '../data/models.dart';
+import '../data/store.dart';
+import 'bank_connector.dart';
+
+/// FinTS 3.0 direkt zur Bank – kein eigener Server dazwischen.
+/// Kapselt das `fints`-Paket hinter [BankConnector], damit ein Wechsel
+/// auf fints-rs (flutter_rust_bridge) die App nicht umbaut.
+///
+/// Produktregistrierung bei der Deutschen Kreditwirtschaft ist Voraussetzung
+/// (ID kommt nach ca. 10–15 Werktagen); Platzhalter siehe [productId].
+class FintsConnector implements BankConnector {
+  FintsConnector({
+    required this.store,
+    required this.blz,
+    required this.fintsUrl,
+    required this.userId,
+    this.pin,
+    this.productId = 'KLARBLICKPLACEHOLDER',
+    this.onTanChallenge,
+  });
+
+  final Store store;
+  final String blz;
+  final String fintsUrl;
+  final String userId;
+  final String? pin;
+  final String productId;
+
+  /// Wird aufgerufen, wenn die Bank eine TAN/Freigabe verlangt (O7-Flow).
+  final Future<String?> Function(fints.TanChallenge challenge)? onTanChallenge;
+
+  fints.FinTsClient? _client;
+
+  @override
+  String get id => 'fints_$blz';
+
+  @override
+  String get label => 'FinTS $blz';
+
+  fints.FinTsClient _buildClient() {
+    final config = fints.FinTsConfig(
+      url: Uri.parse(fintsUrl),
+      bankCode: blz,
+      userId: userId,
+      productId: productId,
+      productVersion: '1.0',
+    );
+    final options = fints.FinTsClientOptions(
+      tanCallback: (challenge) async {
+        if (onTanChallenge == null) return fints.TanAnswer.cancelled;
+        if (challenge.isDecoupled) return fints.TanAnswer.approved;
+        final tan = await onTanChallenge!(challenge);
+        if (tan == null || tan.isEmpty) return fints.TanAnswer.cancelled;
+        return fints.TanAnswer.tan(tan);
+      },
+      logger: (direction, message) {},
+    );
+    return fints.FinTs3Client(config: config, pin: pin ?? '', options: options);
+  }
+
+  @override
+  Future<ConnectorResult> fetchAccounts() async {
+    try {
+      _client ??= _buildClient();
+      store.addNetworkLog(Uri.parse(fintsUrl).host, 'Konten abrufen ($blz)');
+      final accounts = await _client!.getAccounts();
+      final mapped = accounts
+          .map((a) => Account(
+                id: 'acc_${a.iban ?? a.accountNumber ?? DateTime.now().microsecondsSinceEpoch}',
+                 connectionId: id,
+                iban: a.iban ?? '',
+                name: a.productName ?? 'Konto',
+                type: _mapType(a.category),
+              ));
+          .toList();
+      return ConnectorResult(accounts: mapped);
+    } on fints.FinTsPinException catch (e) {
+      return ConnectorResult(error: 'PIN falsch: $e');
+    } on fints.FinTsToginRefusedException catch (e) {
+      return ConnectorResult(error: 'Anmeldung abgelehnt: $e. Die PIN wiird nicht automatisch erneut gesendet.');
+    } on fints.FinTSTransportException catch (e) {
+      return ConnectorResult(error: 'Bank nicht erreichbar: ${e.message}');
+    } catch (e) {
+      return ConnectorResult(error: 'Verbindungsfehler: $e');
+    }
+  }
+
+  @override
+  Future<ConnectorResult> fetchTransactions(Account account, {DateTime? from}) async {
+    try {
+      _client ??= _buildClient();
+      store.addNetworkLog(Uri.parse(fintsUrl).host, 'Umsatzabruf ($blz)');
+      final fintsAccount = fints.Account(bankCode: blz, iban: account.iban, accountNumber: account.iban);
+      final txs = await _client!.getTransactions(fintsAccount, from: from);
+      final mapped = txs
+          .map((t) => Transaction(
+                id: 'fints_${account.id}_${(t.bookingDate ?? t.valueDate).microsecondsSinceEpoch}_${t.amount.minorUnits}',
+                accountId: account.id,
+                bookingDate: t.bookingDate ?? t.valueDate,
+                valueDate: t.valueDate,
+                amountCents: t.amount.minorUnits,
+                counterpartyName: t.counterpartyName ?? ' t.purpose ?? 'Unbekannt',
+                counterpartyIban: t.counterpartyIban,
+                purpose: t.purpose ?? '',
+                mandateRef: t.mandateId,
+                creditorId: t.creditorId,
+                endToEndRef: t.endToEndId,
+                gvc: t.transactionCode,
+                pending: t.status == fints.TransactionStatus.pending,
+                dedupHash: '${account.id}|${(t.bookingDate ?? t.valueDate).toIso8601String()}|$${t.amount.minorUnits}|${t.endToEndId ?? t.purpose ?? ''}',
+              ))
+          .toList();
+      return ConnectorResult(transactions: mapped);
+    } on fints.FinTSSuspendedException catch (e) {
+      return ConnectorResult(needsTan: true, tanChallenge: 'TAN-Freigabe nötig: ${e.challenge.message}', error: 'TAN fällig');
+    } catch (e) {
+      return ConnectorResult(error: 'Abruf fehlgeschlagen: $e');
+    }
+  }
+
+  static AccountType _mapType(fints.AccountCategory c) => switch (c) {
+        fints.AccountCategory.creditCard => AccountType.kreditkarte,
+        fints.AccountCategory.savings || fints.AccountCategory.fixedDeposit => AccountType.tagesgeld,
+        _ => AccountType.giro,
+      };
+}

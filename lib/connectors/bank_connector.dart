@@ -1,1 +1,22 @@
-aW1wb3J0ICcuLi9kYXRhL21vZGVscy5kYXJ0JzsKCi8vLyBTY2huaXR0c3RlbGxlIGbDvHIgYWxsZSBLb250by1BbmJpbmR1bmdzd2VnZS4KLy8vIEZpblRTIGRpcmVrdCB6dXIgQmFuayAoSGF1cHR3ZWcpLCBEYXRlaS1JbXBvcnQgKEZhbGxiYWNrKSwgbWFudWVsbCAoQmFyZ2VsZCkuCmFic3RyYWN0IGNsYXNzIEJhbmtDb25uZWN0b3IgewogIFN0cmluZyBnZXQgaWQ7CiAgU3RyaW5nIGdldCBsYWJlbDsKICBGdXR1cmU8Q29ubmVjdG9yUmVzdWx0PiBmZXRjaEFjY291bnRzKCk7CiAgRnV0dXJlPENvbm5lY3RvclJlc3VsdD4gZmV0Y2hUcmFuc2FjdGlvbnMoQWNjb3VudCBhY2NvdW50LCB7RGF0ZVRpbWU/IGZyb219KTsKfQoKY2xhc3MgQ29ubmVjdG9yUmVzdWx0IHsKICBmaW5hbCBMaXN0PEFjY291bnQ+PyBhY2NvdW50czsKICBmaW5hbCBMaXN0PFRyYW5zYWN0aW9uPj8gdHJhbnNhY3Rpb25zOwogIGZpbmFsIFN0cmluZz8gZXJyb3I7CiAgZmluYWwgYm9vbCBuZWVkc1RhbjsKICBmaW5hbCBTdHJpbmc/IHRhbkNoYWxsZW5nZTsKCiAgY29uc3QgQ29ubmVjdG9yUmVzdWx0KHt0aGlzLmFjY291bnRzLCB0aGlzLnRyYW5zYWN0aW9ucywgdGhpcy5lcnJvciwgdGhpcy5uZWVkc1RhbiA9IGZhbHNlLCB0aGlzLnRhbkNoYWxsZW5nZX0pOwoKICBib29sIGdldCBvayA9PiBlcnJvciA9PSBudWxsOwp9Cg==
+import '../data/models.dart';
+
+/// Schnittstelle für alle Konto-Anbindungswege.
+/// FinTS direkt zur Bank (Hauptweg), Datei-Import (Fallback), manuell (Bargeld).
+abstract class BankConnector {
+  String get id;
+  String get label;
+  Future<ConnectorResult> fetchAccounts();
+  Future<ConnectorResult> fetchTransactions(Account account, {DateTime? from});
+}
+
+class ConnectorResult {
+  final List<Account>? accounts;
+  final List<Transaction>? transactions;
+  final String? error;
+  final bool needsTan;
+  final String? tanChallenge;
+
+  const ConnectorResult({this.accounts, this.transactions, this.error, this.needsTan = false, this.tanChallenge});
+
+  bool get ok => error == null;
+}

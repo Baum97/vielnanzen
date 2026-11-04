@@ -1,1 +1,17 @@
-IyBLbGFyYmxpY2sg4oCTIHJlaW4gbG9rYWxlIEZpbmFuLUFwcCAoRmx1dHRlciwgQW5kcm9pZCAmIGlPUykKClPDvG5zdGVubG9zZSwgcmVpbiBsb2thbGUgRmluYW56LUFwcCBmw7xyIEFuZHJvaWQgJiBpb3MuIEFsbGUgRGF0ZW4gbGllZ2VuIHZlcnNjaGzDvHNzZWx0IGF1ZiBkZW0gR2Vyw6R0IOKAkyBub2NoIFNlcnZlci4gR1BMLTMuMC4KClNlZSBhbHNvOiBQUklWQUNZLm1kLCBMSUNFTlNFLgoKCiMgU3RhcnQKCmBgYApmbHV0dGVyIHB1YiBnZXQKZmx1dHRlciB0ZXN0CmZsdXR0ZXIgcnVuCmZsdXR0ZXIgYnVpbGQgd2ViCmBgYAoKUmVwbzogaHR0cHM6Ly9naXRodWIuY29tL0JhdW05Ny92aWVsbmFuemVuCg==
+# Klarblick – rein lokale Finan-App (Flutter, Android & iOS)
+
+Sünstenlose, rein lokale Finanz-App für Android & ios. Alle Daten liegen verschlüsselt auf dem Gerät – noch Server. GPL-3.0.
+
+See also: PRIVACY.md, LICENSE.
+
+
+# Start
+
+```
+flutter pub get
+flutter test
+flutter run
+flutter build web
+```
+
+Repo: https://github.com/Baum97/vielnanzen

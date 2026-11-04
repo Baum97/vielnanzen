@@ -1,3 +1,10 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CgppbXBvcnQgJy4uL3NjcmVlbnMvY29udHJhY3RzX3RhYl9zY3JlZW5zLmRhcnQnOwoKY2xhc3MgQ29udHJhY3RzVGFiIGV4dGVuZHMgU3RhdGVsZXNzV2lkZ2V0IHsKICBDb25zdHJ1Y3RzVGFiKC57ZXl9KTsK
+import 'package:flutter/material.dart';
 
-ICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpID0+IGNvbnN0IENvbnRyYWN0c1RhYlNjcmVlbigpOwoKfQo=
+import '../screens/contracts_tab_screens.dart';
+
+class ContractsTab extends StatelessWidget {
+  const ContractsTab({super.key});
+
+  @override
+  Widget build(BuildContext context) => const ContractsTabScreen();
+}

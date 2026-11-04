@@ -1,1 +1,119 @@
-ICAgIHQ6IHQsCiAgICAgICAgICAgICAgICAgICAgICBjYXRlZ29yeTogcmVmLnJlYWQoZW5naW5lUHJvdmlkZXIpLmNhdGVnb3J5QnlJZCh0LmNhdGVnb3J5SWQpLAogICAgICAgICAgICAgICAgICAgICAgYWNjb3VudE5hbWU6IHN0b3JlLmFjY291bnRzLndoZXJlKChhKSA9PiBhLmlkID09IHQuYWNjb3VudElkKS5tYXAoKGEpID0+IGEubmFtZSkuZmlyc3RPck51bGwgPz8gJycsCiAgICAgICAgICAgICAgICAgICAgICBkaXNjcmVldDogZGlzY3JlZXQsCiAgICAgICAgICAgICAgICAgICAgICBvblRhcDogKCkgPT4gTmF2aWdhdG9yLm9mKGNvbnRleHQpLnB1c2goTWF0ZXJpYWxQYWdlUm91dGUoYnVpbGRlcjogKF8pID0+IFRyYW5zYWN0aW9uRGV0YWlsU2NyZWVuKHRyYW5zYWN0aW9uSWQ6IHQuaWQpKSksCiAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgIF0pLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgIF0pLAogICAgICAgICAgKSwKICAgICAgICApLAogICAgICBdKSwKICAgICk7CiAgfQoKICBzdGF0aWMgU3RyaW5nIF9pbnRlcnZhbExhYmVsKENvbnRyYWN0SW50ZXJ2YWwgaSkgPT4gc3dpdGNoIChpKSB7CiAgICAgICAgQ29udHJhY3RJbnRlcnZhbC53b2VjaGVudGxpY2ggPT4gJ3fDtmNoZW50bGljaCcsCiAgICAgICAgQ29udHJhY3RJbnRlcnZhbC56d2Vpd29lY2hlbnRsaWNoID0+ICdhbGxlIDIgV29jaGVuJywKICAgICAgICBDb250cmFjdEludGVydmFsLm1vbmF0bGljaCA9PiAnbW9uYXRsaWNoJywKICAgICAgICBDb250cmFjdEludGVydmFsLnF1YXJ0YWxzd2Vpc2UgPT4gJ3F1YXJ0YWxzd2Vpc2UnLAogICAgICAgIENvbnRyYWN0SW50ZXJ2YWwuaGFsYmphZWhybGljaCA9PiAnaGFsYmrDpGhybGljaCcsCiAgICAgICAgQ29udHJhY3RJbnRlcnZhbC5qYWVocmxpY2ggPT4gJ2rDpGhybGljaCcsCiAgICAgICAgQ29udHJhY3RJbnRlcnZhbC5pbmRpdmlkdWVsbCA9PiAnaW5kaXZpZHVlbGwnLAogICAgICB9Owp9CgpjbGFzcyBfU3RhdCBleHRlbmRzIFN0YXRlbGVzc1dpZGdldCB7CiAgZmluYWwgU3RyaW5nIGxhYmVsOwogIGZpbmFsIGludCBjZW50czsKICBmaW5hbCBDb2xvcj8gY29sb3I7CiAgZmluYWwgYm9vbCBkaXNjcmVldDsKICBjb25zdCBfU3RhdCh0aGlzLmxhYmVsLCB0aGlzLmNlbnRzLCB0aGlzLmNvbG9yLCB0aGlzLmRpc2NyZWV0KTsKCiAgQG92ZXJyaWRlCiAgV2lkZ2V0IGJ1aWxkKEJ1aWxkQ29udGV4dCBjb250ZXh0KSB7CiAgICBmaW5hbCB0aGVtZSA9IFRoZW1lLm9mKGNvbnRleHQpOwogICAgcmV0dXJuIEV4cGFuZGVkKAogICAgICBjaGlsZDogQ29sdW1uKGNyb3NzQXhpc0FsaWdubWVudDogQ3Jvc3NBeGlzQWxpZ25tZW50LnN0YXJ0LCBjaGlsZHJlbjogWwogICAgICAgIFRleHQobGFiZWwsIHN0eWxlOiB0aGVtZS50ZXh0VGhlbWUubGFiZWxTbWFsbD8uY29weVdpdGgoY29sb3I6IHRoZW1lLmNvbG9yU2NoZW1lLnNlY29uZGFyeSkpLAogICAgICAgIEFtb3VudFRleHQoY2VudHMsIHNpZ25lZDogdHJ1ZSwgZGlzY3JlZXQ6IGRpc2NyZWV0LCBzdHlsZTogdGhlbWUudGV4dFRoZW1lLnRpdGxlTWVkaXVtPy5jb3B5V2l0aChjb2xvcjogY29sb3IpKSwKICAgICAgXSksCiAgICApOwogIH0KfQoKdm9pZCBzaG93QWRkQWNjb3VudFNoZWV0KEJ1aWxkQ29udGV4dCBjb250ZXh0LCBXaWRnZXRSZWYgcmVmKSB7CiAgc2hvd01vZGFsQm90dG9tU2hlZXQoCiAgICBjb250ZXh0OiBjb250ZXh0LAogICAgc2hvd0RyYWdIYW5kbGU6IHRydWUsCiAgICBidWlsZGVyOiAoY3R4KSA9PiBTYWZlQXJlYSgKICAgICAgY2hpbGQ6IENvbHVtbihtYWluQXhpc1NpemU6IE1haW5BeGlzU2l6ZS5taW4sIGNoaWxkcmVuOiBbCiAgICAgICAgTGlzdFRpbGUoCiAgICAgICAgICBsZWFkaW5nOiBjb25zdCBJY29uKEljb25zLmFjY291bnRfYmFsYW5jZSksCiAgICAgICAgICB0aXRsZTogY29uc3QgVGV4dCgnQmFuayB2ZXJiaW5kZW4gKEZpblRTKScpLAogICAgICAgICAgc3VidGl0bGU6IGNvbnN0IFRleHQoJ0RpcmVrdCB6dXIgQmFuayDigJMga2VpbiBTZXJ2ZXIgZGF6d2lzY2hlbicpLAogICAgICAgICAgb25UYXA6ICgpIHsKICAgICAgICAgICAgTmF2aWdhdG9yLnBvcChjdHgpOwogICAgICAgICAgICBOYXZpZ2F0b3Iub2YoY29udGV4dCkucHVzaChNYXRlcmlhbFBhZ2VSb3V0ZShidWlsZGVyOiAoXykgPT4gY29uc3QgT25ib2FyZGluZ1NjcmVlbigpKSk7CiAgICAgICAgICB9LAogICAgICAgICksCiAgICAgICAgTGlzdFRpbGUoCiAgICAgICAgICBsZWFkaW5nOiBjb25zdCBJY29uKEljb25zLmZpbGVfdXBsb2FkX291dGxpbmVkKSwKICAgICAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdEYXRlaSBpbXBvcnRpZXJlbicpLAogICAgICAgICAgc3VidGl0bGU6IGNvbnN0IFRleHQoJ0NTViwgQ0FNVC4wNTMgb2RlciBNVDk0MCcpLAogICAgICAgICAgb25UYXA6ICgpIHsKICAgICAgICAgICAgTmF2aWdhdG9yLnBvcChjdHgpOwogICAgICAgICAgICBOYXZpZ2F0b3Iub2YoY29udGV4dCkucHVzaChNYXRlcmlhbFBhZ2VSb3V0ZShidWlsZGVyOiAoXykgPT4gY29uc3QgSW1wb3J0U2NyZWVuKCkpKTsKICAgICAgICAgIH0sCiAgICAgICAgKSwKICAgICAgICBMaXN0VGlsZSgKICAgICAgICAgIGxlYWRpbmc6IGNvbnN0IEljb24oSWNvbnMuYWNjb3VudF9iYWxhbmNlX3dhbGxldF9vdXRsaW5lZCksCiAgICAgICAgICB0aXRsZTogY29uc3QgVGV4dCgnQmFyZ2VsZCAvIG1hbnVlbGxlcyBLb250bycpLAogICAgICAgICAgb25UYXA6ICgpIHsKICAgICAgICAgICAgTmF2aWdhdG9yLnBvcChjdHgpOwogICAgICAgICAgICBfc2hvd01hbnVhbEFjY291bnREaWFsb2coY29udGV4dCwgcmVmKTsKICAgICAgICAgIH0sCiAgICAgICAgKSwKICAgICAgXSksCiAgICApLAogICk7Cn0KCnZvaWQgX3Nob3dNYW51YWxBY2NvdW50RGlhbG9nKEJ1aWxkQ29udGV4dCBjb250ZXh0LCBXaWRnZXRSZWYgcmVmKSB7CiAgZmluYWwgbmFtZUNvbnRyb2xsZXIgPSBUZXh0RWRpdGluZ0NvbnRyb2xsZXIodGV4dDogJ0JhcmdlbGQnKTsKICBmaW5hbCBiYWxhbmNlQ29udHJvbGxlciA9IFRleHRFZGl0aW5nQ29udHJvbGxlcih0ZXh0OiAnMCcpOwogIHNob3dEaWFsb2coCiAgICBjb250ZXh0OiBjb250ZXh0LAogICAgYnVpbGRlcjogKGN0eCkgPT4gQWxlcnREaWFsb2coCiAgICAgIHRpdGxlOiBjb25zdCBUZXh0KCdNYW51ZWxsZXMgS29udG8nKSwKICAgICAgY29udGVudDogQ29sdW1uKG1haW5BeGlzU2l6ZTogTWFpbkF4aXNTaXplLm1pbiwgY2hpbGRyZW46IFsKICAgICAgICBUZXh0RmllbGQoY29udHJvbGxlcjogbmFtZUNvbnRyb2xsZXIsIGRlY29yYXRpb246IGNvbnN0IElucHV0RGVjb3JhdGlvbihsYWJlbFRleHQ6ICdOYW1lJykpLAogICAgICAgIFRleHRGaWVsZCgKICAgICAgICAgIGNvbnRyb2xsZXI6IGJhbGFuY2VDb250cm9sbGVyLAogICAgICAgICAgZGVjb3JhdGlvbjogY29uc3QgSW5wdXREZWNvcmF0aW9uKGxhYmVsVGV4dDogJ1N0YXJ0c2FsZG8gKOKCrCknKSwKICAgICAgICAgIGtleWJvYXJkVHlwZTogY29uc3QgVGV4dElucHV0VHlwZS5udW1iZXJXaXRoT3B0aW9ucyhkZWNpbWFsOiB0cnVlKSwKICAgICAgICApLAogICAgICBdKSwKICAgICAgYWN0aW9uczogWwogICAgICAgIFRleHRCdXR0b24ob25QcmVzc2VkOiAoKSA9PiBOYXZpZ2F0b3IucG9wKGN0eCksIGNoaWxkOiBjb25zdCBUZXh0KCdBYmJyZWNoZW4nKSksCiAgICAgICAgRmlsbGVkQnV0dG9uKAogICAgICAgICAgb25QcmVzc2VkOiAoKSB7CiAgICAgICAgICAgIGZpbmFsIGV1cm9zID0gZG91YmxlLnRyeVBhcnNlKGJhbGFuY2VDb250cm9sbGVyLnRleHQucmVwbGFjZUFsbCgnLCcsICcuJykpID8/IDA7CiAgICAgICAgICAgIGZpbmFsIHN0b3JlID0gcmVmLnJlYWQoc3RvcmVQcm92aWRlcik7CiAgICAgICAgICAgIHN0b3JlLnVwc2VydEFjY291bnQoQWNjb3VudCgKICAgICAgICAgICAgICBpZDogJ2FjY18ke0RhdGVUaW1lLm5vdygpLm1pY3Jvc2Vjb25kc1NpbmNlRXBvY2h9JywKICAgICAgICAgICAgICBpYmFuOiAnTUFOVUFMJywKICAgICAgICAgICAgICBuYW1lOiBuYW1lQ29udHJvbGxlci50ZXh0LAogICAgICAgICAgICAgIHR5cGU6IEFjY291bnRUeXBlLmJhcmdlbGQsCiAgICAgICAgICAgICAgYmFsYW5jZUNlbnRzOiAoZXVyb3MgKiAxMDApLnJvdW5kKCksCiAgICAgICAgICAgICApOwogICAgICAgICAgICBOYXZpZ2F0b3IucG9wKGN0eCk7CiAgICAgICAgICB9LAogICAgICAgICAgY2hpbGQ6IGNvbnN0IFRleHQoJ0FubGVnZW4nKSwKICAgICAgICApLAogICAgICBdLAogICAgKSwKICApOwp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../data/models.dart';
+import '../../state/app_state.dart';
+import '../theme.dart';
+import '../widgets.dart';
+import '../charts.dart';
+
+class HomeTab extends ConsumerWidget {
+  final VoidCallback? onOpenSettings;
+  const HomeTab({super.key, this.onOpenSettings});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final app = ref.watch(appStateProvider);
+    final store = app.store;
+    final theme = Theme.of(context);
+    final discreet = store.settings['discreetMode'] == true;
+
+    final visible = store.accounts.where((a) => a.includeInTotal && !a.hidden).toList();
+    final total = visible.fold<int>(0, (a, acc) => a + acc.balanceCents);
+
+    final txs = (app.result?.transactions ?? store.transactions).toList()
+      ..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
+    final upcoming = store.contracts.where((c) => c.status == ContractStatus.aktiv).toList()
+      ..sort((a, b) => (a.nextDue ?? DateTime(2100)).compareTo(b.nextDue ?? DateTime(2100)));
+    final monthStart = DateTime(DateTime.now().year, DateTime.now().month, 1);
+    final monthSpend = txs
+        .where((t) => t.amountCents < 0 && !t.excluded && !t.isTransfer && !t.bookingDate.isBefore(monthStart))
+        .fold<int>(0, (a, t) => a - t.amountCents);
+
+    // Verlauf für Mini-Chart
+    final points = <(DateTime, int)>[];
+    var bal = total;
+    for (var i = txs.length - 1; i >= 0; i--) {
+      points.add((txs[i].bookingDate, bal));
+      bal -= txs[i].amountCents;
+    }
+    if (points.isNotEmpty) points.add((DateTime.now(), total));
+
+    return Scaffold(
+      body: CustomScrollView(slivers: [
+        SliverAppBar(
+          title: const Text('Klarblick'),
+          floating: true,
+          actions: [
+            IconButton(icon: const Icon(Icons.settings_outlined), onPressed: onOpenSettings, tooltip: 'Einstellungen'),
+          ],
+        ),
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 80),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text('Gesamtsaldo', style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.secondary)),
+              AmountText(total, style: theme.textTheme.displayLarge?.copyWith(fontSize: 36), discreet: discreet),
+              const SizedBox(height: 16),
+              if (points.length >= 2) AppCard(title: 'Verlauf', child: LineChart(points: points)),
+              const SizedBox(height: 12),
+              AppCard(
+                title: 'Diesen Monat ausgegeben',
+                child: AmountText(-monthSpend, style: theme.textTheme.headlineMedium, discreet: discreet),
+              ),
+              const SizedBox(height: 12),
+              AppCard(
+                title: 'Konten',
+                child: Column(children: [
+                  for (final a in store.accounts)
+                    ListTile(
+                      dense: true,
+                      contentPadding: EdgeInsets.zero,
+                      leading: Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(color: parseHexColor(a.color).withValues(alpha: 0.12), borderRadius: BorderRadius.circular(10)),
+                        child: const Icon(Icons.account_balance, size: 20),
+                      ),
+                      title: Text(a.name, maxLines: 1, overflow: TextOverflow.ellipsis),
+                      subtitle: Text(a.iban, maxLines: 1, overflow: TextOverflow.ellipsis),
+                      trailing: AmountText(a.balanceCents, signed: true, discreet: discreet, style: theme.textTheme.bodyMedium),
+                    ),
+                ]),
+              ),
+              const SizedBox(height: 12),
+              AppCard(
+                title: 'Anstehende Verträge',
+                child: upcoming.isEmpty
+                    ? const Text('Keine aktiven Verträge erkannt.')
+                    : Column(children: [
+                        for (final c in upcoming.take(4))
+                          ListTile(
+                            dense: true,
+                            contentPadding: EdgeInsets.zero,
+                            title: Text(c.name, maxLines: 1, overflow: TextOverflow.ellipsis),
+                            subtitle: Text(c.nextDue != null ? 'nächste Zahlung ${AmountFormat.date.format(c.nextDue!)}' : ''),
+                            trailing: AmountText(-c.expectedCents, discreet: discreet),
+                          ),
+                      ]),
+              ),
+              const SizedBox(height: 12),
+              AppCard(
+                title: 'Letzte Umsätze',
+                child: Column(children: [
+                  for (final t in txs.take(5))
+                    TransactionRow(
+                      t: t,
+                      category: ref.read(engineProvider).categoryById(t.categoryId),
+                      accountName: store.accounts.where((a) => a.id == t.accountId).map((a) => a.name).firstOrNull ?? '',
+                      discreet: discreet,
+                    ),
+                ]),
+              ),
+            ]),
+          ),
+        ),
+      ]),
+    );
+  }
+}
