@@ -1,0 +1,6 @@
+{
+  "creditorIds": [
+    { "id": "DE98ZZZ09999999999", "name": "ARD ZDF Deutschlandradio Beitragsservice", "category": "rundfunk" },
+    { "id": "DE26ZZZ00000000001", "name": "Netflix International B.V.", "category": "streaming-video" }
+  ]
+}

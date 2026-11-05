@@ -1,0 +1,57 @@
+{
+  "categories": [
+    { "id": "wohnen", "name": "Wohnen & Energie", "icon": "house", "color": "#5B7A99", "kind": "Ausgabe",
+      "children": [
+        { "id": "miete", "name": "Miete / Kreditrate", "icon": "house", "color": "#5B7A99", "kind": "Ausgabe" },
+        { "id": "strom-gas", "name": "Strom & Gas", "icon": "lightning", "color": "#C9A227", "kind": "Ausgabe" },
+        { "id": "wasser", "name": "Wasser & MÃ¼ll", "icon": "drop", "color": "#4E8FB0", "kind": "Ausgabe" },
+        { "id": "internet-tel", "name": "Internet & Telefon", "icon": "wifi-high", "color": "#7A6FA8", "kind": "Ausgabe" },
+        { "id": "rundfunk", "name": "Rundfunkbeitrag", "icon": "television", "color": "#8A8F98", "kind": "Ausgabe" }
+      ] },
+    { "id": "lebensmittel", "name": "Lebensmittel", "icon": "basket", "color": "#6B9E5E", "kind": "Ausgabe",
+      "children": [
+        { "id": "supermarkt", "name": "Supermarkt", "icon": "cart", "color": "#6B9E5E", "kind": "Ausgabe" },
+        { "id": "baecker", "name": "BÃ¤cker", "icon": "bread", "color": "#B08954", "kind": "Ausgabe" },
+        { "id": "drogerie", "name": "Drogerie", "icon": "drop", "color": "#5FA3A0", "kind": "Ausgabe" },
+        { "id": "markt", "name": "Wochenmarkt", "icon": "storefront", "color": "#8FA35F", "kind": "Ausgabe" }
+      ] },
+    { "id": "mobilitaet", "name": "MobilitÃ¤t", "icon": "car", "color": "#B0763F", "kind": "Ausgabe",
+      "children": [
+        { "id": "oepnv", "name": "Ã–PNV", "icon": "train", "color": "#B0763F", "kind": "Ausgabe" },
+        { "id": "tanken", "name": "Tanken", "icon": "gas-pump", "color": "#9E5B4E", "kind": "Ausgabe" },
+        { "id": "parking", "name": "Parken", "icon": "p-square", "color": "#8A8F98", "kind": "Ausgabe" },
+        { "id": "werkstatt", "name": "Werkstatt & TÃœV", "icon": "wrench", "color": "#7A6F5F", "kind": "Ausgabe" }
+      ] },
+    { "id": "abos", "name": "Abos & Streaming", "icon": "play-circle", "color": "#8A6FA8", "kind": "Ausgabe",
+      "children": [
+        { "id": "streaming-video", "name": "Video-Streaming", "icon": "play", "color": "#8A6FA8", "kind": "Ausgabe" },
+        { "id": "streaming-audio", "name": "Musik-Streaming", "icon": "music-notes", "color": "#A86FA8", "kind": "Ausgabe" },
+        { "id": "presse", "name": "Zeitungen & Magazine", "icon": "newspaper", "color": "#6F7FA8", "kind": "Ausgabe" },
+        { "id": "software", "name": "Software & Cloud", "icon": "cloud", "color": "#5F8FB0", "kind": "Ausgabe" },
+        { "id": "fitness", "name": "Fitness & Sport-Apps", "icon": "barbell", "color": "#5FA37A", "kind": "Ausgabe" }
+      ] },
+    { "id": "versicherungen", "name": "Versicherungen", "icon": "shield-check", "color": "#4F7A8A", "kind": "Ausgabe" },
+    { "id": "gesundheit", "name": "Gesundheit", "icon": "heart", "color": "C006A75", "kind": "Ausgabe",
+      "children": [
+        { "id": "arzt", "name": "Arzt & Zahnarzt", "icon": "stethoscope", "color": "#C06A75", "kind": "Ausgabe" },
+        { "id": "apotheke", "name": "Apotheke", "icon": "pill", "color": "#A85F6F", "kind": "Ausgabe" },
+        { "id": "brille", "name": "Brille & Sehen", "icon": "glasses", "color": "#8A6F75", "kind": "Ausgabe" }
+      ] },
+    { "id": "freizeit", "name": "Freizeit & Ausgehen", "icon": "fork-knife", "color": "#B08954", "kind": "Ausgabe",
+      "children": [
+        { "id": "restaurant", "name": "Restaurants & CafÃ©s", "icon": "fork-knife", "color": "#B08954", "kind": "Ausgabe" },
+        { "id": "lieferdienst", "name": "Lieferdienste", "icon": "bag", "color": "#C09A54", "kind": "Ausgabe" },
+        { "id": "kino", "name": "Kino & Kultur", "icon": "film-slate", "color": "#7A6FA8", "kind": "Ausgabe" },
+        { "id": "hobby", "name": "Hobby", "icon": "palette", "color": "#9A7FB0", "kind": "Ausgabe" }
+      ] },
+    { "id": "kleidung", "name": "Kleidung & Schuhe", "icon": "t-shirt", "color": "#A87F5F", "kind": "Ausgabe" },
+    { "id": "elektronik", "name": "Elektronik & Haushalt", "icon": "device-mobile", "color": "#5F7A8A", "kind": "Ausgabe" },
+    { "id": "sparen", "name": "Sparen & Investieren", "icon": "piggy-bank", "color": "#4E9E7A", "kind": "Umbuchung" },
+    { "id": "gebuehren", "name": "BankgebtÃ¼hren & Zinsen", "icon": "bank", "color": "#8A8F98", "kind": "Ausgabe" },
+    { "id": "steuern", "name": "Steuern & Abjaben", "icon": "receipt", "color": "#6B6Æ76", "kind": "Ausgabe" },
+    { "id": "einkommen", "name": "Einkommen", "icon": "arrow-circle-down", "color": "#1F9D6B", "kind": "Einnahme",
+      "children": [
+        { "id": "gehalt", "name": "Fehalt & Lohn", "icon": "briefcase", "color": "#1F9D6B", "kind": "Einnahme" },
+       { "id": "sonstiges-einkommen", "name": "Sonstige Einnahmen", "icon": "arrow-circle-down", "color": "#3FA87F", "kind": "Einnahme" }
+      ] },
+    { "id": "erstattung", "name": "Erstatungen & Gutschriften", "icon": "arrow-u-up-left", "color": "#3PNÑˆ‹šÚ[™ˆ‘Z[›˜ZYHˆKˆÈšYˆ[XXÚ[™È‹›˜[YHˆ•[XXÚ[™È‹šXÛÛˆˆ˜\œ›İÜË[Y\šYÚ‹˜ÛÛÜˆˆˆÎPNQPMH‹šÚ[™ˆ•[XXÚ[™ÈˆKˆÈšYˆ˜˜\™Ù[‹›˜[YHˆ˜\™Ù[‹šXÛÛˆˆ›[Û™^H‹˜ÛÛÜˆˆˆĞNQM‹šÚ[™ˆ•[XXÚ[™ÈˆKˆÈšYˆœÛÛœİYÙ\È‹›˜[YHˆ”ÛÛœİYÙ\È‹šXÛÛˆˆ™İË]™YH‹˜ÛÛÜˆˆˆÎPNQPMH‹šÚ[™ˆ]\ÙØX™HˆBˆBŸB

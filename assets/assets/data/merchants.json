@@ -1,0 +1,13 @@
+{
+  "merchants": [
+    { "id": "m_netflix", "normalizedName": "NETFLIX INTERNATIONAL", "displayName": "Netflix", "category": "streaming-video" },
+    { "id": "m_spotify", "normalizedName": "SPOTIFY AB", "displayName": "Spotify", "category": "streaming-audio" },
+    { "id": "m_telekom", "normalizedName": "TELEKOM DEUTSCHLAND", "displayName": "Telekom", "category": "internet-tel" },
+    { "id": "m_tk", "normalizedName": "TK TECHNIKER KRANKENKASSE", "displayName": "TK Krankenkasse", "category": "krankenversicherung" },
+    { "id": "m_rewe", "normalizedName": "REWE", "displayName": "REWE", "category": "supermarkt" },
+    { "id": "m_allianz", "normalizedName": "ALLIANZ VERSICHERUNG", "displayName": "Allianz", "category": "versicherung" },
+    { "id": "m_fitness", "normalizedName": "FITNESS FIRST", "displayName": "Fitness First", "category": "fitness" },
+    { "id": "m_stadtwerke", "normalizedName": "STADTWERKE BEISPIELSTADT", "displayName": "Stadtwerke", "category": "strom-gas" },
+    { "id": "m_ard", "normalizedName": "ARD ZDF DEUTSCHLANDRADIO", "displayName": "Rundfunkbeitrag", "category": "rundfunk" }
+  ]
+}

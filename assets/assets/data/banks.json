@@ -1,0 +1,16 @@
+{
+  "banks": [
+    { "name": "Sparkasse KölnBonn", "blz": "37050198", "bic": "COLSDE33XXX", "fintsUrl": "https://fints.sparkasse-koelnbonn.de/fints", "fints": true, "city": "Köln" },
+    { "name": "Stadtsparkasse München", "blz": "70150000", "bic": "SSKMDEMMXXX", "fintsUrl": "https://fints.sparkasse-muenchen.de/fints", "fints": true, "city": "München" },
+    { "name": "Frankfurter Sparkasse", "blz": "50050201", "bic": "HELADEF1822", "fintsUrl": "https://fints.sparkasse-frankfurt.de/fints", "fints": true, "city": "Frankfurt" },
+    { "name": "Volksbank Berlin", "blz": "10090000", "bic": "BEVODEBBXXX", "fintsUrl": "https://fints.volksbank-berlin.de/fints", "fints": true, "city": "Berlin" },
+    { "name": "DKB AG", "blz": "12030000", "bic": "BYLADEMM001", "fintsUrl": "https://fints.dkb.de/fints", "fints": true, "city": "Berlin" },
+    { "name": "ING-DiBa AG", "blz": "50010517", "bic": "INGDDEFFXXX", "fintsUrl": "https://fints.ing.de/fints", "fints": true, "city": "Frankfurt" },
+    { "name": "Commerzbank AG", "blz": "50040000", "bic": "COBADEFFXXX", "fintsUrl": "https://fints.commerzbank.de/fints", "fints": true, "city": "Frankfurt" },
+    { "name": "1822direkt", "blz": "50050201", "bic": "HELADEF1822", "fintsUrl": "https://fints.1822direkt.de/fints", "fints": true, "city": "Frankfurt" },
+    { "name": "Consorsbank", "blz": "76030080", "bic": "CSDBDE71XXX", "fintsUrl": "https://fints.consorsbank.de/fints", "fints": true, "city": "Nürnberg" },
+    { "name": "N26 Bank GmbH", "blz": "10010500", "bic": "NTSBDEB1XXX", "fintsUrl": "", "fints": false, "city": "Berlin" },
+    { "name": "Trade Republic Bank GmbH", "blz": "10110500", "bic": "TRBKDEBBXXX", "fintsUrl": "", "fints": false, "city": "Berlin" },
+    { "name": "bunq B.V.", "blz": "", "bic": "BUNQNL2AXXX", "fintsUrl": "", "fints": false, "city": "Amsterdam" }
+  ]
+}
