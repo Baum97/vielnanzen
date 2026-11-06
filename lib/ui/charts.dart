@@ -59,9 +59,17 @@ class _BalanceChartState extends ConsumerState<BalanceChart> {
           height: 20,
           child: idx == null
               ? Row(children: [
-                  Text('max ${AmountFormat.compact(maxV, discreet: discreet)}', style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
-                  const Spacer(),
-                  Text('min ${AmountFormat.compact(minV, discreet: discreet)}', style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
+                  Expanded(
+                    child: Text('Höchststand ${AmountFormat.compact(maxV, discreet: discreet)}',
+                        maxLines: 1, overflow: TextOverflow.ellipsis, style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
+                  ),
+                  Expanded(
+                    child: Text('Tiefststand ${AmountFormat.compact(minV, discreet: discreet)}',
+                        textAlign: TextAlign.right,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
+                  ),
                 ])
               : Text(
                   '${AmountFormat.date.format(pts[idx].$1)} · ${AmountFormat.format(pts[idx].$2, discreet: discreet)}',

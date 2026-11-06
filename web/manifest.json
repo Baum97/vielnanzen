@@ -1,11 +1,11 @@
 {
-    "name": "klarblick",
-    "short_name": "klarblick",
+    "name": "Klarblick",
+    "short_name": "Klarblick",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#F7F7F5",
+    "theme_color": "#2F5BEA",
+    "description": "Ausgaben, Abos und Sparpotenzial im Blick – alle Daten bleiben lokal.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

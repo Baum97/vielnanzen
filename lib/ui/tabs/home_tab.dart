@@ -117,7 +117,6 @@ class HomeTab extends ConsumerWidget {
                 Expanded(
                   child: StatTile(
                     label: 'Einnahmen',
-                    icon: Icons.south_west,
                     cents: p.summary.incomeCents,
                     delta: p.incomeChangePct,
                     goodWhenUp: true,
@@ -132,7 +131,6 @@ class HomeTab extends ConsumerWidget {
                 Expanded(
                   child: StatTile(
                     label: 'Ausgaben',
-                    icon: Icons.north_east,
                     cents: p.summary.expenseCents,
                     delta: p.expenseChangePct,
                     color: AppColors.neg(context),
@@ -142,8 +140,8 @@ class HomeTab extends ConsumerWidget {
                 const SizedBox(width: 8),
                 Expanded(
                   child: StatTile(
-                    label: p.summary.savingsRate != null ? 'Übrig · ${AmountFormat.percent(p.summary.savingsRate!)}' : 'Übrig',
-                    icon: Icons.account_balance_wallet_outlined,
+                    label: 'Übrig',
+                    caption: p.summary.savingsRate != null ? 'Quote ${AmountFormat.percent(p.summary.savingsRate!)}' : null,
                     cents: p.summary.netCents,
                     color: p.summary.netCents >= 0 ? AppColors.pos(context) : AppColors.neg(context),
                   ),

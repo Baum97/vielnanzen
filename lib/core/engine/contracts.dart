@@ -137,6 +137,9 @@ class ContractDetector {
   static String? _purposeHint(String purpose) {
     final cleaned = purpose
         .replaceAll(RegExp(r'(EREF|MREF|CRED|SVWZ|KREF)\+\S*', caseSensitive: false), ' ')
+        .replaceAll(
+            RegExp(r'\b(abschlag|abschlagszahlung|beitrag|rechnung|rg|zahlung|lastschrift|kundennr|kd-nr|vertrag|nr|monatsabo|abo)\b\.?', caseSensitive: false),
+            ' ')
         .replaceAll(RegExp(r'\d[\d./-]*'), ' ')
         .replaceAll(RegExp(r'\s+'), ' ')
         .trim();

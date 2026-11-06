@@ -1,8 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bankverbindung (FinTS) direkt zur Bank -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- App-Sperre mit Fingerabdruck / Gesicht -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
+    <!-- Kein Auto-Backup: Der Schlüssel liegt im Android-Keystore und wird nicht
+         mitgesichert – ein wiederhergestellter Datencontainer wäre unlesbar. -->
     <application
-        android:label="klarblick"
+        android:label="Klarblick"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules">
         <activity
             android:name=".MainActivity"
             android:exported="true"

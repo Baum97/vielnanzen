@@ -1,5 +1,6 @@
 package de.klarblick.klarblick
 
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 
-class MainActivity : FlutterActivity()
+// FragmentActivity ist für die Biometrie-Abfrage (local_auth) erforderlich.
+class MainActivity : FlutterFragmentActivity()

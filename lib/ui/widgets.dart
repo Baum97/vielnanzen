@@ -277,7 +277,20 @@ class StatTile extends StatelessWidget {
   final IconData? icon;
   final VoidCallback? onTap;
 
-  const StatTile({super.key, required this.label, required this.cents, this.delta, this.goodWhenUp = false, this.color, this.icon, this.onTap});
+  /// Zusatzzeile, wenn kein Vergleichswert angezeigt wird (z. B. Sparquote).
+  final String? caption;
+
+  const StatTile({
+    super.key,
+    required this.label,
+    required this.cents,
+    this.delta,
+    this.goodWhenUp = false,
+    this.color,
+    this.icon,
+    this.onTap,
+    this.caption,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -303,7 +316,15 @@ class StatTile extends StatelessWidget {
               child: AmountText(cents, style: theme.textTheme.titleMedium?.copyWith(color: color), round: true),
             ),
             const SizedBox(height: 4),
-            SizedBox(height: 16, child: DeltaChip(delta, goodWhenUp: goodWhenUp)),
+            SizedBox(
+              height: 16,
+              child: caption != null
+                  ? Text(caption!,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary))
+                  : DeltaChip(delta, goodWhenUp: goodWhenUp),
+            ),
           ]),
         ),
       ),

@@ -128,7 +128,7 @@ class _CategoriesView extends ConsumerWidget {
                       const SizedBox(height: 4),
                       Row(children: [
                         Expanded(
-                          child: Text('${AmountFormat.percent(c.share)} · ${c.count} Buchungen',
+                          child: Text('${AmountFormat.percent(c.share)} · ${c.count} ${c.count == 1 ? 'Buchung' : 'Buchungen'}',
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: theme.textTheme.labelSmall?.copyWith(color: theme.colorScheme.secondary)),
@@ -154,7 +154,7 @@ class _CategoriesView extends ConsumerWidget {
                   contentPadding: EdgeInsets.zero,
                   leading: Avatar(icon: categoryIcon(engine.categoryById(s.categoryId)?.icon), color: parseHexColor(s.color), size: 34),
                   title: Text(s.name),
-                  subtitle: Text('${s.count} Eingänge'),
+                  subtitle: Text('${s.count} ${s.count == 1 ? 'Eingang' : 'Eingänge'}'),
                   trailing: AmountText(s.cents, signed: true, style: theme.textTheme.bodyMedium),
                 ),
           ]),

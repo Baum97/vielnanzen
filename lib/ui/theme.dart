@@ -45,6 +45,8 @@ class AppTheme {
       surface: dark ? AppColors.bgSurfaceDark : AppColors.bgSurfaceLight,
       onSurface: dark ? AppColors.textPrimaryDark : AppColors.textPrimaryLight,
       surfaceContainerHighest: dark ? AppColors.bgElevatedDark : const Color(0xFFF0F0EE),
+      secondaryContainer: (dark ? AppColors.accentDark : AppColors.accent).withValues(alpha: dark ? 0.28 : 0.14),
+      onSecondaryContainer: dark ? AppColors.textPrimaryDark : AppColors.accent,
       outline: dark ? AppColors.separatorDark : AppColors.separatorLight,
       error: dark ? AppColors.criticalDark : AppColors.critical,
       onError: Colors.white,
@@ -114,15 +116,14 @@ class AmountFormat {
 
   static String format(int cents, {bool discreet = false, bool round = false}) {
     if (discreet) return hidden;
-    final v = cents / 100;
-    final f = (round || cents.abs() >= 1000000) ? _int : _full;
-    return f.format(v).replaceFirst('-', '−');
+    final f = round ? _int : _full;
+    return f.format(cents / 100).replaceFirst('-', '−');
   }
 
-  /// Kurz für Achsen/Kacheln: "1,2 Tsd. €".
+  /// Kurz für Achsen/Kacheln: „33.420 €“, ab 1 Mio. „1,2 Mio. €“.
   static String compact(int cents, {bool discreet = false}) {
     if (discreet) return '•••';
-    if (cents.abs() < 100000) return format(cents, round: true);
+    if (cents.abs() < 100000000) return format(cents, round: true);
     return _compact.format(cents / 100).replaceFirst('-', '−');
   }
 
