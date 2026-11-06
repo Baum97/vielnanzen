@@ -102,7 +102,7 @@ class HomeTab extends ConsumerWidget {
                 AmountText(balanceChange, signed: true, style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w600)),
                 const SizedBox(width: 6),
                 Flexible(
-                  child: Text(p.range.label.toLowerCase(),
+                  child: Text(p.range.label,
                       style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary), overflow: TextOverflow.ellipsis),
                 ),
               ]),
