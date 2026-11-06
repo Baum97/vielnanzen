@@ -1,27 +1,33 @@
+import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
 
-import 'package:encrypt/encrypt.dart' as enc;
+import 'package:cryptography/cryptography.dart';
 import 'package:flutter/foundation.dart';
-import 'package:path_provider/path_provider.dart';
 
+import 'blob/blob_storage.dart';
 import 'models.dart';
 import 'secure_key.dart';
 
 /// Verschlüsselte, rein lokale Persistenz aller App-Daten.
-/// Datei: AES-256-GCM-verschlüsseltes JSON im App-Dokumentenverzeichnis.
-/// Schnittstelle für eine spätere SQLCipher/drift-Anbindung bleibt offen.
+///
+/// Format v2: `KB2:` + Base64(Nonce[12] ‖ Chiffrat ‖ GCM-Tag[16]), AES-256-GCM
+/// mit **zufälligem Nonce pro Speichervorgang**. Version 1.0 nutzte einen festen
+/// IV; solche Container werden noch gelesen und beim nächsten Speichern ersetzt.
 class Store extends ChangeNotifier {
-  Store({SecureKeyStore? keyStore}) : _keyStore = keyStore ?? LocalSecureKeyStore();
+  Store({SecureKeyStore? keyStore, BlobStorage? blob})
+      : keyStore = keyStore ?? DeviceSecureKeyStore(),
+        _blob = blob ?? BlobStorage.platform();
 
-  final SecureKeyStore _keyStore;
+  final SecureKeyStore keyStore;
+  final BlobStorage _blob;
+  static final _cipher = AesGcm.with256bits();
+  static const _prefix = 'KB2:';
 
-  enc.Encrypter? _encrypter;
-  File? _file;
+  SecretKey? _key;
+  Uint8List? _legacyIv;
 
   final List<Account> accounts = [];
   final List<Transaction> transactions = [];
-  final List<Merchant> merchants = [];
   final List<Contract> contracts = [];
   final List<Rule> rules = [];
   final List<Budget> budgets = [];
@@ -30,90 +36,112 @@ class Store extends ChangeNotifier {
   final List<NetworkLogEntry> networkLog = [];
   final List<BankConnection> connections = [];
 
-  final Map<String, dynamic> settings = {
-    'discreetMode': false,
-    'darkMode': 'system',
-    'accentColor': '#2F5BEA',
-    'monthStart': '1',
-    'refreshOnOpen': true,
-    'notifications': true,
-    'appLock': true,
-    'hideInSwitcher': true,
-    'selectedAccountIds': <String>[],
-  };
+  final Map<String, int> _byHash = {};
+
+  static Map<String, dynamic> defaultSettings() => {
+        'discreetMode': false,
+        'darkMode': 'system',
+        'refreshOnOpen': false,
+        'appLock': false,
+        'timeRange': 'm1',
+        'fintsProductId': '',
+      };
+
+  final Map<String, dynamic> settings = defaultSettings();
 
   bool _loaded = false;
   bool get isLoaded => _loaded;
+
+  /// Für Tests: ohne Plattformkanäle als geladen markieren.
+  @visibleForTesting
   void forceLoadedForTest() => _loaded = true;
+
+  String? loadError;
 
   Future<void> load() async {
     if (_loaded) return;
-    final key = await _keyStore.getOrCreateDatabaseKey();
-    final derived = LocalSecureKeyStore.deriveKey(key);
-    _encrypter = enc.Encrypter(enc.AES(enc.Key(derived), mode: enc.AESMode.gcm));
-    final dir = await getApplicationDocumentsDirectory();
-    _file = File('${dir.path}/klarblick.db.enc');
-    if (await _file!.exists()) {
-      try {
-        final iv = enc.IV(derived.sublist(0, 12));
-        final encrypted = enc.Encrypted.fromBase64(await _file!.readAsString());
-        final plain = _encrypter!.decrypt(encrypted, iv: iv);
-        _applyJson(jsonDecode(plain) as Map<String, dynamic>);
-      } catch (_) {
-        // Datei beschädigt – starte leer, Daten bleiben lokal erhalten wo möglich.
+    try {
+      final raw = await keyStore.getOrCreateDatabaseKey();
+      final derived = deriveDatabaseKey(raw);
+      _key = SecretKey(derived);
+      _legacyIv = derived.sublist(0, 12);
+      final data = await _blob.read();
+      if (data != null && data.isNotEmpty) {
+        try {
+          _applyJson(jsonDecode(await _decrypt(data)) as Map<String, dynamic>);
+        } catch (e) {
+          // Nicht lesbar: Container sichern statt überschreiben und leer starten.
+          loadError = 'Gespeicherte Daten konnten nicht entschlüsselt werden. Eine Sicherung wurde angelegt.';
+          await _blob.backupCorrupt(data);
+        }
       }
+    } catch (e) {
+      loadError = 'Speicher nicht verfügbar: $e';
     }
     _loaded = true;
     notifyListeners();
   }
 
-  void _applyJson(Map<String, dynamic> j) {
-    accounts
-      ..clear()
-      ..addAll((j['accounts'] as List? ?? []).map((e) => Account.fromJson(e as Map<String, dynamic>)));
-    transactions
-      ..clear()
-      ..addAll((j['transactions'] as List? ?? []).map((e) => Transaction.fromJson(e as Map<String, dynamic>)));
-    merchants
-      ..clear()
-      ..addAll((j['merchants'] as List? ?? []).map((e) => Merchant(
-            id: e['id'] as String,
-            normalizedName: e['normalizedName'] as String,
-            displayName: e['displayName'] as String,
-            defaultCategoryId: e['defaultCategoryId'] as String?,
-          )));
-    contracts
-      ..clear()
-      ..addAll((j['contracts'] as List? ?? []).map((e) => Contract.fromJson(e as Map<String, dynamic>)));
-    rules
-      ..clear()
-      ..addAll((j['rules'] as List? ?? []).map((e) => Rule.fromJson(e as Map<String, dynamic>)));
-    budgets
-      ..clear()
-      ..addAll((j['budgets'] as List? ?? []).map((e) => Budget.fromJson(e as Map<String, dynamic>)));
-    goals
-      ..clear()
-      ..addAll((j['goals'] as List? ?? []).map((e) => Goal.fromJson(e as Map<String, dynamic>)));
-    insights
-      ..clear()
-      ..addAll((j['insights'] as List? ?? []).map((e) => Insight.fromJson(e as Map<String, dynamic>)));
-    networkLog
-      ..clear()
-      ..addAll((j['networkLog'] as List? ?? []).map((e) => NetworkLogEntry.fromJson(e as Map<String, dynamic>)));
-    connections
-      ..clear()
-      ..addAll((j['connections'] as List? ?? []).map((e) => BankConnection.fromJson(e as Map<String, dynamic>)));
-    final s = j['settings'] as Map<String, dynamic>?;
-    if (s != null) settings.addAll(s);
+  Future<String> _decrypt(String data) async {
+    if (data.startsWith(_prefix)) {
+      final bytes = base64Decode(data.substring(_prefix.length));
+      final box = SecretBox.fromConcatenation(bytes, nonceLength: 12, macLength: 16);
+      return utf8.decode(await _cipher.decrypt(box, secretKey: _key!));
+    }
+    // Legacy v1: Base64(Chiffrat ‖ Tag) mit festem IV
+    final bytes = base64Decode(data);
+    final box = SecretBox(
+      bytes.sublist(0, bytes.length - 16),
+      nonce: _legacyIv!,
+      mac: Mac(bytes.sublist(bytes.length - 16)),
+    );
+    return utf8.decode(await _cipher.decrypt(box, secretKey: _key!));
   }
 
-  Map<String, dynamic> _toJson() => {
-        'version': 1,
+  Future<String> _encrypt(String plain) async {
+    final box = await _cipher.encrypt(utf8.encode(plain), secretKey: _key!, nonce: _cipher.newNonce());
+    return _prefix + base64Encode(box.concatenation());
+  }
+
+  void _applyJson(Map<String, dynamic> j) {
+    List<T> list<T>(String key, T Function(Map<String, dynamic>) f) =>
+        (j[key] as List? ?? []).map((e) => f(e as Map<String, dynamic>)).toList();
+    accounts
+      ..clear()
+      ..addAll(list('accounts', Account.fromJson));
+    transactions
+      ..clear()
+      ..addAll(list('transactions', Transaction.fromJson));
+    contracts
+      ..clear()
+      ..addAll(list('contracts', Contract.fromJson));
+    rules
+      ..clear()
+      ..addAll(list('rules', Rule.fromJson));
+    budgets
+      ..clear()
+      ..addAll(list('budgets', Budget.fromJson));
+    goals
+      ..clear()
+      ..addAll(list('goals', Goal.fromJson));
+    insights
+      ..clear()
+      ..addAll(list('insights', Insight.fromJson));
+    networkLog
+      ..clear()
+      ..addAll(list('networkLog', NetworkLogEntry.fromJson));
+    connections
+      ..clear()
+      ..addAll(list('connections', BankConnection.fromJson));
+    final s = j['settings'] as Map<String, dynamic>?;
+    if (s != null) settings.addAll(s);
+    _reindex();
+  }
+
+  Map<String, dynamic> toJson() => {
+        'version': 2,
         'accounts': accounts.map((e) => e.toJson()).toList(),
         'transactions': transactions.map((e) => e.toJson()).toList(),
-        'merchants': merchants
-            .map((m) => {'id': m.id, 'normalizedName': m.normalizedName, 'displayName': m.displayName, 'defaultCategoryId': m.defaultCategoryId})
-            .toList(),
         'contracts': contracts.map((e) => e.toJson()).toList(),
         'rules': rules.map((e) => e.toJson()).toList(),
         'budgets': budgets.map((e) => e.toJson()).toList(),
@@ -124,19 +152,72 @@ class Store extends ChangeNotifier {
         'settings': settings,
       };
 
-  Future<void> save() async {
-    if (_encrypter == null || _file == null) return;
-    final key = await _keyStore.getOrCreateDatabaseKey();
-    final derived = LocalSecureKeyStore.deriveKey(key);
-    final iv = enc.IV(derived.sublist(0, 12));
-    final encrypted = _encrypter!.encrypt(jsonEncode(_toJson()), iv: iv);
-    await _file!.writeAsString(encrypted.base64);
+  // ---------------------------------------------------------------------------
+  // Speichern (entprellt) & Benachrichtigen
+
+  Timer? _saveTimer;
+  Future<void>? _saving;
+  bool _dirty = false;
+  int _batchDepth = 0;
+  bool _pendingNotify = false;
+
+  void _changed() {
+    if (_batchDepth > 0) {
+      _pendingNotify = true;
+      return;
+    }
+    notifyListeners();
+    _scheduleSave();
   }
+
+  /// Mehrere Änderungen zusammenfassen: eine Benachrichtigung, ein Speichervorgang.
+  void batch(void Function() fn) {
+    _batchDepth++;
+    try {
+      fn();
+    } finally {
+      _batchDepth--;
+      if (_batchDepth == 0 && _pendingNotify) {
+        _pendingNotify = false;
+        _changed();
+      }
+    }
+  }
+
+  void _scheduleSave() {
+    _dirty = true;
+    _saveTimer?.cancel();
+    _saveTimer = Timer(const Duration(milliseconds: 400), () => save());
+  }
+
+  /// Schreibt sofort (z. B. bevor die App in den Hintergrund geht).
+  Future<void> save() async {
+    _saveTimer?.cancel();
+    if (_key == null) return;
+    if (_saving != null) {
+      await _saving;
+      if (!_dirty) return;
+    }
+    _dirty = false;
+    final completer = Completer<void>();
+    _saving = completer.future;
+    try {
+      await _blob.write(await _encrypt(jsonEncode(toJson())));
+    } catch (e) {
+      _dirty = true;
+      debugPrint('Speichern fehlgeschlagen: $e');
+    } finally {
+      _saving = null;
+      completer.complete();
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Mutationen
 
   void updateSettings(Map<String, dynamic> patch) {
     settings.addAll(patch);
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void addNetworkLog(String host, String purpose) {
@@ -144,9 +225,11 @@ class Store extends ChangeNotifier {
       0,
       NetworkLogEntry(id: DateTime.now().microsecondsSinceEpoch.toString(), host: host, timestamp: DateTime.now(), purpose: purpose),
     );
-    if (networkLog.length > 500) networkLog.removeLast();
-    save();
+    if (networkLog.length > 500) networkLog.removeRange(500, networkLog.length);
+    _changed();
   }
+
+  Account? accountById(String id) => accounts.where((a) => a.id == id).firstOrNull;
 
   void upsertAccount(Account a) {
     final i = accounts.indexWhere((e) => e.id == a.id);
@@ -155,28 +238,72 @@ class Store extends ChangeNotifier {
     } else {
       accounts.add(a);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void removeAccount(String id) {
+    final acc = accountById(id);
     accounts.removeWhere((e) => e.id == id);
     transactions.removeWhere((t) => t.accountId == id);
-    notifyListeners();
-    save();
+    if (acc?.connectionId != null && !accounts.any((a) => a.connectionId == acc!.connectionId)) {
+      connections.removeWhere((c) => c.id == acc!.connectionId);
+    }
+    _reindex();
+    _changed();
   }
 
-  void upsertTransactions(List<Transaction> list) {
+  void _reindex() {
+    _byHash.clear();
+    for (var i = 0; i < transactions.length; i++) {
+      _byHash[transactions[i].dedupHash] = i;
+    }
+  }
+
+  bool hasTransactionHash(String hash) => _byHash.containsKey(hash);
+
+  /// Fügt neue Umsätze hinzu bzw. aktualisiert vorhandene (gleicher Dedup-Hash).
+  /// Nutzerangaben (Kategorie, Notiz, Ausschluss …) bleiben erhalten.
+  /// Gibt die Zahl neu hinzugefügter Umsätze zurück.
+  int upsertTransactions(List<Transaction> list) {
+    var added = 0;
     for (final t in list) {
-      final i = transactions.indexWhere((e) => e.dedupHash == t.dedupHash);
-      if (i >= 0) {
-        transactions[i] = t.copyWith(categoryId: transactions[i].categoryId, excluded: transactions[i].excluded, note: transactions[i].note, tags: transactions[i].tags);
+      final i = _byHash[t.dedupHash];
+      if (i != null) {
+        final old = transactions[i];
+        transactions[i] = old.manualCategory
+            ? t.copyWith(
+                categoryId: old.categoryId,
+                manualCategory: true,
+                categoryReason: old.categoryReason,
+                excluded: old.excluded,
+                isTransfer: old.isTransfer,
+                note: old.note,
+                tags: old.tags,
+              )
+            : t.copyWith(excluded: old.excluded, note: old.note, tags: old.tags, isTransfer: old.isTransfer || t.isTransfer);
       } else {
+        _byHash[t.dedupHash] = transactions.length;
         transactions.add(t);
+        added++;
       }
     }
-    notifyListeners();
-    save();
+    _changed();
+    return added;
+  }
+
+  /// Ersetzt die Analyse-Felder aller Umsätze in einem Rutsch (ohne Reindex).
+  void replaceAnalyzedTransactions(List<Transaction> analyzed) {
+    if (analyzed.length != transactions.length) {
+      transactions
+        ..clear()
+        ..addAll(analyzed);
+      _reindex();
+    } else {
+      for (var i = 0; i < analyzed.length; i++) {
+        transactions[i] = analyzed[i];
+      }
+    }
+    _changed();
   }
 
   void upsertTransaction(Transaction t) {
@@ -184,11 +311,15 @@ class Store extends ChangeNotifier {
     if (i >= 0) {
       transactions[i] = t;
     } else {
+      _byHash[t.dedupHash] = transactions.length;
       transactions.add(t);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
+
+  Transaction? transactionById(String id) => transactions.where((t) => t.id == id).firstOrNull;
+
+  Contract? contractById(String id) => contracts.where((c) => c.id == id).firstOrNull;
 
   void upsertContract(Contract c) {
     final i = contracts.indexWhere((e) => e.id == c.id);
@@ -197,14 +328,18 @@ class Store extends ChangeNotifier {
     } else {
       contracts.add(c);
     }
-    notifyListeners();
-    save();
+    _changed();
+  }
+
+  void setContractStatus(String id, ContractStatus status) {
+    final c = contractById(id);
+    if (c == null) return;
+    upsertContract(c.copyWith(status: status, userConfirmed: true));
   }
 
   void removeContract(String id) {
     contracts.removeWhere((e) => e.id == id);
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void upsertRule(Rule r) {
@@ -214,14 +349,12 @@ class Store extends ChangeNotifier {
     } else {
       rules.add(r);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void removeRule(String id) {
     rules.removeWhere((e) => e.id == id);
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void upsertBudget(Budget b) {
@@ -231,60 +364,75 @@ class Store extends ChangeNotifier {
     } else {
       budgets.add(b);
     }
-    notifyListeners();
-    save();
+    _changed();
+  }
+
+  void removeBudget(String id) {
+    budgets.removeWhere((e) => e.id == id);
+    _changed();
   }
 
   void upsertGoal(Goal g) {
-    final i = goals.indexWhere((e) => g.id == g.id);
+    final i = goals.indexWhere((e) => e.id == g.id);
     if (i >= 0) {
       goals[i] = g;
     } else {
       goals.add(g);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
 
-  void upsertInsight(Insight i) {
-    final idx = insights.indexWhere((e) => e.id == i.id);
-    if (idx >= 0) {
-      insights[idx] = i;
-    } else {
-      insights.add(i);
+  /// Übernimmt die aktuellen Insights der Analyse; ausgeblendete bleiben ausgeblendet.
+  void replaceInsights(List<Insight> fresh) {
+    final dismissed = {for (final i in insights.where((i) => i.dismissed)) i.id: i};
+    final previous = {for (final i in insights) i.id: i};
+    insights
+      ..clear()
+      ..addAll(fresh.map((i) {
+        final d = dismissed[i.id];
+        if (d != null) return i.copyWith(dismissedAt: d.dismissedAt);
+        final p = previous[i.id];
+        return p != null ? i.copyWith(createdAt: p.createdAt) : i;
+      }));
+    // Ausgeblendete, die gerade nicht auftreten, merken (sonst kämen sie zurück).
+    for (final d in dismissed.values) {
+      if (!insights.any((i) => i.id == d.id)) insights.add(d);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
 
   void dismissInsight(String id) {
     final i = insights.indexWhere((e) => e.id == id);
     if (i >= 0) {
-      insights[i] = Insight(
-        id: insights[i].id,
-        type: insights[i].type,
-        title: insights[i].title,
-        detail: insights[i].detail,
-        potentialCentsPerYear: insights[i].potentialCentsPerYear,
-        createdAt: insights[i].createdAt,
-        dismissedAt: DateTime.now(),
-        payloadJson: insights[i].payloadJson,
-      );
-      notifyListeners();
-      save();
+      insights[i] = insights[i].copyWith(dismissedAt: DateTime.now());
+      _changed();
     }
   }
 
-  void upsertMerchant(Merchant m) {
-    final i = merchants.indexWhere((e) => e.normalizedName == m.normalizedName);
-    if (i >= 0) {
-      merchants[i] = m;
-    } else {
-      merchants.add(m);
+  void restoreInsights() {
+    for (var i = 0; i < insights.length; i++) {
+      if (insights[i].dismissed) {
+        final x = insights[i];
+        insights[i] = Insight(
+          id: x.id,
+          type: x.type,
+          title: x.title,
+          detail: x.detail,
+          action: x.action,
+          potentialCentsPerYear: x.potentialCentsPerYear,
+          createdAt: x.createdAt,
+          contractId: x.contractId,
+          merchantName: x.merchantName,
+          categoryId: x.categoryId,
+        );
+      }
     }
-    notifyListeners();
-    save();
+    _changed();
   }
+
+  BankConnection? connectionById(String id) => connections.where((c) => c.id == id).firstOrNull;
+
+  static String pinKeyFor(String connectionId) => 'klarblick.pin.$connectionId';
 
   void upsertConnection(BankConnection c) {
     final i = connections.indexWhere((e) => e.id == c.id);
@@ -293,11 +441,37 @@ class Store extends ChangeNotifier {
     } else {
       connections.add(c);
     }
-    notifyListeners();
-    save();
+    _changed();
   }
 
-  List<Transaction> transactionsForAccounts(Set<String> accountIds) =>
-      transactions.where((t) => accountIds.isEmpty || accountIds.contains(t.accountId)).toList()
-        ..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
+  /// Löscht alle Daten inkl. Schlüssel und gespeicherter PINs.
+  Future<void> wipe() async {
+    for (final c in connections) {
+      try {
+        await keyStore.write(pinKeyFor(c.id), null);
+      } catch (_) {}
+    }
+    accounts.clear();
+    transactions.clear();
+    contracts.clear();
+    rules.clear();
+    budgets.clear();
+    goals.clear();
+    insights.clear();
+    networkLog.clear();
+    connections.clear();
+    settings
+      ..clear()
+      ..addAll(defaultSettings());
+    _reindex();
+    _saveTimer?.cancel();
+    await _blob.delete();
+    notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _saveTimer?.cancel();
+    super.dispose();
+  }
 }

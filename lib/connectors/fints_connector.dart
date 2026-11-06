@@ -1,128 +1,242 @@
 import 'package:fints/fints.dart' as fints;
 
 import '../data/models.dart';
-import '../data/store.dart';
-import 'bank_connector.dart';
+import 'fints_mapping.dart';
+
+/// Rückfragen an den Nutzer während eines Bankabrufs (TAN, Verfahren, Medium).
+/// Die UI implementiert diese Schnittstelle mit Dialogen.
+abstract class FintsPrompts {
+  /// TAN eingeben oder App-Freigabe bestätigen.
+  Future<fints.TanAnswer> tan(fints.TanChallenge challenge);
+
+  /// Auswahl des TAN-Verfahrens (pushTAN, photoTAN, …).
+  Future<fints.TanMethod?> tanMethod(List<fints.TanMethod> methods);
+
+  /// Auswahl des TAN-Mediums (z. B. welches Smartphone).
+  Future<fints.TanMedium?> tanMedium(List<fints.TanMedium> media);
+
+  /// Hinweise der Bank anzeigen.
+  void bankMessage(String subject, String text);
+}
+
+/// Ergebnis eines Abrufs über eine Bankverbindung.
+class FintsSyncResult {
+  final List<Account> accounts;
+  final Map<String, List<Transaction>> transactions;
+  final String state;
+  final List<String> warnings;
+  final String? newUserId;
+
+  const FintsSyncResult({
+    required this.accounts,
+    required this.transactions,
+    required this.state,
+    this.warnings = const [],
+    this.newUserId,
+  });
+}
+
+class FintsSyncException implements Exception {
+  final String message;
+  final bool pinWrong;
+  final String? state;
+  const FintsSyncException(this.message, {this.pinWrong = false, this.state});
+  @override
+  String toString() => message;
+}
 
 /// FinTS 3.0 direkt zur Bank – kein eigener Server dazwischen.
-/// Kapselt das `fints`-Paket hinter [BankConnector], damit ein Wechsel
-/// auf fints-rs (flutter_rust_bridge) die App nicht umbaut.
 ///
-/// Produktregistrierung bei der Deutschen Kreditwirtschaft ist Voraussetzung
-/// (ID kommt nach ca. 10–15 Werktagen); Platzhalter siehe [productId].
-class FintsConnector implements BankConnector {
+/// Voraussetzung ist eine (kostenlose) Produktregistrierung bei der Deutschen
+/// Kreditwirtschaft: https://www.fints.org/de/hersteller/produktregistrierung
+/// Die ID kann in den Einstellungen eingetragen oder beim Bauen per
+/// `--dart-define=FINTS_PRODUCT_ID=…` mitgegeben werden.
+class FintsConnector {
   FintsConnector({
-    required this.store,
-    required this.blz,
-    required this.fintsUrl,
-    required this.userId,
-    this.pin,
-    this.productId = 'KLARBLICKPLACEHOLDER',
-    this.onTanChallenge,
+    required this.connection,
+    required this.pin,
+    required this.productId,
+    required this.prompts,
+    this.onNetwork,
+    this.transport,
   });
 
-  final Store store;
-  final String blz;
-  final String fintsUrl;
-  final String userId;
-  final String? pin;
+  static const buildProductId = String.fromEnvironment('FINTS_PRODUCT_ID');
+
+  final BankConnection connection;
+  final String pin;
   final String productId;
+  final FintsPrompts prompts;
+  final void Function(String host, String purpose)? onNetwork;
+  /// Für Tests: eigener Transport statt HTTP.
+  final fints.FinTsTransport? transport;
 
-  /// Wird aufgerufen, wenn die Bank eine TAN/Freigabe verlangt (O7-Flow).
-  final Future<String?> Function(fints.TanChallenge challenge)? onTanChallenge;
-
-  fints.FinTsClient? _client;
-
-  @override
-  String get id => 'fints_$blz';
-
-  @override
-  String get label => 'FinTS $blz';
-
-  fints.FinTsClient _buildClient() {
+  fints.FinTsClient _client() {
     final config = fints.FinTsConfig(
-      url: Uri.parse(fintsUrl),
-      bankCode: blz,
-      userId: userId,
-      productId: productId,
-      productVersion: '1.0',
+      url: Uri.parse(connection.fintsUrl.trim()),
+      bankCode: connection.blz.trim(),
+      userId: connection.userId.trim(),
+      customerId: (connection.customerId?.trim().isEmpty ?? true) ? null : connection.customerId!.trim(),
+      productId: productId.trim(),
+      productVersion: '1.1',
     );
-    final options = fints.FinTsClientOptions(
-      tanCallback: (challenge) async {
-        if (onTanChallenge == null) return fints.TanAnswer.cancelled;
-        if (challenge.isDecoupled) return fints.TanAnswer.approved;
-        final tan = await onTanChallenge!(challenge);
-        if (tan == null || tan.isEmpty) return fints.TanAnswer.cancelled;
-        return fints.TanAnswer.tan(tan);
-      },
-      logger: (direction, message) {},
+    return fints.FinTs3Client(
+      config: config,
+      pin: pin,
+      options: fints.FinTsClientOptions(
+        state: connection.fintsState,
+        transport: transport,
+        tanCallback: prompts.tan,
+        tanMethodSelector: prompts.tanMethod,
+        tanMediumSelector: prompts.tanMedium,
+        onBankMessage: (m) => prompts.bankMessage(m.subject, m.text),
+      ),
     );
-    return fints.FinTs3Client(config: config, pin: pin ?? '', options: options);
   }
 
-  @override
-  Future<ConnectorResult> fetchAccounts() async {
-    try {
-      _client ??= _buildClient();
-      store.addNetworkLog(Uri.parse(fintsUrl).host, 'Konten abrufen ($blz)');
-      final accounts = await _client!.getAccounts();
-      final mapped = accounts
-          .map((a) => Account(
-                id: 'acc_${a.iban ?? a.accountNumber ?? DateTime.now().microsecondsSinceEpoch}',
-                 connectionId: id,
-                iban: a.iban ?? '',
-                name: a.productName ?? 'Konto',
-                type: _mapType(a.category),
-              ));
-          .toList();
-      return ConnectorResult(accounts: mapped);
-    } on fints.FinTsPinException catch (e) {
-      return ConnectorResult(error: 'PIN falsch: $e');
-    } on fints.FinTsToginRefusedException catch (e) {
-      return ConnectorResult(error: 'Anmeldung abgelehnt: $e. Die PIN wiird nicht automatisch erneut gesendet.');
-    } on fints.FinTSTransportException catch (e) {
-      return ConnectorResult(error: 'Bank nicht erreichbar: ${e.message}');
-    } catch (e) {
-      return ConnectorResult(error: 'Verbindungsfehler: $e');
-    }
-  }
-
-  @override
-  Future<ConnectorResult> fetchTransactions(Account account, {DateTime? from}) async {
-    try {
-      _client ??= _buildClient();
-      store.addNetworkLog(Uri.parse(fintsUrl).host, 'Umsatzabruf ($blz)');
-      final fintsAccount = fints.Account(bankCode: blz, iban: account.iban, accountNumber: account.iban);
-      final txs = await _client!.getTransactions(fintsAccount, from: from);
-      final mapped = txs
-          .map((t) => Transaction(
-                id: 'fints_${account.id}_${(t.bookingDate ?? t.valueDate).microsecondsSinceEpoch}_${t.amount.minorUnits}',
-                accountId: account.id,
-                bookingDate: t.bookingDate ?? t.valueDate,
-                valueDate: t.valueDate,
-                amountCents: t.amount.minorUnits,
-                counterpartyName: t.counterpartyName ?? ' t.purpose ?? 'Unbekannt',
-                counterpartyIban: t.counterpartyIban,
-                purpose: t.purpose ?? '',
-                mandateRef: t.mandateId,
-                creditorId: t.creditorId,
-                endToEndRef: t.endToEndId,
-                gvc: t.transactionCode,
-                pending: t.status == fints.TransactionStatus.pending,
-                dedupHash: '${account.id}|${(t.bookingDate ?? t.valueDate).toIso8601String()}|$${t.amount.minorUnits}|${t.endToEndId ?? t.purpose ?? ''}',
-              ))
-          .toList();
-      return ConnectorResult(transactions: mapped);
-    } on fints.FinTSSuspendedException catch (e) {
-      return ConnectorResult(needsTan: true, tanChallenge: 'TAN-Freigabe nötig: ${e.challenge.message}', error: 'TAN fällig');
-    } catch (e) {
-      return ConnectorResult(error: 'Abruf fehlgeschlagen: $e');
-    }
-  }
-
-  static AccountType _mapType(fints.AccountCategory c) => switch (c) {
+  static AccountType mapType(fints.AccountCategory c) => switch (c) {
         fints.AccountCategory.creditCard => AccountType.kreditkarte,
         fints.AccountCategory.savings || fints.AccountCategory.fixedDeposit => AccountType.tagesgeld,
+        fints.AccountCategory.securities || fints.AccountCategory.fund => AccountType.depot,
         _ => AccountType.giro,
+      };
+
+  static String accountIdFor(fints.Account a) =>
+      'acc_${(a.iban ?? '${a.bankCode}_${a.accountNumber}_${a.subAccount ?? ''}').replaceAll(RegExp(r'[^A-Za-z0-9_]'), '')}';
+
+  /// Holt Konten, Salden und Umsätze. [since] = ab wann (null: so weit die Bank liefert, max. 5 Jahre).
+  /// [freshPin]: die PIN wurde gerade neu eingegeben – eine gespeicherte Anmeldesperre wird dann aufgehoben.
+  Future<FintsSyncResult> sync({DateTime? since, bool freshPin = false}) async {
+    final host = Uri.tryParse(connection.fintsUrl)?.host ?? connection.fintsUrl;
+    final fints.FinTsClient client;
+    try {
+      client = _client();
+    } on ArgumentError catch (e) {
+      throw FintsSyncException('Ungültige Angaben: ${e.message} (${e.name ?? ''})');
+    }
+    final warnings = <String>[];
+    try {
+      if (freshPin && client.loginRefusal != null) await client.clearLoginRefusal(pin);
+      onNetwork?.call(host, 'Konten abrufen (${connection.bankName})');
+      final remote = await client.getAccounts();
+      final accounts = <Account>[];
+      final txs = <String, List<Transaction>>{};
+      for (final a in remote) {
+        final type = mapType(a.category);
+        if (type == AccountType.depot || a.category == fints.AccountCategory.loan) continue;
+        final id = accountIdFor(a);
+        var balance = 0;
+        DateTime? balanceDate;
+        try {
+          onNetwork?.call(host, 'Saldo (${a.iban ?? a.accountNumber})');
+          final b = await client.getBalance(a);
+          balance = amountToCents(b.booked);
+          balanceDate = b.bookedAsOf;
+        } on fints.FinTsUnsupportedException {
+          warnings.add('Saldo für ${a.productName ?? a.iban} nicht verfügbar.');
+        }
+        accounts.add(Account(
+          id: id,
+          connectionId: connection.id,
+          iban: a.iban ?? '',
+          accountNumber: a.accountNumber,
+          bankCode: a.bankCode,
+          name: (a.productName?.trim().isNotEmpty ?? false) ? a.productName!.trim() : _defaultName(type),
+          type: type,
+          currency: a.currency ?? 'EUR',
+          balanceCents: balance,
+          balanceDate: balanceDate ?? DateTime.now(),
+          lastSync: DateTime.now(),
+        ));
+        txs[id] = await _transactions(client, a, id, since, host, warnings);
+      }
+      return FintsSyncResult(accounts: accounts, transactions: txs, state: client.state, warnings: warnings);
+    } on FintsSyncException {
+      rethrow;
+    } on fints.FinTsLoginDataChangedException catch (e) {
+      throw FintsSyncException('Die Bank hat neue Zugangsdaten mitgeteilt (Anmeldename: ${e.userId ?? e.loginName ?? '–'}). Bitte Verbindung neu einrichten.',
+          state: _safeState(client));
+    } on fints.FinTsPinException catch (e) {
+      throw FintsSyncException('PIN falsch oder Zugang gesperrt: ${e.message}', pinWrong: true, state: _safeState(client));
+    } on fints.FinTsLoginRefusedException catch (e) {
+      throw FintsSyncException(
+          'Anmeldung abgelehnt: ${e.message.isEmpty ? 'ohne Begründung' : e.message}. '
+          'Zum Schutz vor einer Sperre wird die PIN nicht automatisch erneut gesendet.',
+          state: _safeState(client));
+    } on fints.FinTsTanCancelledException {
+      throw FintsSyncException('Freigabe abgebrochen.', state: _safeState(client));
+    } on fints.FinTsDecoupledTimeoutException {
+      throw FintsSyncException('Die Freigabe in der Banking-App kam nicht rechtzeitig.', state: _safeState(client));
+    } on fints.FinTsTanException catch (e) {
+      throw FintsSyncException('TAN abgelehnt: ${e.message}', state: _safeState(client));
+    } on fints.FinTsTanSetupException catch (e) {
+      throw FintsSyncException('Kein passendes TAN-Verfahren: ${e.message}', state: _safeState(client));
+    } on fints.FinTsTransportException catch (e) {
+      throw FintsSyncException('Bank nicht erreichbar (${e.statusCode ?? 'keine Verbindung'}). Prüfe Internet und FinTS-Adresse.',
+          state: _safeState(client));
+    } on fints.FinTsBankException catch (e) {
+      final codes = e.codes.toSet();
+      final hint = codes.contains('9078') || codes.contains('9079') || e.message.toLowerCase().contains('produkt')
+          ? ' Die FinTS-Produkt-ID fehlt oder ist nicht registriert (Einstellungen → Bankverbindung).'
+          : '';
+      throw FintsSyncException('Die Bank meldet: ${e.message}$hint', state: _safeState(client));
+    } on fints.FinTsException catch (e) {
+      throw FintsSyncException('FinTS-Fehler: ${e.message}', state: _safeState(client));
+    } on ArgumentError catch (e) {
+      throw FintsSyncException('Ungültige Angaben: ${e.message} (${e.name ?? ''})');
+    } catch (e) {
+      throw FintsSyncException('Abruf fehlgeschlagen: $e', state: _safeState(client));
+    } finally {
+      try {
+        await client.close();
+      } catch (_) {}
+    }
+  }
+
+  static String? _safeState(fints.FinTsClient c) {
+    try {
+      return c.state;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Umsätze mit Rückfall auf kürzere Zeiträume, falls die Bank lange Zeiträume ablehnt.
+  Future<List<Transaction>> _transactions(
+      fints.FinTsClient client, fints.Account a, String accountId, DateTime? since, String host, List<String> warnings) async {
+    final now = DateTime.now();
+    final tries = <DateTime>[
+      since ?? DateTime(now.year - 5, now.month, now.day),
+      if (since == null) ...[DateTime(now.year - 2, now.month, now.day), DateTime(now.year - 1, now.month, now.day), now.subtract(const Duration(days: 90))],
+    ];
+    Object? lastError;
+    for (final from in tries) {
+      try {
+        onNetwork?.call(host, 'Umsätze seit ${from.day}.${from.month}.${from.year}');
+        final list = await client.getTransactions(a, from: from);
+        return list.map((t) => mapFintsTransaction(t, accountId)).toList();
+      } on fints.FinTsIncompleteResultException catch (e) {
+        final partial = e.partialResult;
+        if (partial is List<fints.Transaction>) {
+          warnings.add('Die Bank hat nicht alle Umsätze geliefert.');
+          return partial.map((t) => mapFintsTransaction(t, accountId)).toList();
+        }
+        lastError = e;
+      } on fints.FinTsUnsupportedException catch (e) {
+        warnings.add('Umsatzabruf für ${a.productName ?? a.iban} nicht unterstützt: ${e.message}');
+        return const [];
+      } on fints.FinTsBankException catch (e) {
+        if (e is fints.FinTsLoginRefusedException || e is fints.FinTsTanException) rethrow;
+        lastError = e; // z. B. Zeitraum zu groß → kürzer versuchen
+      }
+    }
+    if (lastError != null) warnings.add('Umsätze für ${a.productName ?? a.iban} nicht abrufbar: $lastError');
+    return const [];
+  }
+
+  static String _defaultName(AccountType t) => switch (t) {
+        AccountType.kreditkarte => 'Kreditkarte',
+        AccountType.tagesgeld => 'Tagesgeld',
+        _ => 'Girokonto',
       };
 }

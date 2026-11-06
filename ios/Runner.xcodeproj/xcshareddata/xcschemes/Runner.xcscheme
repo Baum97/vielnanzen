@@ -5,7 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      {{#withSwiftPackageManager}}
       <PreActions>
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
@@ -24,7 +23,6 @@
             </ActionContent>
          </ExecutionAction>
       </PreActions>
-      {{/withSwiftPackageManager}}
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
