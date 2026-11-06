@@ -36,7 +36,16 @@ class DeviceSecureKeyStore implements SecureKeyStore {
   @override
   Future<Uint8List> getOrCreateDatabaseKey() async {
     if (_cached != null) return _cached!;
-    final existing = await _storage.read(key: _dbKeyName);
+    String? existing;
+    try {
+      existing = await _storage.read(key: _dbKeyName);
+    } catch (e) {
+      // Keystore nicht mehr lesbar (z. B. nach Neuinstallation/Gerätewechsel):
+      // Einträge verwerfen und neu beginnen – der alte Datencontainer wäre ohnehin
+      // nicht mehr zu entschlüsseln und wird vom Store gesichert.
+      debugPrint('Sicherer Speicher nicht lesbar, setze zurück: $e');
+      await _storage.deleteAll();
+    }
     if (existing != null) return _cached = Uint8List.fromList(base64Decode(existing));
 
     // Migration aus SharedPreferences (Version 1.0)
