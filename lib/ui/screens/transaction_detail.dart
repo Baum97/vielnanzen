@@ -173,7 +173,7 @@ class TransactionDetailScreen extends ConsumerWidget {
       categoryId: picked,
       manualCategory: true,
       categoryReason: 'Manuell',
-      isTransfer: picked == 'umbuchung' ? true : (t.isTransfer && picked != 'umbuchung' ? false : t.isTransfer),
+      isTransfer: picked == 'umbuchung',
     ));
 
     // Für alle Umsätze dieser Firma übernehmen?

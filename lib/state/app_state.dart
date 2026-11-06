@@ -68,8 +68,17 @@ class AppStateNotifier extends Notifier<AppState> {
       final result = await runEngine(engine, txs, accounts, rules, contracts);
       // Nur übernehmen, wenn sich die Umsatzliste währenddessen nicht verändert hat.
       if (store.transactions.length == txs.length) {
+        // Während der Analyse geänderte Umsätze (z. B. neue Kategorie) behalten –
+        // der nachfolgende Lauf wertet sie aus.
+        final merged = List<Transaction>.of(result.transactions);
+        for (var i = 0; i < txs.length; i++) {
+          if (!identical(store.transactions[i], txs[i])) {
+            merged[i] = store.transactions[i];
+            _queued = true;
+          }
+        }
         store.batch(() {
-          store.replaceAnalyzedTransactions(result.transactions);
+          store.replaceAnalyzedTransactions(merged);
           store.contracts
             ..clear()
             ..addAll(result.contracts);
