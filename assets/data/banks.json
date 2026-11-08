@@ -1,16 +1,129 @@
 {
+  "_doc": "FinTS-Zugänge. Die Adresse ist im Verbinden-Dialog editierbar und sollte mit den Angaben der eigenen Bank abgeglichen werden. Banken ohne FinTS: Datei-Import (CSV/CAMT/MT940).",
   "banks": [
-    { "name": "Sparkasse KölnBonn", "blz": "37050198", "bic": "COLSDE33XXX", "fintsUrl": "https://fints.sparkasse-koelnbonn.de/fints", "fints": true, "city": "Köln" },
-    { "name": "Stadtsparkasse München", "blz": "70150000", "bic": "SSKMDEMMXXX", "fintsUrl": "https://fints.sparkasse-muenchen.de/fints", "fints": true, "city": "München" },
-    { "name": "Frankfurter Sparkasse", "blz": "50050201", "bic": "HELADEF1822", "fintsUrl": "https://fints.sparkasse-frankfurt.de/fints", "fints": true, "city": "Frankfurt" },
-    { "name": "Volksbank Berlin", "blz": "10090000", "bic": "BEVODEBBXXX", "fintsUrl": "https://fints.volksbank-berlin.de/fints", "fints": true, "city": "Berlin" },
-    { "name": "DKB AG", "blz": "12030000", "bic": "BYLADEMM001", "fintsUrl": "https://fints.dkb.de/fints", "fints": true, "city": "Berlin" },
-    { "name": "ING-DiBa AG", "blz": "50010517", "bic": "INGDDEFFXXX", "fintsUrl": "https://fints.ing.de/fints", "fints": true, "city": "Frankfurt" },
-    { "name": "Commerzbank AG", "blz": "50040000", "bic": "COBADEFFXXX", "fintsUrl": "https://fints.commerzbank.de/fints", "fints": true, "city": "Frankfurt" },
-    { "name": "1822direkt", "blz": "50050201", "bic": "HELADEF1822", "fintsUrl": "https://fints.1822direkt.de/fints", "fints": true, "city": "Frankfurt" },
-    { "name": "Consorsbank", "blz": "76030080", "bic": "CSDBDE71XXX", "fintsUrl": "https://fints.consorsbank.de/fints", "fints": true, "city": "Nürnberg" },
-    { "name": "N26 Bank GmbH", "blz": "10010500", "bic": "NTSBDEB1XXX", "fintsUrl": "", "fints": false, "city": "Berlin" },
-    { "name": "Trade Republic Bank GmbH", "blz": "10110500", "bic": "TRBKDEBBXXX", "fintsUrl": "", "fints": false, "city": "Berlin" },
-    { "name": "bunq B.V.", "blz": "", "bic": "BUNQNL2AXXX", "fintsUrl": "", "fints": false, "city": "Amsterdam" }
+    {
+      "name": "Berliner Volksbank",
+      "blz": "10090000",
+      "bic": "BEVODEBBXXX",
+      "fintsUrl": "https://fints2.atruvia.de/cgi-bin/hbciservlet",
+      "fints": true,
+      "city": "Berlin"
+    },
+    {
+      "name": "Volksbank / Raiffeisenbank (Atruvia)",
+      "blz": "",
+      "bic": "",
+      "fintsUrl": "https://fints2.atruvia.de/cgi-bin/hbciservlet",
+      "fints": true,
+      "city": "Deutschland",
+      "blzRequired": true
+    },
+    {
+      "name": "Sparkasse",
+      "blz": "",
+      "bic": "",
+      "fintsUrl": "",
+      "fints": true,
+      "city": "Deutschland",
+      "blzRequired": true,
+      "urlRequired": true,
+      "hint": "BLZ und FinTS-Adresse findest du im Online-Banking deiner Sparkasse (meist https://banking-xx.s-fints-pt-xx.de/fints30)."
+    },
+    {
+      "name": "DKB AG",
+      "blz": "12030000",
+      "bic": "BYLADEMM001",
+      "fintsUrl": "https://banking-dkb.s-fints-pt-dkb.de/fints30",
+      "fints": true,
+      "city": "Berlin"
+    },
+    {
+      "name": "ING-DiBa AG",
+      "blz": "50010517",
+      "bic": "INGDDEFFXXX",
+      "fintsUrl": "https://fints.ing.de/fints/",
+      "fints": true,
+      "city": "Frankfurt"
+    },
+    {
+      "name": "comdirect",
+      "blz": "20041177",
+      "bic": "COBADEHDXXX",
+      "fintsUrl": "https://fints.comdirect.de/fints",
+      "fints": true,
+      "city": "Quickborn"
+    },
+    {
+      "name": "Commerzbank AG",
+      "blz": "50040000",
+      "bic": "COBADEFFXXX",
+      "fintsUrl": "https://fints.commerzbank.de/fints",
+      "fints": true,
+      "city": "Frankfurt"
+    },
+    {
+      "name": "Deutsche Bank",
+      "blz": "50070024",
+      "bic": "DEUTDEDBFRA",
+      "fintsUrl": "https://fints.deutsche-bank.de/",
+      "fints": true,
+      "city": "Frankfurt"
+    },
+    {
+      "name": "Postbank",
+      "blz": "10010010",
+      "bic": "PBNKDEFFXXX",
+      "fintsUrl": "https://hbci.postbank.de/banking/hbci.do",
+      "fints": true,
+      "city": "Bonn"
+    },
+    {
+      "name": "Consorsbank",
+      "blz": "76030080",
+      "bic": "CSDBDE71XXX",
+      "fintsUrl": "https://brokerage-hbci.consorsbank.de/hbci",
+      "fints": true,
+      "city": "Nürnberg"
+    },
+    {
+      "name": "N26 Bank",
+      "blz": "10011001",
+      "bic": "NTSBDEB1XXX",
+      "fintsUrl": "",
+      "fints": false,
+      "city": "Berlin"
+    },
+    {
+      "name": "Trade Republic Bank",
+      "blz": "10012345",
+      "bic": "TRBKDEBBXXX",
+      "fintsUrl": "",
+      "fints": false,
+      "city": "Berlin"
+    },
+    {
+      "name": "C24 Bank",
+      "blz": "50024024",
+      "bic": "DEFFDEFFXXX",
+      "fintsUrl": "",
+      "fints": false,
+      "city": "Frankfurt"
+    },
+    {
+      "name": "bunq",
+      "blz": "",
+      "bic": "BUNQNL2AXXX",
+      "fintsUrl": "",
+      "fints": false,
+      "city": "Amsterdam"
+    },
+    {
+      "name": "Revolut",
+      "blz": "",
+      "bic": "REVOLT21XXX",
+      "fintsUrl": "",
+      "fints": false,
+      "city": "Vilnius"
+    }
   ]
 }

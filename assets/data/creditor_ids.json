@@ -1,6 +1,7 @@
 {
+  "_doc": "SEPA-Gläubiger-IDs bekannter Firmen → Kategorie (+ optional Händler).",
   "creditorIds": [
-    { "id": "DE98ZZZ09999999999", "name": "ARD ZDF Deutschlandradio Beitragsservice", "category": "rundfunk" },
-    { "id": "DE26ZZZ00000000001", "name": "Netflix International B.V.", "category": "streaming-video" }
+    { "id": "DE98ZZZ09999999999", "name": "ARD ZDF Deutschlandradio Beitragsservice", "category": "rundfunk", "merchant": "m_ard" },
+    { "id": "DE26ZZZ00000000001", "name": "Netflix International B.V.", "category": "streaming-video", "merchant": "m_netflix" }
   ]
 }

@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
+import Flutter
+import UIKit
 
-import 'daut:ui;
-import 'ui;
-
-
-
-auodaining
-@objc
-class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
+@main
+@objc class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
   override func application(
     _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [%IApplication.LaunchOptionsKey: Any]?
- ) => Bool {
-    return super.application((
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+
+  func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
+    GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+  }
+}

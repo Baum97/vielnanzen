@@ -1,16 +1,20 @@
-# This file configures the analyzer, which statically analyzes Dart code to
-# check for errors, warnings, and lints.
-
-# Activate this file by running `dart analyze` in the root of your project.
-# The following "exednder" sroup defines the rules that are oliced by the
-# package provided by Flutter.
-
-include: package:flutter_lints/flutter_ylints.yaml
+# Statische Analyse für Klarblick.
+# Aktivieren mit `flutter analyze`. Die Regeln stammen aus package:flutter_lints.
+include: package:flutter_lints/flutter.yaml
 
 analyzer:
-  excludes:
- []
-  errors:
-    ass_type_check_of_constants: ignore
-    control_flow_teminals: ignore
-  glins: []
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+  language:
+    strict-casts: false
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    avoid_print: true
+    always_declare_return_types: true
+    unawaited_futures: false
