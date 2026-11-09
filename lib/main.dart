@@ -5,10 +5,12 @@ import 'package:intl/date_symbol_data_local.dart';
 
 import 'core/engine/engine.dart';
 import 'data/store.dart';
+import 'services/incoming_files.dart';
 import 'state/app_state.dart';
 import 'ui/app_lock.dart';
 import 'ui/app_shell.dart';
 import 'ui/nav_key.dart';
+import 'ui/screens/import_screen.dart';
 import 'ui/screens/onboarding.dart';
 import 'ui/theme.dart';
 
@@ -39,6 +41,8 @@ class _KlarblickAppState extends ConsumerState<KlarblickApp> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (ref.read(storeProvider).transactions.isNotEmpty) ref.read(appStateProvider.notifier).runAnalysis();
+      // „Teilen → Klarblick“ / „Öffnen mit“ (Android)
+      ref.read(incomingFilesServiceProvider).start();
     });
   }
 
@@ -69,12 +73,34 @@ class _KlarblickAppState extends ConsumerState<KlarblickApp> {
   }
 }
 
-/// Ohne Konten → Onboarding, sonst die App.
-class HomeGate extends ConsumerWidget {
+/// Ohne Konten → Onboarding, sonst die App. Übernimmt außerdem per „Teilen“ übergebene Dateien –
+/// erst hier, also nachdem die App-Sperre entsperrt wurde.
+class HomeGate extends ConsumerStatefulWidget {
   const HomeGate({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeGate> createState() => _HomeGateState();
+}
+
+class _HomeGateState extends ConsumerState<HomeGate> {
+  void _openIncoming() {
+    if (!mounted) return;
+    final files = ref.read(incomingFilesProvider.notifier).take();
+    if (files.isEmpty) return;
+    Navigator.of(context).push(MaterialPageRoute<bool>(builder: (_) => ImportScreen(initialFiles: files)));
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _openIncoming());
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    ref.listen(incomingFilesProvider, (_, next) {
+      if (next.isNotEmpty) WidgetsBinding.instance.addPostFrameCallback((_) => _openIncoming());
+    });
     ref.watch(appStateProvider.select((s) => s.revision));
     final store = ref.read(storeProvider);
     if (!store.isLoaded) return const Scaffold(body: Center(child: CircularProgressIndicator()));

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/analytics/tx_filter.dart';
 import '../../data/models.dart';
 import '../../state/app_state.dart';
 import '../../state/nav.dart';
@@ -18,10 +19,13 @@ class TransactionsTab extends ConsumerStatefulWidget {
 
 class _TransactionsTabState extends ConsumerState<TransactionsTab> {
   final _search = TextEditingController();
+  final _chipScroll = ScrollController();
+  String _lastSelection = '';
 
   @override
   void dispose() {
     _search.dispose();
+    _chipScroll.dispose();
     super.dispose();
   }
 
@@ -38,26 +42,30 @@ class _TransactionsTabState extends ConsumerState<TransactionsTab> {
 
     final accountNames = {for (final a in store.accounts) a.id: a.name};
     final now = DateTime.now();
-    final from = range.start(now, earliest: analytics.earliest);
-    final q = filter.query.trim().toLowerCase();
+    final ctx = TxFilterContext(
+      categoryOf: engine.categoryById,
+      merchantKey: analytics.merchantKey,
+      merchantName: analytics.merchantDisplay,
+      accountName: (id) => accountNames[id] ?? 'Konto',
+      accountCount: store.accounts.length,
+      rangeFrom: range.start(now, earliest: analytics.earliest),
+      rangeLabel: range.label,
+      searchText: (t) => '${t.counterpartyName} ${t.purpose} ${t.note ?? ''} ${t.counterpartyIban ?? ''} ${analytics.merchantDisplay(t)} '
+              '${engine.categoryById(t.categoryId)?.name ?? ''} ${(t.amountCents.abs() / 100).toStringAsFixed(2).replaceAll('.', ',')}'
+          .toLowerCase(),
+    );
+    final txs = filterTransactions(store.transactions, filter, ctx)..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
 
-    final txs = store.transactions.where((t) {
-      if (filter.onlyRange && t.bookingDate.isBefore(from)) return false;
-      if (filter.kind == TxKind.expenses && t.amountCents >= 0) return false;
-      if (filter.kind == TxKind.income && t.amountCents <= 0) return false;
-      if (filter.categoryId != null && t.categoryId != filter.categoryId && analytics.topCategory(t.categoryId)?.id != filter.categoryId) {
-        return false;
-      }
-      if (filter.merchantKey != null && analytics.merchantKey(t) != filter.merchantKey) return false;
-      if (q.isNotEmpty) {
-        final hay = '${t.counterpartyName} ${t.purpose} ${t.note ?? ''} ${t.counterpartyIban ?? ''} ${analytics.merchantDisplay(t)} '
-                '${engine.categoryById(t.categoryId)?.name ?? ''} ${(t.amountCents.abs() / 100).toStringAsFixed(2).replaceAll('.', ',')}'
-            .toLowerCase();
-        if (!hay.contains(q)) return false;
-      }
-      return true;
-    }).toList()
-      ..sort((a, b) => b.bookingDate.compareTo(a.bookingDate));
+    // Filterleiste: Gewähltes vorn, danach nur noch sinnvolle Optionen.
+    final bar = computeFilterBar(store.transactions, filter, ctx);
+    final selection = bar.selected.map((c) => '${c.dim.name}:${c.id}').join('|');
+    if (selection != _lastSelection) {
+      _lastSelection = selection;
+      // Die Leiste springt an den Anfang, damit das Gewählte und die nachrückenden Optionen sichtbar sind.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (_chipScroll.hasClients) _chipScroll.animateTo(0, duration: const Duration(milliseconds: 220), curve: Curves.easeOut);
+      });
+    }
 
     // Flache Liste: Tagesüberschriften + Zeilen (schnell auch bei Tausenden Umsätzen)
     final items = <Object>[];
@@ -80,8 +88,6 @@ class _TransactionsTabState extends ConsumerState<TransactionsTab> {
 
     final income = txs.where(analytics.isIncome).fold<int>(0, (a, t) => a + t.amountCents);
     final expense = txs.where(analytics.isExpense).fold<int>(0, (a, t) => a - t.amountCents);
-
-    final topCats = engine.categories.where((c) => c.parentId == null && c.kind != CategoryKind.umbuchung).toList();
 
     return Scaffold(
       body: CustomScrollView(slivers: [
@@ -119,23 +125,16 @@ class _TransactionsTabState extends ConsumerState<TransactionsTab> {
                 const SizedBox(height: 8),
                 SizedBox(
                   height: 36,
-                  child: ListView(scrollDirection: Axis.horizontal, children: [
-                    _chip('Alle', filter.kind == TxKind.all, () => ref.read(txFilterProvider.notifier).set(filter.copyWith(kind: TxKind.all))),
-                    _chip('Ausgaben', filter.kind == TxKind.expenses,
-                        () => ref.read(txFilterProvider.notifier).set(filter.copyWith(kind: TxKind.expenses))),
-                    _chip('Einnahmen', filter.kind == TxKind.income,
-                        () => ref.read(txFilterProvider.notifier).set(filter.copyWith(kind: TxKind.income))),
-                    _chip(range.label, filter.onlyRange,
-                        () => ref.read(txFilterProvider.notifier).set(filter.copyWith(onlyRange: !filter.onlyRange)),
-                        icon: Icons.date_range),
-                    if (filter.merchantName != null)
-                      _chip(filter.merchantName!, true, () => ref.read(txFilterProvider.notifier).set(filter.copyWith(clearMerchant: true)),
-                          icon: Icons.close),
-                    for (final c in topCats)
-                      _chip(c.name, filter.categoryId == c.id, () {
-                        ref.read(txFilterProvider.notifier).set(filter.categoryId == c.id ? filter.copyWith(clearCategory: true) : filter.copyWith(categoryId: c.id));
-                      }),
-                  ]),
+                  child: SingleChildScrollView(
+                    controller: _chipScroll,
+                    scrollDirection: Axis.horizontal,
+                    child: Row(children: [
+                      for (final c in bar.selected) _chip(c, filter, ctx),
+                      if (bar.selected.isNotEmpty && bar.options.isNotEmpty)
+                        const Padding(padding: EdgeInsets.only(right: 6), child: SizedBox(height: 20, child: VerticalDivider(width: 8, thickness: 1))),
+                      for (final c in bar.options) _chip(c, filter, ctx),
+                    ]),
+                  ),
                 ),
               ]),
             ),
@@ -143,11 +142,21 @@ class _TransactionsTabState extends ConsumerState<TransactionsTab> {
         ),
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 8, 20, 4),
-            child: Text(
-              '${txs.length} Umsätze · +${AmountFormat.format(income, discreet: ref.watch(discreetProvider), round: true)} / −${AmountFormat.format(expense, discreet: ref.watch(discreetProvider), round: true)}',
-              style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
-            ),
+            padding: const EdgeInsets.fromLTRB(20, 4, 12, 0),
+            child: Row(children: [
+              Expanded(
+                child: Text(
+                  '${txs.length} Umsätze · +${AmountFormat.format(income, discreet: ref.watch(discreetProvider), round: true)} / −${AmountFormat.format(expense, discreet: ref.watch(discreetProvider), round: true)}',
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
+                ),
+              ),
+              if (!filter.isEmpty)
+                TextButton(
+                  onPressed: () => ref.read(txFilterProvider.notifier).reset(),
+                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                  child: const Text('Zurücksetzen'),
+                ),
+            ]),
           ),
         ),
         if (items.isEmpty)
@@ -194,13 +203,13 @@ class _TransactionsTabState extends ConsumerState<TransactionsTab> {
     );
   }
 
-  Widget _chip(String label, bool selected, VoidCallback onTap, {IconData? icon}) => Padding(
+  Widget _chip(FilterChipSpec c, TxFilter filter, TxFilterContext ctx) => Padding(
+        key: ValueKey('${c.dim.name}:${c.id}'),
         padding: const EdgeInsets.only(right: 6),
         child: FilterChip(
-          label: Text(label),
-          avatar: icon != null && !selected ? Icon(icon, size: 16) : null,
-          selected: selected,
-          onSelected: (_) => onTap(),
+          label: Text(c.label),
+          selected: c.selected,
+          onSelected: (_) => ref.read(txFilterProvider.notifier).set(applyChip(filter, c, ctx)),
           visualDensity: VisualDensity.compact,
         ),
       );
