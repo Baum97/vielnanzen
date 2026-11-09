@@ -66,3 +66,19 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign --dart-define=FINTS_PRODUCT_ID=${{ secrets.FINTS_PRODUCT_ID }}
+
+      # Unsignierte .ipa zum Sideloading (z. B. AltStore, Sideloadly): Das Tool signiert die App
+      # beim Installieren mit der eigenen Apple-ID. Direkt installieren lässt sich diese Datei nicht.
+      - name: Unsignierte .ipa packen
+        run: |
+          test -d build/ios/iphoneos/Runner.app || { echo "::error::Runner.app wurde nicht gebaut"; exit 1; }
+          mkdir -p ipa/Payload
+          cp -R build/ios/iphoneos/Runner.app ipa/Payload/
+          (cd ipa && zip -qry klarblick-unsigned.ipa Payload)
+          unzip -l ipa/klarblick-unsigned.ipa | grep -E "Payload/Runner.app/(Info.plist|Runner)$"
+          ls -la ipa/klarblick-unsigned.ipa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: klarblick-ios-unsigned-ipa
+          path: ipa/klarblick-unsigned.ipa
+          retention-days: 30

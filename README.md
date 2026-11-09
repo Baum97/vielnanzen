@@ -69,8 +69,17 @@ flutter run                       # Gerät oder Emulator
   `android/key.properties` (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`).
 - **Flutter-Version:** Die Workflows nutzen fest Flutter 3.47.9, passend zu den Gradle-/AGP-/
   Kotlin-Versionen in `android/`. Bei einem Flutter-Update alle Workflows mit anpassen.
-- **iOS:** Die CI prüft `flutter build ios --no-codesign`. Zum Installieren in Xcode
-  `ios/Runner.xcworkspace` öffnen, Team wählen und auf ein Gerät bauen (Apple-Developer-Account nötig).
+- **iOS:** iOS installiert nur von Apple signierte Apps; eine direkt installierbare Datei gibt es
+  deshalb nicht. Die CI baut bei jedem Push `flutter build ios --no-codesign` und legt eine
+  **unsignierte `.ipa`** als Artefakt `klarblick-ios-unsigned-ipa` ab. Wege aufs iPhone:
+  - *Xcode (Mac):* `ios/Runner.xcworkspace` öffnen, Team wählen (eine kostenlose Apple-ID genügt),
+    iPhone anschließen und bauen – mit kostenloser Apple-ID läuft die App 7 Tage.
+  - *Sideloading:* die unsignierte `.ipa` mit Werkzeugen wie AltStore oder Sideloadly installieren;
+    sie signieren die App beim Installieren mit deiner Apple-ID (ebenfalls mit 7-Tage-Grenze bei
+    kostenloser Apple-ID, Rechner nötig). Auf einem iPhone ist das noch nicht getestet.
+  - *TestFlight/App Store:* erfordert ein Apple-Developer-Konto (99 €/Jahr) und Signatur-Zertifikate
+    als Secrets in der CI.
+  Auf iOS gibt es „Teilen → Klarblick“ noch nicht; Dateien werden im Import über *Dateien auswählen* geladen.
 - **Web:** `flutter build web` (Bankverbindung im Browser nicht möglich – dort nur Datei-Import).
   Pushes auf `main` werden nach GitHub Pages veröffentlicht: <https://baum97.github.io/vielnanzen/>
   (einmalig: *Settings → Pages → Source: gh-pages / root*).
