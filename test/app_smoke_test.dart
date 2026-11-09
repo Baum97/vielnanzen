@@ -222,4 +222,50 @@ void main() {
     await tester.pump(const Duration(seconds: 1));
     store.dispose();
   });
+
+  testWidgets('Umsätze-Filterleiste: nur sinnvolle Optionen, Auswahl bleibt vorn, Abwählen setzt zurück', (tester) async {
+    final store = await _demoStore(seed);
+    await _pumpApp(tester, store, seed, size: const Size(720, 1280), ratio: 2);
+    await tester.tap(find.descendant(of: find.byType(NavigationBar), matching: find.text('Umsätze')));
+    await tester.pumpAndSettle();
+
+    Finder chip(String label) => find.widgetWithText(FilterChip, label);
+    bool selected(String label) => tester.widget<FilterChip>(chip(label)).selected;
+    Future<void> tapChip(String label) async {
+      await tester.ensureVisible(chip(label));
+      await tester.pumpAndSettle();
+      await tester.tap(chip(label));
+      await tester.pumpAndSettle();
+    }
+
+    // Ausgangslage: Art und Oberkategorien
+    expect(chip('Einnahmen'), findsOneWidget);
+    expect(chip('Ausgaben'), findsOneWidget);
+    expect(chip('Lebensmittel'), findsOneWidget);
+
+    // Einnahmen → nur Einnahme-Kategorien
+    await tapChip('Einnahmen');
+    expect(selected('Einnahmen'), isTrue);
+    expect(chip('Gehalt & Lohn'), findsOneWidget);
+    expect(chip('Lebensmittel'), findsNothing, reason: 'unter Einnahmen laufen keine Lebensmittel');
+    expect(chip('Ausgaben'), findsNothing);
+
+    // Kategorie wählen → bleibt vorn (Pfad), andere Einnahme-Kategorien sind erst nach Abwahl wieder da
+    await tapChip('Gehalt & Lohn');
+    expect(selected('Gehalt & Lohn'), isTrue);
+    expect(selected('Einkommen'), isTrue);
+    expect(chip('Gehalt & Lohn'), findsOneWidget);
+
+    // Einnahmen abwählen → Kategorien ebenfalls abgewählt, alle Optionen wieder da
+    await tapChip('Einnahmen');
+    expect(chip('Gehalt & Lohn'), findsNothing, reason: 'als Auswahl entfernt; bei „Alle“ erscheinen Oberkategorien');
+    expect(chip('Einkommen'), findsOneWidget);
+    expect(selected('Einkommen'), isFalse);
+    expect(chip('Ausgaben'), findsOneWidget);
+    expect(chip('Lebensmittel'), findsOneWidget);
+    expect(find.text('Zurücksetzen'), findsNothing, reason: 'kein Filter aktiv');
+
+    await tester.pump(const Duration(seconds: 1));
+    store.dispose();
+  });
 }
