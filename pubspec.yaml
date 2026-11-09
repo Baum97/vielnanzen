@@ -40,3 +40,4 @@ flutter:
     - assets/data/merchants.json
     - assets/data/creditor_ids.json
     - assets/data/banks.json
+    - assets/data/bank_directory.json

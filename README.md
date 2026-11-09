@@ -20,9 +20,11 @@ Gerät – es gibt keinen Klarblick-Server. Lizenz: GPL-3.0 (siehe `LICENSE`, `P
 
 **FinTS (direkt zur Bank, ohne Server)** – unterstützt PIN/TAN mit pushTAN/App-Freigabe,
 photoTAN und TAN-Eingabe; lädt bis zu 5 Jahre Umsätze (so weit die Bank liefert).
-Voreingetragen sind u. a. ING, DKB, comdirect, Commerzbank, Deutsche Bank, Postbank,
-Consorsbank und Volks-/Raiffeisenbanken; für Sparkassen und andere Banken BLZ und
-FinTS-Adresse eingeben.
+Die Bank wird per Name, Ort, BLZ oder **IBAN** gesucht (rund 2.700 Banken); die FinTS-Adresse
+trägt Klarblick selbst ein und sie bleibt änderbar. Die Liste stammt aus
+[hbci4java](https://github.com/hbci4j/hbci4java) (LGPL-2.1, Daten der Bundesbank/Deutschen
+Kreditwirtschaft) und wird mit `python3 tool/build_bank_directory.py` neu erzeugt; einzelne Adressen
+können veraltet sein.
 
 > **Wichtig:** Banken akzeptieren nur registrierte FinTS-Programme. Die Registrierung bei der
 > Deutschen Kreditwirtschaft ist kostenlos: <https://www.fints.org/de/hersteller/produktregistrierung>
@@ -30,9 +32,21 @@ FinTS-Adresse eingeben.
 > FinTS-Produkt-ID* eingetragen oder beim Bauen mitgegeben:
 > `flutter build apk --dart-define=FINTS_PRODUCT_ID=…` (in der CI als Secret `FINTS_PRODUCT_ID`).
 
-**Datei-Import** (für Banken ohne FinTS wie N26, Trade Republic, C24, Revolut oder ohne
-Produkt-ID): CSV der gängigen Banken (Sparkasse, ING, DKB, comdirect, N26, Volksbank …),
-CAMT.052/053 und MT940. Doppelte Umsätze werden erkannt.
+**Datei-Import** (Banken ohne FinTS wie N26, Trade Republic, C24, Revolut – oder wenn noch keine
+Produkt-ID vorliegt):
+- **Teilen statt suchen (Android):** In der Bank-App den Export wählen → *Teilen* → *Klarblick*.
+  Die Datei öffnet sich direkt im Import (auch *Öffnen mit* funktioniert). Die App-Sperre bleibt
+  aktiv: geteilte Dateien werden erst nach dem Entsperren übernommen.
+- **Konto wird erkannt:** Klarblick liest die IBAN aus der Datei (CAMT, MT940, CSV mit Kontospalte
+  oder IBAN im Kopf) und ordnet die Umsätze dem passenden Konto zu – oder legt es mit dem Namen der
+  Bank an. Exporte ohne IBAN (z. B. Trade Republic) merkt sich die App pro Dateiformat.
+- **Jedes CSV:** Gängige Bank-Exporte (Sparkasse, ING, DKB, comdirect, N26, Volksbank …) werden
+  automatisch erkannt. Bei einem unbekannten Format ordnest du die Spalten einmal zu
+  (Datum, Betrag oder Soll/Haben, Empfänger, Zweck) – die Zuordnung wird gemerkt.
+- Dazu CAMT.052/053 und MT940, mehrere Dateien auf einmal, doppelte Umsätze werden übersprungen.
+
+**Trade Republic:** Es gibt keine offizielle Schnittstelle, deshalb gibt es keinen Direktabruf.
+Wenn die TR-App einen Export anbietet, teile ihn per *Teilen → Klarblick*.
 
 **Demo-Daten:** 5 Jahre Beispielumsätze zum Ausprobieren – rein lokal.
 
@@ -73,6 +87,7 @@ lib/
   services/         Bank-Abruf
   state/            Riverpod-Zustand, Navigation
   ui/               Tabs, Detailseiten, Diagramme
-assets/data/        Kategorien, ~135 Händler, Gläubiger-IDs, Banken
+assets/data/        Kategorien, ~135 Händler, Gläubiger-IDs, Bankverzeichnis, Banken ohne FinTS
+tool/               Skript für das Bankverzeichnis
 test/               Engine-, Import-, Speicher- und Widget-Tests
 ```

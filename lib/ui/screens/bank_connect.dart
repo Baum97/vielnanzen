@@ -1,14 +1,13 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../connectors/fints_connector.dart';
 import '../../core/engine/contracts.dart';
+import '../../data/bank_directory.dart';
 import '../../data/models.dart';
 import '../../services/bank_sync.dart';
 import '../../state/app_state.dart';
+import '../../state/bank_directory_provider.dart';
 import '../bank/sync_ui.dart';
 import '../theme.dart';
 import '../widgets.dart';
@@ -25,7 +24,6 @@ class BankConnectScreen extends ConsumerStatefulWidget {
 
 class _BankConnectScreenState extends ConsumerState<BankConnectScreen> {
   final _search = TextEditingController();
-  List<Map<String, dynamic>> _banks = [];
   Map<String, dynamic>? _bank;
 
   final _blz = TextEditingController();
@@ -41,9 +39,6 @@ class _BankConnectScreenState extends ConsumerState<BankConnectScreen> {
   @override
   void initState() {
     super.initState();
-    rootBundle.loadString('assets/data/banks.json').then((s) {
-      if (mounted) setState(() => _banks = ((jsonDecode(s) as Map<String, dynamic>)['banks'] as List).cast<Map<String, dynamic>>());
-    });
     _product.text = ref.read(bankSyncProvider).productId;
   }
 
@@ -54,6 +49,8 @@ class _BankConnectScreenState extends ConsumerState<BankConnectScreen> {
     }
     super.dispose();
   }
+
+  void _selectEntry(BankEntry e) => _select({'name': e.name, 'blz': e.blz, 'fintsUrl': e.url, 'city': e.city});
 
   void _select(Map<String, dynamic> b) {
     setState(() {
@@ -124,70 +121,97 @@ class _BankConnectScreenState extends ConsumerState<BankConnectScreen> {
   }
 
   Widget _searchView(ThemeData theme) {
-    final q = _search.text.trim().toLowerCase().replaceAll(' ', '');
-    final results = q.isEmpty
-        ? _banks
-        : _banks.where((b) {
-            final hay = '${b['name']} ${b['blz']} ${b['bic'] ?? ''} ${b['city'] ?? ''}'.toLowerCase().replaceAll(' ', '');
-            // IBAN eingegeben? Stellen 5–12 sind die BLZ.
-            final ibanBlz = q.length >= 12 && q.startsWith('de') ? q.substring(4, 12) : null;
-            return hay.contains(q) || (ibanBlz != null && (b['blz'] ?? '') == ibanBlz);
-          }).toList();
+    final directory = ref.watch(bankDirectoryProvider);
+    final noFints = ref.watch(noFintsBanksProvider).value ?? const <NoFintsBank>[];
+    final q = _search.text.trim();
+    final fold = BankDirectory.fold(q);
+    final dir = directory.value;
+    final results = dir == null ? const <BankEntry>[] : dir.search(q);
+    final noFintsHits = q.isEmpty ? noFints : noFints.where((b) => BankDirectory.fold(b.name).contains(fold)).toList();
+    final looksLikeBlz = RegExp(r'^\d{8}$').hasMatch(q.replaceAll(' ', ''));
+
     return Column(children: [
       Padding(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
         child: TextField(
           controller: _search,
           autofocus: true,
-          decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Bankname, BLZ, BIC oder IBAN', isDense: true),
+          decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Bankname, Ort, BLZ oder IBAN', isDense: true),
           onChanged: (_) => setState(() {}),
         ),
       ),
       Expanded(
-        child: ListView(children: [
-          for (final b in results)
-            ListTile(
-              leading: Avatar(label: b['name'] as String, color: theme.colorScheme.primary, size: 36),
-              title: Text('${b['name']}'),
-              subtitle: Text([if ((b['blz'] as String? ?? '').isNotEmpty) 'BLZ ${b['blz']}', b['city'] ?? ''].join(' · ')),
-              trailing: Chip(
-                label: Text(b['fints'] == true ? 'FinTS' : 'Datei-Import'),
-                visualDensity: VisualDensity.compact,
-              ),
-              onTap: () {
-                if (b['fints'] == true) {
-                  _select(b);
-                } else {
-                  _noFints(b['name'] as String);
-                }
-              },
-            ),
-          ListTile(
-            leading: const Icon(Icons.add),
-            title: const Text('Andere Bank'),
-            subtitle: const Text('BLZ und FinTS-Adresse selbst eingeben'),
-            onTap: () => _select({'name': 'Meine Bank', 'blz': '', 'fintsUrl': '', 'urlRequired': true}),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Klarblick verbindet sich per FinTS direkt mit deiner Bank – ohne Server dazwischen. '
-              'Deine Zugangsdaten verlassen das Gerät nur in Richtung deiner Bank.',
-              style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
-            ),
-          ),
-        ]),
+        child: directory.isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : ListView(children: [
+                if (q.isEmpty)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+                    child: Text(
+                      'Tippe den Namen deiner Bank ein oder füge deine IBAN ein – Klarblick findet die Bank und trägt die '
+                      'FinTS-Adresse automatisch ein.',
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                  ),
+                for (final b in results)
+                  ListTile(
+                    leading: Avatar(label: b.name, color: theme.colorScheme.primary, size: 36),
+                    title: Text(b.title, maxLines: 2, overflow: TextOverflow.ellipsis),
+                    subtitle: Text('BLZ ${b.blz}'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () => _selectEntry(b),
+                  ),
+                for (final b in noFintsHits)
+                  ListTile(
+                    leading: Avatar(label: b.name, color: theme.colorScheme.secondary, size: 36),
+                    title: Text(b.name),
+                    subtitle: const Text('Kein FinTS – Datei-Import'),
+                    trailing: const Chip(label: Text('Datei'), visualDensity: VisualDensity.compact),
+                    onTap: () => _noFints(b),
+                  ),
+                if (q.isNotEmpty && results.isEmpty && noFintsHits.isEmpty)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                    child: InfoBanner(
+                      text: looksLikeBlz
+                          ? 'Zu dieser BLZ ist keine FinTS-Adresse bekannt. Du kannst sie selbst eintragen oder die Umsätze als Datei importieren.'
+                          : 'Keine Bank gefunden. Versuche den Ort, die BLZ oder deine IBAN – oder trage die Daten selbst ein.',
+                      color: theme.colorScheme.primary,
+                    ),
+                  ),
+                ListTile(
+                  leading: const Icon(Icons.edit_outlined),
+                  title: const Text('Daten selbst eintragen'),
+                  subtitle: const Text('BLZ und FinTS-Adresse manuell'),
+                  onTap: () => _select({'name': 'Meine Bank', 'blz': looksLikeBlz ? q.replaceAll(' ', '') : '', 'fintsUrl': '', 'urlRequired': true}),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.upload_file_outlined),
+                  title: const Text('Stattdessen Datei importieren'),
+                  subtitle: const Text('Funktioniert mit jeder Bank'),
+                  onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const ImportScreen())),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text(
+                    'Klarblick verbindet sich per FinTS direkt mit deiner Bank – ohne Server dazwischen. '
+                    'Deine Zugangsdaten verlassen das Gerät nur in Richtung deiner Bank. '
+                    'Bankenliste: hbci4java (LGPL-2.1); Adressen können veraltet sein und sind änderbar.',
+                    style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.secondary),
+                  ),
+                ),
+              ]),
       ),
     ]);
   }
 
-  void _noFints(String name) {
+  void _noFints(NoFintsBank bank) {
     showDialog<void>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Text(name),
-        content: const Text('Diese Bank bietet keinen FinTS-Zugang für Privatkunden. Exportiere deine Umsätze im Online-Banking '
-            'als CSV (oder CAMT/MT940) und importiere die Datei – das dauert eine Minute.'),
+        title: Text(bank.name),
+        content: Text('${bank.note}\n\nExportiere deine Umsätze in der Bank-App als CSV (oder CAMT/MT940) und teile die Datei '
+            'direkt an Klarblick („Teilen → Klarblick“) oder wähle sie hier aus.'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Abbrechen')),
           FilledButton(
@@ -195,7 +219,7 @@ class _BankConnectScreenState extends ConsumerState<BankConnectScreen> {
               Navigator.pop(ctx);
               Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const ImportScreen()));
             },
-            child: const Text('Datei importieren'),
+            child: const Text('Datei auswählen'),
           ),
         ],
       ),

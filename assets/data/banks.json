@@ -1,129 +1,30 @@
 {
-  "_doc": "FinTS-Zugänge. Die Adresse ist im Verbinden-Dialog editierbar und sollte mit den Angaben der eigenen Bank abgeglichen werden. Banken ohne FinTS: Datei-Import (CSV/CAMT/MT940).",
+  "_doc": "Bekannte Banken ohne FinTS-Zugang: Umsätze per Datei-Import (CSV/CAMT/MT940) oder über „Teilen“ aus der Bank-App laden. Banken mit FinTS stehen in bank_directory.json.",
   "banks": [
     {
-      "name": "Berliner Volksbank",
-      "blz": "10090000",
-      "bic": "BEVODEBBXXX",
-      "fintsUrl": "https://fints2.atruvia.de/cgi-bin/hbciservlet",
-      "fints": true,
-      "city": "Berlin"
-    },
-    {
-      "name": "Volksbank / Raiffeisenbank (Atruvia)",
-      "blz": "",
-      "bic": "",
-      "fintsUrl": "https://fints2.atruvia.de/cgi-bin/hbciservlet",
-      "fints": true,
-      "city": "Deutschland",
-      "blzRequired": true
-    },
-    {
-      "name": "Sparkasse",
-      "blz": "",
-      "bic": "",
-      "fintsUrl": "",
-      "fints": true,
-      "city": "Deutschland",
-      "blzRequired": true,
-      "urlRequired": true,
-      "hint": "BLZ und FinTS-Adresse findest du im Online-Banking deiner Sparkasse (meist https://banking-xx.s-fints-pt-xx.de/fints30)."
-    },
-    {
-      "name": "DKB AG",
-      "blz": "12030000",
-      "bic": "BYLADEMM001",
-      "fintsUrl": "https://banking-dkb.s-fints-pt-dkb.de/fints30",
-      "fints": true,
-      "city": "Berlin"
-    },
-    {
-      "name": "ING-DiBa AG",
-      "blz": "50010517",
-      "bic": "INGDDEFFXXX",
-      "fintsUrl": "https://fints.ing.de/fints/",
-      "fints": true,
-      "city": "Frankfurt"
-    },
-    {
-      "name": "comdirect",
-      "blz": "20041177",
-      "bic": "COBADEHDXXX",
-      "fintsUrl": "https://fints.comdirect.de/fints",
-      "fints": true,
-      "city": "Quickborn"
-    },
-    {
-      "name": "Commerzbank AG",
-      "blz": "50040000",
-      "bic": "COBADEFFXXX",
-      "fintsUrl": "https://fints.commerzbank.de/fints",
-      "fints": true,
-      "city": "Frankfurt"
-    },
-    {
-      "name": "Deutsche Bank",
-      "blz": "50070024",
-      "bic": "DEUTDEDBFRA",
-      "fintsUrl": "https://fints.deutsche-bank.de/",
-      "fints": true,
-      "city": "Frankfurt"
-    },
-    {
-      "name": "Postbank",
-      "blz": "10010010",
-      "bic": "PBNKDEFFXXX",
-      "fintsUrl": "https://hbci.postbank.de/banking/hbci.do",
-      "fints": true,
-      "city": "Bonn"
-    },
-    {
-      "name": "Consorsbank",
-      "blz": "76030080",
-      "bic": "CSDBDE71XXX",
-      "fintsUrl": "https://brokerage-hbci.consorsbank.de/hbci",
-      "fints": true,
-      "city": "Nürnberg"
-    },
-    {
       "name": "N26 Bank",
-      "blz": "10011001",
-      "bic": "NTSBDEB1XXX",
-      "fintsUrl": "",
-      "fints": false,
-      "city": "Berlin"
+      "city": "Berlin",
+      "note": "N26 bietet keinen FinTS-Zugang."
     },
     {
       "name": "Trade Republic Bank",
-      "blz": "10012345",
-      "bic": "TRBKDEBBXXX",
-      "fintsUrl": "",
-      "fints": false,
-      "city": "Berlin"
+      "city": "Berlin",
+      "note": "Trade Republic bietet keinen FinTS-Zugang und keine offizielle Schnittstelle."
     },
     {
       "name": "C24 Bank",
-      "blz": "50024024",
-      "bic": "DEFFDEFFXXX",
-      "fintsUrl": "",
-      "fints": false,
-      "city": "Frankfurt"
+      "city": "Frankfurt",
+      "note": "C24 bietet keinen FinTS-Zugang."
     },
     {
       "name": "bunq",
-      "blz": "",
-      "bic": "BUNQNL2AXXX",
-      "fintsUrl": "",
-      "fints": false,
-      "city": "Amsterdam"
+      "city": "Amsterdam",
+      "note": "bunq bietet keinen FinTS-Zugang."
     },
     {
       "name": "Revolut",
-      "blz": "",
-      "bic": "REVOLT21XXX",
-      "fintsUrl": "",
-      "fints": false,
-      "city": "Vilnius"
+      "city": "Vilnius",
+      "note": "Revolut bietet keinen FinTS-Zugang."
     }
   ]
 }
