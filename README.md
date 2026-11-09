@@ -44,10 +44,17 @@ flutter test
 flutter run                       # Gerät oder Emulator
 ```
 
-- **Android:** Jeder Push baut eine installierbare APK (GitHub → *Actions* → *Build (Android & iOS)*
-  → Artefakt `klarblick-android-apk`). Lokal: `flutter build apk --release`. Für eine
-  Store-Version `android/key.properties` mit `storeFile`, `storePassword`, `keyAlias`,
-  `keyPassword` anlegen – ohne diese Datei wird mit dem Debug-Schlüssel signiert.
+- **Android:** Jeder Push baut eine installierbare APK und ein App-Bundle (GitHub → *Actions* →
+  *Build (Android & iOS)* → Artefakt `klarblick-android-apk`). Lokal: `flutter build apk --release`.
+- **Android-Release:** Einen Tag pushen, z. B. `git tag v1.1.0 && git push origin v1.1.0` – der
+  Workflow *Android Release* erstellt ein GitHub-Release mit `klarblick-1.1.0.apk` und `.aab`.
+  Für den Play Store einen eigenen Schlüssel als Repository-Secrets hinterlegen:
+  `ANDROID_KEYSTORE_BASE64` (`base64 -w0 upload-keystore.jks`), `ANDROID_KEYSTORE_PASSWORD`,
+  `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD` – ohne Secrets wird mit dem Debug-Schlüssel
+  signiert (installierbar, aber nicht Play-Store-tauglich). Lokal dasselbe über
+  `android/key.properties` (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`).
+- **Flutter-Version:** Die Workflows nutzen fest Flutter 3.47.9, passend zu den Gradle-/AGP-/
+  Kotlin-Versionen in `android/`. Bei einem Flutter-Update alle Workflows mit anpassen.
 - **iOS:** Die CI prüft `flutter build ios --no-codesign`. Zum Installieren in Xcode
   `ios/Runner.xcworkspace` öffnen, Team wählen und auf ein Gerät bauen (Apple-Developer-Account nötig).
 - **Web:** `flutter build web` (Bankverbindung im Browser nicht möglich – dort nur Datei-Import).

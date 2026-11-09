@@ -19,6 +19,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: '3.47.9'
           cache: true
       - run: flutter pub get
       - run: flutter analyze
@@ -37,14 +38,19 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: '3.47.9'
           cache: true
       - run: flutter pub get
       # Optional: FinTS-Produkt-ID als Repository-Secret FINTS_PRODUCT_ID hinterlegen.
       - run: flutter build apk --release --dart-define=FINTS_PRODUCT_ID=${{ secrets.FINTS_PRODUCT_ID }}
+      # App-Bundle (Play Store) ebenfalls bauen – prüft den Release-Weg bei jedem Push.
+      - run: flutter build appbundle --release --dart-define=FINTS_PRODUCT_ID=${{ secrets.FINTS_PRODUCT_ID }}
       - uses: actions/upload-artifact@v4
         with:
           name: klarblick-android-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
           retention-days: 30
 
   ios:
@@ -56,6 +62,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: '3.47.9'
           cache: true
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign --dart-define=FINTS_PRODUCT_ID=${{ secrets.FINTS_PRODUCT_ID }}
