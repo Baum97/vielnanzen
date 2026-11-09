@@ -1,0 +1,30 @@
+{
+  "_doc": "Bekannte Banken ohne FinTS-Zugang: Umsätze per Datei-Import (CSV/CAMT/MT940) oder über „Teilen“ aus der Bank-App laden. Banken mit FinTS stehen in bank_directory.json.",
+  "banks": [
+    {
+      "name": "N26 Bank",
+      "city": "Berlin",
+      "note": "N26 bietet keinen FinTS-Zugang."
+    },
+    {
+      "name": "Trade Republic Bank",
+      "city": "Berlin",
+      "note": "Trade Republic bietet keinen FinTS-Zugang und keine offizielle Schnittstelle."
+    },
+    {
+      "name": "C24 Bank",
+      "city": "Frankfurt",
+      "note": "C24 bietet keinen FinTS-Zugang."
+    },
+    {
+      "name": "bunq",
+      "city": "Amsterdam",
+      "note": "bunq bietet keinen FinTS-Zugang."
+    },
+    {
+      "name": "Revolut",
+      "city": "Vilnius",
+      "note": "Revolut bietet keinen FinTS-Zugang."
+    }
+  ]
+}
